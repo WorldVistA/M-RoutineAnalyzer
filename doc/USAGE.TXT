@@ -1,0 +1,18 @@
+1. Abstract
+
+The M-RoutineAnalyzer is a set of utilities based on XINDEX that can be used to analyze M routines and Fileman dictionaries in VistA installations for package to package dependencies and package entry tags.
+VistA code is organized in terms of packages.  These packages depend on each other in variety of ways. Understanding these dependencies is important both for discussions on iEHR architecture and current VistA refactoring effort.   The tags presented below can be used to generate various reports on these dependencies.
+
+2. Usage
+
+Following is a brief description of the main entry points. A more detailed technical report will be published shortly.
+
+D MAIN^ZZRGND14 - This command parses all VistA codebase and produces the data needed for the reports. The indexed data is stored in ^ZZRG.
+
+D REPORTAPI^ZZRGND13 - Prints the tags from a particular package that are called from other packages, OPTION file or RPC broker. For each tag it lists the formal as well as input and output parameters, directly used globals, globals used through FileMan calls and package dependencies from faux routines. 
+
+D REPORTAPIO^ZZRGND13 - Lists the external tags that are called by a particular package.
+
+D USES^ZZRGND15 - Globals used by routines in a package along with the file and the package that owns them
+
+D USED^ZZRGND15 - Globals owned by a package and the packages that use them.
