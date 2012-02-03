@@ -162,6 +162,8 @@ NDXLOCAL(RTN,TAG,GL,RESULT,ITAGS,START,LEVEL) ;
  . . . S:$E(ITAG,1,2)="$$" ITAG=$E(ITAG,3,$L(ITAG))
  . . . I $D(ITAGS(ITAG_"^"_IRTN)) K FPAR Q 
  . . . S ITAGS(ITAG_"^"_IRTN)=""
+ . . . S:ITAG]"" ^AFSPATH(IRTN,ITAG,RTN,TAG)="" I 1
+ . . . E  S:ITAG]"" ^AFSPATH(IRTN,IRTN,RTN,TAG)="" I 1
  . . . D NDXLOCAL(IRTN,ITAG,GL,.IRESULT,.ITAGS)
  . . . D MRGLOCAL(.RESULT,.IRESULT,.FPAR,$$SAMEPKG(RTN,IRTN,GL))
  . . . K FPAR
@@ -187,6 +189,7 @@ NDXLOCAL(RTN,TAG,GL,RESULT,ITAGS,START,LEVEL) ;
  . S TAGLEVEL=@GL@(2,RTN,ITAG,"L")
  . Q:TAGLEVEL'=LEVEL
  . K IRESULT
+ . S ^AFSPATH(RTN,ITAG,RTN,TAG)=""
  . D NDXLOCAL(RTN,ITAG,GL,.IRESULT,.ITAGS)
  . D MRGLOCAL(.RESULT,.IRESULT,"",1)
  Q
@@ -391,7 +394,7 @@ WAPI(GL) ;
  . . I @GL@(4,PKG)>40 W !,I,". COMMON SERVICE NAME: "_NAME I 1
  . . E  W !,I,". PACKAGE NAME: "_NAME
  . . I '$D(@GL@(7,PKG)) W !!,"Not used by other packages",! I 1
- . . E  D WPKGAPI(GL,PKG,I,"","")
+ . . E  D RPCETAG^ZZRGND16(PKG,GL),WPKGAPI(GL,PKG,I,"","")
  . . W !,"--------------------------------------------------------------",!
  . W !
  S PKG=$$GETPKG(RTN,"",GL)
@@ -603,12 +606,14 @@ NDXRPC(GL)
  N I,ENTRY,RPC,PKG,RTN,TAG
  S I=""
  F  S I=$O(^XWB(8994,I)) Q:I=""  D
- . Q:I=0  Q:$D(^XWB(8994,I,0))<1  Q:^XWB(8994,I,0)'["^"
+ . Q:+I=0
  . S ENTRY=^XWB(8994,I,0)
  . S RPC=$P(ENTRY,"^",1)
  . S RTN=$P(ENTRY,"^",3)
+ . Q:RTN=""
  . S TAG=$P(ENTRY,"^",2)
  . S PKG=$$GETPKG(RTN,"",GL)
+ . S @GL@(14,PKG,RTN,TAG)=I
  . S @GL@(14,PKG,RTN,TAG,RPC)=""
  Q
  ;
@@ -685,19 +690,43 @@ RGDEP(GL)
  Q
  ;
 REPGLPKG(TITLE,GLBS,PKG,GL)
- N X,X1,OUT,SPC,NAME,OUTN
+ N X,X1,OUT,SPC,NAME,OUTN,RTN,TAG,TMPGLB
  S X="",X1="",OUT=1,SPC=""
  F I=1:1:$L(TITLE) S SPC=SPC_" " 
  S OUT(1)=TITLE
  F  S X1=$O(@GLBS@(X1)) Q:X1=""  D
- . F  S X=$O(@GL@(11,X1,"PKGS",X)) Q:X=""  D
- . . Q:PKG=X  S NAME=$$PKGNAME(X,GL)  Q:$D(OUTN(NAME))>0
- . . I $L(OUT(OUT))+$L(NAME)>75 D
- . . . S OUT=OUT+1
- . . . S OUT(OUT)=SPC 
- . . S OUT(OUT)=OUT(OUT)_NAME_","
- . . S OUTN(NAME)=""
+ . S RTN=$P(GLBS,",",3),RTN=$E(RTN,2,$L(RTN)-1)
+ . S TAG=$P(GLBS,",",4),TAG=$E(TAG,2,$L(TAG)-1)
+ . D FNDMCODE(RTN,TAG,GL,.MGL) S X2=""
+ . F  S X2=$O(MGL(X2)) Q:X2=""  D
+ . . I X2["""" S X2=$P(X2,"""",1)_$P(X2,"""",2)
+ . . Q:X2'[X1
+ . . I $L($P(X2,"(",2))'>0 D
+ . . . S TMPGLB=GL_"(11,"""_X1_""",""PKGS"")"
+ . . E  S TMPGLB=GL_"(11,"""_X1_""","""_X2_","",""PKGS"")"
+ . . F  S X=$O(@TMPGLB@(X)) Q:X=""  D
+ . . . Q:PKG=X  S NAME=$$PKGNAME(X,GL)  Q:$D(OUTN(NAME))>0
+ . . . I $L(OUT(OUT))+$L(NAME)>75 D
+ . . . . S OUT=OUT+1
+ . . . . S OUT(OUT)=SPC 
+ . . . S OUT(OUT)=OUT(OUT)_NAME_","
+ . . . S OUTN(NAME)=""
  S:$L(OUT(1))=$L(TITLE) OUT=0
  D REPORT(TITLE,.OUT)
+ Q
+ ;
+FNDMCODE(RTN,TAG,GL,MGL)
+ N X,X1,XCMD,TCMD
+ S X="",MGL=""
+ F  S X=$O(@GL@(2,RTN,TAG,X)) Q:X=""  D
+ . S X1="",XCMD=""
+ . F  S X1=$O(@GL@(2,RTN,TAG,X,X1)) Q:'X1  D
+ . . S TCMD=@GL@(2,RTN,TAG,X,X1)
+ . . I ($P(TCMD,$C(9),1)="G")&(XCMD="X") D
+ . . . S MGL($P(TCMD,$C(9),2))="" 
+ . . . I ($P(TCMD,$C(9),2)'["^DD")&($P(TCMD,$C(9),2)'["ZOSF") D
+ . . . . W !,TAG_"^"_RTN_" - "_$P(TCMD,$C(9),2)
+ . . I TCMD["XECUTE" S XCMD="X" 
+ . . E  S XCMD="" 
  Q
  ;
