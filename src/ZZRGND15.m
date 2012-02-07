@@ -46,16 +46,17 @@ GETFLDS(LINE,FIELDS)
  S:$E(VAL,$L(VAL))="""" VAL=$E(VAL,1,$L(VAL)-1)
  Q
  ;
-USES(GL,PKG)  ;
+USES(GLB,PKG)  ;
+ S:$G(GLB)="" GLB="^ZZRG"
  N GPKG,SUB,RTN
- D RDOWNER(GL,0)
- W !,"Directly Used Globals By ",$$PKGNAME^ZZRGND13(PKG,GL),!
+ D RDOWNER(GLB,0)
+ W !,"Directly Used Globals By ",$$GPKGNAME^ZZRGND19(PKG,GLB),!
  S RTN=""
- F  S RTN=$O(@GL@(1,RTN)) Q:RTN=""  D
- . Q:$$GETPKG^ZZRGND13(RTN,"",GL)'=PKG
+ F  S RTN=$O(@GLB@(1,RTN)) Q:RTN=""  D
+ . Q:$$GETPKG^ZZRGND19(RTN,GLB)'=PKG
  . S G=""
- . F  S G=$O(@GL@(1,RTN,"G",G)) Q:G=""  D USESGLB(GL,PKG,RTN,G) 
- W !,"Globals used through FileMan calls by ",$$PKGNAME^ZZRGND13(PKG,GL),!
+ . F  S G=$O(@GLB@(1,RTN,"G",G)) Q:G=""  D USESGLB(GLB,PKG,RTN,G) 
+ W !,"Globals used through FileMan calls by ",$$GPKGNAME^ZZRGND19(PKG,GLB),!
  Q
  ;
 USESGLB(GL,PKG,RTN,G)
@@ -91,11 +92,11 @@ USED(GL,PKG)  ;
  N GINFO
  S RTN="",CNT=0
  F  S RTN=$O(@GL@(1,RTN)) Q:RTN=""  D
- . Q:$$GETPKG^ZZRGND13(RTN,"",GL)=PKG
+ . Q:$$GETPKG^ZZRGND19(RTN,GL)=PKG
  . S G=""
  . F  S G=$O(@GL@(1,RTN,"G",G)) Q:G=""  D
  . . S GINFO=$$GLBINFO(GL,G)
  . . Q:$P(GINFO,"^",1)'=PKG
- . . W !,"Routine ",RTN,": ",G, " (",$$PKGNAME^ZZRGND13($$GETPKG^ZZRGND13(RTN,"",GL),GL),")"
+ . . W !,"Routine ",RTN,": ",G, " (",$$GPKGNAME^ZZRGND19($$GETPKG^ZZRGND19(RTN,GL),GL),")"
  Q
  ;

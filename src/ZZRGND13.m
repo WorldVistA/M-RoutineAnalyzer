@@ -1,29 +1,5 @@
 ZZRGND13 ;CBR/ - REPORTS ;02/01/12
  ;;7.3;TOOLKIT;**to be determined**;
-SAMEPKG(RTN,CMPRTN,GL) ;
- Q $$GETPKG(RTN,"",GL)=$$GETPKG(CMPRTN,"",GL) 
- ;
-GPKGINFO(SOURCE,TARGET) ;
- N RTN,PKG,ID,INFO,P
- S RTN=""
- F  S RTN=$O(@SOURCE@(RTN)) Q:RTN=""  D
- . S PKG=$$GETPKG(RTN,.P)
- . S @TARGET@(PKG,P)=""
- . S @TARGET@(PKG,P,RTN)=""
- S PKG=""
- F  S PKG=$O(@TARGET@(PKG))  Q:PKG=""  D
- . I PKG="UNKNOWN" S INFO="UNKNOWN" I 1
- . E  I PKG="MXML" S INFO="M XML PARSER^MXML" I 1
- . E  I PKG="NVS" S INFO="NATIONAL VISTA SUPPORT^NVS" I 1
- . E  I PKG="VEX" S INFO="Vendor - Audiofax Inc^VEX" I 1
- . E  D
- . . S ID=$O(^DIC(9.4,"C",PKG,""))
- . . S INFO=^DIC(9.4,ID,0)
- . S P=""
- . F  S P=$O(@TARGET@(PKG,P)) Q:P=""  S @TARGET@(PKG,P)=INFO
- . S @TARGET@(PKG)=INFO
- Q
- ;
 ERR(IDX,MSG) ;
  N CNT
  S CNT=+$G(^UTILITY($J,"FO","E",0))+1
@@ -48,7 +24,7 @@ NDXPRTNS(PKG,TARGET) ;
  K:TARGET]"" ^UTILITY($J) 
  S RTN=""
  F  S RTN=$O(^ROUTINE(RTN)) Q:RTN=""  D
- . I PKG]"",$$GETPKG(RTN)'=PKG Q 
+ . I PKG]"",$$GETPKG^ZZRGND19(RTN)'=PKG Q 
  . S CNT=CNT+1
  . S ^UTILITY($J,RTN)=""
  S ^UTILITY($J,0)=CNT_";ROU",NRO=CNT
@@ -62,14 +38,14 @@ NDXFI(GL) ;
  N RTN,TAGS,TAG,PKG,T,TRTN,TTAG,TPKG,I,J
  S RTN=""
  F  S RTN=$O(@GL@(1,RTN)) Q:RTN=""  D 
- . S PKG=$$GETPKG(RTN,"",GL)
+ . S PKG=$$GETPKG^ZZRGND19(RTN,GL)
  . S:'$D(@GL@(4,PKG)) @GL@(4,PKG)=0
  . S T=""
  . F  S T=$O(@GL@(1,RTN,"X",T)) Q:T=""  D
  . . S TRTN=$P(T," ",1)
  . . S TTAG=$P(T," ",2)
  . . Q:TTAG=""
- . . S TPKG=$$GETPKG(TRTN,"",GL)
+ . . S TPKG=$$GETPKG^ZZRGND19(TRTN,GL)
  . . Q:PKG=TPKG
  . . I '$D(@GL@(4,TPKG,PKG)) S @GL@(4,TPKG)=+$G(@GL@(4,TPKG))+1,@GL@(4,TPKG,PKG)="" 
  . . S I=""
@@ -165,7 +141,7 @@ NDXLOCAL(RTN,TAG,GL,RESULT,ITAGS,START,LEVEL) ;
  . . . S:ITAG]"" ^AFSPATH(IRTN,ITAG,RTN,TAG)="" I 1
  . . . E  S:ITAG]"" ^AFSPATH(IRTN,IRTN,RTN,TAG)="" I 1
  . . . D NDXLOCAL(IRTN,ITAG,GL,.IRESULT,.ITAGS)
- . . . D MRGLOCAL(.RESULT,.IRESULT,.FPAR,$$SAMEPKG(RTN,IRTN,GL))
+ . . . D MRGLOCAL(.RESULT,.IRESULT,.FPAR,$$SAMEPKG^ZZRGND19(RTN,IRTN,GL))
  . . . K FPAR
  . . . S:$P(L,$C(9),3)="G0" Q=1
  . . I T="L" D
@@ -261,7 +237,7 @@ NDXFMAN(GL,RTN,TAG,RESULT,SHORT)
  . . . I (CX="D")!(CX="X") D  Q
  . . . . S IRTN=$P(ARG," ",1)
  . . . . S ITAG=$P(ARG," ",2)
- . . . . I $$GETPKG(IRTN,"",GL)="DI",VAL'="" D
+ . . . . I $$GETPKG^ZZRGND19(IRTN,GL)="DI",VAL'="" D
  . . . . . S FILE=$$GETFILE(RTN,TAG,I,VAL,$P(CMD,$C(9),4))
  . . . . . S:FILE'="" RESULT("FMG",FILE)=""
  Q
@@ -342,7 +318,7 @@ REPORTSR(GL,TITLE,GLB) ;
  F I=1:1:$L(TITLE) S SPC=SPC_" " 
  S OUT(1)=TITLE
  F  S X=$O(@GL@(X)) Q:X=""  D
- . S NAME=$$PKGNAME(X,GLB) 
+ . S NAME=$$GPKGNAME^ZZRGND19(X,GLB) 
  . I $L(OUT(OUT))+$L(NAME)>75 D
  . . S OUT=OUT+1
  . . S OUT(OUT)=SPC 
@@ -390,20 +366,20 @@ WAPI(GL) ;
  I RTN="" D  Q
  . F  S PKG=$O(@GL@(4,PKG)) Q:PKG=""  S I=I+1 D 
  . . W !,"--------------------------------------------------------------",!
- . . S NAME=$$PKGNAME(PKG,GL)
+ . . S NAME=$$GPKGNAME^ZZRGND19(PKG,GL)
  . . I @GL@(4,PKG)>40 W !,I,". COMMON SERVICE NAME: "_NAME I 1
  . . E  W !,I,". PACKAGE NAME: "_NAME
  . . I '$D(@GL@(7,PKG)) W !!,"Not used by other packages",! I 1
  . . E  D RPCETAG^ZZRGND16(PKG,GL),WPKGAPI(GL,PKG,I,"","")
  . . W !,"--------------------------------------------------------------",!
  . W !
- S PKG=$$GETPKG(RTN,"",GL)
+ S PKG=$$GETPKG^ZZRGND19(RTN,GL)
  D WPKGAPI(GL,PKG,1,RTN,TAG)
  Q
  ;
 REPORTAPI(GLB) ;
  S:$G(GLB)="" GLB="^ZZRG"
- D READPKGS(GLB)
+ D READPKGS^ZZRGND19(GLB,0)
  D RGDEP(GLB)
  D WAPI(GLB)
  Q
@@ -416,7 +392,7 @@ WPKGAPIO(GL,SPKG,I) ;
  . F  S RTN=$O(@GL@(8,SPKG,PKG,RTN)) Q:RTN=""  D
  . . S ATAG=""
  . . F  S ATAG=$O(@GL@(8,SPKG,PKG,RTN,ATAG)) Q:ATAG=""  D
- . . . W !," "_ATAG_"^"_RTN_" ("_$$PKGNAME(PKG,GL)_")"
+ . . . W !," "_ATAG_"^"_RTN_" ("_$$GPKGNAME^ZZRGND19(PKG,GL)_")"
  Q
  ;
 WAPIO(GL) ; 
@@ -424,7 +400,7 @@ WAPIO(GL) ;
  S PKG="",I=0,RTN=""
  F  S PKG=$O(@GL@(8,PKG)) Q:PKG=""  S I=I+1 D 
  . W !,"--------------------------------------------------------------",!
- . S NAME=$$PKGNAME(PKG,GL)
+ . S NAME=$$GPKGNAME^ZZRGND19(PKG,GL)
  . I @GL@(4,PKG)>40 W !,I,". COMMON SERVICE NAME: "_NAME,! I 1
  . E  W !,I,". PACKAGE NAME: "_NAME,!
  . D WPKGAPIO(GL,PKG,I)
@@ -434,7 +410,7 @@ WAPIO(GL) ;
  ;
 REPORTAPIO(GLB) ;
  S:$G(GLB)="" GLB="^ZZRG"
- D READPKGS(GLB)
+ D READPKGS^ZZRGND19(GLB,0)
  D WAPIO(GLB)
  Q
  ;
@@ -524,56 +500,6 @@ RPCRTN(RTN,PROC,GL)
  . . W SEP_$P(TMP," ",2)_"^"_$P(TMP," ",1) S SEP="," 
  Q
  ;
-GETPKG(RTN,P,GL) ;
- N I,PREFIX,PKG,STOP,FILE
- S PKG=""
- S STOP=0
- I $D(@GL@(10))=0 D READPKGS(GL)
- F I=1:1 Q:$L(RTN)<I  D  Q:PKG]""&STOP
- . S PREFIX=$E(RTN,1,I)
- . I $D(@GL@(10,PREFIX)) S PKG=PREFIX,P=PREFIX I 1
- . E  S:PKG]"" STOP=1
- Q:PKG]"" PKG
- S STOP=0
- I $E(RTN)="%" S PKG="XU",P="%"
- S:PKG="" PKG="UNKNOWN",P="UNKNOWN"
- Q PKG
- ; 
-PKGNAME(PKG,GL) ;
- Q:PKG="UNKNOWN" PKG
- N NAME
- I $D(@GL@(10,PKG))'>0 S PKG="UNKNOWN" Q PKG
- S NAME=@GL@(10,PKG)
- Q NAME
- ;
-ANS()
- N FILE
- S FILE=""
- W !,"Enter Packages.csv path: "
- R FILE Q FILE
- ;
-READPKGS(GL) 
- N OLDIO,LINE,LASTPN,LASTPRFX,EOF,FILE
- S OLDIO=$IO,EOF=0
- I $D(@GL@(10))>0 Q
- S FILE=$$ANS()
- S $ET="S EOF=$$EOF1END(FILE,OLDIO)"
- O FILE:"@ET":5 U FILE
- S @GL@(10)=""
- F  Q:EOF  D
- . R LINE
- . S:$P(LINE,",",1)'="" LASTPN=$P(LINE,",",1) 
- . S:$P(LINE,",",3)'="" LASTPRFX=$P(LINE,",",3) 
- . S @GL@(10,LASTPRFX)=LASTPN
- Q
- ;
-EOF1END(FILE,OLDIO)
- C FILE
- I $ZE["<ENDOFFILE>" S $EC=""
- I $ZE["<NOTOPEN>" S $EC="" W !,"Path not found!"
- U OLDIO
- Q 1
- ;
 REPOPTAG
  N IDX,X,LENGTH,OPTION
  S IDX=0
@@ -598,7 +524,7 @@ NDXOPT(GL)
  . S RTN=$P(^DIC(19,I,25),"^",2)
  . Q:$G(RTN)=""
  . S TAG=$P(^DIC(19,I,25),"^",1)
- . S PKG=$$GETPKG(RTN,"",GL)
+ . S PKG=$$GETPKG^ZZRGND19(RTN,GL)
  . S @GL@(13,PKG,RTN,TAG,OPTNAME)=""  
  Q
  ;
@@ -612,7 +538,7 @@ NDXRPC(GL)
  . S RTN=$P(ENTRY,"^",3)
  . Q:RTN=""
  . S TAG=$P(ENTRY,"^",2)
- . S PKG=$$GETPKG(RTN,"",GL)
+ . S PKG=$$GETPKG^ZZRGND19(RTN,GL)
  . S @GL@(14,PKG,RTN,TAG)=I
  . S @GL@(14,PKG,RTN,TAG,RPC)=""
  Q
@@ -652,7 +578,7 @@ WRTDEP(GL,GLB,SGLB,RTN)
  F  S X=$O(^UTILITY($J,1,RTN,"X",X)) Q:X=""  D
  . S I=$I(I),@GL@(11,GLB,"RTNS",I)=X
  . S @GL@(11,GLB,"RTNS",0)=I,RTNAME=$P(X," ",1)
- . S PKG=$$GETPKG(RTNAME,"",GL),PKGNAME=$$PKGNAME(PKG,GL)
+ . S PKG=$$GETPKG^ZZRGND19(RTNAME,GL),PKGNAME=$$GPKGNAME^ZZRGND19(PKG,GL)
  . S @GL@(11,GLB,"PKGS",PKG)=PKGNAME S:$D(@GL@(11,GLB,SGLB,"RTNS",0))=0 @GL@(11,GLB,SGLB,"RTNS",0)=0
  . S @GL@(11,GLB,SGLB,"RTNS",0)=$I(@GL@(11,GLB,SGLB,"RTNS",0))
  . S @GL@(11,GLB,SGLB,"PKGS",PKG)=PKGNAME
@@ -705,7 +631,7 @@ REPGLPKG(TITLE,GLBS,PKG,GL)
  . . . S TMPGLB=GL_"(11,"""_X1_""",""PKGS"")"
  . . E  S TMPGLB=GL_"(11,"""_X1_""","""_X2_","",""PKGS"")"
  . . F  S X=$O(@TMPGLB@(X)) Q:X=""  D
- . . . Q:PKG=X  S NAME=$$PKGNAME(X,GL)  Q:$D(OUTN(NAME))>0
+ . . . Q:PKG=X  S NAME=$$GPKGNAME^ZZRGND19(X,GL)  Q:$D(OUTN(NAME))>0
  . . . I $L(OUT(OUT))+$L(NAME)>75 D
  . . . . S OUT=OUT+1
  . . . . S OUT(OUT)=SPC 

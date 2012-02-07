@@ -8,7 +8,7 @@ RPCETAG(PKG,GL)
  ;
 UPDPATH(GLB,OTHRTN,OTHTAG,GL)
  N PKG,NXTRTN,NXTTAG,CNT,ID  
- S PKG=$$GETPKG^ZZRGND13(OTHRTN,"",GL)
+ S PKG=$$GETPKG^ZZRGND19(OTHRTN,GL)
  I GLB[(","""_OTHRTN_""","""_OTHTAG_"""") Q
  I $L(GLB)+$L(","""_OTHRTN_""","""_OTHTAG_""")")>1023 Q
  I $D(@GL@(14,PKG,OTHRTN,OTHTAG)) D  Q
@@ -72,7 +72,7 @@ TTX(GL)  ;
  . . . . S XTAG=$P(^XWB(8994,ID,0),"^",2)
  . . . . W:XRTN'=ARTN !,"ERROR"
  . . . . W:XTAG'=ATAG !,"ERROR"
- . . . . W !!,"RPC TAG: ",ATAG,"^",ARTN," (",ID,") (",$$PKGNAME^ZZRGND13($$GETPKG^ZZRGND13(ARTN,"",GL),GL),")",!
+ . . . . W !!,"RPC TAG: ",ATAG,"^",ARTN," (",ID,") (",$$GPKGNAME^ZZRGND19($$GETPKG^ZZRGND19(ARTN,GL),GL),")",!
  . . . . F IDX=1:1 Q:'$D(^XWB(8994,ID,1,IDX))  W ^XWB(8994,ID,1,IDX,0)," "
  . . . . W !!
  Q
