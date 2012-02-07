@@ -7,22 +7,24 @@ READFILE(FILENAME,COMMAND,PATH)
  ;   PATH     - (optional) file path ending in /
  Q:$G(FILENAME)=""
  Q:$G(COMMAND)=""
- N OLDIO,LINE,EOF,FILE
+ N OLDIO,LINE,EOF,FILE,TAG
  S OLDIO=$IO,EOF=0
  I $G(PATH)'="" S FILE=PATH_FILENAME
  E  W !,"Enter "_FILENAME_" path: " R FILE
  S $ET="S EOF=$$EOF1END^ZZRGND20(FILE)"
- O FILE:"@ET":5 U FILE
+ O FILE:"R":5 U FILE
  F  Q:EOF  D
- . R LINE
- . D @(COMMAND_"("""_LINE_""")")
- U OLDIO
+ . R LINE 
+ . S TAG=COMMAND_"("""_$$DBLQUOT(LINE)_""")"
+ . D @TAG
  Q
  ;
 EOF1END(FILE)
+ S $ET=""
  C FILE
  I $ZE["<ENDOFFILE>" S $EC=""
  I $ZE["<NOTOPEN>" S $EC="" W !,"Path not found!"
+ U OLDIO
  Q 1
  ;
 GCSVFLDS(LINE,FIELDS,SEP)
@@ -60,4 +62,14 @@ LTRIM(STR,CH)
  . S TO=I
  S:TO>0 STR=$E(STR,I,$L(STR))
  Q STR
+ ;
+DBLQUOT(STR)
+ ; Doubles quotes in a string
+ N I,CH,RETVAL
+ S RETVAL=""
+ F I=1:1:$L(STR) D
+ . S CH=$E(STR,I)
+ . S RETVAL=RETVAL_CH
+ . S:CH="""" RETVAL=RETVAL_CH
+ Q RETVAL
  ;
