@@ -10,6 +10,7 @@ GETPKG(RTN,GLB) ; Extracts the namespace prefix from a routine label
  I $D(@GLB@(10))=0 D READPKGS(GLB,0)
  F I=1:1:$L(RTN) D  Q:STOP
  . I $D(@GLB@(10,$E(RTN,1,I))) S PREFIX=$E(RTN,1,I),STOP=1 Q
+ S:PREFIX]"" PREFIX=@GLB@(10,PREFIX,"D")
  Q:PREFIX]"" PREFIX
  Q:$E(RTN)="%" "XU"
  Q "UNKNOWN"
@@ -21,19 +22,23 @@ SAMEPKG(RTN,CMPRTN,GLB) ; True if the two routines belong to the same package
  Q $$GETPKG(RTN,GLB)=$$GETPKG(CMPRTN,GLB) 
  ;
 READPKGS(GLB,CLEAN) ; Reads Packages.csv file and stores info in @GLB@(10)
- N PKGNAME
+ N PKGNAME,DEFAULT
  S:$G(GLB)="" GLB="^ZZRG"
  K:+$G(CLEAN) @GLB@(10)
  Q:$D(@GLB@(10))
- S PKGNAME=""
+ S PKGNAME="",DEFAULT=""
  D READFILE^ZZRGND20("Packages.csv","RDPKGLIN^ZZRGND19",$G(PKGSPATH))
  Q
  ; 
 RDPKGLIN(LINE) ; Process one csv line from Packages.csv
  N NAMESPC,FIELDS
  D GCSVFLDS^ZZRGND20(LINE,.FIELDS)
- S:FIELDS(1)'="" PKGNAME=FIELDS(1)
- S:(FIELDS(3)'="")&(PKGNAME'="") @GLB@(10,FIELDS(3))=PKGNAME
+ I FIELDS(1)'="" D
+ . S PKGNAME=FIELDS(1)
+ . S DEFAULT=$G(FIELDS(3))
+ I (FIELDS(3)'="")&(PKGNAME'="") D
+ . S @GLB@(10,FIELDS(3))=PKGNAME
+ . S @GLB@(10,FIELDS(3),"D")=DEFAULT
  Q
  ;
 RDOWNER(GLB,CLEAN) ; Reads Ownership.csv file and stores the info in @GLB@(20)
