@@ -20,6 +20,7 @@ NEWINP(INP) ;
  ;
 CRTBASE(GLB) ; parses codebase & extracts relevant info
  N CNT,RTN,INP,NRO,DA,INDDA 
+ S:$G(GLB)="" GLB="^ZZRG"
  K @GLB
  D NEWINP(.INP)
  S INP(10)=9.4,INP(1)=1,DA=-1,INDDA=DA
@@ -83,22 +84,23 @@ NDXRPC(GL) ; Indexes tags called by RPC Broker
  . S @GL@(14,PKG,RTN,TAG,RPC)=""
  Q
  ;
-NDXIN(GL,CLEAN) ;
+NDXIN(GLB,CLEAN) ;
  N PKG
- K:CLEAN @GL@(7)
- K @GL@(15)
+ S:$G(GLB)="" GLB="^ZZRG"
+ K:+$G(CLEAN) @GLB@(7)
+ K @GLB@(15)
  S PKG=""
- F  S PKG=$O(@GL@(9,PKG)) Q:PKG=""  D
- . S @GL@(15,PKG)=""
+ F  S PKG=$O(@GLB@(9,PKG)) Q:PKG=""  D
+ . S @GLB@(15,PKG)=""
  S PKG=""
- F  S PKG=$O(@GL@(13,PKG)) Q:PKG=""  D
- . S @GL@(15,PKG)=""
+ F  S PKG=$O(@GLB@(13,PKG)) Q:PKG=""  D
+ . S @GLB@(15,PKG)=""
  S PKG=""
- F  S PKG=$O(@GL@(14,PKG)) Q:PKG=""  D
- . S @GL@(15,PKG)=""
+ F  S PKG=$O(@GLB@(14,PKG)) Q:PKG=""  D
+ . S @GLB@(15,PKG)=""
  S PKG=""
- F  S PKG=$O(@GL@(15,PKG)) Q:PKG=""  D
- . D NDXPKGIN(GL,PKG,0)
+ F  S PKG=$O(@GLB@(15,PKG)) Q:PKG=""  D
+ . D NDXPKGIN(GLB,PKG,0)
  Q
  ;
 NDXPKGIN(GL,PKG,CLEAN) ;
@@ -134,6 +136,7 @@ NDXTAG(GL,PKG,RTN,TAG,RESULT)
  M:$D(RESULT("G")) @GL@(7,PKG,RTN,TAG,"G")=RESULT("G")
  M:$D(RESULT("GL")) @GL@(7,PKG,RTN,TAG,"GL")=RESULT("GL")
  M:$D(RESULT("FMG")) @GL@(7,PKG,RTN,TAG,"FMG")=RESULT("FMG")
+ M:$D(RESULT("FMGC")) @GL@(7,PKG,RTN,TAG,"FMGC")=RESULT("FMGC")
  Q
  ;
 NDXLOCAL(RTN,TAG,GL,RESULT,ITAGS,START,LEVEL) ; Index locals

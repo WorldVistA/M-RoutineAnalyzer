@@ -1,5 +1,5 @@
-ZZRGND4 ;ISC/REL,GRK - PROCESS DO, GO TO, WRITE & FOR COMMANDS ;08/05/08  13:59
- ;;7.3;TOOLKIT;**20,61,68,110,128**;Apr 25, 1995;Build 1
+ZZRGND4 ;CBR/ - PROCESS LIST OF PACKAGES AND GLOBAL OWNERSHIP FILES ;02/01/12
+ ;;7.3;TOOLKIT;**to be determined**;
  Q
  ;DO and GO; IND("DO1") checks if we already checked a DO at this level
 DG1(ARG,V,VADDL,CM,HASPOST) ; 
@@ -83,6 +83,8 @@ ST(LOC,S,GK) ;
  S R=$F(S,"(") S:R>1 S=$E(S,1,R-1) S:"IX"[LOC IND("COM")=IND("COM")_","_S
  S:'$D(V(LOC,S)) V(LOC,S)="" 
  D SETVADDL^ZZRGND2(LOC,S)
+ D:LOC="X" ADDCMD^ZZRGND2("D")
+ D:LOC="X" ADDARG^ZZRGND2(S)
  Q
  ;
 FR(ARG,V,VADDL,POST) ;
@@ -180,5 +182,5 @@ PRUNE(S1,S2) ;String,prune char from front and back
  F  Q:$E(S1)'=S2  S S1=$E(S1,2,999)
  F  Q:$E(S1,$L(S1))'=S2  S S1=$E(S1,1,$L(S1)-1)
  Q S1
- ;
+ 
  
