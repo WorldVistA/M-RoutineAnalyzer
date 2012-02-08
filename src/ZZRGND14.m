@@ -26,8 +26,8 @@ CRTBASE(GLB) ; parses codebase & extracts relevant info
  S INP(10)=9.4,INP(1)=1,DA=-1,INDDA=DA
  S CNT=0,RTN=""
  K ^UTILITY($J)
- F  S RTN=$O(^ROUTINE(RTN)) Q:RTN=""  S CNT=CNT+1,^UTILITY($J,RTN)=""
- S ^UTILITY($J,0)=CNT_";ROU",NRO=CNT
+ I '$D(^UTILITY($J)),$D(^%ZOSF("RSEL")) X ^("RSEL")
+ S NRO=0,X=0 F I=0:0 S X=$O(^UTILITY($J,X)) Q:X=""  S NRO=NRO+1
  D MAIN^ZZRGNDX(1)
  M @GLB=^UTILITY($J)
  K ^UTILITY($J)
