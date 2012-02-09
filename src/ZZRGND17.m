@@ -13,8 +13,8 @@ RFMCALLS(GLB) ; Prints FileMan calls per M TAG and globals used by these calls
  . . F  S TAG=$O(@GLB@(7,PKG,RTN,TAG)) Q:TAG=""  D
  . . . Q:'$D(@GLB@(7,PKG,RTN,TAG,"FMG"))
  . . . W !!," "_TAG_"^"_RTN
- . . . D REPORTGL^ZZRGND13("  Globals: ",GLB_"(7,"""_PKG_""","""_RTN_""","""_TAG_""",""FMG"")",0)
- . . . D REPORTGL^ZZRGND13("  FileMan calls: ",GLB_"(7,"""_PKG_""","""_RTN_""","""_TAG_""",""FMGC"")",0)
+ . . . D REPORTGL^ZZRGND13("  Globals: ",GLB_"(7,"""_PKG_""","""_RTN_""","""_TAG_""",""FMG"")",0,";")
+ . . . D REPORTGL^ZZRGND13("  FileMan calls: ",GLB_"(7,"""_PKG_""","""_RTN_""","""_TAG_""",""FMGC"")",0,";")
  . W !,"--------------------------------------------------------------",!
  Q
  ;
