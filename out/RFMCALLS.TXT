@@ -1,0 +1,8985 @@
+D RFMCALLS^ZZRGND17
+
+--------------------------------------------------------------
+
+1. PACKAGE NAME: VOLUNTARY TIMEKEEPING
+
+ VIEW^ABSV88B
+  Globals: ^ABS(503330,
+  FileMan calls: EN1^DIP
+
+ DELETE^ABSVDENT
+  Globals: ^ABS(503340,
+  FileMan calls: ^DIC;^DIK
+
+ NEW^ABSVDENT
+  Globals: ^ABS(503334,;^ABS(503340
+  FileMan calls: FILE^DICN;^DIC;^DIE
+
+ VIEW^ABSVDENT
+  Globals: ^ABS(503340,
+  FileMan calls: EN^DIQ;^DIC
+
+ DATE^ABSVDPNT
+  Globals: ^ABS(503340,
+  FileMan calls: EN1^DIP
+
+ EXPORT^ABSVDPNT
+  Globals: ^ABS(503340,
+  FileMan calls: EN1^DIP
+
+ FUND^ABSVDPNT
+  Globals: ^ABS(503340,
+  FileMan calls: EN1^DIP
+
+ INDISTAT^ABSVDPNT
+  Globals: ^ABS(503340,;^ABS(503346.1,
+  FileMan calls: EN1^DIP;^DIC
+
+ INDIV^ABSVDPNT
+  Globals: ^ABS(503340,;^ABS(503346.1,
+  FileMan calls: EN1^DIP;^DIC
+
+ ORG^ABSVDPNT
+  Globals: ^ABS(503334,;^ABS(503340,
+  FileMan calls: EN1^DIP;^DIC
+
+ ORGSTAT^ABSVDPNT
+  Globals: ^ABS(503334,;^ABS(503340,
+  FileMan calls: EN1^DIP;^DIC
+
+ SEARCH^ABSVDPNT
+  Globals: ^ABS(503340
+  FileMan calls: EN^DIS
+
+ TYPE^ABSVDPNT
+  Globals: ^ABS(503340,
+  FileMan calls: EN1^DIP
+
+ ACK^ABSVDPRT
+  Globals: ^ABS(503340,
+  FileMan calls: EN1^DIP
+
+ DATEREC^ABSVDPRT
+  Globals: ^ABS(503340,
+  FileMan calls: EN1^DIP
+
+ FISCAL^ABSVDPRT
+  Globals: ^ABS(503340,
+  FileMan calls: EN1^DIP
+
+ ORG^ABSVDPRT
+  Globals: ^ABS(503340,
+  FileMan calls: EN1^DIP
+
+ POST^ABSVDPRT
+  Globals: ^ABS(503334,;^ABS(503340,
+  FileMan calls: EN1^DIP;^DIC;^DIR
+
+ TYPE^ABSVDPRT
+  Globals: ^ABS(503340,
+  FileMan calls: EN1^DIP
+
+ AC^ABSVE1
+  Globals: ^ABS(503337,
+  FileMan calls: ^DIC;^DIE
+
+ OC^ABSVE1
+  Globals: ^ABS(503334,
+  FileMan calls: ^DIC;^DIE
+
+ SAC^ABSVE1
+  Globals: ^ABS(503332,
+  FileMan calls: ^DIC;^DIE
+
+ SE^ABSVE1
+  Globals: ^ABS(503338,
+  FileMan calls: ^DIC;^DIE
+
+ SWD^ABSVE1
+  Globals: ^ABS(503333,
+  FileMan calls: ^DIC;^DIE
+
+ LIST^ABSVL2
+  Globals: ^ABS(503330.1,
+  FileMan calls: EN1^DIP
+
+ AWARD^ABSVLBL
+  Globals: ^ABS(503330
+  FileMan calls: EN1^DIP
+
+ PREP^ABSVM
+  Globals: UNDETERMINED ("E");^ABS(503339.5,
+  FileMan calls: LIST^DIC;MSG^DIALOG;UPDATE^DIE;^DIR
+
+ PRINT^ABSVM
+  Globals: ^ABS(503339.5
+  FileMan calls: ^DIC;^DIR
+
+ PRINT^ABSVNIT1
+  Globals: ^ABS(503330.2
+  FileMan calls: EN1^DIP
+
+ PRINT^ABSVOT
+  Globals: ^ABS(503336
+  FileMan calls: EN1^DIP
+
+ DELSUS^ABSVTED
+  Globals: ^ABS(503335;^ABS(503335,
+  FileMan calls: ^DIC;^DIK
+
+ REL^ABSVTED
+  Globals: ^ABS(503335;^ABS(503335,
+  FileMan calls: ^DIC;^DIE
+
+ MERGE^ABSVTED1
+  Globals: ^ABS(503330,;^ABS(503335;^ABS(503335,
+  FileMan calls: ^DIC;^DIK
+
+ ASSIGN^ABSVTPR
+  Globals: ^ABS(503330,
+  FileMan calls: EN1^DIP
+
+ CODE^ABSVTPR
+  Globals: ^ABS(503330,
+  FileMan calls: EN1^DIP
+
+ GAMES^ABSVTPR
+  Globals: ^ABS(503330,
+  FileMan calls: EN1^DIP
+
+ OLIST^ABSVTPR
+  Globals: ^ABS(503335
+  FileMan calls: EN1^DIP
+
+ ORGLIST^ABSVTPR
+  Globals: ^ABS(503335
+  FileMan calls: EN1^DIP
+
+ SELORG^ABSVTPR
+  Globals: ^ABS(503334,
+  FileMan calls: ^DIC
+
+ SERVLIST^ABSVTPR
+  Globals: ^ABS(503335
+  FileMan calls: EN1^DIP
+
+ SHIRTS^ABSVTPR
+  Globals: ^ABS(503330,
+  FileMan calls: EN1^DIP
+
+ SIGNIN^ABSVTPR
+  Globals: ^ABS(503330,
+  FileMan calls: EN1^DIP
+
+ SLIST^ABSVTPR
+  Globals: ^ABS(503335
+  FileMan calls: EN1^DIP
+
+ WORK^ABSVTPR
+  Globals: ^ABS(503330,
+  FileMan calls: EN1^DIP
+
+ OCCSUM^ABSVTPR1
+  Globals: ^ABS(503336
+  FileMan calls: EN1^DIP
+
+ OLIST^ABSVTPR1
+  Globals: ^ABS(503336
+  FileMan calls: EN1^DIP
+
+ SELSER^ABSVTPR1
+  Globals: ^ABS(503332,
+  FileMan calls: ^DIC
+
+ SLIST^ABSVTPR1
+  Globals: ^ABS(503336
+  FileMan calls: EN1^DIP
+
+ TELLIST^ABSVTPR1
+  Globals: ^ABS(503330
+  FileMan calls: EN1^DIP;^DIR
+
+ WEEKLY^ABSVTPR1
+  Globals: ^ABS(503331
+  FileMan calls: EN1^DIP
+
+ SELORG^ABSVTPR2
+  Globals: ^ABS(503334,
+  FileMan calls: ^DIC
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+2. PACKAGE NAME: QUASAR
+
+ VISIT^ACKQAS
+  Globals: ^ACK(509850.8,1,2,
+  FileMan calls: LIST^DIC
+
+ $$CONVERT1^ACKQUTL4
+  Globals: ^ACK(509850.3,
+  FileMan calls: $$GET1^DIQ
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+3. PACKAGE NAME: NETWORK HEALTH EXCHANGE
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+4. PACKAGE NAME: VISUAL IMPAIRMENT SERVICE TEAM
+
+ PRINT^ANRVLET
+  Globals: ^ANRV(2043
+  FileMan calls: EN2^DIWF
+
+ PINF^ANRVOA
+  Globals: ^DPT(
+  FileMan calls: GETS^DIQ
+
+ ADDTXT^ANRVOB
+  Globals: UNDETERMINED (2048.01)
+  FileMan calls: WP^DIE
+
+ GETTXT^ANRVOB
+  Globals: UNDETERMINED (2048.01)
+  FileMan calls: $$GET1^DIQ
+
+ MKREC^ANRVOB
+  Globals: UNDETERMINED ()
+  FileMan calls: UPDATE^DIE
+
+ UPREC^ANRVOB
+  Globals: UNDETERMINED ()
+  FileMan calls: FILE^DIE
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+5. PACKAGE NAME: E CLAIMS MGMT ENGINE
+
+ $$ADDCOMM^BPSBUTL
+  Globals: UNDETERMINED ()
+  FileMan calls: FILE^DIE
+
+ $$DIVNCPDP^BPSBUTL
+  Globals: ^BPS(9002313.56,
+  FileMan calls: $$GET1^DIQ
+
+ IBSEND^BPSECMP2
+  Globals: ^BPSC(;^BPSC(";^BPSR("_RESPIE,1000,;^BPST(
+  FileMan calls: $$GET1^DIQ;GETS^DIQ;^DIE
+
+ DUR1^BPSNCPD3
+  Globals: ^BPSF(9002313.93,;^BPSR("_DURIEN_",1000,;^BPST("_TRANIEN_",10,
+  FileMan calls: $$GET1^DIQ;GETS^DIQ
+
+ $$EN^BPSNCPDP
+  Globals: ^DPT(
+  FileMan calls: $$GET1^DIQ
+
+ EN^BPSOSS8
+  Globals: ^BPS(9002313.99,
+  FileMan calls: ^DIE
+
+ EN^BPSPHAR
+  Globals: ^BPS(9002313.56,
+  FileMan calls: $$GET1^DIQ;^DIC;^DIE
+
+ $$BPSPLN^BPSUTIL
+  Globals: ^BPST(;^BPST("_IEN59,10,
+  FileMan calls: $$GET1^DIQ
+
+ $$CMOPON^BPSUTIL
+  Globals: ^BPS(9002313.56,
+  FileMan calls: $$GET1^DIQ
+
+ $$ECMEON^BPSUTIL
+  Globals: ^BPS(9002313.56,
+  FileMan calls: $$GET1^DIQ
+
+ $$MULTPHRM^BPSUTIL
+  Globals: ^BPS(9002313.56,
+  FileMan calls: $$GET1^DIQ
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+6. PACKAGE NAME: SHIFT HANDOFF TOOL
+
+ DELENTS^CRHD1
+  Globals: ^CRHD(183.3
+  FileMan calls: ^DIK
+
+ HOTMMGR^CRHD1
+  Globals: ^DIC(19.1,;^VA(200,
+  FileMan calls: $$FIND1^DIC;GETS^DIQ
+
+ TMCOMB^CRHD10
+  Globals: UNDETERMINED (CRHDFN)
+  FileMan calls: $$GET1^DIQ
+
+ TMLIST^CRHD10
+  Globals: ^VA(200,
+  FileMan calls: $$GET1^DIQ
+
+ TMMOD^CRHD10
+  Globals: UNDETERMINED ()
+  FileMan calls: UPDATE^DIE
+
+ TMPRVINF^CRHD10
+  Globals: ^VA(200,
+  FileMan calls: $$GET1^DIQ
+
+ DEFPREF^CRHD11
+  Globals: ^CRHD(183,
+  FileMan calls: $$GET1^DIQ
+
+ GETALLPL^CRHD11
+  Globals: ^VA(200,
+  FileMan calls: $$GET1^DIQ
+
+ DIV^CRHD5
+  Globals: ^DIC(4,
+  FileMan calls: $$GET1^DIQ
+
+ MGR^CRHD7
+  Globals: ^DIC(19.1,;^VA(200,
+  FileMan calls: $$FIND1^DIC;GETS^DIQ
+
+ CANEDIT^CRHD9
+  Globals: ^VA(200,
+  FileMan calls: $$GET1^DIQ
+
+ FILENGET^CRHD9
+  Globals: ^CRHD(183.4,
+  FileMan calls: $$FIND1^DIC;$$GET1^DIQ
+
+ FILENSAV^CRHD9
+  Globals: UNDETERMINED ()
+  FileMan calls: FILE^DIE;UPDATE^DIE
+
+ HODLIST^CRHD9
+  Globals: ^CRHD(183.3;^VA(200,
+  FileMan calls: $$GET1^DIQ;^DIE
+
+ HOPLIST^CRHD9
+  Globals: ^CRHD(183.3
+  FileMan calls: ^DIE
+
+ HOTMDEL^CRHD9
+  Globals: ^CRHD(183.3
+  FileMan calls: ^DIK
+
+ HOTMSAVE^CRHD9
+  Globals: UNDETERMINED ()
+  FileMan calls: UPDATE^DIE
+
+ MOD^CRHD9
+  Globals: UNDETERMINED ()
+  FileMan calls: UPDATE^DIE
+
+ PATPRV^CRHD9
+  Globals: ^VA(200,
+  FileMan calls: $$GET1^DIQ
+
+ PRVINFO^CRHD9
+  Globals: ^VA(200,
+  FileMan calls: $$GET1^DIQ
+
+ USERPHPG^CRHD9
+  Globals: ^VA(200,
+  FileMan calls: $$GET1^DIQ
+
+ AUSRINFO^CRHDUT2
+  Globals: ^VA(200,
+  FileMan calls: $$GET1^DIQ
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+7. PACKAGE NAME: DENTAL
+
+ PRINT^DENTCPM
+  Globals: ^DENT(220
+  FileMan calls: ^DIC
+
+ DELNC^DENTE0
+  Globals: ^DENT(226
+  FileMan calls: ^DIC
+
+ SITE^DENTE0
+  Globals: UNDETERMINED (DIC);^DENT(225
+  FileMan calls: ^DIC;^DIE
+
+ ADMIN^DENTE1
+  Globals: ^DENT(223
+  FileMan calls: ^DIC
+
+ DELTR^DENTE1
+  Globals: ^DENT(221
+  FileMan calls: ^DIC
+
+ FEE^DENTE1
+  Globals: ^DENT(222
+  FileMan calls: ^DIC
+
+ PERS^DENTE1
+  Globals: ^DENT(224
+  FileMan calls: ^DIC
+
+ TREAT^DENTE1
+  Globals: ^DENT(221
+  FileMan calls: ^DIC
+
+ ARR^DENTE2
+  Globals: ^DENT(223
+  FileMan calls: ^DIC
+
+ FBRR^DENTE2
+  Globals: ^DENT(222
+  FileMan calls: ^DIC
+
+ PRR^DENTE2
+  Globals: ^DENT(224
+  FileMan calls: ^DIC
+
+ TSE^DENTE2
+  Globals: UNDETERMINED (DIC);^DIC(220.3
+  FileMan calls: ^DIC;^DIE
+
+ PROV^DENTE3
+  Globals: UNDETERMINED (DIC);^DENT(220.5
+  FileMan calls: ^DIC;^DIE
+
+ TOS^DENTP1
+  Globals: ^DIC(220.3
+  FileMan calls: EN1^DIP
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+8. PACKAGE NAME: REGISTRATION
+
+ $$TSDATA^DGACT
+  Globals: ^DIC(42.4,;^DIC(45.7,
+  FileMan calls: $$GET1^DIQ
+
+ GETPRIOR^DGADDUTL
+  Globals: ^DPT(
+  FileMan calls: GETS^DIQ
+
+ GETUPDTS^DGADDUTL
+  Globals: ^DPT(
+  FileMan calls: GETS^DIQ
+
+ EN^DGAINP3
+  Globals: ^DGAM(334
+  FileMan calls: ^DIC
+
+ EN^DGANHD3
+  Globals: ^DGAM(345
+  FileMan calls: ^DIC
+
+ EN1^DGBLRV
+  Globals: ^DGPM("
+  FileMan calls: EN1^DIP
+
+ CERT^DGBTEF
+  Globals: ^DPT("
+  FileMan calls: ^DIC
+
+ RATES^DGBTEF1
+  Globals: ^DG(43
+  FileMan calls: ^DIE
+
+ EDIT^DGBUL
+  Globals: ^DG(43
+  FileMan calls: ^DIE
+
+ $$CVEDT^DGCV
+  Globals: ^DPT(
+  FileMan calls: $$GET1^DIQ
+
+ $$CVELIG^DGCV
+  Globals: ^DPT(
+  FileMan calls: GETS^DIQ
+
+ SETCV^DGCV
+  Globals: UNDETERMINED ("DGFDA")
+  FileMan calls: FILE^DIE
+
+ EN^DGCVEXP
+  Globals: ^DPT(
+  FileMan calls: $$GET1^DIQ
+
+ DEMOG^DGDEATH
+  Globals: ^DIC(4,;^DPT(
+  FileMan calls: $$FIND1^DIC;GETS^DIQ
+
+ DISCHRGE^DGDEATH
+  Globals: UNDETERMINED ("FDA")
+  FileMan calls: FILE^DIE
+
+ DKBULL^DGDEATH
+  Globals: UNDETERMINED ("FDA")
+  FileMan calls: FILE^DIE
+
+ DSBULL^DGDEATH
+  Globals: UNDETERMINED ("FDA")
+  FileMan calls: FILE^DIE
+
+ XFR^DGDEATH
+  Globals: ^DPT(
+  FileMan calls: $$GET1^DIQ
+
+ KILL^DGDEPINA
+  Globals: ^DGPR(408.12
+  FileMan calls: ^DIK
+
+ SET^DGDEPINA
+  Globals: ^DGPR(408.12
+  FileMan calls: IX1^DIK
+
+ EDIT^DGENACL
+  Globals: UNDETERMINED (DIC);^DPT("
+  FileMan calls: ^DIC;^DIE
+
+ $$ADD^DGENDBS
+  Globals: UNDETERMINED ();UNDETERMINED (DGENDA
+)
+  FileMan calls: $$IENS^DILF;CLEAN^DILF;UPDATE^DIE
+
+ $$TESTVAL^DGENDBS
+  Globals: UNDETERMINED (FILE)
+  FileMan calls: $$EXTERNAL^DILFD;CHK^DIE
+
+ $$UPD^DGENDBS
+  Globals: UNDETERMINED ("K");UNDETERMINED (DGENDA
+)
+  FileMan calls: $$IENS^DILF;CLEAN^DILF;FILE^DIE
+
+ NOTIFY^DGENEGT1
+  Globals: ^DGEN(27.16,
+  FileMan calls: $$EXTERNAL^DILFD
+
+ PURGE^DGENRDUA
+  Globals: ^DGRDUA(390
+  FileMan calls: ^DIK
+
+ $$EXT^DGENU
+  Globals: ^DGEN(27.11,
+  FileMan calls: $$EXTERNAL^DILFD
+
+ PRINT^DGGECSB
+  Globals: ^GECS(2100
+  FileMan calls: EN1^DIP;^DIC
+
+ EN^DGHTINAC
+  Globals: ^DIC(4,;^DPT(
+  FileMan calls: $$GET1^DIQ;^DIR
+
+ DCSDEL^DGJSUM
+  Globals: ^VAS(393
+  FileMan calls: ^DIE
+
+ EDIT^DGJSUM
+  Globals: ^VAS(393
+  FileMan calls: ^DIE
+
+ SIGUP^DGJSUM
+  Globals: ^VAS(393,
+  FileMan calls: ^DIE
+
+ EV^DGLOCK
+  Globals: --
+  FileMan calls: EN^DDIOL
+
+ POWV^DGLOCK
+  Globals: UNDETERMINED ("POW Status verified at the HEC...NO EDITING!!")
+  FileMan calls: EN^DDIOL
+
+ VET^DGLOCK
+  Globals: UNDETERMINED ("Applicant is NOT a veteran!!")
+  FileMan calls: EN^DDIOL
+
+ POS^DGLOCK1
+  Globals: UNDETERMINED (DIE)
+  FileMan calls: ^DIC
+
+ AAC^DGLOCK2
+  Globals: UNDETERMINED (DIE)
+  FileMan calls: ^DIC
+
+ $$GETSTAT^DGMSTAPI
+  Globals: ^DGMS(29.11,
+  FileMan calls: GETS^DIQ
+
+ $$NEWSTAT^DGMSTAPI
+  Globals: UNDETERMINED ()
+  FileMan calls: UPDATE^DIE
+
+ ADD^DGMTA
+  Globals: UNDETERMINED ()
+  FileMan calls: FILE^DICN;FILE^DIE
+
+ $$SR^DGMTAUD1
+  Globals: ^DGMT(408.31,;^DIC(4,
+  FileMan calls: $$GET1^DIQ;FIND^DIC
+
+ COM^DGMTEO
+  Globals: ^DPT("
+  FileMan calls: ^DIC
+
+ MT^DGMTSCU3
+  Globals: ^DGMT(408.22
+  FileMan calls: ^DIE
+
+ RESET^DGMTU11
+  Globals: ^DGMT(408.22
+  FileMan calls: ^DIE
+
+ $$FNDTITLE^DGPFAPI1
+  Globals: UNDETERMINED (261107
+)
+  FileMan calls: $$EZBLD^DIALOG
+
+ $$GETHTIU^DGPFAPI1
+  Globals: UNDETERMINED (261101
+);UNDETERMINED (261102
+)
+           UNDETERMINED (261103
+);UNDETERMINED (261107
+)
+           UNDETERMINED (261108
+)
+  FileMan calls: $$EZBLD^DIALOG
+
+ FNDTITLE^DGPFAPI1
+  Globals: UNDETERMINED (261107
+)
+  FileMan calls: $$EZBLD^DIALOG
+
+ $$DELTIU^DGPFAPI2
+  Globals: UNDETERMINED ();UNDETERMINED (261101
+);UNDETERMINED (261106
+)
+  FileMan calls: $$EZBLD^DIALOG;FILE^DIE
+
+ $$STOTIU^DGPFAPI2
+  Globals: UNDETERMINED (261101
+);UNDETERMINED (261102
+)
+           UNDETERMINED (261103
+);UNDETERMINED (261104
+)
+           UNDETERMINED (261109
+)
+  FileMan calls: $$EZBLD^DIALOG
+
+ EN^DGPFHLUQ
+  Globals: UNDETERMINED (DGLINE)
+  FileMan calls: EN^DDIOL
+
+ EN^DGPFRAB
+  Globals: ^DGPF(26.14,
+  FileMan calls: $$EXTERNAL^DILFD
+
+ EN^DGPFRFA
+  Globals: ^DGPF(26.13,
+  FileMan calls: $$EXTERNAL^DILFD
+
+ EN^DGPFRFR
+  Globals: ^DGPF(26.13,
+  FileMan calls: $$EXTERNAL^DILFD
+
+ EN^DGPFRPI
+  Globals: UNDETERMINED (26.112);^DGPF(26.11
+  FileMan calls: $$EXTERNAL^DILFD;IX^DIC
+
+ AUTO^DGPMBSAB
+  Globals: ^DG(43
+  FileMan calls: ^DIE
+
+ WARD^DGPMDDOS
+  Globals: UNDETERMINED (DIC);UNDETERMINED (DIE);^DIC(42
+  FileMan calls: ^DIC;^DIE;^DIK
+
+ EN^DGPMEX
+  Globals: ^DPT("
+  FileMan calls: ^DIC
+
+ EN^DGPMUTL
+  Globals: ^DGPM("
+  FileMan calls: --
+
+ ADM^DGPMVODS
+  Globals: ^A1B2(11500.2;^DGPM("
+  FileMan calls: ^DIE
+
+ EN^DGPREBJ
+  Globals: ^DGS(41.42;^DGS(41.43
+  FileMan calls: ^DIK
+
+ DIREDT^DGPREP1
+  Globals: ^DGS(41.42;^DPT(
+  FileMan calls: ^DIC;^DIE
+
+ PURGE43^DGPREP4
+  Globals: ^DGS(41.43
+  FileMan calls: WAIT^DICD;^DIK;^DIR
+
+ 7^DGPTC
+  Globals: ^DG(45.86
+  FileMan calls: ^DIC
+
+ 10^DGPTC
+  Globals: ^DGPT("
+  FileMan calls: ^DIC
+
+ EN^DGPTCO1
+  Globals: ^DG(45.86
+  FileMan calls: ^DIC
+
+ EN^DGPTCO3
+  Globals: ^DG(45.86
+  FileMan calls: ^DIC
+
+ GEN^DGPTCR
+  Globals: ^DG(45.86
+  FileMan calls: ^DIC
+
+ EN^DGPTEXPR
+  Globals: ^DIC(45.89
+  FileMan calls: EN1^DIP
+
+ DC^DGPTF
+  Globals: ^DGPT("
+  FileMan calls: ^DIE
+
+ SUF^DGPTF
+  Globals: UNDETERMINED ()
+  FileMan calls: FILE^DIE
+
+ ASK^DGPTFDEL
+  Globals: ^DGPT("
+  FileMan calls: ^DIC
+
+ DREL^DGPTFDEL
+  Globals: ^DGP(45.84
+  FileMan calls: ^DIC
+
+ HEL^DGPTFDEL
+  Globals: ^DGP(45.84
+  FileMan calls: ^DIC
+
+ $$DELETE^DGPTFEE
+  Globals: ^DGPT("
+  FileMan calls: ^DIK
+
+ EN1^DGPTFIC
+  Globals: ^ICD0("
+  FileMan calls: --
+
+ EN^DGPTFM71
+  Globals: ^DGPT("
+  FileMan calls: ^DIC
+
+ 2^DGPTFOU
+  Globals: ^DGPT("
+  FileMan calls: EN1^DIP
+
+ EN^DGPTFVC
+  Globals: ^DGPT("
+  FileMan calls: ^DIC
+
+ IN^DGPTMSG
+  Globals: ^DGM("
+  FileMan calls: --
+
+ PRN^DGPTRPP
+  Globals: ^DGP(45.87
+  FileMan calls: EN1^DIP
+
+ EDEFF^DGPTSUF
+  Globals: ^DIC(45.68
+  FileMan calls: ^DIC
+
+ LE^DGPTTS
+  Globals: ^DGPT("_PTF_"
+  FileMan calls: ^DIE
+
+ ASIH^DGPTTS2
+  Globals: ^DGPT("
+  FileMan calls: ^DIE
+
+ TD5^DGPTTS2
+  Globals: ^DGPT("_PTF_"
+  FileMan calls: ^DIE
+
+ FLAG^DGPTUTL1
+  Globals: ^DGPT("
+  FileMan calls: ^DIC
+
+ INCOME^DGPTUTL1
+  Globals: ^DGPT("
+  FileMan calls: ^DIE
+
+ EN^DGPWB
+  Globals: ^DPT("
+  FileMan calls: ^DIC
+
+ MAN^DGQESC5
+  Globals: ^DPT("
+  FileMan calls: ^DIC
+
+ KILL^DGREGDD
+  Globals: UNDETERMINED ("DGROOT")
+  FileMan calls: FILE^DIE
+
+ SET^DGREGDD
+  Globals: UNDETERMINED ("DGROOT")
+  FileMan calls: FILE^DIE
+
+ $$ZIP^DGREGDD1
+  Globals: UNDETERMINED ($SELECT^1;999(7));^DIC(5,"_$GET^1;2(4)_",1,
+  FileMan calls: $$FIND1^DIC;FILE^DIE
+
+ PAT^DGRPC
+  Globals: ^DPT("
+  FileMan calls: ^DIC
+
+ UPD^DGRPCU
+  Globals: UNDETERMINED (DIC);^DGIN(38.6
+  FileMan calls: ^DIC;^DIE
+
+ EN^DGRPD
+  Globals: UNDETERMINED ();^DIC(4,;^DPT(
+  FileMan calls: $$EXTERNAL^DILFD;$$FIND1^DIC;^DIWP
+
+ RDIS^DGRPDB
+  Globals: ^DPT(
+  FileMan calls: GETS^DIQ
+
+ $$COMPOW^DGRPMS
+  Globals: ^DIC(22,
+  FileMan calls: $$GET1^DIQ
+
+ DELMSE^DGRPMS
+  Globals: UNDETERMINED ("K")
+  FileMan calls: FILE^DIE
+
+ FVP^DGRPMS
+  Globals: UNDETERMINED ()
+  FileMan calls: FILE^DIE
+
+ GETPAT^DGRPTU
+  Globals: ^DPT("
+  FileMan calls: ^DIC;^DIE
+
+ SEARCH^DGRRLU
+  Globals: UNDETERMINED (+$GET^1;2(1)
+);^VA(200,
+  FileMan calls: $$IENS^DILF;CLEAN^DILF;DT^DICRW;GETS^DIQ
+
+ ADGRU^DGRUDD01
+  Globals: UNDETERMINED ("E")
+  FileMan calls: UPDATE^DIE
+
+ EN^DGRUGBJ
+  Globals: ^VA(200,
+  FileMan calls: $$GET1^DIQ
+
+ CLOSE^DGRUGC
+  Globals: ^DG(45.9
+  FileMan calls: ^DIC
+
+ KIL^DGRUGC
+  Globals: ^DG(45.9
+  FileMan calls: ^DIC
+
+ OPEN^DGRUGC
+  Globals: ^DG(45.9
+  FileMan calls: ^DIC
+
+ EE^DGRUGDR
+  Globals: ^DG(45.9
+  FileMan calls: ^DIC;^DIE
+
+ 2^DGSCHAD
+  Globals: UNDETERMINED (DIC);^DGS(41.1
+  FileMan calls: ^DIC;^DIE
+
+ 1^DGSEC1
+  Globals: ^DGSL(38.1
+  FileMan calls: ^DIC;^DIE
+
+ LIST^DGSILL
+  Globals: ^DPT("
+  FileMan calls: EN1^DIP
+
+ EN^DGSWITCH
+  Globals: ^DPT("
+  FileMan calls: ^DIC
+
+ EDIT^DGTEMP
+  Globals: UNDETERMINED (DIC);^DG(43.7
+  FileMan calls: ^DIC;^DIE
+
+ PR^DGTSSET
+  Globals: ^DIC(45.7
+  FileMan calls: EN1^DIP
+
+ DIVK^DGWAIT
+  Globals: ^DGWAIT("
+  FileMan calls: ^DIC
+
+ PT1^DGYZODS
+  Globals: UNDETERMINED (DIC);^A1B2(11500.1
+  FileMan calls: FILE^DICN;IX1^DIK
+
+ 3^VADPT60
+  Globals: ^DIC(8.2
+  FileMan calls: ^DIC
+
+ 5^VADPT60
+  Globals: ^DIC(8
+  FileMan calls: ^DIC
+
+ 6^VADPT60
+  Globals: ^DPT("
+  FileMan calls: ^DIC
+
+ 1^VADPT61
+  Globals: ^DIC(8.2
+  FileMan calls: ^DIC;^DIE
+
+ 2^VADPT61
+  Globals: ^DIC(8
+  FileMan calls: ^DIC;^DIE
+
+ E31^VADPT62
+  Globals: UNDETERMINED (X)
+  FileMan calls: --
+
+ E32^VADPT62
+  Globals: UNDETERMINED (X)
+  FileMan calls: --
+
+ CREATE^VAFCHFS
+  Globals: UNDETERMINED ();^XTV(8989.51,
+  FileMan calls: $$FIND1^DIC;UPDATE^DIE;WP^DIE;^DIC;^DIE
+
+ START^VAFCPDAT
+  Globals: ^DIC(4,;^DPT(
+  FileMan calls: $$GET1^DIQ;EN^DIQ1;^DIR
+
+ $$EN^VAFCPID
+  Globals: ^DPT(
+  FileMan calls: $$GET1^DIQ
+
+ EDIT^VAFCPTED
+  Globals: ^DPT(
+  FileMan calls: $$GET1^DIQ
+
+ BLDPID^VAFCQRY1
+  Globals: ^DPT(
+  FileMan calls: GETS^DIQ
+
+ DELETE^VAFCTFU
+  Globals: ^DGCN(391.91
+  FileMan calls: ^DIK
+
+ TFL^VAFCTFU1
+  Globals: ^DIC(4,
+  FileMan calls: EN^DIQ1
+
+ $$SEND2^VAFCUTL1
+  Globals: ^DPT(
+  FileMan calls: EN^DIQ1
+
+ $$EN^VAFHLOBX
+  Globals: ^VA(200
+  FileMan calls: ^DIC
+
+ $$EN^VAFHLPD1
+  Globals: ^DIC(4,;^DPT(
+  FileMan calls: EN^DIQ1
+
+ $$EN^VAFHLZTA
+  Globals: ^DIC(4,;^DIC(5,;^DPT(
+  FileMan calls: $$GET1^DIQ
+
+ EN^VAFHPURG
+  Globals: ^DG(43
+  FileMan calls: DT^DICRW;EN^DIQ1
+
+ $$ADDSEG^VAQUTL50
+  Globals: ^VAT(394.71
+  FileMan calls: FILE^DICN;^DIE
+
+ CLINIC^VAUTOMA
+  Globals: ^SC("
+  FileMan calls: --
+
+ DIVISION^VAUTOMA
+  Globals: ^DG(40.8
+  FileMan calls: --
+
+ PATIENT^VAUTOMA
+  Globals: ^DPT("
+  FileMan calls: --
+
+ WARD^VAUTOMA
+  Globals: ^DIC(42
+  FileMan calls: --
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+9. PACKAGE NAME: VA FILEMAN
+
+ DOCLIST^DDBR
+  Globals: UNDETERMINED (DOCSA)
+  FileMan calls: LOADCL^DDBR4
+
+ WP^DDBR
+  Globals: UNDETERMINED ($GET^1;2(1));UNDETERMINED ($NAME^1;2(2)
+)
+           UNDETERMINED ($NAME^1;2(2))
+  FileMan calls: $$GET^DIQG;$$NROOT^DDBRAP;KTMP^DDBRU;WP^DDBRAP
+
+ WP^DDBR2
+  Globals: UNDETERMINED (DDBPMSG)
+  FileMan calls: $$CTXT^DDBR
+
+ $$TEST^DDBRT
+  Globals: ^%ZIS(1,
+  FileMan calls: $$GET1^DIQ
+
+ POST^DDBRZIS
+  Globals: UNDETERMINED ("^TMP(""DDB"",$J)")
+  FileMan calls: BROWSE^DDBR
+
+ FILESEC^DDMOD
+  Globals: UNDETERMINED (401)
+  FileMan calls: BLD^DIALOG;CLEAN^DILF
+
+ EN^DDMPU
+  Globals: UNDETERMINED ($GET^1;2(1));UNDETERMINED ()
+  FileMan calls: CLEAN^DIEFU;FILE^DDMP;MSG^DIALOG;^DDS;^DIR
+
+ FINDC^DDR0
+  Globals: UNDETERMINED (DDRFILE)
+  FileMan calls: FIND^DIC
+
+ DIKC^DDR1
+  Globals: UNDETERMINED ($GET^1;2(4));UNDETERMINED ()
+  FileMan calls: FILE^DIE;^DIK
+
+ FIND1C^DDR2
+  Globals: UNDETERMINED (DDRFILE)
+  FileMan calls: $$FIND1^DIC;RECALL^DILFD
+
+ GETSC^DDR2
+  Globals: UNDETERMINED (DDRFILE)
+  FileMan calls: GETS^DIQ
+
+ FILEC^DDR3
+  Globals: UNDETERMINED ();UNDETERMINED (DDRFLAGS)
+  FileMan calls: FILE^DIE;UPDATE^DIE
+
+ VALC^DDR3
+  Globals: UNDETERMINED (DDRFILE)
+  FileMan calls: VAL^DIE
+
+ $$GET^DDSVAL
+  Globals: UNDETERMINED (DDP)
+  FileMan calls: $$EXTERNAL^DILFD;$$REL^DDSVALM;GETWP^DDSVALM
+
+ PUT^DDSVAL
+  Globals: UNDETERMINED (3086)
+  FileMan calls: BLD^DIALOG;MULT^DDSVALM
+
+ PUT^DDSVALF
+  Globals: UNDETERMINED ($GET^1;2(1));UNDETERMINED (520);UNDETERMINED (DDP)
+           UNDETERMINED (DDSPG);UNDETERMINED (DDSVDA
+)
+           UNDETERMINED (DDSVDDP);UNDETERMINED (FIL)
+  FileMan calls: $$EXTERNAL^DILFD;$$GETFLD^DDSLIB;$$IENS^DILF;BLD^DIALOG
+                 GL^DDS10;RPB^DDS7;RPCF^DDSCOMP;^DIR
+
+ EN^DDSZ
+  Globals: UNDETERMINED (+DDSFRM);UNDETERMINED (DDSFRM
+)
+  FileMan calls: $$REF^DDS0;PGRP^DDSZ3
+
+ 1^DIAU
+  Globals: ^DD(DFF
+  FileMan calls: EN1^DIP;L^DICRW1
+
+ 2^DIAU
+  Globals: ^DIC(
+  FileMan calls: EN1^DIP
+
+ 4^DIAU
+  Globals: ^DDA(DDA
+  FileMan calls: A^DICRW;EN1^DIP
+
+ $$FIND1^DIC
+  Globals: UNDETERMINED ($GET^1;2(1));UNDETERMINED (299)
+           UNDETERMINED (DIMSGA)
+  FileMan calls: CALLOUT^DIEFU;ERR^DICF4;FIND^DICF;INIZE^DIEFU
+
+ ASK^DIC
+  Globals: UNDETERMINED (DINDEX(1))
+  FileMan calls: CHKVAL2^DIC0;CHKVAL^DIC0;INIT^DIC0;Q^DIC2;^DIC1
+
+ RTN^DIC
+  Globals: UNDETERMINED (DIC)
+  FileMan calls: BYIEN1^DIC5;BYIEN2^DIC5;DSPHLP^DICQ;GETFA^DIC1;INIT^DIC0
+                 Q^DIC2;SETVAL^DIC0;SPACEBAR^DIC5
+
+ YN^DICN
+  Globals: UNDETERMINED (7001
+)
+  FileMan calls: $$EZBLD^DIALOG
+
+ DQ^DICQ
+  Globals: UNDETERMINED (DIC)
+  FileMan calls: GETFA^DIC1
+
+ EN^DID
+  Globals: UNDETERMINED (+$PIECE^2;4(8))
+  FileMan calls: --
+
+ FIREREC^DIE17
+  Globals: UNDETERMINED (DIEZRXR(3));UNDETERMINED (DIIENS)
+           UNDETERMINED (DIKEY);UNDETERMINED (DP)
+  FileMan calls: DA^DILF;FIRE^DIKC;RESTORE^DIE1
+
+ OUT^DIE17
+  Globals: UNDETERMINED (DIE);^DD("_DP_"
+  FileMan calls: ^DIC
+
+ EN^DIEZ
+  Globals: UNDETERMINED ("DIEZ"
+);UNDETERMINED (8024)
+           UNDETERMINED (8033
+3
+);UNDETERMINED (^DIC(5))
+  FileMan calls: $$EZBLD^DIALOG;$$GETTMP^DIKC1;BLD^DIALOG;DT^DICRW;L^DIEZ2
+                 QFF^DIEZ2;^DIEZ0
+
+ FIA^DIFROMSU
+  Globals: UNDETERMINED (9539);UNDETERMINED (9540);UNDETERMINED (9541)
+           UNDETERMINED (9542);UNDETERMINED (DIFRDDC);UNDETERMINED (DIFRFE)
+  FileMan calls: $$UP^DIQGU;BLD^DIALOG;DT^DICRW;SB^DIFROMSS
+
+ B^DII
+  Globals: UNDETERMINED (0);UNDETERMINED (DI)
+  FileMan calls: --
+
+ EN1^DIK
+  Globals: UNDETERMINED (DIKCDIK);UNDETERMINED (DIKCRFIL)
+  FileMan calls: 1^DIK1;INDEX^DIKC
+
+ EN2^DIK
+  Globals: UNDETERMINED (DIKCDIK);UNDETERMINED (DIKCRFIL)
+  FileMan calls: 1^DIK1;INDEX^DIKC
+
+ ENALL^DIK
+  Globals: UNDETERMINED (DHSAVE)
+  FileMan calls: CNT^DIK1;INDEX^DIKC
+
+ ENALL2^DIK
+  Globals: UNDETERMINED (DHSAVE)
+  FileMan calls: CNT^DIK1;INDEX^DIKC
+
+ IX1^DIK
+  Globals: UNDETERMINED (DIK)
+  FileMan calls: 1^DIK1;INDEX^DIKC
+
+ IX2^DIK
+  Globals: UNDETERMINED (DIK)
+  FileMan calls: 1^DIK1;INDEX^DIKC
+
+ IXALL^DIK
+  Globals: UNDETERMINED (DIKSAVE)
+  FileMan calls: CNT^DIK1;INDEX^DIKC
+
+ IXALL2^DIK
+  Globals: UNDETERMINED (DIKSAVE)
+  FileMan calls: CNT^DIK1;INDEX^DIKC
+
+ DIEZ^DIKCUTL3
+  Globals: UNDETERMINED (DIKCIT)
+  FileMan calls: EN^DIEZ;UNC^DIEZ
+
+ EN^DIKZ
+  Globals: UNDETERMINED (8024);UNDETERMINED (8036
+3
+)
+           UNDETERMINED (DIFILENO);UNDETERMINED (DIK2);UNDETERMINED (DNM)
+  FileMan calls: $$EZBLD^DIALOG;A^DIU21;BLD^DIALOG;DELETROU^DIEZ;DT^DICRW
+                 LOADALL^DIKC1;WAIT^DICD;^DIKZ0;^DIKZ1
+
+ EN1^DIKZ
+  Globals: UNDETERMINED (8036);UNDETERMINED (820
+)
+  FileMan calls: $$EZBLD^DIALOG;OS^DII;SIZ^DIPZ0
+
+ $$FMTE^DILIBF
+  Globals: UNDETERMINED (Y)
+  FileMan calls: $$OUT^DIALOGU
+
+ OS^DINIT
+  Globals: ^DD(""OS""
+  FileMan calls: ^DIC
+
+ DT^DIO2
+  Globals: UNDETERMINED (Y)
+  FileMan calls: $$OUT^DIALOGU;DT^DDXP4
+
+ EN1^DIOZ
+  Globals: UNDETERMINED (8028);UNDETERMINED (8029);UNDETERMINED (8035
+)
+           UNDETERMINED (8035
+2
+);UNDETERMINED (820
+);UNDETERMINED (9014)
+           UNDETERMINED (9019)
+  FileMan calls: $$EZBLD^DIALOG;BLD^DIALOG;OS^DII;^DIR
+
+ EN1^DIP
+  Globals: UNDETERMINED ($GET^1;2(4))
+  FileMan calls: CLEAN^DIEFU;OS^DII
+
+ EN1^DIPZ
+  Globals: UNDETERMINED (8034);UNDETERMINED (820
+)
+  FileMan calls: $$EZBLD^DIALOG;OS^DII;SIZ^DIPZ0
+
+ D^DIQ
+  Globals: UNDETERMINED (Y)
+  FileMan calls: $$FMTE^DILIBF
+
+ GETS^DIQ
+  Globals: UNDETERMINED (DIQGERRA)
+  FileMan calls: CALLOUT^DIEFU;DDENTRY^DIQGQ;INIZE^DIEFU
+
+ EN^DIQ1
+  Globals: UNDETERMINED ($SELECT^1;999(13))
+  FileMan calls: --
+
+ EN^DIS
+  Globals: UNDETERMINED ($GET^1;2(4))
+  FileMan calls: --
+
+ DIEN^DIWE
+  Globals: UNDETERMINED (DIW)
+  FileMan calls: --
+
+ EN2^DIWF
+  Globals: UNDETERMINED (^(1));^DIC("
+  FileMan calls: EN1^DIP;YN^DICN;^DIC
+
+ PURGE^DMSQ
+  Globals: UNDETERMINED (I)
+  FileMan calls: CLF^DMSQU;^DIR
+
+ EN1^DMSQP1
+  Globals: ^DMSQ("T",
+  FileMan calls: EN1^DIP
+
+ EN2^DMSQP1
+  Globals: ^DMSQ("C",
+  FileMan calls: EN1^DIP
+
+ EN3^DMSQP1
+  Globals: ^DMSQ("T",
+  FileMan calls: EN1^DIP
+
+ EN4^DMSQP1
+  Globals: ^DMSQ("E",
+  FileMan calls: EN1^DIP
+
+ EN5^DMSQP1
+  Globals: ^DMSQ("E",
+  FileMan calls: EN1^DIP
+
+ EN6^DMSQP1
+  Globals: ^DMSQ("T",
+  FileMan calls: EN1^DIP
+
+ EN7^DMSQP1
+  Globals: ^DMSQ("C",
+  FileMan calls: EN1^DIP
+
+ EN8^DMSQP1
+  Globals: ^DMSQ("C",
+  FileMan calls: EN1^DIP
+
+ EN9^DMSQP1
+  Globals: ^DMSQ("E",
+  FileMan calls: EN1^DIP
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+10. PACKAGE NAME: HINQ
+
+ DIVISION^DVBAB1
+  Globals: ^DIC(4,
+  FileMan calls: GETS^DIQ
+
+ INSTLIST^DVBAB1
+  Globals: ^DIC(4,;^DIC(5,
+  FileMan calls: GETS^DIQ
+
+ MSG^DVBAB1
+  Globals: ^XMB(3.8
+  FileMan calls: ^DIC
+
+ START^DVBAB84
+  Globals: UNDETERMINED (200.02);^VA(200,
+  FileMan calls: $$GET1^DIQ;GETS^DIQ
+
+ XDA^DVBAB89
+  Globals: ^DPT(
+  FileMan calls: ^DIC
+
+ GETSET^DVBABDDU
+  Globals: UNDETERMINED (DVBFIL)
+  FileMan calls: FIELD^DID
+
+ BACKUP^DVBABFRM
+  Globals: UNDETERMINED ("A");UNDETERMINED (S)
+  FileMan calls: UPDATE^DIE;WP^DIE
+
+ COPY^DVBABFRM
+  Globals: UNDETERMINED ("A");^DVB(396.17,
+  FileMan calls: UPDATE^DIE;WP^DIE
+
+ RESTORE^DVBABFRM
+  Globals: ^DVB(396.17,
+  FileMan calls: WP^DIE
+
+ U1N4^DVBABFRM
+  Globals: ^DPT(
+  FileMan calls: $$GET1^DIQ
+
+ $$EN2^DVBCTRN
+  Globals: ^DVB(396.4
+  FileMan calls: ^DIE
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+11. PACKAGE NAME: ENROLLMENT APPLICATION SYSTEM
+
+ PATADDR^EASAILK1
+  Globals: ^DPT("
+  FileMan calls: ^DIC
+
+ OEN^EASEC10E
+  Globals: ^DGMT(408.31;^DPT("
+  FileMan calls: ^DIC
+
+ EN^EASEZQ
+  Globals: ^EAS(712,
+  FileMan calls: ^DIC
+
+ REMSIG^EASEZU5
+  Globals: UNDETERMINED (DIC);^EAS(712
+  FileMan calls: ^DIC;^DIE;^DIR
+
+ $$PSITE^EASUER
+  Globals: ^DIC(4,
+  FileMan calls: $$GET1^DIQ
+
+ DELETE^EASXDR
+  Globals: ^DGPR(408.12
+  FileMan calls: EN^DIQ;^DIR
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+12. PACKAGE NAME: EVENT CAPTURE
+
+ USER^ECDEAL2
+  Globals: ^ECD(;^VA(200
+  FileMan calls: $$GET1^DIQ;^DIK
+
+ EDITC^ECDSS2
+  Globals: ^EC(726,
+  FileMan calls: ^DIC;^DIE
+
+ SETDEAC^ECDSS2
+  Globals: ^EC(726;^EC(726,
+  FileMan calls: ^DIC;^DIE;^DIR
+
+ SETDEAC^ECDSSA
+  Globals: ^EC(725;^EC(725,
+  FileMan calls: ^DIC;^DIE;^DIR
+
+ PAT^ECPAT
+  Globals: ^DPT(
+  FileMan calls: ^DIC
+
+ PATPROC^ECUERPC
+  Globals: ^EC(726,;^ECC(723,;^SC(
+  FileMan calls: $$GET1^DIQ
+
+ PRDEFS^ECUERPC
+  Globals: ^ECC(723,;^SC(
+  FileMan calls: $$GET1^DIQ
+
+ CLHLP^ECUERPC1
+  Globals: ^DPT(
+  FileMan calls: ^DIC
+
+ ECDEF^ECUERPC1
+  Globals: UNDETERMINED (ECFILE)
+  FileMan calls: ^DIC
+
+ PROCBAT^ECUERPC1
+  Globals: ^ECC(723,;^SC(
+  FileMan calls: $$GET1^DIQ
+
+ ECSCN^ECUMRPC
+  Globals: UNDETERMINED ($PIECE^2;4(5))
+  FileMan calls: $$GET1^DIQ
+
+ ECSDTLS^ECUMRPC
+  Globals: ^SC(
+  FileMan calls: $$GET1^DIQ
+
+ DSSUNT^ECUMRPC1
+  Globals: ^DIC(40.7,;^DIC(49,;^ECC(723,;^PRCD(420.1,
+  FileMan calls: $$GET1^DIQ
+
+ GLOC^ECUMRPC2
+  Globals: ^DIC(5,
+  FileMan calls: $$GET1^DIQ
+
+ ECHELP^ECUURPC
+  Globals: ^DIC(9.2
+  FileMan calls: ^DIC
+
+ FNDIEN^ECUURPC
+  Globals: UNDETERMINED (FIL)
+  FileMan calls: ^DIC
+
+ VERSRV^ECUURPC
+  Globals: ^DIC(19,
+  FileMan calls: FIND^DIC
+
+ EN^ECXAADM
+  Globals: ^DG(43
+  FileMan calls: EN^DIQ1;^DIR
+
+ EN^ECXADEN
+  Globals: ^DENT(225,
+  FileMan calls: FILE^DID;^DIR
+
+ EN^ECXAECQ
+  Globals: ^ACK(509850.6,
+  FileMan calls: FILE^DID;^DIR
+
+ EN^ECXAMOV
+  Globals: ^DG(43
+  FileMan calls: EN^DIQ1;^DIR
+
+ EN^ECXANUR
+  Globals: ^DG(43
+  FileMan calls: EN^DIQ1;^DIR
+
+ EN^ECXANUT
+  Globals: UNDETERMINED (SCRNARR
+TMP
+)
+  FileMan calls: $$OREF^DILF
+
+ EN^ECXAPRO
+  Globals: ^DIC(4
+  FileMan calls: EN^DIQ1;^DIR
+
+ EN^ECXARAD
+  Globals: ^RA(79,
+  FileMan calls: FILE^DID;^DIR
+
+ EN^ECXASUR
+  Globals: ^SRO(133,
+  FileMan calls: FILE^DID;^DIR
+
+ EN^ECXCPRO
+  Globals: ^DIC(4
+  FileMan calls: EN^DIQ1;^DIR
+
+ EN^ECXDEFIN
+  Globals: ^ECX(727.1,
+  FileMan calls: ^DIC;^DIR
+
+ ED^ECXDIVIV
+  Globals: ^PS(59.5,
+  FileMan calls: ^DIC;^DIE
+
+ EN^ECXLARA
+  Globals: UNDETERMINED (SCRNARR
+TMP
+)
+  FileMan calls: $$OREF^DILF
+
+ EN^ECXLARP
+  Globals: ^ECX(727.2
+  FileMan calls: EN1^DIP
+
+ EN^ECXLPRO
+  Globals: ^DIC(4
+  FileMan calls: EN^DIQ1;^DIR
+
+ EN^ECXLRED
+  Globals: ^ECX(727.7,
+  FileMan calls: ^DIC;^DIE
+
+ EN^ECXNUTDE
+  Globals: ^ECX(728.46
+  FileMan calls: ^DIC;^DIR
+
+ EN^ECXNUTPE
+  Globals: ^ECX(728.45
+  FileMan calls: ^DIC
+
+ EN^ECXPCT
+  Globals: ^SCTM(404.51
+  FileMan calls: EN1^DIP
+
+ EN^ECXPHAA
+  Globals: UNDETERMINED (SCRNARR
+)
+  FileMan calls: $$OREF^DILF
+
+ EDIT^ECXSCLD
+  Globals: ^ECX(728.44,
+  FileMan calls: ^DIC
+
+ FIX^ECXSCLD
+  Globals: ^DIC(40.7,
+  FileMan calls: ^DIC
+
+ PROCESS^ECXSCRP
+  Globals: ^SC(
+  FileMan calls: $$GET1^DIQ
+
+ EN^ECXTRANS
+  Globals: ^DIC(4
+  FileMan calls: EN^DIQ1;^DIR
+
+ EN^ECXTREX
+  Globals: ^ECX(727.1
+  FileMan calls: ^DIC;^DIR
+
+ EN^ECXWRDX
+  Globals: ^DIC(42;^ECX(727.4
+  FileMan calls: EN^DIQ1;FILE^DICN;^DIC;^DIE;^DIR
+
+ EN^ECXXREV
+  Globals: ^ECX(727,
+  FileMan calls: ^DIC
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+13. PACKAGE NAME: EMERGENCY DEPARTMENT INTEGRATION SOFTWARE
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+14. PACKAGE NAME: ENGINEERING
+
+ EN^ENEQNX4
+  Globals: ^ENG(6914.1
+  FileMan calls: ^DIC;^DIR
+
+ PROCD^ENEQPMP2
+  Globals: ^ENG(6914.2
+  FileMan calls: EN1^DIP
+
+ SDPM^ENEQPMR4
+  Globals: ^DIC(6922
+  FileMan calls: ^DIC
+
+ HS^ENEQRP1
+  Globals: ^ENG(6914,
+  FileMan calls: $$GET1^DIQ;^DIR
+
+ HD^ENEQRP2
+  Globals: ^ENG(6911
+  FileMan calls: ^DIC;^DIR
+
+ F1^ENEQRP3
+  Globals: ^ENG(6911
+  FileMan calls: YN^DICN;^DIC
+
+ EN^ENEQRP5
+  Globals: ^DIC(6922
+  FileMan calls: ^DIC;^DIR
+
+ CMR^ENEQRPI
+  Globals: ^ENG(6914.1
+  FileMan calls: ^DIC
+
+ R2^ENFSA
+  Globals: ^ENG(""FSA""
+  FileMan calls: ^DIC
+
+ R3^ENFSA
+  Globals: ^ENG(""FSA""
+  FileMan calls: ^DIC
+
+ P10^ENFSA1
+  Globals: ^ENG(6924.3
+  FileMan calls: ^DIC
+
+ P30^ENFSA1
+  Globals: ^ENG(6924.2
+  FileMan calls: ^DIC
+
+ PO^ENLBL12
+  Globals: ^ENG(6914
+  FileMan calls: --
+
+ LOCID^ENLBL15
+  Globals: ^ENG(6914
+  FileMan calls: --
+
+ BLDG^ENLBL4
+  Globals: ^ENG(6928.3
+  FileMan calls: ^DIC
+
+ SEC^ENMAN
+  Globals: ^DIC(6922
+  FileMan calls: ^DIC;^DIE
+
+ A^ENPL11
+  Globals: ^ENG(""PROJ""
+  FileMan calls: EN1^DIP;^DIC
+
+ ACT^ENPL2
+  Globals: ^ENG(""PROJ""
+  FileMan calls: ^DIC;^DIE
+
+ A^ENPL3A
+  Globals: ^ENG(""PROJ""
+  FileMan calls: ^DIC
+
+ SINGLE^ENPRP
+  Globals: ^ENG(""PROJ""
+  FileMan calls: ^DIC;^DIR
+
+ PREMP^ENSP
+  Globals: ^ENG(""KEY""
+  FileMan calls: --
+
+ PRKEY^ENSP
+  Globals: ^ENG(""LK""
+  FileMan calls: --
+
+ PRSRV^ENSP
+  Globals: ^ENG(""KEY""
+  FileMan calls: --
+
+ ENT^ENSP2
+  Globals: UNDETERMINED (DIC);^ENG(""SP""
+  FileMan calls: ^DIC
+
+ EP^ENSP6
+  Globals: ^ENG(""SP""
+  FileMan calls: --
+
+ L^ENSP6
+  Globals: ^ENG(6928.3
+  FileMan calls: --
+
+ P^ENSP6
+  Globals: ^ENG(""SP""
+  FileMan calls: --
+
+ PP^ENSP6
+  Globals: ^ENG(""SP""
+  FileMan calls: --
+
+ VEN^ENSP6
+  Globals: ^ENG(6928.3
+  FileMan calls: --
+
+ WRDEDT^ENWARD
+  Globals: ^ENG(6920
+  FileMan calls: ^DIC;^DIE
+
+ CLSOUT^ENWO1
+  Globals: ^ENG(6920
+  FileMan calls: ^DIE
+
+ DEL^ENWO1
+  Globals: ^ENG(6920
+  FileMan calls: ^DIK;^DIR
+
+ ENT^ENWO1
+  Globals: ^ENG(6920
+  FileMan calls: ^DIE;^DIR
+
+ EQHI^ENWO1
+  Globals: ^DIBT(";^ENG(6914;^ENG(6920
+  FileMan calls: EN^DIQ1;FILE^DICN;^DIE;^DIK
+
+ ENG^ENWONEW
+  Globals: ^DIC(6922
+  FileMan calls: ^DIC
+
+ TRANS^ENWONEW1
+  Globals: ^DIC(6922
+  FileMan calls: ^DIC
+
+ TRNIN^ENWONEW2
+  Globals: ^DIC(6922
+  FileMan calls: ^DIC
+
+ E^ENWOST
+  Globals: ^ENG(""EMP""
+  FileMan calls: ^DIC
+
+ O^ENWOST
+  Globals: ^DIC(49
+  FileMan calls: ^DIC
+
+ ROOM^ENWOST
+  Globals: ^ENG(""SP""
+  FileMan calls: ^DIC
+
+ IND^ENY2K
+  Globals: ^ENG(6914
+  FileMan calls: ^DIR
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+15. PACKAGE NAME: POLICE & SECURITY
+
+ OR1^ESPOFFCL
+  Globals: ^ESP(912
+  FileMan calls: ^DIC
+
+ OR1^ESPOFP
+  Globals: ^ESP(912
+  FileMan calls: ^DIC
+
+ OR1^ESPORM
+  Globals: ^ESP(912
+  FileMan calls: ^DIC
+
+ OR1^ESPORP
+  Globals: ^ESP(912
+  FileMan calls: ^DIC
+
+ CSY^ESPVNP
+  Globals: ^ESP(914
+  FileMan calls: ^DIC
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+16. PACKAGE NAME: FEE BASIS
+
+ UPDATE^FBAAAV
+  Globals: ^FBAAV("
+  FileMan calls: ^DIC;^DIR
+
+ LOOKUP^FBAAFS
+  Globals: UNDETERMINED (162.03)
+  FileMan calls: $$EXTERNAL^DILFD;^DIR
+
+ INDIV^FBAASL
+  Globals: ^FBAAA("
+  FileMan calls: DT^DICRW;^DIC
+
+ OUTP^FBCH78
+  Globals: ^FB7078("
+  FileMan calls: EN^DIQ;IX^DIC
+
+ EDIT^FBCHCD
+  Globals: UNDETERMINED (DIC);^FB7078(";^FBAA(162.2;^FBAAA("_FBVET_"
+  FileMan calls: IX^DIC;^DIE
+
+ EDIT^FBCHREQ1
+  Globals: ^FBAA(161.5;^FBAA(162.2
+  FileMan calls: IX^DIK;^DIE
+
+ ADD^FBCHROC
+  Globals: ^FBAA(161.5
+  FileMan calls: IX^DIC;^DIE
+
+ EDIT^FBCHROC
+  Globals: ^FBAA(161.5
+  FileMan calls: IX^DIC
+
+ GETVEN^FBPAY
+  Globals: ^FBAAV("
+  FileMan calls: ^DIC
+
+ GETVET^FBPAY
+  Globals: ^FBAAA("
+  FileMan calls: ^DIC
+
+ ADD^FBSHAUT
+  Globals: ^FBAAA("_DA(1)_"
+  FileMan calls: FILE^DICN;^DIE
+
+ CHANGE^FBSHAUT
+  Globals: ^FBAAA("_DA(1)_"
+  FileMan calls: ^DIE
+
+ REINSTA^FBSHAUT
+  Globals: ^FBAAA("_DA(1)_"
+  FileMan calls: ^DIE
+
+ DISENT^FBUCED
+  Globals: UNDETERMINED (DIC);^FB(162.94
+  FileMan calls: ^DIC;^DIE
+
+ DSPENT^FBUCED
+  Globals: UNDETERMINED (DIC);^FB(162.91
+  FileMan calls: ^DIC;^DIE
+
+ EXT^FBUCED
+  Globals: ^FB583(DA(1)
+  FileMan calls: FILE^DICN;^DIE;^DIR
+
+ REQENT^FBUCED
+  Globals: UNDETERMINED (DIC);^FB(162.93
+  FileMan calls: ^DIC;^DIE
+
+ DEL^FBUCED1
+  Globals: ^FB583("
+  FileMan calls: ^DIK;^DIR
+
+ ABAND^FBUCEX
+  Globals: ^FB583("
+  FileMan calls: ^DIE
+
+ ASK^FBUCOUT
+  Globals: ^FB583("
+  FileMan calls: EN1^DIP;^DIR
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+17. PACKAGE NAME: DIETETICS
+
+ EN1^FHADR10
+  Globals: ^FH(117.3
+  FileMan calls: ^DIE
+
+ EN1^FHADR3
+  Globals: ^FH(117.3
+  FileMan calls: ^DIE
+
+ EN1^FHADR7
+  Globals: ^FH(117.3
+  FileMan calls: ^DIE;^DIR
+
+ EN10^FHASC
+  Globals: ^FH(115.5
+  FileMan calls: EN1^DIP
+
+ EN2^FHASC
+  Globals: ^FH(115.3
+  FileMan calls: EN1^DIP
+
+ EN2^FHASE
+  Globals: ^FH(115.6
+  FileMan calls: EN1^DIP
+
+ EN4^FHASN
+  Globals: ^FH(115.4
+  FileMan calls: EN1^DIP
+
+ EN5^FHASN
+  Globals: ^FH(115.4;^FH(119.73
+  FileMan calls: ^DIC
+
+ EN1^FHCMSR
+  Globals: ^FH(117.2
+  FileMan calls: ^DIE
+
+ DATA^FHDSSAPI
+  Globals: ^DPT(
+  FileMan calls: $$GET1^DIQ
+
+ EN6^FHNO1
+  Globals: ^FH(118
+  FileMan calls: EN1^DIP
+
+ EN7^FHNO1
+  Globals: ^FH(118.1
+  FileMan calls: EN1^DIP
+
+ EN5^FHNU
+  Globals: ^FHNU("
+  FileMan calls: EN1^DIP
+
+ EN8^FHNU
+  Globals: ^FHUM("
+  FileMan calls: EN1^DIP
+
+ EN10^FHORC5
+  Globals: ^FH(119.6
+  FileMan calls: EN1^DIP
+
+ EN12^FHORC5
+  Globals: ^FH(119.5
+  FileMan calls: EN1^DIP
+
+ EN2^FHORD
+  Globals: ^FH(111
+  FileMan calls: EN1^DIP
+
+ EN2^FHORD4
+  Globals: ^FH(119.4
+  FileMan calls: EN1^DIP
+
+ EN2^FHORT3
+  Globals: ^FH(118.2
+  FileMan calls: EN1^DIP
+
+ EN1^FHPRF
+  Globals: ^FH(119.72
+  FileMan calls: ^DIC;^DIE;^DIK
+
+ EN2^FHPRF
+  Globals: ^FH(119.72
+  FileMan calls: ^DIC;^DIE;^DIK
+
+ EN6^FHPRI
+  Globals: ^FH(119.1
+  FileMan calls: EN1^DIP
+
+ EN8^FHPRI
+  Globals: ^FH(113.1
+  FileMan calls: EN1^DIP
+
+ EN4^FHPRO
+  Globals: ^FH(116.2
+  FileMan calls: EN1^DIP
+
+ EN6^FHPRO
+  Globals: ^FH(119.72
+  FileMan calls: ^DIC;^DIE;^DIK
+
+ EN10^FHREC
+  Globals: ^FH(114.2
+  FileMan calls: EN1^DIP
+
+ EN4^FHREC
+  Globals: ^FH(114.1
+  FileMan calls: EN1^DIP
+
+ EN6^FHREC
+  Globals: ^FH(114.3
+  FileMan calls: EN1^DIP
+
+ EN8^FHREC
+  Globals: ^FH(114.4
+  FileMan calls: EN1^DIP
+
+ EN2^FHREC2
+  Globals: ^FH(114
+  FileMan calls: ^DIC
+
+ EN3^FHSEL1
+  Globals: ^FHPT(";^FHPT("_DA(1)_"
+  FileMan calls: ^DIE;^DIK
+
+ EN2^FHSP
+  Globals: ^FH(118.3
+  FileMan calls: EN1^DIP
+
+ EN1^FHSYSP
+  Globals: ^FH(119.9
+  FileMan calls: EN1^DIP
+
+ EN2^FHSYSP
+  Globals: ^FH(119.9
+  FileMan calls: EN1^DIP
+
+ EN3^FHSYSP
+  Globals: ^FH(119.9
+  FileMan calls: ^DIE
+
+ $$FHWORASM^FHWORA
+  Globals: UNDETERMINED ("T")
+  FileMan calls: DT^DILF
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+18. PACKAGE NAME: NATIONAL ONLINE INFORMATION SHARING
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+19. PACKAGE NAME: GENERIC CODE SHEET
+
+ EDIT^GECSEDIT
+  Globals: ^GECS(2100.1,
+  FileMan calls: $$GET1^DIQ;^DIR
+
+ BATCHES^GECSREP0
+  Globals: ^GECS(2101.3
+  FileMan calls: EN1^DIP
+
+ READYBAT^GECSREP0
+  Globals: ^GECS(2100
+  FileMan calls: EN1^DIP
+
+ WAITBAT^GECSREP0
+  Globals: ^GECS(2101.3
+  FileMan calls: EN1^DIP
+
+ DATA^GECSSGET
+  Globals: ^GECS(2100.1
+  FileMan calls: EN^DIQ1
+
+ $$SELECT^GECSSTAA
+  Globals: ^GECS(2100.1
+  FileMan calls: ^DIC
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+20. PACKAGE NAME: PROBLEM LIST
+
+ ASSIGN^GMPLBLD2
+  Globals: ^GMPL(125
+  FileMan calls: ^DIC
+
+ GETFLDS^GMPLEDT3
+  Globals: ^AUPNPROB("
+  FileMan calls: EN^DIQ1
+
+ EN^GMPLSAVE
+  Globals: ^AUPNPROB("
+  FileMan calls: ^DIE
+
+ NEW^GMPLSAVE
+  Globals: ^AUPNPROB("
+  FileMan calls: IX1^DIK
+
+ AUDIT^GMPLX
+  Globals: ^GMPL(125.8
+  FileMan calls: FILE^DICN;IX1^DIK
+
+ DTMOD^GMPLX
+  Globals: ^AUPNPROB("
+  FileMan calls: ^DIE
+
+ PARAMS^GMPLX1
+  Globals: ^GMPL(125.99;^ORD(101
+  FileMan calls: ^DIE
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+21. PACKAGE NAME: ADVERSE REACTION TRACKING
+
+ EN1^GMRADSP4
+  Globals: ^DPT("
+  FileMan calls: ^DIC
+
+ EN1^GMRADSP6
+  Globals: ^DPT("
+  FileMan calls: ^DIC
+
+ EN1^GMRAEF1
+  Globals: ^DPT("
+  FileMan calls: ^DIC
+
+ EN1^GMRAFUT0
+  Globals: ^GMRD(120.82
+  FileMan calls: ^DIC;^DIE
+
+ EN2^GMRAFUT0
+  Globals: ^GMRD(120.83
+  FileMan calls: ^DIC;^DIE
+
+ EN3^GMRAFUT0
+  Globals: ^GMRD(120.84
+  FileMan calls: ^DIC;^DIE
+
+ EIE^GMRAGUI1
+  Globals: ^GMR(120.8;^GMR(120.86;^ORD(101,
+  FileMan calls: $$FIND1^DIC;^DIE;^DIK
+
+ NKA^GMRAGUI1
+  Globals: ^GMR(120.86
+  FileMan calls: ^DIE
+
+ UPDATE^GMRAGUI1
+  Globals: UNDETERMINED ();^GMR(120.8
+  FileMan calls: UPDATE^DIE;^DIK
+
+ IDBAND^GMRAMCU0
+  Globals: ^GMR(120.8
+  FileMan calls: FILE^DICN;^DIE
+
+ EN1^GMRAOR2
+  Globals: ^VA(200,
+  FileMan calls: $$GET1^DIQ
+
+ $$SENDREQ^GMRAPES0
+  Globals: ^DPT(;^VA(200,
+  FileMan calls: GETS^DIQ
+
+ $$RADD^GMRARAD
+  Globals: ^GMR(120.8
+  FileMan calls: IX1^DIK;^DIR
+
+ BR^GMRAUTL1
+  Globals: ^GMRD(120.87,
+  FileMan calls: WP^DDBR
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+22. PACKAGE NAME: CONSULT/REQUEST TRACKING
+
+ EN^GMRC1233
+  Globals: UNDETERMINED (DIC);^GMR(123.3
+  FileMan calls: ^DIC;^DIE
+
+ FR^GMRCAFRD
+  Globals: ^GMR(123
+  FileMan calls: ^DIE;^DIR
+
+ GUI^GMRCASV1
+  Globals: ^GMR(123.5,
+  FileMan calls: $$FIND1^DIC
+
+ $$MCCNVT^GMRCCP
+  Globals: UNDETERMINED ("K")
+  FileMan calls: FILE^DIE
+
+ REMOVE^GMRCDIS
+  Globals: ^GMR(123
+  FileMan calls: ^DIE;^DIK
+
+ EN^GMRCEDIT
+  Globals: ^VA(200,
+  FileMan calls: $$GET1^DIQ;^DIR
+
+ $$FR^GMRCGUIA
+  Globals: ^GMR(123
+  FileMan calls: ^DIE
+
+ $$SFILE^GMRCGUIB
+  Globals: ^GMR(123
+  FileMan calls: ^DIE
+
+ FILE^GMRCGUIC
+  Globals: ^GMR(123;^VA(200,
+  FileMan calls: $$GET1^DIQ;^DIE
+
+ SEND^GMRCGUIC
+  Globals: ^GMR(123.3,;^ORD(101.43,;^VA(200,
+  FileMan calls: $$FIND1^DIC;$$GET1^DIQ
+
+ GETMED^GMRCGUIU
+  Globals: ^MCAR(697.2,
+  FileMan calls: $$GET1^DIQ
+
+ OBR^GMRCHL72
+  Globals: ^GMR(123.3,
+  FileMan calls: $$GET1^DIQ
+
+ EN^GMRCIBKG
+  Globals: ^GMR(123.6;^HLCS(870,
+  FileMan calls: $$GET1^DIQ;^DIK
+
+ EN^GMRCILKP
+  Globals: ^ORD(100.01,
+  FileMan calls: $$GET1^DIQ;^DIR
+
+ EN^GMRCQC
+  Globals: ^GMR(123.5
+  FileMan calls: MIX^DIC1
+
+ DT^GMRCSLM2
+  Globals: ^DIC(31,;^GMR(123,;^VA(200,
+  FileMan calls: $$GET1^DIQ
+
+ CLONPSAS^GMRCSRVS
+  Globals: UNDETERMINED ("E");^GMR(123.5,
+  FileMan calls: UPDATE^DIE;WP^DIE
+
+ EN^GMRCSRVS
+  Globals: UNDETERMINED (DIC);^GMR(123.5
+  FileMan calls: ^DIC;^DIE
+
+ ROLLBACK^GMRCTIU1
+  Globals: ^GMR(123
+  FileMan calls: ^DIE;^DIK
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+23. PACKAGE NAME: GEN. MED. REC. - GENERATOR
+
+ EN1^GMRGARC0
+  Globals: ^GMRD(124.1
+  FileMan calls: IX1^DIK;^DIR
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+24. PACKAGE NAME: GEN. MED. REC. - VITALS
+
+ EN2^GMRVDS0
+  Globals: ^DPT("
+  FileMan calls: ^DIC
+
+ EN1^GMRVEE0
+  Globals: ^DPT("
+  FileMan calls: ^DIC
+
+ EN1^GMRVER0
+  Globals: ^DPT("
+  FileMan calls: ^DIC
+
+ EN1^GMRVOREQ
+  Globals: ^ORD(101,
+  FileMan calls: IX^DIC
+
+ ADDRPCS^GMV3PST
+  Globals: UNDETERMINED ();UNDETERMINED (GMVMSG);^DIC(19,;^XWB(8994,
+  FileMan calls: $$FIND1^DIC;EN^DDIOL;GETS^DIQ;UPDATE^DIE
+
+ CLINPTS^GMVCLIN
+  Globals: UNDETERMINED ("T")
+  FileMan calls: DT^DILF
+
+ EN1^GMVDCEXT
+  Globals: UNDETERMINED ("ST")
+  FileMan calls: DT^DILF
+
+ WARDLOC^GMVGETD
+  Globals: ^DIC(42,
+  FileMan calls: LIST^DIC
+
+ GETDT^GMVGETQ
+  Globals: UNDETERMINED ("ETS")
+  FileMan calls: DT^DILF
+
+ EN^GMVPXRM
+  Globals: UNDETERMINED (120.506);^GMR(120.5,
+  FileMan calls: $$EXTERNAL^DILFD
+
+ ERROR^GMVUTL1
+  Globals: UNDETERMINED ()
+  FileMan calls: UPDATE^DIE
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+25. PACKAGE NAME: GEN. MED. REC. - I/O
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+26. PACKAGE NAME: HEALTH SUMMARY
+
+ REPORT^GMTSADH5
+  Globals: UNDETERMINED ($PIECE^2;4(8));^GMT(142,
+  FileMan calls: $$GET1^DID;^DIC
+
+ MAIN^GMTSADOR
+  Globals: ^GMT(142,
+  FileMan calls: --
+
+ CD^GMTSCW
+  Globals: ^TIU(8925.1
+  FileMan calls: ^DIC
+
+ SELTYP^GMTSDVR
+  Globals: ^GMT(142,
+  FileMan calls: --
+
+ $$CRE^GMTSOBJ
+  Globals: ^GMT(142.5
+  FileMan calls: ^DIC
+
+ INQ^GMTSOBJ
+  Globals: ^GMT(142.5
+  FileMan calls: ^DIC
+
+ TEST^GMTSOBJ
+  Globals: ^GMT(142.5
+  FileMan calls: ^DIC
+
+ STATUS^GMTSROB
+  Globals: ^SRF(
+  FileMan calls: $$GET1^DIQ
+
+ GETLIST^GMTSXAL
+  Globals: UNDETERMINED (19
+)
+  FileMan calls: $$EZBLD^DIALOG
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+27. PACKAGE NAME: HOSPITAL BASED HOME CARE
+
+ EN^HBHCWORK
+  Globals: ^HBHC(633.2
+  FileMan calls: ^DIC
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+28. PACKAGE NAME: HEALTH DATA & INFORMATICS
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+29. PACKAGE NAME: HEALTH LEVEL SEVEN
+
+ FIELDS^HLCSHDR4
+  Globals: ^ORD(101
+  FileMan calls: EN1^DIP
+
+ $$STAT^HLCSLM
+  Globals: ^HLCS(869.3,
+  FileMan calls: $$GET1^DIQ
+
+ START^HLCSLNCH
+  Globals: ^HLCS(870
+  FileMan calls: ^DIC;^DIR
+
+ CONDMON^HLEVREP0
+  Globals: ^HLEV(776.1
+  FileMan calls: EN1^DIP
+
+ CTRL^HLEVREP1
+  Globals: UNDETERMINED ("^TMP($J,""HLMAP"",""S"",""D"","_DATE_")")
+  FileMan calls: BROWSE^DDBR
+
+ REMREQO^HLEVREP3
+  Globals: ^HLEV(776.1,
+  FileMan calls: EN1^DIP
+
+ SETPRTY^HLOQUE
+  Globals: ^HLD(779.9
+  FileMan calls: ^DIC;^DIE
+
+ $$ACT^HLSUB
+  Globals: ^HLS(774,
+  FileMan calls: ^DIC
+
+ GET^HLSUB
+  Globals: ^ORD(101,
+  FileMan calls: ^DIC
+
+ AP^HLUOPT
+  Globals: ^HL(771
+  FileMan calls: ^DDS;^DIC
+
+ APP^HLUOPT
+  Globals: ^HL(771
+  FileMan calls: EN1^DIP
+
+ DT^HLUOPT
+  Globals: ^HL(771.4
+  FileMan calls: EN1^DIP
+
+ FIELD^HLUOPT
+  Globals: ^HL(771.1
+  FileMan calls: EN1^DIP
+
+ INTED^HLUOPT
+  Globals: ^ORD(101
+  FileMan calls: ^DDS;^DIC
+
+ LLED^HLUOPT
+  Globals: ^HLCS(870
+  FileMan calls: ^DDS;^DIC
+
+ LOG^HLUOPT
+  Globals: UNDETERMINED (DIC);^HL(770
+  FileMan calls: ^DIC;^DIE;^DIR
+
+ MT^HLUOPT
+  Globals: ^HL(771.2
+  FileMan calls: EN1^DIP
+
+ PLFT^HLUOPT
+  Globals: ^HL(772
+  FileMan calls: EN1^DIP
+
+ PLPT^HLUOPT
+  Globals: ^HL(772
+  FileMan calls: EN1^DIP
+
+ SN^HLUOPT
+  Globals: ^HL(771.3
+  FileMan calls: EN1^DIP
+
+ SP^HLUOPT
+  Globals: UNDETERMINED (DIC);^HL(770;^HL(771
+  FileMan calls: FILE^DICN;^DIC;^DIE
+
+ SPP^HLUOPT
+  Globals: ^HL(770
+  FileMan calls: EN1^DIP
+
+ VERS^HLUOPT
+  Globals: ^HL(771.5
+  FileMan calls: EN1^DIP
+
+ CLGLLP^HLUTIL2
+  Globals: ^HLCS(870
+  FileMan calls: ^DIC;^DIE
+
+ CLRQUE^HLUTIL2
+  Globals: ^HLCS(870
+  FileMan calls: ^DIC;^DIR
+
+ SHGLLP^HLUTIL2
+  Globals: ^HLCS(870
+  FileMan calls: ^DIC
+
+ LINK^HLUTIL3
+  Globals: ^DIC(4,
+  FileMan calls: ^DIC
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+30. PACKAGE NAME: INTEGRATED BILLING
+
+ $$CAN^IBAKAT
+  Globals: ^IB("
+  FileMan calls: ^DIE
+
+ ADD^IBARXET
+  Globals: ^IBE(354.3
+  FileMan calls: ^DIC;^DIE;^DIK
+
+ PRINT^IBARXET
+  Globals: ^IBE(354.3
+  FileMan calls: EN1^DIP
+
+ EN^IBARXMQ
+  Globals: ^DPT("
+  FileMan calls: YN^DICN;^DIC;^DIR
+
+ $$IBBACONV^IBBAADTI
+  Globals: UNDETERMINED ()
+  FileMan calls: UPDATE^DIE
+
+ DELDT^IBCDE
+  Globals: ^IBA(362.1
+  FileMan calls: ^DIK;^DIR
+
+ EDIT^IBCDE
+  Globals: ^IBE(350.9
+  FileMan calls: ^DIE
+
+ PRINT^IBCDE
+  Globals: ^IBA(362.1
+  FileMan calls: EN1^DIP
+
+ $$ADD3611^IBCEOB
+  Globals: ^IBM(361.1
+  FileMan calls: FILE^DICN
+
+ ERRUPD^IBCEOB
+  Globals: ^IBM(361.1,
+  FileMan calls: WP^DIE
+
+ SPL1^IBCEOBAR
+  Globals: ^IBM(361.1
+  FileMan calls: FILE^DICN
+
+ NVAFAC^IBCEP8
+  Globals: ^IBA(355.93
+  FileMan calls: ^DIC
+
+ QSTAT^IBCEQBS
+  Globals: ^IBA(364.1
+  FileMan calls: ^DIC;^DIR
+
+ EN^IBCNRPM1
+  Globals: ^IBCNR(366.03
+  FileMan calls: IX^DIC;^DIC
+
+ EN^IBCNRPS
+  Globals: ^IBCNR(366.03
+  FileMan calls: IX^DIC;^DIC
+
+ EN^IBCOMD
+  Globals: ^DIC(5
+  FileMan calls: ^DIC;^DIR
+
+ EDITRSA^IBCREE
+  Globals: ^IBE(363
+  FileMan calls: ^DIC
+
+ PRT^IBDF18E2
+  Globals: ^IBD(359.3
+  FileMan calls: EN1^DIP
+
+ ETIME^IBDFBK1
+  Globals: UNDETERMINED ()
+  FileMan calls: FILE^DIE
+
+ IMAGENM^IBDFBK1
+  Globals: UNDETERMINED ()
+  FileMan calls: UPDATE^DIE
+
+ START^IBECUS
+  Globals: ^IBE(350.9
+  FileMan calls: ^DIE;^DIR
+
+ CLEAR^IBEFUTL
+  Globals: ^IBE(350.9
+  FileMan calls: ^DIE
+
+ EDIT^IBEFUTL
+  Globals: ^IBE(350.9
+  FileMan calls: FILE^DICN;^DIE
+
+ STOP^IBEFUTL
+  Globals: ^IBE(350.9
+  FileMan calls: ^DIE;^DIR
+
+ VPE^IBJDE1
+  Globals: ^IBE(351.71
+  FileMan calls: EN1^DIP;^DIC
+
+ $$SELINSUR^IBNCPDPI
+  Globals: ^DIC(36
+  FileMan calls: ^DIC
+
+ EN1^IBODISP
+  Globals: ^DPT("
+  FileMan calls: ^DIC
+
+ EN2^IBODISP
+  Globals: ^IB("
+  FileMan calls: EN1^DIP
+
+ MAIN^IBOHPT1
+  Globals: ^DPT("
+  FileMan calls: ^DIC;^DIR
+
+ RETURN^IBOMTLTC
+  Globals: ^IB(;^IBA(351.81,;^IBE(351,
+  FileMan calls: $$EXTERNAL^DILFD;GETS^DIQ
+
+ INQ^IBPO
+  Globals: ^IBE(350.6
+  FileMan calls: ^DIC
+
+ LST^IBPO
+  Globals: ^IBE(350.6
+  FileMan calls: EN1^DIP
+
+ TMP^IBPO
+  Globals: UNDETERMINED (^DIC(5))
+  FileMan calls: EN1^DIP
+
+ $$IBAREXT^IBRFN4
+  Globals: ^DGCR(399,;^DGPT(;^DIC(36,;^IBA(355.3,
+  FileMan calls: $$GET1^DIQ
+
+ $$RNBU^IBRSUTL
+  Globals: ^IBT(356
+  FileMan calls: FILE^DICN;^DIE
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+31. PACKAGE NAME: DRG GROUPER
+
+ COPY^ICPTAPIU
+  Globals: UNDETERMINED ("W")
+  FileMan calls: ^DIWP;^DIWW
+
+ CPTMOD^ICPTPRN
+  Globals: ^DIC(81.3
+  FileMan calls: EN1^DIP
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+32. PACKAGE NAME: INCOME VERIFICATION MATCH
+
+ EN^IVMCM1
+  Globals: ^DGMT(408.31
+  FileMan calls: ^DIE
+
+ FULL^IVMPTRN7
+  Globals: ^DPT(
+  FileMan calls: $$GET1^DIQ
+
+ REV^IVMUFNC3
+  Globals: ^IVM(301.61
+  FileMan calls: IX1^DIK
+
+ EN^IVMUM3
+  Globals: ^DGPR(408.12
+  FileMan calls: FILE^DICN;IX1^DIK;^DIE
+
+ EN^IVMUM5
+  Globals: ^DGMT(408.22;^DGMT(408.31
+  FileMan calls: IX1^DIK;^DIE
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+33. PACKAGE NAME: CAPACITY MANAGEMENT TOOLS
+
+ SST^KMPDSS
+  Globals: --
+  FileMan calls: EN^DDIOL;^DIR
+
+ ROUSAVE^KMPDU3
+  Globals: ^TMP("_"""KMPDU3-1"""_"
+  FileMan calls: --
+
+ ROUSTATS^KMPDU3
+  Globals: ^KMPD(8972.1,
+  FileMan calls: $$GET1^DIQ
+
+ ASSCROU^KMPDU4
+  Globals: UNDETERMINED ();^KMPD(8972.1
+  FileMan calls: UPDATE^DIE;^DIK
+
+ FILEINQ^KMPDU5
+  Globals: UNDETERMINED (KMPDFN)
+  FileMan calls: GETS^DIQ
+
+ FILESRC^KMPDU5
+  Globals: UNDETERMINED (KMPDFN)
+  FileMan calls: $$GET1^DIQ
+
+ STRSTP^KMPDUTL2
+  Globals: UNDETERMINED ()
+  FileMan calls: FILE^DIE
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+34. PACKAGE NAME: CAPACITY MANAGEMENT - RUM
+
+ START^KMPRSS
+  Globals: ^XTV(8989.3,
+  FileMan calls: ^DIE;^DIR
+
+ STOP^KMPRSS
+  Globals: ^XTV(8989.3,
+  FileMan calls: ^DIE;^DIR
+
+ QUEBKG^KMPRUTL1
+  Globals: UNDETERMINED ("W");UNDETERMINED ();^DIC(19.2
+  FileMan calls: MSG^DIALOG;UPDATE^DIE;^DIK
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+35. PACKAGE NAME: SAGG PROJECT
+
+ FILE^KMPSUTL
+  Globals: ^KMPS(8970.1
+  FileMan calls: ^DIE
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+36. PACKAGE NAME: AUTOMATED LAB INSTRUMENTS
+
+ EN^LA7CHKFP
+  Globals: UNDETERMINED ("No reports on file!")
+  FileMan calls: EN^DDIOL
+
+ $$CREATE^LA7LOG
+  Globals: UNDETERMINED ()
+  FileMan calls: FILE^DIE
+
+ PRINT^LA7LOG
+  Globals: ^LAHM(62.48
+  FileMan calls: DT^DICRW;^DIC;^DIR
+
+ $$GCPR^LA7QRY
+  Globals: ^VA(200,
+  FileMan calls: $$FIND1^DIC
+
+ DPTSET^LA7SBCR1
+  Globals: ^DPT(
+  FileMan calls: GETS^DIQ
+
+ SCDE^LA7SCE
+  Globals: UNDETERMINED (DIC);^LAHM(62.93
+  FileMan calls: ^DIC;^DIE
+
+ SCFE^LA7SCE
+  Globals: UNDETERMINED ("Unable to obtain lock on entry "_$PIECE^2;4(6))
+           UNDETERMINED (LA7MSG);^DIC(4,;^LAHM(62.9
+  FileMan calls: $$GET1^DIQ;EN^DDIOL;^DIC;^DIE;^DIR
+
+ SCME^LA7SCE
+  Globals: UNDETERMINED (DIC);^LAHM(62.92
+  FileMan calls: ^DIC;^DIE
+
+ SCTE^LA7SCE
+  Globals: UNDETERMINED (DIC);^LAHM(62.91
+  FileMan calls: ^DIC;^DIE
+
+ CANC^LA7SM
+  Globals: UNDETERMINED ($PIECE^2;4(5));UNDETERMINED ()
+  FileMan calls: EN^DDIOL;FILE^DIE;^DIR
+
+ CLSHIP^LA7SM
+  Globals: UNDETERMINED ($PIECE^2;4(5))
+  FileMan calls: EN^DDIOL;^DIR
+
+ SMET^LA7SM
+  Globals: UNDETERMINED ($PIECE^2;4(5))
+  FileMan calls: EN^DDIOL;^DIR
+
+ RETRANS^LA7SM1
+  Globals: UNDETERMINED ($PIECE^2;4(5));UNDETERMINED (MSG)
+  FileMan calls: EN^DDIOL;^DIR
+
+ RCI^LA7SM2
+  Globals: UNDETERMINED ($PIECE^2;4(5));UNDETERMINED ()
+           UNDETERMINED (62.801);UNDETERMINED (LA7I_" "_$PIECE^2;4(6))
+  FileMan calls: $$GET1^DIQ;EN^DDIOL;FIELD^DID;FILE^DIE;^DIR
+
+ REQINFO^LA7SM2
+  Globals: UNDETERMINED ($PIECE^2;4(5))
+  FileMan calls: EN^DDIOL
+
+ EN^LA7SMB
+  Globals: UNDETERMINED ($PIECE^2;4(5))
+  FileMan calls: EN^DDIOL;^DIR
+
+ SMONLY^LA7SMB
+  Globals: --
+  FileMan calls: EN^DDIOL
+
+ EN^LA7SMP
+  Globals: UNDETERMINED ("Print Shipping Manifest")
+           UNDETERMINED ($PIECE^2;4(5))
+  FileMan calls: EN^DDIOL
+
+ EN^LA7SRR
+  Globals: UNDETERMINED ("Working");UNDETERMINED (LA7X);^LAM(
+  FileMan calls: $$FIND1^DIC;$$GET1^DIQ;EN^DDIOL;^DIR
+
+ EN^LA7UTILA
+  Globals: ^LAHM(62.49
+  FileMan calls: --
+
+ SET^LA7VMSG
+  Globals: UNDETERMINED ()
+  FileMan calls: CLEAN^DILF;FILE^DIE;UPDATE^DIE
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+37. PACKAGE NAME: LIBRARY
+
+ HOL^LBRYEDI
+  Globals: UNDETERMINED (DIE);^LBRY(680
+  FileMan calls: ^DIC;^DIE
+
+ PIE^LBRYEDI
+  Globals: UNDETERMINED (DIE);^LBRY(680
+  FileMan calls: ^DIC;^DIE
+
+ SUB^LBRYEDR
+  Globals: UNDETERMINED (DIC);^LBRY(680.3
+  FileMan calls: ^DIC;^DIE
+
+ SERV^LBRYHSF
+  Globals: ^DIC(49
+  FileMan calls: EN^DIQ;^DIC
+
+ DFR^LBRYRPT
+  Globals: ^LBRY(681
+  FileMan calls: EN1^DIP;YN^DICN
+
+ FYI^LBRYRPT
+  Globals: ^LBRY(680
+  FileMan calls: EN1^DIP
+
+ LGL^LBRYRPT
+  Globals: ^LBRY(680
+  FileMan calls: EN1^DIP
+
+ LTV^LBRYRPT
+  Globals: ^LBRY(681
+  FileMan calls: EN1^DIP;YN^DICN
+
+ MIL^LBRYRPT
+  Globals: ^LBRY(682
+  FileMan calls: EN1^DIP;YN^DICN
+
+ ORR^LBRYRPT
+  Globals: ^LBRY(682
+  FileMan calls: EN1^DIP
+
+ ART^LBRYRPT0
+  Globals: ^LBRY(681
+  FileMan calls: EN1^DIP
+
+ LAT^LBRYRPT0
+  Globals: ^LBRY(680
+  FileMan calls: EN1^DIP
+
+ LDT^LBRYRPT0
+  Globals: ^LBRY(681
+  FileMan calls: EN1^DIP
+
+ LPS^LBRYRPT0
+  Globals: ^LBRY(680
+  FileMan calls: EN1^DIP
+
+ MSC^LBRYRPT0
+  Globals: ^LBRY(680
+  FileMan calls: EN1^DIP
+
+ NLT^LBRYRPT0
+  Globals: ^LBRY(680.5
+  FileMan calls: EN1^DIP
+
+ JTA^LBRYRPT1
+  Globals: ^LBRY(680.5
+  FileMan calls: EN1^DIP;^DIC
+
+ SLJ^LBRYRPT1
+  Globals: ^LBRY(680.3
+  FileMan calls: ^DIC
+
+ EN1^LBRYSITE
+  Globals: UNDETERMINED (DIC)
+  FileMan calls: ^DIE
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+38. PACKAGE NAME: LEXICON UTILITY
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+39. PACKAGE NAME: LAB SERVICE
+
+ EN1^LR7OSMZ0
+  Globals: ^LRO(68,
+  FileMan calls: ^DIC
+
+ SING^LR7OV2
+  Globals: ^LAB(60,
+  FileMan calls: ^DIC
+
+ $$VALID^LR7OV4
+  Globals: ^HOLIDAY(
+  FileMan calls: $$FIND1^DIC;FIND^DIC
+
+ STA^LRACK
+  Globals: ^LAB(64.5
+  FileMan calls: EN1^DIP
+
+ D^LRAP
+  Globals: UNDETERMINED (MSG);^LAB(62.5
+  FileMan calls: EN^DDIOL;^DIC;^DIE
+
+ FIND^LRARCHD
+  Globals: UNDETERMINED (0);^LAB(69.9
+  FileMan calls: EN^DIQ
+
+ ENTC^LRARU
+  Globals: ^LAB(95.11
+  FileMan calls: ^DIK;^DIR
+
+ $$UPDOR^LRBEBA4
+  Globals: UNDETERMINED (69.01);UNDETERMINED (69.02)
+  FileMan calls: $$GET1^DIQ
+
+ U^LRBLDP
+  Globals: ^LRE("
+  FileMan calls: EN^DIQ;^DIC
+
+ S^LRBLJA
+  Globals: ^LAB(66,
+  FileMan calls: ^DIC;^DIE
+
+ P^LRBLJP
+  Globals: ^LRD(65,
+  FileMan calls: EN1^DIP;^DIC
+
+ S^LRBLJP
+  Globals: ^LRD(65;^LRD(65,
+  FileMan calls: EN^DIQ;^DIC
+
+ P^LRBLP
+  Globals: ^LR("
+  FileMan calls: --
+
+ OERR^LRBLPD1
+  Globals: UNDETERMINED ("W")
+  FileMan calls: ^DIWP;^DIWW
+
+ BBD^LRBLS
+  Globals: ^LAB(62.5
+  FileMan calls: ^DIC;^DIE
+
+ CX^LRBLS
+  Globals: ^LAB(65.4,
+  FileMan calls: ^DIE
+
+ DES^LRBLS
+  Globals: ^LAB(65.4;^LAB(65.4,
+  FileMan calls: ^DIC;^DIE
+
+ HX^LRBLS
+  Globals: ^LAB(65.4,
+  FileMan calls: ^DIE
+
+ MSB^LRBLS
+  Globals: ^ICPT(";^LAB(66.5
+  FileMan calls: ^DIC;^DIE
+
+ SNO^LRBLS
+  Globals: UNDETERMINED (A)
+  FileMan calls: EN^DDIOL
+
+ SP^LRBLS
+  Globals: ^LAB(69.9
+  FileMan calls: ^DIE
+
+ L^LRBLST
+  Globals: ^LRO(69.2
+  FileMan calls: ^DIE
+
+ I^LRBLVAL
+  Globals: ^LAB(66.2
+  FileMan calls: EN^DIQ;^DIC
+
+ P^LRBLVAL
+  Globals: ^LAB(66.2
+  FileMan calls: EN1^DIP
+
+ ACC^LRCAPPH2
+  Globals: ^LRO(68
+  FileMan calls: ^DIE;^DIR
+
+ DIS^LRCAPU
+  Globals: UNDETERMINED (LRICS_DA(1)_",1,")
+  FileMan calls: EN^DIQ
+
+ EN^LRCAPV
+  Globals: ^LRO(68.2
+  FileMan calls: ^DIC
+
+ DELETE^LREPIPI
+  Globals: ^LAB(69.5
+  FileMan calls: ^DIC;^DIR
+
+ INQUIRY^LREPIPI
+  Globals: ^LAB(69.5
+  FileMan calls: ^DIC
+
+ NWSEQNM^LRLLS3
+  Globals: ^LRO(68.2,
+  FileMan calls: ^DIC
+
+ 6206^LRLNC0
+  Globals: UNDETERMINED (DIE);^LAB(62.06;^LAM(
+  FileMan calls: $$GET1^DIQ;^DIE;^DIR
+
+ SING^LRNITEG
+  Globals: ^LAB(69.91
+  FileMan calls: --
+
+ QUE^LROPTLST
+  Globals: ^DIC(19,
+  FileMan calls: ^DIC
+
+ LEDI^LRORD
+  Globals: ^LAB(64.061,
+  FileMan calls: $$FIND1^DIC
+
+ ADDNAME^LRQCLOG
+  Globals: UNDETERMINED (U_$PIECE^2;4(5))
+  FileMan calls: ^DIE
+
+ $$TSTRES^LRRPU
+  Globals: UNDETERMINED (+LRDPF
+);UNDETERMINED (63.04);^LAB(95.3,;^LAM(
+  FileMan calls: $$EXTERNAL^DILFD;$$GET1^DIQ;$$ROOT^DILFD
+
+ DUZ2^LRU
+  Globals: ^VA(200
+  FileMan calls: ^DIC
+
+ EN^LRUDIT
+  Globals: ^LRO(69.2
+  FileMan calls: EN1^DIP
+
+ $$LNC^LRVER1
+  Globals: UNDETERMINED (64.02);^LAB(61,;^LAM(
+  FileMan calls: $$FIND1^DIC;$$GET1^DIQ
+
+ PT^LRX
+  Globals: ^DIC(
+  FileMan calls: $$GET1^DID
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+40. PACKAGE NAME: IMAGING
+
+ $$IMPORT^MAGBAPI
+  Globals: UNDETERMINED ("U");^MAG(2006.034
+  FileMan calls: FILE^DICN;UPDATE^DIE
+
+ IMPORT^MAGBAPI
+  Globals: UNDETERMINED ("U");^MAG(2006.034
+  FileMan calls: FILE^DICN;UPDATE^DIE
+
+ UPDATE^MAGDAIRF
+  Globals: ^DIC(4,
+  FileMan calls: $$GET1^DIQ
+
+ EECR^MAGDCRP
+  Globals: ^MAG(2006.623,
+  FileMan calls: ^DIC;^DIE
+
+ INCR^MAGDCRP
+  Globals: ^MAG(2006.623,
+  FileMan calls: EN1^DIP;^DIC
+
+ EECT^MAGDCTP
+  Globals: ^MAG(2006.621,
+  FileMan calls: ^DIC;^DIE
+
+ INCT^MAGDCTP
+  Globals: ^MAG(2006.621,
+  FileMan calls: ^DIC
+
+ GETSC^MAGDDR
+  Globals: UNDETERMINED (MAGOUT)
+  FileMan calls: GETSC^DDR2
+
+ LISTC^MAGDDR
+  Globals: UNDETERMINED (MAGOUT)
+  FileMan calls: LISTC^DDR
+
+ ENTRY^MAGDRCU1
+  Globals: ^DIC(4,;^GMR(123.5,
+  FileMan calls: $$GET1^DIQ
+
+ FMGET^MAGDRPC1
+  Globals: UNDETERMINED (FILE)
+  FileMan calls: $$GET1^DIQ
+
+ LISTORIG^MAGDRPC1
+  Globals: ^DIC(4,
+  FileMan calls: GETS^DIQ
+
+ IMAGE^MAGDRPC2
+  Globals: ^MAG(2005,
+  FileMan calls: GETS^DIQ
+
+ IMGVER^MAGDRPC2
+  Globals: ^XPD(9.7,
+  FileMan calls: FIND^DIC
+
+ RADLKUP^MAGDRPC3
+  Globals: ^RA(72,
+  FileMan calls: $$GET1^DIQ
+
+ INIT^MAGDRPC4
+  Globals: ^DIC(4,
+  FileMan calls: $$GET1^DIQ
+
+ LOOKUP^MAGDRPC4
+  Globals: ^GMR(123,
+  FileMan calls: $$GET1^DIQ
+
+ START^MAGDRPC5
+  Globals: ^DIC(4,
+  FileMan calls: $$GET1^DIQ
+
+ FINDLOC^MAGDRPC8
+  Globals: ^DIC(4,
+  FileMan calls: FIND^DIC
+
+ GETPLACE^MAGDRPC8
+  Globals: ^DIC(4,
+  FileMan calls: FIND^DIC
+
+ LOCS^MAGDRPC8
+  Globals: ^DIC(4,
+  FileMan calls: $$GET1^DIQ;FIND^DIC
+
+ ACNUMB^MAGDRPCA
+  Globals: ^RA(79.1,
+  FileMan calls: $$GET1^DIQ
+
+ PROC^MAGDRPCA
+  Globals: ^SC(
+  FileMan calls: $$GET1^DIQ
+
+ ADDROOM^MAGDRPCB
+  Globals: UNDETERMINED ("E");UNDETERMINED (70.02);^RA(79.1,
+           ^RA(79.1,"_RADIMGLOC_","R",
+  FileMan calls: $$GET1^DIQ;LIST^DIC;UPDATE^DIE
+
+ IMAGELOC^MAGDRPCB
+  Globals: UNDETERMINED ()
+  FileMan calls: FILE^DIE
+
+ ORDERS^MAGDRPCB
+  Globals: UNDETERMINED (70.02);UNDETERMINED (70.03);^RAO(75.1,
+           ^RAO(75.1,"_RAOIEN_","M",
+  FileMan calls: $$GET1^DIQ;GETS^DIQ;LIST^DIC
+
+ RADLST^MAGDRPCB
+  Globals: ^VA(200,
+  FileMan calls: LIST^DIC
+
+ USERNAME^MAGDRPCB
+  Globals: ^VA(200,
+  FileMan calls: $$GET1^DIQ
+
+ GETREAD^MAGDTR06
+  Globals: ^DIC(4,;^MAG(2005.84,;^MAG(2005.85,
+  FileMan calls: $$GET1^DIQ
+
+ ENTRY^MAGDTRDX
+  Globals: ^DIC(4,;^GMR(123.3,;^GMR(123.5,;^MAG(2005.84,;^MAG(2005.85,;^SC(
+           ^TIU(8925.1,;^VA(200,
+  FileMan calls: $$GET1^DIQ
+
+ LSTRSNS^MAGGA01
+  Globals: ^MAG(2005.88,
+  FileMan calls: LIST^DIC
+
+ SETPROPS^MAGGA02
+  Globals: UNDETERMINED ("MAGFDA");UNDETERMINED (MAGNODE)
+  FileMan calls: FILE^DIE;LOCK^DILF
+
+ LKP^MAGGNLKP
+  Globals: UNDETERMINED (FILE)
+  FileMan calls: $$GET1^DID;FIND^DIC
+
+ DATA^MAGGNTI
+  Globals: ^TIU(8925,
+  FileMan calls: $$GET1^DIQ
+
+ IMAGES^MAGGNTI
+  Globals: ^TIU(8925,
+  FileMan calls: $$GET1^DIQ
+
+ ISDOCCL^MAGGNTI
+  Globals: ^TIU(8925,;^TIU(8925.1,
+  FileMan calls: $$GET1^DIQ;FIND^DIC
+
+ NEWADD^MAGGNTI1
+  Globals: ^TIU(8925,
+  FileMan calls: $$GET1^DIQ
+
+ LIST^MAGGSCP
+  Globals: ^DPT(
+  FileMan calls: $$GET1^DIQ
+
+ SET^MAGGSFL1
+  Globals: UNDETERMINED ("S");UNDETERMINED ()
+  FileMan calls: CLEAN^DILF;FILE^DIE;UPDATE^DIE
+
+ DEL^MAGGSFLT
+  Globals: ^MAG(2005.87
+  FileMan calls: CLEAN^DILF;^DIK
+
+ GET^MAGGSFLT
+  Globals: ^MAG(2005.87,
+  FileMan calls: GETS^DIQ
+
+ ADD^MAGGSIA
+  Globals: UNDETERMINED ("S");UNDETERMINED ()
+  FileMan calls: UPDATE^DIE
+
+ LOGOFF^MAGGTAU
+  Globals: UNDETERMINED ("S")
+  FileMan calls: UPDATE^DIE
+
+ UPD^MAGGTAU
+  Globals: UNDETERMINED ("S");UNDETERMINED ();^VA(200,
+  FileMan calls: GETS^DIQ;UPDATE^DIE
+
+ HSLIST^MAGGTCPR
+  Globals: ^GMT(142,
+  FileMan calls: LIST^DIC
+
+ HSUM^MAGGTCPR
+  Globals: ^GMT(142,
+  FileMan calls: $$GET1^DIQ
+
+ ADD^MAGGTIA
+  Globals: ^MAG(2005,
+  FileMan calls: FIELD^DID;VAL^DIE
+
+ START^MAGGTLB
+  Globals: ^LRT(67,
+  FileMan calls: GETS^DIQ
+
+ FIND^MAGGTPT1
+  Globals: ^DPT(
+  FileMan calls: FIND^DIC
+
+ FILE^MAGGTSR1
+  Globals: UNDETERMINED ("S")
+  FileMan calls: CLEAN^DILF;UPDATE^DIE
+
+ GETS^MAGGTSYS
+  Globals: ^MAG(2005,;^TIU(8925,
+  FileMan calls: GETS^DIQ
+
+ MAIL^MAGGTU3
+  Globals: ^VA(200,
+  FileMan calls: $$GET1^DIQ
+
+ USERINF2^MAGGTU3
+  Globals: ^DIC(4,;^MAG(2006.1,;^VA(200,
+  FileMan calls: $$GET1^DIQ
+
+ VERSTAT^MAGGTU4
+  Globals: ^XPD(9.6,
+  FileMan calls: $$FIND1^DIC;$$GET1^DIQ
+
+ EEPREF^MAGJMN1
+  Globals: ^MAG(2006.65,
+  FileMan calls: ^DIC;^DIE
+
+ EEPRO^MAGJMN1
+  Globals: ^MAG(2006.1,
+  FileMan calls: ^DIE
+
+ INPREF^MAGJMN1
+  Globals: ^MAG(2006.65,
+  FileMan calls: EN^DIP;^DIC
+
+ LSTINQ^MAGJMN1
+  Globals: ^MAG(2006.631,
+  FileMan calls: EN^DIQ;^DIC
+
+ PRPREF^MAGJMN1
+  Globals: ^MAG(2006.65,
+  FileMan calls: EN1^DIP
+
+ SVRLIST^MAGJMN1
+  Globals: ^MAG(2006.631,
+  FileMan calls: ^DIC;^DIE
+
+ VRSIT^MAGJMN1
+  Globals: ^MAG(2006.1,;^MAG(2006.69,
+  FileMan calls: ^DIC;^DIE
+
+ EECPT^MAGJMN3
+  Globals: ^MAG(2006.67,
+  FileMan calls: ^DIC;^DIE
+
+ INCPT^MAGJMN3
+  Globals: ^MAG(2006.67,
+  FileMan calls: EN^DIP;^DIC
+
+ PRCPT^MAGJMN3
+  Globals: ^MAG(2006.67,
+  FileMan calls: EN1^DIP
+
+ USERINF2^MAGJUTL3
+  Globals: ^DIC(4,;^VA(200,
+  FileMan calls: $$GET1^DIQ
+
+ GGELIST^MAGNDCMC
+  Globals: ^MAG(2005.71,;^MAG(2005.71,"_DA0_","M",
+           ^MAG(2005.71,"_DA0_","M","_DA1_","E",
+  FileMan calls: $$FIND1^DIC;LIST^DIC
+
+ GSOPCLAS^MAGNDCMC
+  Globals: ^MAG(2006.532,
+  FileMan calls: $$FIND1^DIC
+
+ CONSLIST^MAGNGMR
+  Globals: ^GMR(123,
+  FileMan calls: GETS^DIQ
+
+ FILE^MAGNGMR
+  Globals: UNDETERMINED ("A");UNDETERMINED ("S")
+  FileMan calls: MSG^DIALOG;UPDATE^DIE
+
+ LDHSP^MAGNTLR2
+  Globals: ^MAG(2006.5831,;^MAG(2006.5831,"_D0_",1,
+  FileMan calls: LIST^DIC
+
+ LREADER^MAGNTLR2
+  Globals: ^DIC(4,;^MAG(2006.5843,;^MAG(2006.5843,"_D0_",1,
+           ^MAG(2006.5843,"_D0_",1,"_D1_",1,
+           ^MAG(2006.5843,"_D0_",1,"_D1_",1,"_D2_",1,
+  FileMan calls: $$GET1^DIQ;LIST^DIC
+
+ TCALLOW^MAGNTLR3
+  Globals: ^VA(200,
+  FileMan calls: $$GET1^DIQ
+
+ TIMEOUT^MAGNTLRS
+  Globals: UNDETERMINED ("A");UNDETERMINED ("S")
+  FileMan calls: MSG^DIALOG;UPDATE^DIE
+
+ UASRVC^MAGNTLRS
+  Globals: UNDETERMINED ("A");UNDETERMINED ("SK");^MAG(2006.5841
+           ^MAG(2006.5841,
+  FileMan calls: FIND^DIC;MSG^DIALOG;UPDATE^DIE;^DIK
+
+ UPSRVC^MAGNTLRS
+  Globals: UNDETERMINED ("A");UNDETERMINED ("SK");^MAG(2006.5831
+           ^MAG(2006.5831,
+  FileMan calls: FIND^DIC;MSG^DIALOG;UPDATE^DIE;^DIK
+
+ UREADER^MAGNTLRS
+  Globals: UNDETERMINED ("A");UNDETERMINED ("S")
+  FileMan calls: MSG^DIALOG;UPDATE^DIE
+
+ USITE^MAGNTLRS
+  Globals: UNDETERMINED ("A");UNDETERMINED ("SK");^MAG(2006.5842
+           ^MAG(2006.5842,
+  FileMan calls: FIND^DIC;MSG^DIALOG;UPDATE^DIE;^DIK
+
+ JHRPT^MAGQBJHR
+  Globals: ^VA(200,
+  FileMan calls: $$GET1^DIQ
+
+ CNP2^MAGQBPG1
+  Globals: UNDETERMINED ("I")
+  FileMan calls: FILE^DIE
+
+ PGEPAR^MAGQBPG2
+  Globals: ^MAG(2006.1,
+  FileMan calls: GETS^DIQ
+
+ QUPDTE^MAGQBTM
+  Globals: UNDETERMINED ("U")
+  FileMan calls: UPDATE^DIE
+
+ CHGSERV^MAGQBUT
+  Globals: ^MAG(2006.1,
+  FileMan calls: $$GET1^DIQ
+
+ ALLSERV^MAGQBUT1
+  Globals: ^MAG(2005.2,
+  FileMan calls: $$GET1^DIQ
+
+ MAGSYS^MAGQBUT2
+  Globals: ^VA(200,;^XMB(3.8,
+  FileMan calls: $$FIND1^DIC;$$GET1^DIQ
+
+ DDLF^MAGQBUT4
+  Globals: UNDETERMINED (FILE)
+  FileMan calls: FIELD^DID
+
+ DVAL^MAGQBUT4
+  Globals: UNDETERMINED (FILE)
+  FileMan calls: VAL^DIE
+
+ GPACHX^MAGQBUT4
+  Globals: ^DIC(9.4,"_J_",22,"_K_","PAH",
+  FileMan calls: LIST^DIC
+
+ KVAL^MAGQBUT4
+  Globals: UNDETERMINED (FLAGS)
+  FileMan calls: $$KEYVAL^DIE
+
+ ADDRG^MAGQBUT5
+  Globals: UNDETERMINED ("U")
+  FileMan calls: UPDATE^DIE
+
+ FINDC^MAGQBUT5
+  Globals: UNDETERMINED (FNUM)
+  FileMan calls: $$FIND1^DIC
+
+ UAT^MAGQBUT5
+  Globals: UNDETERMINED ();^MAG(2006.8;^MAG(2006.8,
+  FileMan calls: $$GET1^DIQ;FILE^DIE;^DIK
+
+ REMTASK^MAGQE4
+  Globals: ^MAG(2006.1
+  FileMan calls: ^DIE
+
+ ESIG^MAGQLOG
+  Globals: ^VA(200,
+  FileMan calls: $$GET1^DIQ
+
+ IMGDEL^MAGSDLGR
+  Globals: ^MAG(2005,
+  FileMan calls: ^DIC
+
+ BKONL^MAGSDOFL
+  Globals: ^MAGQUEUE(2006.033
+  FileMan calls: ^DIK
+
+ LINE^MAGSDOFL
+  Globals: UNDETERMINED ()
+  FileMan calls: UPDATE^DIE
+
+ IGE^MAGSIXGT
+  Globals: ^MAG(2005.85,
+  FileMan calls: $$GET1^DIQ
+
+ IGO^MAGSIXGT
+  Globals: ^MAG(2005,
+  FileMan calls: FIELD^DID
+
+ IGS^MAGSIXGT
+  Globals: ^MAG(2005.84,
+  FileMan calls: $$GET1^DIQ
+
+ IGT^MAGSIXGT
+  Globals: ^MAG(2005.83,
+  FileMan calls: $$GET1^DIQ
+
+ ISN^MAGUSIT
+  Globals: ^DIC(4,;^MAG(2006.1,
+  FileMan calls: $$GET1^DIQ
+
+ IMAGE^MAGXCVC
+  Globals: ^MAG(2005,
+  FileMan calls: GETS^DIQ;^DIC;^DIE
+
+ PROC^MAGXIDX0
+  Globals: ^MAG(2005.85
+  FileMan calls: ^DIC;^DIE
+
+ SPEC^MAGXIDX0
+  Globals: ^MAG(2005.84
+  FileMan calls: ^DIC;^DIE
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+41. PACKAGE NAME: MEDICINE
+
+ GET^MCARAPI
+  Globals: ^MCAR(691.5,
+  FileMan calls: $$VFIELD^DILFD;GETS^DIQ
+
+ ENTER^MCARE
+  Globals: UNDETERMINED (^DIC(5))
+  FileMan calls: --
+
+ CONSULT^MCARGE
+  Globals: UNDETERMINED (DIC);^MCAR(699.5
+  FileMan calls: ^DIC;^DIE;^DIK
+
+ DEMO^MCARGES
+  Globals: ^MCAR(690
+  FileMan calls: ^DIC
+
+ GENERIC^MCARGES
+  Globals: ^MCAR(699.5
+  FileMan calls: ^DIC
+
+ CONSULT^MCARGP
+  Globals: ^MCAR(699.5
+  FileMan calls: --
+
+ CATH^MCARP
+  Globals: ^MCAR(691.1
+  FileMan calls: --
+
+ ECG^MCARP
+  Globals: ^MCAR(691.5
+  FileMan calls: --
+
+ ECHO^MCARP
+  Globals: ^MCAR(691
+  FileMan calls: --
+
+ EP^MCARP
+  Globals: ^MCAR(691.8
+  FileMan calls: --
+
+ ETT^MCARP
+  Globals: ^MCAR(691.7
+  FileMan calls: --
+
+ HOLTER^MCARP
+  Globals: ^MCAR(691.6
+  FileMan calls: --
+
+ RHFULL^MCARP
+  Globals: ^MCAR(701
+  FileMan calls: --
+
+ ALEAD^MCARPAC
+  Globals: ^MCAR(698.2
+  FileMan calls: --
+
+ GEN^MCARPAC
+  Globals: ^MCAR(698
+  FileMan calls: --
+
+ GENERIC^MCARPAC
+  Globals: ^MCAR(699.5
+  FileMan calls: ^DIC
+
+ SURV^MCARPAC
+  Globals: ^MCAR(698.3
+  FileMan calls: --
+
+ VLEAD^MCARPAC
+  Globals: ^MCAR(698.1
+  FileMan calls: --
+
+ POST^MCARSRE
+  Globals: UNDETERMINED (DIC);^MCAR(694.5
+  FileMan calls: ^DIC;^DIE
+
+ PRE^MCARSRE
+  Globals: UNDETERMINED (DIC);^MCAR(694.5
+  FileMan calls: ^DIC;^DIE
+
+ $$PATLK^MCARUTL2
+  Globals: ^MCAR(690
+  FileMan calls: ^DIC
+
+ PATSUB^MCARUTL2
+  Globals: ^DPT(
+  FileMan calls: $$GET1^DIQ
+
+ SUB^MCARUTL2
+  Globals: ^DPT(
+  FileMan calls: $$GET1^DIQ
+
+ MEDLKUP^MCARUTL3
+  Globals: ^DPT(
+  FileMan calls: $$GET1^DIQ
+
+ $$VALID^MCARUTL5
+  Globals: UNDETERMINED (FN)
+  FileMan calls: $$GET1^DIQ
+
+ PVFASS^MCPFTE
+  Globals: UNDETERMINED (DIC);^MCAR(700.1
+  FileMan calls: ^DIC;^DIE
+
+ PVFEDT^MCPFTE
+  Globals: ^MCAR(700.2,
+  FileMan calls: IX^DIC;^DIE
+
+ DEL^MCRH1
+  Globals: ^MCAR(701
+  FileMan calls: ^DIC
+
+ KILL^MCUIMAG0
+  Globals: UNDETERMINED ($$GET1^DID(7))
+           UNDETERMINED (DIK_MCD0_","_$SELECT^1;999(14)_",")
+           UNDETERMINED (MCFILE)
+  FileMan calls: $$GET1^DID;^DIK
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+42. PACKAGE NAME: CLINICAL PROCEDURES
+
+ $$TIUCOMP^MDAPI
+  Globals: UNDETERMINED ()
+  FileMan calls: FILE^DIE
+
+ $$TIUDEL^MDAPI
+  Globals: UNDETERMINED ();^MDD(702.001
+  FileMan calls: FILE^DIE;^DIK
+
+ $$TIUREAS^MDAPI
+  Globals: UNDETERMINED ();^MDD(702;^MDD(702.001
+  FileMan calls: FILE^DIE;UPDATE^DIE;^DIK
+
+ ITIU^MDAPI
+  Globals: UNDETERMINED ();^MDD(702;^MDD(702,
+  FileMan calls: $$GET1^DIQ;UPDATE^DIE;^DIK
+
+ TIUREAS^MDAPI
+  Globals: UNDETERMINED ();^MDD(702;^MDD(702.001
+  FileMan calls: FILE^DIE;UPDATE^DIE;^DIK
+
+ GET^MDAPI1
+  Globals: ^MCAR(691.5,
+  FileMan calls: $$VFIELD^DILFD;GETS^DIQ
+
+ QRYOBS^MDCLIO1
+  Globals: ^MDC(704.101,;^MDC(704.117,
+  FileMan calls: $$FIND1^DIC;$$GET1^DIQ;GETS^DIQ
+
+ UPDATERP^MDCPHL7B
+  Globals: UNDETERMINED ("K");^MDC(704.002,
+  FileMan calls: $$EXTERNAL^DILFD;FILE^DIE
+
+ UPDRSN^MDCPHL7B
+  Globals: UNDETERMINED ()
+  FileMan calls: UPDATE^DIE
+
+ COL^MDDEVCL
+  Globals: ^VA(200,
+  FileMan calls: $$GET1^DIQ
+
+ PROCESS^MDHL7XXX
+  Globals: UNDETERMINED ();^GMR(123,;^VA(200,
+  FileMan calls: $$FIND1^DIC;$$GET1^DIQ;FILE^DIE
+
+ GETVST^MDRPCOP
+  Globals: ^DGPM(;^DPT(
+  FileMan calls: $$GET1^DIQ;GETS^DIQ
+
+ GETENC^MDRPCW1
+  Globals: ^VA(200,
+  FileMan calls: $$GET1^DIQ
+
+ $$CVTVAL^MDTERM
+  Globals: ^MDC(704.101,
+  FileMan calls: $$FIND1^DIC
+
+ EN1^MDWCAN
+  Globals: UNDETERMINED ()
+  FileMan calls: FILE^DIE
+
+ CLINICPT^MDWORSR
+  Globals: UNDETERMINED ();^MDD(702,;^MDS(702.01,
+  FileMan calls: $$GET1^DIQ;FILE^DIE;UPDATE^DIE
+
+ EN1^MDWORSR
+  Globals: UNDETERMINED ();^GMR(123,
+  FileMan calls: $$GET1^DIQ;FILE^DIE
+
+ EN1^MDWSETUP
+  Globals: ^SC(
+  FileMan calls: $$GET1^DIQ;^DIR
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+43. PACKAGE NAME: MY HEALTHEVET
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+44. PACKAGE NAME: MRSA INITIATIVE REPORTS
+
+ DIV^MMRSIPCP
+  Globals: ^MMRS(104
+  FileMan calls: ^DIC;^DIE;^DIR
+
+ HISTDAY^MMRSIPCP
+  Globals: ^MMRS(104.2
+  FileMan calls: FILE^DICN;^DIE;^DIR
+
+ LAB^MMRSIPCP
+  Globals: ^MMRS(104.1;^MMRS(104.2;^MMRS(104.2,
+  FileMan calls: $$GET1^DIQ;EN^DIQ;FILE^DICN;^DDS;^DIR
+
+ WARDMAP^MMRSIPCP
+  Globals: ^MMRS(104.3
+  FileMan calls: ^DDS;^DIC;^DIE
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+45. PACKAGE NAME: MASTER PATIENT INDEX VISTA
+
+ $$SETICN^MPIF001
+  Globals: ^DPT("
+  FileMan calls: ^DIE
+
+ $$SETLOC^MPIF001
+  Globals: ^DPT("
+  FileMan calls: ^DIE
+
+ MPIQ^MPIFAPI
+  Globals: ^DPT(;^DPT("
+  FileMan calls: EN^DIQ1;^DIE
+
+ CALLRPC^MPIFDNL
+  Globals: ^DIC(4,;^VA(200,
+  FileMan calls: $$GET1^DIQ
+
+ PATINFO^MPIFEXT2
+  Globals: ^DPT(
+  FileMan calls: GETS^DIQ
+
+ EN^MPIFRCMP
+  Globals: ^DIC(4,;^MPIF(984.9
+  FileMan calls: $$GET1^DIQ;^DIE
+
+ SPI^MPIFRPC2
+  Globals: ^DPT(
+  FileMan calls: GETS^DIQ
+
+ SET^MPIFSEED
+  Globals: ^MPIF(984.8
+  FileMan calls: ^DIE
+
+ STATS^MPIFSEED
+  Globals: ^DIC(19;^DIC(19.2;^DIC(19.2,
+  FileMan calls: $$GET1^DIQ;^DIC
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+46. PACKAGE NAME: M XML PARSER
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+47. PACKAGE NAME: NATIONAL HEALTH INFORMATION NETWORK
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+48. PACKAGE NAME: NURSING SERVICE
+
+ EN2^NURAAU2
+  Globals: ^NURSA(213.5
+  FileMan calls: D^DIQ;^DIC
+
+ EN3^NURAAU2
+  Globals: ^NURSA(213.5
+  FileMan calls: D^DIQ;^DIC
+
+ EN1^NURAED0
+  Globals: UNDETERMINED ($PIECE^2;4(5))
+  FileMan calls: ^DIE
+
+ EN10^NURAED0
+  Globals: UNDETERMINED ($PIECE^2;4(5))
+  FileMan calls: ^DIE
+
+ EN2^NURAED0
+  Globals: UNDETERMINED ($PIECE^2;4(5))
+  FileMan calls: ^DIE
+
+ EN3^NURAED0
+  Globals: UNDETERMINED ($PIECE^2;4(5))
+  FileMan calls: ^DIE
+
+ EN4^NURAED0
+  Globals: UNDETERMINED ($PIECE^2;4(5))
+  FileMan calls: ^DIE
+
+ EN5^NURAED0
+  Globals: UNDETERMINED ($PIECE^2;4(5))
+  FileMan calls: ^DIE
+
+ EN6^NURAED0
+  Globals: UNDETERMINED ($PIECE^2;4(5))
+  FileMan calls: ^DIE
+
+ EN7^NURAED0
+  Globals: UNDETERMINED ($PIECE^2;4(5))
+  FileMan calls: ^DIE
+
+ EN9^NURAED0
+  Globals: UNDETERMINED ($PIECE^2;4(5))
+  FileMan calls: ^DIE
+
+ EN1^NURAMHE
+  Globals: ^NURSF(211.4
+  FileMan calls: D^DIQ;^DIC
+
+ $$FINDNLOC^NURAPI
+  Globals: ^NURSF(211.4,
+  FileMan calls: FIND^DIC
+
+ ACTLOCS^NURAPI
+  Globals: ^NURSF(211.4,
+  FileMan calls: LIST^DIC
+
+ ENT1^NURCEVE0
+  Globals: ^DPT("
+  FileMan calls: D^DIQ;^DIC;^DIR
+
+ EN1^NURSAFU0
+  Globals: ^NURSF(212.6
+  FileMan calls: ^DIC;^DIE
+
+ EN3^NURSAFU0
+  Globals: ^NURSF(211.3
+  FileMan calls: ^DDS;^DIC
+
+ EN4^NURSAFU0
+  Globals: ^NURSF(211.6
+  FileMan calls: ^DIC;^DIE
+
+ EN5^NURSAFU0
+  Globals: ^NURSF(211.9
+  FileMan calls: ^DIC;^DIE
+
+ EN6^NURSAFU0
+  Globals: ^NURSF(212.7
+  FileMan calls: ^DIC;^DIE
+
+ EN3^NURSAFUD
+  Globals: ^NURSF(211.4
+  FileMan calls: --
+
+ EN5^NURSAFUD
+  Globals: ^NURSF(212.2
+  FileMan calls: ^DIC;^DIE
+
+ EN6^NURSAFUD
+  Globals: ^NURSF(211.5
+  FileMan calls: ^DIC;^DIE
+
+ EN7^NURSAFUD
+  Globals: ^NURSF(211.1;^NURSF(211.1,
+  FileMan calls: FILE^DICN;YN^DICN;^DIC;^DIE
+
+ WARD^NURSUT5
+  Globals: ^NURSF(211.4
+  FileMan calls: ^DIC
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+49. PACKAGE NAME: ONCOLOGY
+
+ PAT^ONCOAIF
+  Globals: ^ONCO(160
+  FileMan calls: ^DIC
+
+ REC^ONCOAIF
+  Globals: ^ONCO(160;^ONCO(165.5
+  FileMan calls: EN^DIQ1;IX^DIC;^DIC;^DIE
+
+ ED^ONCOAIP
+  Globals: ^ONCO(160,;^ONCO(165.5
+  FileMan calls: $$GET1^DIQ;^DIC
+
+ PAT^ONCOAS
+  Globals: UNDETERMINED (DIC);^ONCO(160
+  FileMan calls: EN^DIQ1;^DIC;^DIE
+
+ CFR^ONCOCFL
+  Globals: ^ONCO(160
+  FileMan calls: EN1^DIP
+
+ TR^ONCODSP
+  Globals: ^ONCO(160.1
+  FileMan calls: ^DIC;^DIE;^DIR
+
+ AED^ONCOFLF
+  Globals: UNDETERMINED (DIC)
+  FileMan calls: IX^DIC;^DIE
+
+ DCL^ONCOFUL
+  Globals: ^ONCO(160
+  FileMan calls: ^DIC
+
+ SCL^ONCOFUP
+  Globals: ^ONCO(160
+  FileMan calls: ^DIC
+
+ SU^ONCOGEN
+  Globals: ^ONCO(160;^ONCO(165.5
+  FileMan calls: EN1^DIP;IX^DIC;^DIC;^DIR
+
+ CDD1^ONCOPAR
+  Globals: ^ONCO(160
+  FileMan calls: EN^DID
+
+ CDD2^ONCOPAR
+  Globals: ^ONCO(165.5
+  FileMan calls: EN^DID
+
+ DI^ONCOPRT
+  Globals: ^AUPNVPOV("
+  FileMan calls: EN1^DIP;^DIR
+
+ EN2^ONCOUTC
+  Globals: ^ONCO(160
+  FileMan calls: ^DIK;^DIR
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+50. PACKAGE NAME: ASISTS
+
+ EN^OOPSDOL
+  Globals: ^DIC(4.2,;^XMB(3.8,;^XMB(3.8,"_OPMG_",1,
+  FileMan calls: $$FIND1^DIC;FIND^DIC;LIST^DIC
+
+ GETCASE^OOPSGUI0
+  Globals: ^OOPS(2260,
+  FileMan calls: $$GET1^DIQ
+
+ OPT^OOPSGUI1
+  Globals: ^DIC(19,;^VA(200,
+  FileMan calls: $$GET1^DIQ
+
+ SETSIGN^OOPSGUI1
+  Globals: ^OOPS(2260,
+  FileMan calls: $$GET1^DIQ
+
+ ADDWITN^OOPSGUI2
+  Globals: ^OOPS(2260
+  FileMan calls: FILE^DICN;^DIE
+
+ DEFMD^OOPSGUI2
+  Globals: UNDETERMINED (2262.03);^OOPS(2262,1,1,
+  FileMan calls: $$EXTERNAL^DILFD;$$FIND1^DIC;$$GET1^DIQ
+
+ DELWITN^OOPSGUI2
+  Globals: ^OOPS(2260
+  FileMan calls: ^DIK
+
+ EDTWITN^OOPSGUI2
+  Globals: ^OOPS(2260
+  FileMan calls: ^DIE
+
+ GET^OOPSGUI2
+  Globals: ^OOPS(2260,
+  FileMan calls: $$GET1^DIQ
+
+ REPLWP^OOPSGUI2
+  Globals: UNDETERMINED (FILE)
+  FileMan calls: $$GET1^DID;$$ROOT^DILFD
+
+ SETFIELD^OOPSGUI2
+  Globals: ^OOPS(2260
+  FileMan calls: ^DIE
+
+ WITR^OOPSGUI2
+  Globals: UNDETERMINED (2260.0125)
+  FileMan calls: $$EXTERNAL^DILFD
+
+ GETDATA^OOPSGUI3
+  Globals: UNDETERMINED (FILE)
+  FileMan calls: $$GET1^DID;$$ROOT^DILFD
+
+ GETLIST^OOPSGUI3
+  Globals: UNDETERMINED (FILE)
+  FileMan calls: $$GET1^DID
+
+ GETSCHED^OOPSGUI3
+  Globals: UNDETERMINED (FILE)
+  FileMan calls: $$GET1^DID
+
+ STATINFO^OOPSGUI3
+  Globals: ^DIC(4,
+  FileMan calls: $$GET1^DIQ
+
+ ASISTS^OOPSGUI4
+  Globals: ^OOPS(2260,
+  FileMan calls: CLEAN^DILF;FIND^DIC
+
+ DUP^OOPSGUI4
+  Globals: ^OOPS(2260,
+  FileMan calls: $$GET1^DIQ
+
+ LOAD^OOPSGUI4
+  Globals: ^OOPS(2260
+  FileMan calls: FILE^DICN;^DIE
+
+ PAID^OOPSGUI4
+  Globals: ^PRSPC(;^VA(200,
+  FileMan calls: $$GET1^DIQ;CLEAN^DILF;FIND^DIC
+
+ PER^OOPSGUI4
+  Globals: ^VA(200,
+  FileMan calls: $$GET1^DIQ;CLEAN^DILF;FIND^DIC
+
+ SUPER^OOPSGUI4
+  Globals: ^VA(200,
+  FileMan calls: $$GET1^DIQ;CLEAN^DILF;FIND^DIC
+
+ CHGCASE^OOPSGUI6
+  Globals: ^OOPS(2260,
+  FileMan calls: $$GET1^DIQ
+
+ PARMEDT^OOPSGUI6
+  Globals: ^OOPS(2262
+  FileMan calls: ^DIE
+
+ SITEPEDT^OOPSGUI6
+  Globals: ^OOPS(2262
+  FileMan calls: ^DIE
+
+ SITEPGET^OOPSGUI6
+  Globals: UNDETERMINED (2262.03);^OOPS(2262,;^OOPS(2263.6,
+  FileMan calls: $$GET1^DIQ
+
+ SITEPKIL^OOPSGUI6
+  Globals: ^OOPS(2262
+  FileMan calls: ^DIK
+
+ UNIEDT^OOPSGUI6
+  Globals: ^OOPS(2263.7
+  FileMan calls: ^DIE
+
+ UNIGET^OOPSGUI6
+  Globals: ^VA(200,
+  FileMan calls: $$GET1^DIQ
+
+ UNIKILL^OOPSGUI6
+  Globals: ^OOPS(2263.7
+  FileMan calls: ^DIK
+
+ ENT^OOPSGUI7
+  Globals: ^DIC(4.2,
+  FileMan calls: FIND^DIC
+
+ GETFLD^OOPSGUI7
+  Globals: UNDETERMINED (FILE);^PRSPC(
+  FileMan calls: $$GET1^DIQ;FIND^DIC
+
+ GETINST^OOPSGUI7
+  Globals: ^OOPS(2260,
+  FileMan calls: $$GET1^DID
+
+ SENSDATA^OOPSGUI7
+  Globals: ^XMB(3.8,;^XMB(3.8,"_MGRP_",1,
+  FileMan calls: $$FIND1^DIC;LIST^DIC
+
+ AMEND^OOPSGUI8
+  Globals: ^OOPS(2260
+  FileMan calls: FILE^DICN;IX^DIK
+
+ EN1^OOPSGUI8
+  Globals: ^OOPS(2260,
+  FileMan calls: $$GET1^DIQ
+
+ SETDLOC^OOPSGUI8
+  Globals: UNDETERMINED ("E");UNDETERMINED ()
+  FileMan calls: UPDATE^DIE
+
+ CA7LIST^OOPSGUIC
+  Globals: UNDETERMINED (FILE);^VA(200,
+  FileMan calls: $$GET1^DIQ
+
+ LISTCA^OOPSGUIC
+  Globals: UNDETERMINED (FILE)
+  FileMan calls: $$GET1^DIQ
+
+ MULTIPLE^OOPSGUIC
+  Globals: UNDETERMINED (FILE)
+  FileMan calls: $$GET1^DID;$$ROOT^DILFD
+
+ OSHA300^OOPSGUIC
+  Globals: UNDETERMINED ("E")
+  FileMan calls: UPDATE^DIE
+
+ DUAL^OOPSGUID
+  Globals: ^OOPS(2260
+  FileMan calls: ^DIE
+
+ NSTICK^OOPSGUIF
+  Globals: ^OOPS(2260;^OOPS(2260,
+  FileMan calls: $$GET1^DIQ;EN^DIQ1
+
+ OSHA^OOPSGUIF
+  Globals: ^OOPS(2260
+  FileMan calls: EN^DIQ1
+
+ SIGNCA7^OOPSGUIS
+  Globals: ^OOPS("_FILE_";^OOPS(2260,
+  FileMan calls: $$GET1^DIQ;^DIE
+
+ STA^OOPSGUIS
+  Globals: ^DIC(4,
+  FileMan calls: $$GET1^DIQ
+
+ ACCID^OOPSGUIT
+  Globals: ^OOPS(2260,;^VA(200,
+  FileMan calls: $$GET1^DIQ
+
+ ENT^OOPSGUIT
+  Globals: ^OOPS(2260,;^PRSPC("
+  FileMan calls: $$GET1^DIQ;EN^DIQ1;^DIC
+
+ EN^OOPSNDB
+  Globals: ^DIC(4.2,;^XMB(3.8,;^XMB(3.8,"_OPMG_",1,
+  FileMan calls: $$FIND1^DIC;FIND^DIC;LIST^DIC
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+51. PACKAGE NAME: ORDER ENTRY/RESULTS REPORTING
+
+ HCT^ORAM
+  Globals: UNDETERMINED (OHCTD)
+  FileMan calls: DT^DILF
+
+ ORDER^ORAM
+  Globals: ^ORD(101.41,
+  FileMan calls: $$GET1^DIQ
+
+ PATIENT^ORAM
+  Globals: ^DPT("
+  FileMan calls: ^DIC
+
+ ACDATA^ORAM1
+  Globals: ^ORAM(103
+  FileMan calls: FILE^DICN
+
+ ADDTOP^ORAM1
+  Globals: UNDETERMINED ("TS");UNDETERMINED (ORAMC);UNDETERMINED (ORAMFB)
+           UNDETERMINED (ORAMR)
+  FileMan calls: DT^DILF
+
+ COMPTEST^ORAM1
+  Globals: UNDETERMINED (ORAMTEMP);^ORAM(103
+  FileMan calls: DT^DILF;IX2^DIK;IX^DIK;^DIK
+
+ LOGIT^ORAM1
+  Globals: UNDETERMINED (ORAMNEWD);^ORAM(103
+  FileMan calls: DT^DILF;IX^DIK
+
+ OUTINR^ORAM1
+  Globals: UNDETERMINED ("E")
+  FileMan calls: DT^DILF
+
+ PTENTER^ORAM1
+  Globals: ^ORAM(103
+  FileMan calls: FILE^DICN
+
+ TERASE^ORAM1
+  Globals: ^OR(100.21"_";^ORAM(103,
+  FileMan calls: $$EXTERNAL^DILFD;^DIK
+
+ REMIND^ORAM2
+  Globals: UNDETERMINED (ORAMDT);^ORAM(103
+  FileMan calls: DT^DILF;IX^DIK
+
+ SHOWRATE^ORAM2
+  Globals: UNDETERMINED ("T")
+  FileMan calls: DT^DILF
+
+ COMPENT^ORAM3
+  Globals: UNDETERMINED ();UNDETERMINED (ORAMD2)
+  FileMan calls: DT^DILF;UPDATE^DIE
+
+ COMPRPT^ORAMX
+  Globals: ^ORAM(103,;^SC(
+  FileMan calls: $$EXTERNAL^DILFD
+
+ NEXTLAB^ORAMX
+  Globals: ^ORAM(103
+  FileMan calls: EN1^DIP
+
+ USRNOTS^ORB3MGR2
+  Globals: ^VA(200
+  FileMan calls: ^DIC
+
+ ALRTHX^ORB3U1
+  Globals: ^DPT("
+  FileMan calls: ^DIC
+
+ RECIPS^ORB3U1
+  Globals: ^DPT(";^ORD(100.9;^VA(200
+  FileMan calls: ^DIC;^DIR
+
+ OI^ORCDVBC1
+  Globals: UNDETERMINED (DIC);^ORD(101.43
+  FileMan calls: IX^DIC;^DIE
+
+ BLD^ORCHECK
+  Globals: ^DIC(9.4,
+  FileMan calls: $$GET1^DIQ
+
+ FIND^ORCK101
+  Globals: ^ORD(101,
+  FileMan calls: DT^DICRW;^DIC
+
+ OI^ORCMEDT1
+  Globals: UNDETERMINED (DIC);^ORD(101.43
+  FileMan calls: IX^DIC;^DIE
+
+ PROTOCOL^ORCMEDT1
+  Globals: ^ORD(101
+  FileMan calls: ^DIC
+
+ ACTION^ORCMEDT3
+  Globals: ^ORD(101.41
+  FileMan calls: ^DIE
+
+ EN^ORCMEDT4
+  Globals: ^ORD(101.41
+  FileMan calls: EN^DIQ
+
+ AOPAR^ORCMEDT5
+  Globals: ^XTV(8989.5,
+  FileMan calls: EN1^DIP
+
+ DISABLE^ORCMEDT5
+  Globals: ^ORD(101.41,
+  FileMan calls: ^DIC;^DIR
+
+ QO^ORCMEDT6
+  Globals: ^ORD(101.43
+  FileMan calls: ^DIE
+
+ QCKBYUSR^ORCMEDT7
+  Globals: ^ORD(101.44
+  FileMan calls: ^DIE
+
+ MULTS^OREVNTX1
+  Globals: ^DIC(45.7,
+  FileMan calls: $$GET1^DIQ
+
+ EN^ORKCHK
+  Globals: ^VA(200,
+  FileMan calls: $$GET1^DIQ
+
+ USRCHKS^ORKMGR
+  Globals: ^VA(200
+  FileMan calls: ^DIC
+
+ DEFSRC^ORLP3MGR
+  Globals: ^OR(100.24,;^VA(200
+  FileMan calls: $$FIND1^DIC;CLEAN^DILF;^DIC;^DIR
+
+ UDEFSRC^ORLP3MGR
+  Globals: ^OR(100.24,
+  FileMan calls: $$FIND1^DIC;CLEAN^DILF;^DIR
+
+ USRTMPTS^ORLP3U1
+  Globals: ^VA(200
+  FileMan calls: ^DIC
+
+ USRTMS^ORLP3U1
+  Globals: ^VA(200
+  FileMan calls: ^DIC
+
+ COMB^ORLP3USR
+  Globals: UNDETERMINED ("S");^OR(100.24;^OR(100.24,
+  FileMan calls: $$FIND1^DIC;CLEAN^DILF;UPDATE^DIE;^DIE
+
+ BULL^ORMTIME
+  Globals: ^XMB(3.8,
+  FileMan calls: ^DIC
+
+ LIST^ORQOR1
+  Globals: UNDETERMINED ("T")
+  FileMan calls: DT^DILF
+
+ TMSPT^ORQPTQ1
+  Globals: ^OR(100.21,
+  FileMan calls: $$EXTERNAL^DILFD
+
+ CLINPTS^ORQPTQ2
+  Globals: UNDETERMINED ("T")
+  FileMan calls: DT^DILF
+
+ PROVSRCH^ORQQPL1
+  Globals: ^VA(200,
+  FileMan calls: LIST^DIC
+
+ REPLACE^ORQQPL2
+  Globals: ^AUPNPROB("
+  FileMan calls: ^DIE
+
+ PROBL^ORQQPL3
+  Globals: UNDETERMINED ("C48")
+  FileMan calls: --
+
+ DETAIL^ORQQPS
+  Globals: UNDETERMINED ("ET")
+  FileMan calls: DT^DILF
+
+ GETDEFOL^ORQQPX
+  Globals: ^VA(200,
+  FileMan calls: $$GET1^DIQ
+
+ GETFLDRS^ORQQPX
+  Globals: ^VA(200,
+  FileMan calls: $$GET1^DIQ
+
+ HISTLOC^ORQQPX
+  Globals: ^DIC(4,
+  FileMan calls: $$GET1^DIQ
+
+ INSCURS^ORQQPX
+  Globals: ^VA(200,
+  FileMan calls: $$GET1^DIQ
+
+ NEWACTIV^ORQQPX
+  Globals: ^VA(200,
+  FileMan calls: $$GET1^DIQ
+
+ NEWCVOK^ORQQPX
+  Globals: ^VA(200,
+  FileMan calls: $$GET1^DIQ
+
+ REMLIST^ORQQPX
+  Globals: ^VA(200,
+  FileMan calls: $$GET1^DIQ
+
+ VSITAPPT^ORQQVS
+  Globals: UNDETERMINED ("T")
+  FileMan calls: DT^DILF
+
+ MAILG^ORQQXQA
+  Globals: ^XMB(3.8,
+  FileMan calls: CLEAN^DILF;LIST^DIC
+
+ ACK^ORRCACK
+  Globals: ^ORA(102.4
+  FileMan calls: ^DIE
+
+ INQBYPRO^ORRCOA
+  Globals: ^VA(200
+  FileMan calls: ^DIC
+
+ CANC^ORRCTSK
+  Globals: ^ORRT(102.3
+  FileMan calls: ^DIE
+
+ COMP^ORRCTSK
+  Globals: ^ORRT(102.3
+  FileMan calls: ^DIE
+
+ NEW^ORRCTSK
+  Globals: ^ORRT(102.3
+  FileMan calls: FILE^DICN
+
+ DELETE^ORRHCR
+  Globals: ^ORD(102.21
+  FileMan calls: ^DIK
+
+ SAVDEF^ORRHCR
+  Globals: ^ORD(102.21
+  FileMan calls: ^DIK
+
+ ID2EXT^ORRHCU
+  Globals: UNDETERMINED (FN)
+  FileMan calls: $$GET1^DIQ
+
+ CLRUSR^ORWCH
+  Globals: ^VA(200,
+  FileMan calls: ^DIC;^DIR
+
+ CLINUSER^ORWDAL33
+  Globals: ^XTV(8989.51,
+  FileMan calls: ^DIC
+
+ ADDPDL^ORWDBA2
+  Globals: UNDETERMINED ();UNDETERMINED (200.0351);^ICD9(;^VA(200,
+  FileMan calls: FDA^DILF;FILE^DIE;FIND^DIC;GETS^DIQ;UPDATE^DIE
+
+ DELPDL^ORWDBA2
+  Globals: UNDETERMINED ();UNDETERMINED (200.0351);^VA(200,
+  FileMan calls: FDA^DILF;FILE^DIE;GETS^DIQ
+
+ GETDUDC^ORWDBA2
+  Globals: ^ICD9(;^OR(100,
+  FileMan calls: $$GET1^DIQ;GETS^DIQ
+
+ GETPDL^ORWDBA2
+  Globals: ^VA(200,
+  FileMan calls: GETS^DIQ
+
+ LOOK200^ORWDCSLT
+  Globals: ^VA(200,
+  FileMan calls: $$FIND1^DIC
+
+ QOMEDALT^ORWDPS1
+  Globals: ^DIC(9.4,
+  FileMan calls: $$GET1^DIQ
+
+ WCPUT^ORWDXA
+  Globals: UNDETERMINED (100.008)
+  FileMan calls: WP^DIE
+
+ DELORD^ORWDXC
+  Globals: ^OR(100
+  FileMan calls: ^DIK
+
+ GETSET^ORWPCE2
+  Globals: UNDETERMINED (ORWFILE)
+  FileMan calls: FIELD^DID
+
+ HASCPT^ORWPCE2
+  Globals: ^PXD(811.1,
+  FileMan calls: $$FIND1^DIC;$$GET1^DIQ
+
+ ISCLINIC^ORWPCE2
+  Globals: ^SC(
+  FileMan calls: $$GET1^DIQ
+
+ ORACTREF^ORWPFSS
+  Globals: ^OR(100,
+  FileMan calls: $$GET1^DIQ
+
+ LOOKUP^ORWPT16
+  Globals: ^DPT(
+  FileMan calls: FIND^DIC
+
+ LABLIST^ORWRP
+  Globals: ^XWB(8994,
+  FileMan calls: $$GET1^DIQ
+
+ GBLREF^ORWU
+  Globals: UNDETERMINED (+FN
+)
+  FileMan calls: $$ROOT^DILFD
+
+ VERSRV^ORWU
+  Globals: ^DIC(19,
+  FileMan calls: FIND^DIC
+
+ DEFDIV^ORWU1
+  Globals: ^VA(200,"_ORIEN_",2,
+  FileMan calls: LIST^DIC
+
+ NAMECVT^ORWU1
+  Globals: ^VA(200,
+  FileMan calls: $$GET1^DIQ
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+52. PACKAGE NAME: IFCAP
+
+ IN1^PRC1358C
+  Globals: ^PRCS(410,
+  FileMan calls: EN1^DIP
+
+ IN3^PRC1358C
+  Globals: ^PRCS(410,
+  FileMan calls: EN1^DIP
+
+ $$GETDATA^PRCAAPI
+  Globals: ^PRCA(430,
+  FileMan calls: GETS^DIQ
+
+ UPPRIN^PRCADJ
+  Globals: ^PRCA(430;^PRCA(433
+  FileMan calls: ^DIE
+
+ UPDAT^PRCAGU
+  Globals: ^PRCA(430
+  FileMan calls: ^DIE
+
+ EN^PRCAPAY3
+  Globals: ^PRCA(433
+  FileMan calls: ^DIE
+
+ EN11^PRCAREPT
+  Globals: ^PRCA(430;^RCD(340
+  FileMan calls: ^DIC;^DIR
+
+ DEC^PRCASER1
+  Globals: ^PRCA(433
+  FileMan calls: ^DIE
+
+ REL^PRCASVC
+  Globals: ^PRCA(430;^RCD(340
+  FileMan calls: FILE^DICN;^DIE
+
+ STATUS^PRCASVC1
+  Globals: ^PRCA(430
+  FileMan calls: ^DIE
+
+ RESFROM^PRCAUDT1
+  Globals: ^DGCR(399.3
+  FileMan calls: ^DIC;^DIE;^DIR
+
+ UPSTATS^PRCAUT2
+  Globals: ^PRCA(430
+  FileMan calls: ^DIE
+
+ SETTR^PRCAUTL
+  Globals: ^PRCA(433
+  FileMan calls: FILE^DICN
+
+ DELETE^PRCAWO1
+  Globals: ^PRCA(433
+  FileMan calls: FILE^DICN;^DIE;^DIK
+
+ EN^PRCB1A
+  Globals: --
+  FileMan calls: EN^DDIOL
+
+ DEA^PRCB1A2
+  Globals: UNDETERMINED (" ")
+           UNDETERMINED ("File is in use, please try later!")
+           UNDETERMINED ("No Control Point in file!")
+  FileMan calls: EN^DDIOL
+
+ REA^PRCB1A2
+  Globals: UNDETERMINED (" ")
+           UNDETERMINED ("File is in use, please try later!")
+           UNDETERMINED ("No Control Point in file!")
+  FileMan calls: EN^DDIOL
+
+ EN1^PRCB1A3
+  Globals: ^PRC(420
+  FileMan calls: EN1^DIP
+
+ DEA^PRCBCC
+  Globals: ^PRCD(420.1,
+  FileMan calls: ^DIC
+
+ PRT1^PRCBCC
+  Globals: ^PRCD(420.1
+  FileMan calls: EN1^DIP
+
+ PRT2^PRCBCC
+  Globals: ^PRCD(420.1
+  FileMan calls: EN1^DIP
+
+ REA^PRCBCC
+  Globals: ^PRCD(420.1,
+  FileMan calls: ^DIC
+
+ POST^PRCBMT
+  Globals: ^PRCF(421.1
+  FileMan calls: ^DIC
+
+ EN2^PRCBP
+  Globals: ^PRC(420
+  FileMan calls: ^DIC
+
+ EN4^PRCBP
+  Globals: ^PRCF(421
+  FileMan calls: EN1^DIP
+
+ DEA^PRCBSA
+  Globals: ^PRCD(420.2,
+  FileMan calls: ^DIC
+
+ PRT1^PRCBSA
+  Globals: ^PRCD(420.2
+  FileMan calls: EN1^DIP
+
+ REA^PRCBSA
+  Globals: ^PRCD(420.2,
+  FileMan calls: ^DIC
+
+ GETTRAN^PRCBSTF
+  Globals: ^PRCF(421.6;^PRCF(421.6,
+  FileMan calls: ^DIC;^DIK
+
+ EN^PRCD1A
+  Globals: UNDETERMINED (" ")
+           UNDETERMINED ("File is in use, please try later!")
+  FileMan calls: EN^DDIOL
+
+ EN1^PRCD1A
+  Globals: ^PRCD(420.19,
+  FileMan calls: EN1^DIP
+
+ EN^PRCD1B
+  Globals: UNDETERMINED (" ")
+           UNDETERMINED ("File is in use, please try later!")
+  FileMan calls: EN^DDIOL
+
+ EN1^PRCD1B
+  Globals: UNDETERMINED (" ")
+  FileMan calls: EN^DDIOL
+
+ EN^PRCD1C
+  Globals: UNDETERMINED ("File is in use, please try later!")
+           UNDETERMINED ($TRANSLATE^1;3(8))
+  FileMan calls: EN^DDIOL
+
+ EN1^PRCD1C
+  Globals: ^PRCD(420.14,
+  FileMan calls: EN1^DIP
+
+ EN^PRCD1D
+  Globals: --
+  FileMan calls: EN^DDIOL
+
+ EN^PRCD1E
+  Globals: UNDETERMINED ("File is in use, please try later!")
+           UNDETERMINED ($TRANSLATE^1;3(8))
+  FileMan calls: EN^DDIOL
+
+ EN1^PRCD1E
+  Globals: ^PRCD(420.3,
+  FileMan calls: EN1^DIP
+
+ EN^PRCD1F
+  Globals: UNDETERMINED ("File is in use, please try later!")
+           UNDETERMINED ($TRANSLATE^1;3(8))
+  FileMan calls: EN^DDIOL
+
+ EN8^PRCFA8
+  Globals: ^PRC(442,
+  FileMan calls: IX^DIC
+
+ EN4^PRCFAC1
+  Globals: UNDETERMINED (DIC);^PRC(420
+  FileMan calls: ^DIC;^DIE
+
+ CLEAR^PRCFALCK
+  Globals: ^PRCF(421.4,
+  FileMan calls: ^DIC
+
+ CHANGE^PRCFARRA
+  Globals: ^PRC(442.9;^PRC(442.9,
+  FileMan calls: ^DIC;^DIE
+
+ PRINT^PRCFARRA
+  Globals: ^PRC(442.9
+  FileMan calls: EN1^DIP
+
+ PRINT^PRCFARRT
+  Globals: ^PRCF(421.2
+  FileMan calls: EN1^DIP
+
+ VIEW^PRCFDCI1
+  Globals: ^PRCF(421.5;^PRCF(421.5,
+  FileMan calls: EN^DIQ;^DIC
+
+ DE^PRCFDE
+  Globals: ^PRCF(421.5,
+  FileMan calls: ^DIC
+
+ EDIT^PRCFDE1
+  Globals: ^PRCF(421.5,
+  FileMan calls: ^DIC
+
+ LOGIN^PRCFDE3
+  Globals: ^DIC(49,
+  FileMan calls: ^DIC
+
+ RECHARGE^PRCFDE3
+  Globals: ^DIC(49,;^PRCF(421.5,
+  FileMan calls: ^DIC;^DIR
+
+ REP^PRCFDSUS
+  Globals: ^PRCF(421.5;^PRCF(421.5,
+  FileMan calls: ^DIC;^DIE
+
+ EN1^PRCFINQ
+  Globals: ^PRCS(410,
+  FileMan calls: EN^DIQ;^DIC
+
+ EN3^PRCFINQ
+  Globals: ^PRC(442,
+  FileMan calls: EN^DIQ;^DIC
+
+ EN^PRCH1A
+  Globals: UNDETERMINED ("Wrong type terminal (missing IOSTBM)!")
+           UNDETERMINED ("Wrong type terminal (missing IOXY)!")
+  FileMan calls: EN^DDIOL
+
+ EN2^PRCH2A
+  Globals: ^PRCH(440.6
+  FileMan calls: EN1^DIP
+
+ EN3^PRCH2A
+  Globals: ^PRC(440.5
+  FileMan calls: EN1^DIP
+
+ S2^PRCH442
+  Globals: ^PRC(411;^PRCS(410.3
+  FileMan calls: ^DIC
+
+ OBL^PRCH7B
+  Globals: ^PRC(442
+  FileMan calls: ^DIE
+
+ RECON^PRCH7C
+  Globals: UNDETERMINED ("Wrong type terminal (missing IOSTBM)!")
+  FileMan calls: EN^DDIOL
+
+ OBL^PRCH7D
+  Globals: ^PRC(442
+  FileMan calls: ^DIE
+
+ UP1^PRCH7PUC
+  Globals: ^PRC(442
+  FileMan calls: ^DIE
+
+ DOPC^PRCHCNV
+  Globals: ^PRC(442
+  FileMan calls: ^DIC;^DIE;^DIR
+
+ PCDO^PRCHCNV
+  Globals: ^PRC(442
+  FileMan calls: ^DIC;^DIE;^DIR
+
+ EN1^PRCHE
+  Globals: UNDETERMINED (DIC);UNDETERMINED (PRCARR);^PRC(441
+  FileMan calls: EN^DDIOL;^DIC;^DIE
+
+ EN10^PRCHE
+  Globals: UNDETERMINED (DIC);^VA(200
+  FileMan calls: ^DIC;^DIE
+
+ EN11^PRCHE
+  Globals: ^PRC(442.7
+  FileMan calls: --
+
+ EN2^PRCHE
+  Globals: --
+  FileMan calls: EN^DDIOL;YN^DICN
+
+ EN9^PRCHE
+  Globals: ^PRC(442.6
+  FileMan calls: --
+
+ EN5^PRCHEA
+  Globals: UNDETERMINED (DIC);^PRC(441
+  FileMan calls: ^DIC;^DIE
+
+ EN0^PRCHEA1
+  Globals: UNDETERMINED (DIC);^PRC(440
+  FileMan calls: ^DIC;^DIE
+
+ EN1^PRCHEA1
+  Globals: ^PRC(440
+  FileMan calls: ^DIC;^DIE
+
+ EN2^PRCHEA1
+  Globals: ^PRC(441
+  FileMan calls: ^DIC;^DIE
+
+ EN3^PRCHEA1
+  Globals: UNDETERMINED (DIC);^PRC(441
+  FileMan calls: ^DIC;^DIE
+
+ INQ^PRCHINQ
+  Globals: UNDETERMINED ("REPLACEMENT CHARGE CARD NUMBER: "_$PIECE^2;4(6))
+           ^PRC(440.5
+  FileMan calls: EN^DDIOL;EN^DIQ;^DIC
+
+ PRT^PRCHITM2
+  Globals: UNDETERMINED (PRCTXT);^DIC(4,;^PRC(441,
+  FileMan calls: $$GET1^DIQ;EN1^DIP;EN^DDIOL
+
+ ENT^PRCHLO5
+  Globals: UNDETERMINED (PRCPMSG(1))
+  FileMan calls: EN^DDIOL
+
+ AOCANPC^PRCHPCAR
+  Globals: ^PRC(442
+  FileMan calls: ^DIC;^DIE
+
+ CANDO^PRCHPCAR
+  Globals: ^PRC(442
+  FileMan calls: ^DIC;^DIE
+
+ CANPC^PRCHPCAR
+  Globals: ^PRC(442
+  FileMan calls: ^DIC;^DIE
+
+ EN^PRCHQ10
+  Globals: ^PRC(444;^PRC(444,
+  FileMan calls: EN1^DIP;^DIC;^DIR
+
+ EN^PRCHQ11
+  Globals: ^PRC(444,
+  FileMan calls: ^DIC
+
+ PRTMSG^PRCHQ11
+  Globals: ^PRC(444,
+  FileMan calls: EN1^DIP;^DIC
+
+ PRTRFQ^PRCHQ11
+  Globals: ^PRC(444,
+  FileMan calls: EN1^DIP;^DIC
+
+ QUOTEVU^PRCHQ12
+  Globals: ^PRC(444,
+  FileMan calls: ^DIC
+
+ EN^PRCHQ13
+  Globals: UNDETERMINED (PRC);^PRC(444,
+  FileMan calls: EN^DDIOL;^DDS;^DIC;^DIE;^DIR
+
+ EN^PRCHQ13A
+  Globals: ^PRC(444;^PRC(444,
+  FileMan calls: EN1^DIP;^DIC;^DIR
+
+ ENT^PRCHQ14
+  Globals: UNDETERMINED ("Electronic Transmission Aborted!")
+           UNDETERMINED (PRCAR);^PRC(444;^PRC(444,;^VA(200,
+  FileMan calls: EN1^DIP;EN^DDIOL;EN^DIQ1;FILE^DICN;^DIC;^DIE;^DIR
+
+ PREF^PRCHQ1C
+  Globals: ^PRC(444.4
+  FileMan calls: FILE^DICN;^DIE
+
+ EN^PRCHQ2
+  Globals: UNDETERMINED ("Edit mode not indicated, aborting the edit.")
+  FileMan calls: EN^DDIOL
+
+ EN2^PRCHQ2
+  Globals: UNDETERMINED ("Edit mode not indicated, aborting the edit.")
+  FileMan calls: EN^DDIOL
+
+ RETRANS^PRCHQ8
+  Globals: UNDETERMINED ("Electronic Transmission Aborted!");^PRC(444
+           ^PRC(444,
+  FileMan calls: EN1^DIP;EN^DDIOL;^DIC;^DIR
+
+ RSND864^PRCHQ8
+  Globals: ^PRC(444;^PRC(444,
+  FileMan calls: EN1^DIP;^DIC;^DIR
+
+ EN^PRCHQ9
+  Globals: --
+  FileMan calls: EN1^DIP;EN^DDIOL;EN^DIQ1;FILE^DICN;^DIC;^DIE;^DIR
+
+ START^PRCHQRP3
+  Globals: ^PRC(444
+  FileMan calls: ^DIC
+
+ START^PRCHQRP4
+  Globals: ^PRC(444
+  FileMan calls: ^DIC
+
+ OBL^PRCHRP1
+  Globals: ^PRC(442
+  FileMan calls: IX^DIC;YN^DICN
+
+ CAN^PRCHRP3
+  Globals: ^PRC(442;^PRCS(410
+  FileMan calls: IX^DIC;^DIE
+
+ EN7^PRCHRPT
+  Globals: ^PRCS(410
+  FileMan calls: --
+
+ EN8^PRCHRPT
+  Globals: ^PRC(441
+  FileMan calls: EN^DIQ;^DIC
+
+ START^PRCHURP
+  Globals: ^VA(200
+  FileMan calls: ^DIC;^DIR
+
+ $$VENSEL^PRCHUTL
+  Globals: ^PRC(440;^PRC(440.3
+  FileMan calls: ^DIC;^DIE
+
+ EN^PRCN2237
+  Globals: ^PRCN(413
+  FileMan calls: ^DIC
+
+ EN^PRCNCNCL
+  Globals: ^PRCN(413
+  FileMan calls: ^DIC
+
+ PRT^PRCNDISP
+  Globals: ^PRCN(413
+  FileMan calls: ^DIC
+
+ CON^PRCNOTHR
+  Globals: ^PRCN(413
+  FileMan calls: ^DIC
+
+ RRV^PRCNPEDT
+  Globals: ^PRCN(413;^PRCN(413,
+  FileMan calls: YN^DICN;^DIC;^DIE
+
+ TRV^PRCNPEDT
+  Globals: ^PRCN(413.1;^PRCN(413.1,
+  FileMan calls: YN^DICN;^DIC;^DIE
+
+ EN^PRCNREQE
+  Globals: ^PRCN(413
+  FileMan calls: ^DIC
+
+ EN^PRCNREQN
+  Globals: ^DIC(49;^ENG(6914.1;^PRCN(413;^PRCN(413,;^PRCN(413.1,
+  FileMan calls: FILE^DICN;^DIC;^DIE;^DIK
+
+ CMR^PRCNRPT
+  Globals: ^PRCN(413.1
+  FileMan calls: EN1^DIP
+
+ SER^PRCNRPT
+  Globals: ^PRCN(413.1
+  FileMan calls: EN1^DIP
+
+ EN^PRCNRSMT
+  Globals: ^PRCN(413
+  FileMan calls: ^DIC
+
+ SELECT^PRCNTIPP
+  Globals: ^PRCN(413.1
+  FileMan calls: ^DIC
+
+ EN^PRCNTIPR
+  Globals: ^PRCN(413.1
+  FileMan calls: ^DIC
+
+ EN^PRCNTIWH
+  Globals: ^PRCN(413.1
+  FileMan calls: ^DIC
+
+ ENT^PRCPAODI
+  Globals: --
+  FileMan calls: EN^DDIOL
+
+ EN^PRCPCSPX
+  Globals: ^VA(200,
+  FileMan calls: $$GET1^DIQ
+
+ ENT^PRCPLO3
+  Globals: UNDETERMINED (PRCPMSG(1))
+  FileMan calls: EN^DDIOL
+
+ REMFLAG^PRCPOPR
+  Globals: --
+  FileMan calls: EN^DDIOL;^DIE;^DIR
+
+ AC^PRCPSSQA
+  Globals: UNDETERMINED ("Removing "_$PIECE^2;4(6)_".....")
+           UNDETERMINED ("The authorized user file is busy.  Please try again la
+ter.")
+           UNDETERMINED ("This secondary is not linked to a supply station")
+           UNDETERMINED ("You are not authorized to give staff access to replace
+ quantities.")
+           ^PRCP(445
+  FileMan calls: EN^DDIOL;IX^DIC;^DIK
+
+ EDIT^PRCPUCC
+  Globals: ^PRCP(446
+  FileMan calls: ^DIC;^DIE
+
+ EN1A^PRCS58
+  Globals: ^PRC(442
+  FileMan calls: ^DIC
+
+ EN2^PRCS58
+  Globals: ^PRC(424
+  FileMan calls: FILE^DICN;^DIE
+
+ CT^PRCSEA
+  Globals: ^PRCS(410
+  FileMan calls: --
+
+ DT^PRCSEA
+  Globals: ^PRCS(410
+  FileMan calls: --
+
+ EDRS^PRCSEA
+  Globals: ^PRCS(410
+  FileMan calls: --
+
+ EN^PRCSEA1
+  Globals: UNDETERMINED (" ")
+           UNDETERMINED ("Enter a 2-16 digit number with a leading alpha, as in 
+'ABC123'")
+  FileMan calls: EN^DDIOL
+
+ EDTD^PRCSEB0
+  Globals: UNDETERMINED (DIC);^PRCS(410
+  FileMan calls: --
+
+ ENFIS^PRCSEB1
+  Globals: ^PRCS(410
+  FileMan calls: ^DIE
+
+ ACSCP^PRCSED
+  Globals: UNDETERMINED (DIC);^PRCS(410
+  FileMan calls: --
+
+ OTR^PRCSP1
+  Globals: ^PRCS(410
+  FileMan calls: --
+
+ PRNT^PRCSP1
+  Globals: ^PRCS(410
+  FileMan calls: --
+
+ TS^PRCSP1
+  Globals: ^PRCS(410
+  FileMan calls: --
+
+ TSS^PRCSP1
+  Globals: ^PRCS(410
+  FileMan calls: --
+
+ SUBTOT^PRCSP1A1
+  Globals: ^PRCS(410
+  FileMan calls: EN1^DIP
+
+ POS^PRCSP1B
+  Globals: ^PRC(442
+  FileMan calls: ^DIC
+
+ PROJ^PRCSP1B
+  Globals: ^PRCS(410
+  FileMan calls: EN1^DIP
+
+ TEMPT^PRCSP1B
+  Globals: ^PRCS(410
+  FileMan calls: EN1^DIP
+
+ ONECP^PRCSP1D
+  Globals: --
+  FileMan calls: EN^DDIOL
+
+ TOR^PRCSP1D
+  Globals: ^PRCS(410
+  FileMan calls: EN1^DIP
+
+ MDL^PRCSP1F
+  Globals: ^PRCS(410
+  FileMan calls: EN1^DIP
+
+ CLEAR^PRCSREC1
+  Globals: ^PRCS(417.1
+  FileMan calls: ^DIK;^DIR
+
+ EXCEPT^PRCSREC1
+  Globals: ^PRCS(417.1
+  FileMan calls: EN1^DIP
+
+ DEL^PRCSRIE1
+  Globals: ^PRCS(410.3
+  FileMan calls: ^DIC
+
+ EDIT^PRCSRIE1
+  Globals: UNDETERMINED (DIC);^PRCS(410.3
+  FileMan calls: ^DIC;^DIE
+
+ PRT^PRCSUT1
+  Globals: ^PRCS(410
+  FileMan calls: EN1^DIP
+
+ EN1^PRCSUT31
+  Globals: ^PRCS(410.1
+  FileMan calls: ^DIC
+
+ USERIN^PRCSUT41
+  Globals: ^PRC(411;^VA(200
+  FileMan calls: ^DIE;^DIK;^DIR
+
+ COM^PRCTBAR
+  Globals: ^PRCT(446.4
+  FileMan calls: ^DIC
+
+ DATA^PRCTUTL
+  Globals: UNDETERMINED (DIC);^PRCT(446.4
+  FileMan calls: ^DIC;^DIE
+
+ INQ^PRCTUTL
+  Globals: ^PRCT(446.5
+  FileMan calls: EN^DIQ;^DIC
+
+ PARAM^PRCTUTL
+  Globals: UNDETERMINED (DIC);^PRCT(446.4
+  FileMan calls: ^DIC;^DIE
+
+ PRO^PRCTUTL
+  Globals: UNDETERMINED (DIC);^PRCT(446.4
+  FileMan calls: ^DIC;^DIE
+
+ NITECHK^PRCVIT
+  Globals: ^DIC(4,
+  FileMan calls: $$GET1^DIQ
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+53. PACKAGE NAME: ACCOUNTS RECEIVABLE
+
+ EN^RCAMINS
+  Globals: ^RCD(340
+  FileMan calls: FILE^DICN;^DIK
+
+ LESSW^RCDMC90U
+  Globals: ^RCD(340,
+  FileMan calls: ^DIC
+
+ REPORT^RCDMC90U
+  Globals: ^RCD(340,
+  FileMan calls: ^DIR
+
+ UPDTDMC^RCDMCEDT
+  Globals: ^PRCA(430,
+  FileMan calls: GETS^DIQ;^DIR
+
+ SUMM215^RCDPE215
+  Globals: ^RCY(344.1
+  FileMan calls: ^DIC
+
+ POSTED^RCDPEM2
+  Globals: ^RCY(344.4
+  FileMan calls: ^DIC;^DIE;^DIR
+
+ RETN^RCDPEM2
+  Globals: ^RCY(344.4
+  FileMan calls: ^DIC;^DIE;^DIR
+
+ UNMATCH^RCDPEM2
+  Globals: ^RCY(344.31;^RCY(344.4;^RCY(344.49
+  FileMan calls: ^DIC;^DIE;^DIK;^DIR
+
+ EN^RCDPEWL
+  Globals: ^RCY(344.4
+  FileMan calls: ^DIC;^DIR
+
+ PRTERA^RCDPEWL0
+  Globals: ^RCY(344.4
+  FileMan calls: ^DIC
+
+ SUSPERA^RCDPEWL5
+  Globals: ^RCY(344.4
+  FileMan calls: ^DIC;^DIR
+
+ CLOSE^RCEVDRV1
+  Globals: ^RC(341
+  FileMan calls: ^DIE
+
+ DEL^RCEVDRV1
+  Globals: ^RC(341
+  FileMan calls: ^DIK
+
+ OPEN^RCEVDRV1
+  Globals: ^RC(341
+  FileMan calls: FILE^DICN;^DIE
+
+ $$DEBT^RCEVUTL
+  Globals: ^RCD(340
+  FileMan calls: FILE^DICN
+
+ OPEN^RCFMDRV1
+  Globals: ^RC(347
+  FileMan calls: FILE^DICN;^DIE
+
+ SSTAT^RCFMFN02
+  Globals: ^RC(347
+  FileMan calls: ^DIE
+
+ EN3^RCFMOBR
+  Globals: ^PRCF(423.6
+  FileMan calls: ^DIK
+
+ DIQ^RCJIBFN2
+  Globals: ^PRCA(430
+  FileMan calls: EN^DIQ1
+
+ FLAG^RCKATP
+  Globals: ^RCD(340
+  FileMan calls: FILE^DICN
+
+ EDILOCK^RCMSITE
+  Globals: ^RC(342
+  FileMan calls: ^DIE
+
+ EDITRDAY^RCMSITE
+  Globals: ^RC(342
+  FileMan calls: ^DIE
+
+ EDITRDDT^RCMSITE
+  Globals: ^RC(342
+  FileMan calls: ^DIE
+
+ SITE^RCRCXMS
+  Globals: ^RCT(349.1
+  FileMan calls: ^DIE
+
+ BILLREP^RCTOPU
+  Globals: ^RCD(340,
+  FileMan calls: ^DIC
+
+ REPORT^RCTOPU
+  Globals: ^RCD(340,
+  FileMan calls: ^DIR
+
+ REVERSE^RCTOPU
+  Globals: ^PRCA(430;^PRCA(430,
+  FileMan calls: ^DIC;^DIE;^DIR
+
+ STOP^RCTOPU
+  Globals: ^RCD(340,
+  FileMan calls: ^DIC;^DIR
+
+ UPDCODE^RCTOPU
+  Globals: ^RC(348.2,
+  FileMan calls: ^DIC
+
+ SHOW^RCXFMSUR
+  Globals: ^PRCA(430
+  FileMan calls: ^DIC
+
+ LINKASK^RCXFMSUV
+  Globals: ^RCD(340,
+  FileMan calls: ^DIC
+
+ EN^RCXVPARM
+  Globals: UNDETERMINED ("E")
+  FileMan calls: FILE^DIE
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+54. PACKAGE NAME: INTEGRATED PATIENT FUNDS
+
+ CLEAR^PRPFED
+  Globals: ^PRPF(470,
+  FileMan calls: ^DIC
+
+ DEF^PRPFED
+  Globals: UNDETERMINED (DIC);^PRPF(470
+  FileMan calls: ^DIC;^DIE
+
+ FORM^PRPFED
+  Globals: ^PRPF(470.2
+  FileMan calls: ^DIC;^DIE
+
+ POST^PRPFED
+  Globals: UNDETERMINED (DIC)
+  FileMan calls: --
+
+ RCODE^PRPFED1
+  Globals: ^PRPF(470.6;^PRPF(470.6,
+  FileMan calls: ^DIC;^DIE
+
+ ADDRESS^PRPFED2
+  Globals: ^DPT(";^PRPF(470,
+  FileMan calls: ^DIC;^DIE
+
+ GUARDIAN^PRPFED2
+  Globals: ^DPT(;^DPT("
+  FileMan calls: ^DIC;^DIE
+
+ INACT^PRPFED2
+  Globals: UNDETERMINED (DIC);^PRPF(470,
+  FileMan calls: ^DIC;^DIE
+
+ LONGREG^PRPFED2
+  Globals: UNDETERMINED (DIC);^PRPF(470,
+  FileMan calls: ^DIC;^DIE
+
+ SELDATA^PRPFED2
+  Globals: UNDETERMINED (DIC);^PRPF(470,
+  FileMan calls: ^DIC;^DIE
+
+ SHORTREG^PRPFED2
+  Globals: UNDETERMINED (DIC);^PRPF(470,
+  FileMan calls: ^DIC;^DIE
+
+ ALL^PRPFNQ
+  Globals: ^PRPF(470
+  FileMan calls: EN1^DIP
+
+ AUDIT^PRPFPNT
+  Globals: ^PRPF(470.1
+  FileMan calls: --
+
+ BALANCE^PRPFPNT
+  Globals: ^PRPF(470
+  FileMan calls: --
+
+ CLERK^PRPFPNT
+  Globals: ^PRPF(470.1
+  FileMan calls: --
+
+ FISACTIV^PRPFPNT
+  Globals: ^PRPF(470.1
+  FileMan calls: --
+
+ FISTRANS^PRPFPNT
+  Globals: ^PRPF(470.1
+  FileMan calls: --
+
+ INDIGENT^PRPFPNT
+  Globals: ^PRPF(470
+  FileMan calls: --
+
+ PATLIST^PRPFPNT
+  Globals: ^PRPF(470
+  FileMan calls: --
+
+ SUMMARY^PRPFPNT
+  Globals: ^PRPF(470
+  FileMan calls: --
+
+ TRANS^PRPFPNT
+  Globals: ^PRPF(470.1
+  FileMan calls: --
+
+ UNSTA^PRPFPNT
+  Globals: ^PRPF(470
+  FileMan calls: ^DIR
+
+ ADD^PRPFS
+  Globals: UNDETERMINED (DIC)
+  FileMan calls: ^DIE
+
+ DELDATE^PRPFS
+  Globals: UNDETERMINED (DIC)
+  FileMan calls: ^DIK
+
+ DELITEM^PRPFS
+  Globals: UNDETERMINED (DIC);^PRPF(470
+  FileMan calls: ^DIK
+
+ REPORT^PRPFS
+  Globals: ^PRPF(470
+  FileMan calls: --
+
+ TASKMAN^PRPFS
+  Globals: ^PRPF(470
+  FileMan calls: EN1^DIP
+
+ ALL^PRPFTAT
+  Globals: ^PRPF(470
+  FileMan calls: EN1^DIP
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+55. PACKAGE NAME: PAID
+
+ ED^PRSADPA
+  Globals: ^PRST(458.3
+  FileMan calls: IX^DIC
+
+ LV^PRSADPA
+  Globals: ^PRST(458.1
+  FileMan calls: IX^DIC
+
+ OT^PRSADPA
+  Globals: ^PRST(458.2
+  FileMan calls: IX^DIC
+
+ PP^PRSADPA
+  Globals: ^PRSPC(";^PRST(458
+  FileMan calls: ^DIC
+
+ CAN^PRSAEDR
+  Globals: ^PRSPC("
+  FileMan calls: IX^DIC
+
+ CAN^PRSAOTR
+  Globals: ^PRSPC("
+  FileMan calls: IX^DIC
+
+ STID^PRSAPT1
+  Globals: ^PRST(457.2
+  FileMan calls: EN1^DIP
+
+ TRMD^PRSAPT1
+  Globals: ^PRST(457.4
+  FileMan calls: EN1^DIP
+
+ TTD^PRSAPT1
+  Globals: ^PRST(457.3
+  FileMan calls: EN1^DIP
+
+ HR^PRSARC
+  Globals: ^PRST(458.8
+  FileMan calls: ^DIC
+
+ NURSE^PRSARC
+  Globals: ^PRST(458.8
+  FileMan calls: ^DIC
+
+ TK^PRSARC
+  Globals: ^PRST(458.8
+  FileMan calls: ^DIC
+
+ DISP^PRSATD1
+  Globals: ^PRST(457.1
+  FileMan calls: ^DDS;^DIC
+
+ EDIT^PRSATD1
+  Globals: ^PRST(457.1
+  FileMan calls: ^DDS;^DIC;^DIK
+
+ DISP^PRSATL
+  Globals: ^PRST(455.5
+  FileMan calls: ^DDS;^DIC
+
+ EDIT^PRSATL
+  Globals: ^PRST(455.5
+  FileMan calls: ^DDS;^DIC
+
+ PAY^PRSATPG
+  Globals: ^PRST(455.5
+  FileMan calls: ^DIC
+
+ ENT^PRSDFIL
+  Globals: ^DD(454
+  FileMan calls: ^DIC
+
+ EN2^PRSEED0
+  Globals: ^PRSE(452.8,
+  FileMan calls: ^DIE
+
+ EN3^PRSEED0
+  Globals: ^PRSE(452.8,
+  FileMan calls: ^DIE
+
+ EN4^PRSEED0
+  Globals: ^PRSE(452.8,
+  FileMan calls: ^DIE
+
+ EN5^PRSEED0
+  Globals: ^PRSE(452.8,
+  FileMan calls: ^DIE
+
+ EN6^PRSEED0
+  Globals: ^PRSE(452.8,
+  FileMan calls: ^DIE
+
+ EN1^PRSEED4
+  Globals: UNDETERMINED (DIC);^PRSE(452.3;^PRSE(452.8;^PRSE(452.8,
+  FileMan calls: ^DIC;^DIE;^DIK
+
+ EN2^PRSEED4
+  Globals: UNDETERMINED (DIC);^PRSE(452.2
+  FileMan calls: ^DIC;^DIE
+
+ EN4^PRSEED4
+  Globals: UNDETERMINED (DIC);^PRSE(452.5
+  FileMan calls: ^DIC;^DIE
+
+ EN5^PRSEED4
+  Globals: UNDETERMINED (DIC);^PRSE(452.9
+  FileMan calls: ^DIC;^DIE
+
+ EN6^PRSEED4
+  Globals: UNDETERMINED (DIC);^PRSE(452.6
+  FileMan calls: ^DIC;^DIE
+
+ EN7^PRSEED4
+  Globals: ^PRSE(452.7
+  FileMan calls: ^DIE
+
+ EN1^PRSEED8
+  Globals: ^PRSE(452.1;^PRSE(452.8
+  FileMan calls: ^DIC;^DIR
+
+ EN1^PRSEEMP3
+  Globals: ^PRSP(454.1
+  FileMan calls: --
+
+ EMP^PRSRL1
+  Globals: ^PRSPC("
+  FileMan calls: ^DIC
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+56. PACKAGE NAME: DRUG ACCOUNTABILITY
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+57. PACKAGE NAME: BAR CODE MED ADMIN
+
+ RPC^PSBCSUTL
+  Globals: ^PSB(53.79,
+  FileMan calls: $$GET1^DIQ
+
+ FLWUP^PSBMD
+  Globals: ^PS(52.6,;^PS(52.7,;^PSB(53.68,
+  FileMan calls: $$GET1^DIQ
+
+ RPC^PSBMD
+  Globals: UNDETERMINED ()
+  FileMan calls: FILE^DIE
+
+ XQ^PSBMD
+  Globals: ^PSB(53.68
+  FileMan calls: ^DDS;^DIK;^DIR
+
+ RPC^PSBML
+  Globals: ^DIC(42,;^PSB(53.79,;^VA(200,
+  FileMan calls: $$GET1^DIQ
+
+ EN^PSBMLEN
+  Globals: ^DPT("
+  FileMan calls: ^DIC
+
+ EN^PSBMLTS
+  Globals: ^DPT("
+  FileMan calls: ^DIC;^DIR
+
+ RPC^PSBO
+  Globals: UNDETERMINED ();^PSB(53.69,
+  FileMan calls: FILE^DIE;VAL^DIE
+
+ RSTUSR^PSBPAR
+  Globals: ^VA(200
+  FileMan calls: YN^DICN;^DIC
+
+ PUTPAR^PSBPARIV
+  Globals: ^DIC(42,
+  FileMan calls: $$GET1^DIQ
+
+ WLIST^PSBPARIV
+  Globals: ^DIC(42,
+  FileMan calls: $$GET1^DIQ
+
+ EDIT^PSBPRN
+  Globals: ^DPT("
+  FileMan calls: ^DIC
+
+ GETPRNS^PSBPRN
+  Globals: UNDETERMINED (PSBDD);^PSB(53.79,
+  FileMan calls: $$GET1^DIQ
+
+ INST^PSBRPC
+  Globals: ^VA(200,
+  FileMan calls: $$GET1^DIQ
+
+ MAX^PSBRPC
+  Globals: ^ORD(101.24,
+  FileMan calls: $$GET1^DIQ
+
+ NWLIST^PSBRPC
+  Globals: ^DIC(42,;^NURSF(211.4,
+  FileMan calls: $$GET1^DIQ
+
+ SCANPT^PSBRPC
+  Globals: ^DIC(42,;^DPT(
+  FileMan calls: $$FIND1^DIC;$$GET1^DIQ
+
+ USRLOAD^PSBRPC
+  Globals: ^DIC(4,;^VA(200,
+  FileMan calls: $$GET1^DIQ
+
+ VITALS^PSBRPC
+  Globals: UNDETERMINED (9000010.01);UNDETERMINED (9999999.07)
+  FileMan calls: $$FIND1^DIC;$$GET1^DIQ
+
+ BAGDTL^PSBRPC2
+  Globals: UNDETERMINED ("ENPST")
+  FileMan calls: DT^DILF
+
+ SCANMED^PSBRPC2
+  Globals: ^PS(52.6,;^PS(52.7,;^PSDRUG(
+  FileMan calls: $$FIND1^DIC;$$GET1^DIQ
+
+ OILST^PSBRPCMO
+  Globals: ^PS(50.7,;^PSDRUG(
+  FileMan calls: $$FIND1^DIC;$$GET1^DIQ;LIST^DIC
+
+ PROVLST^PSBRPCMO
+  Globals: ^VA(200,
+  FileMan calls: $$GET1^DIQ;LIST^DIC
+
+ EN^PSBSAGG
+  Globals: ^DIC(4,
+  FileMan calls: $$GET1^DIQ
+
+ DRUGINQ^PSBUTL
+  Globals: ^PSDRUG(;^PSDRUG("
+  FileMan calls: FIELD^DID;GETS^DIQ;^DIC;^DIR
+
+ FNDACTV^PSBVDLU3
+  Globals: ^PSB(53.79,
+  FileMan calls: $$GET1^DIQ
+
+ SCANFAIL^PSBVDLU3
+  Globals: UNDETERMINED (PSBFILE);^DPT(;^VA(200,
+  FileMan calls: $$GET1^DIQ;CLEAN^DILF
+
+ EN^PSBVDLVL
+  Globals: UNDETERMINED (PSBDD);^PSB(53.79,
+  FileMan calls: $$GET1^DIQ
+
+ RPC^PSBVITFL
+  Globals: UNDETERMINED (9999999.07)
+  FileMan calls: $$FIND1^DIC
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+58. PACKAGE NAME: CONTROLLED SUBSTANCES
+
+ CODE^PSDPRT
+  Globals: ^PSI(58.17,
+  FileMan calls: EN1^DIP
+
+ INVEN^PSDPRT
+  Globals: ^PSI(58.16,
+  FileMan calls: EN1^DIP
+
+ NAOU^PSDPRT
+  Globals: ^PSD(58.8,
+  FileMan calls: EN1^DIP
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+59. PACKAGE NAME: INPATIENT MEDICATIONS
+
+ ENIWPE^PSGFILD0
+  Globals: ^PS(59.6
+  FileMan calls: ^DIC;^DIE
+
+ ENOAOPT^PSGFILD0
+  Globals: ^PS(59.7
+  FileMan calls: ^DIE
+
+ ENSUEP^PSGFILD0
+  Globals: ^PS(53.45
+  FileMan calls: ^DIC;^DIE
+
+ ENUUEP^PSGFILD0
+  Globals: ^PS(53.45
+  FileMan calls: ^DIE
+
+ ENATC^PSGFILD3
+  Globals: ^PSDRUG("
+  FileMan calls: ^DIC;^DIR
+
+ ENIU^PSGFILD3
+  Globals: ^PSDRUG("
+  FileMan calls: ^DIC;^DIR
+
+ ENAT^PSGFILED
+  Globals: ^PS(57.7
+  FileMan calls: ^DIC;^DIE
+
+ ENCD^PSGFILED
+  Globals: ^PS(53.46
+  FileMan calls: ^DIC;^DIE
+
+ ENCG^PSGFILED
+  Globals: ^PS(57.8
+  FileMan calls: ^DIC;^DIE
+
+ ENCPDD^PSGFILED
+  Globals: ^PS(55
+  FileMan calls: ^DIE
+
+ ENDRG^PSGFILED
+  Globals: ^PSDRUG("
+  FileMan calls: ^DIC
+
+ ENOSE^PSGFILED
+  Globals: ^PS(53.2
+  FileMan calls: ^DIC;^DIE
+
+ ENSYS^PSGFILED
+  Globals: ^PS(59.7
+  FileMan calls: ^DIE
+
+ ENWG^PSGFILED
+  Globals: ^PS(57.5
+  FileMan calls: ^DIC;^DIE
+
+ EN^PSGOEHA
+  Globals: ^PS(55
+  FileMan calls: YN^DICN;^DIE
+
+ ENCV^PSGSETU
+  Globals: ^PS(53.45
+  FileMan calls: ^DIC
+
+ ENDL^PSGSICHK
+  Globals: ^PSDRUG("
+  FileMan calls: ^DIC
+
+ MULTI^PSGWBOI
+  Globals: ^PSI(58.3
+  FileMan calls: ^DIC
+
+ SINGLE^PSGWBOI
+  Globals: ^PSI(58.3
+  FileMan calls: ^DIC
+
+ ENC^PSIVDRG
+  Globals: UNDETERMINED (DIC);^PS(50.2
+  FileMan calls: ^DIC;^DIE
+
+ ALL^PSJ59P5
+  Globals: ^PS(59.5,
+  FileMan calls: $$FIND1^DIC;FIND^DIC;GETS^DIQ
+
+ ENE^PSJBCMA4
+  Globals: UNDETERMINED (55.06);^PS(55
+  FileMan calls: $$GET1^DIQ;^DIE
+
+ ENR^PSJBCMA4
+  Globals: UNDETERMINED (55.01);UNDETERMINED (55.06);^PS(55
+  FileMan calls: $$GET1^DIQ;^DIE
+
+ ENSE^PSJEEU
+  Globals: ^DIC(9.4,;^PS(51.1
+  FileMan calls: IX^DIC;^DIE
+
+ ENSV^PSJEEU
+  Globals: ^DIC(9.4,
+  FileMan calls: IX^DIC
+
+ ENSVI^PSJEEU
+  Globals: ^DIC(9.4,
+  FileMan calls: IX^DIC
+
+ ENR^PSJOERI
+  Globals: ^PS(55
+  FileMan calls: ^DIE
+
+ CONVERT^PSJUTL1
+  Globals: ^PS(53.1;^PS(55
+  FileMan calls: EN^DIK;^DIK
+
+ $$BCMALG^PSJUTL2
+  Globals: ^PSB(53.79,
+  FileMan calls: $$EXTERNAL^DILFD
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+60. PACKAGE NAME: NATIONAL DRUG FILE
+
+ ALL^PSN5067
+  Globals: ^PSNDF(50.67,
+  FileMan calls: $$FIND1^DIC;FIND^DIC;GETS^DIQ
+
+ NAME^PSN50P41
+  Globals: ^PS(50.416,
+  FileMan calls: FIND^DIC;GETS^DIQ
+
+ ZERO^PSN50P41
+  Globals: ^PS(50.416,
+  FileMan calls: $$FIND1^DIC;FIND^DIC;GETS^DIQ
+
+ ZERO^PSN50P6
+  Globals: ^PSNDF(50.6,
+  FileMan calls: $$FIND1^DIC;FIND^DIC;GETS^DIQ
+
+ C^PSN50P65
+  Globals: ^PS(50.605,
+  FileMan calls: $$FIND1^DIC;FIND^DIC;GETS^DIQ
+
+ IEN^PSN50P65
+  Globals: ^PS(50.605,
+  FileMan calls: $$FIND1^DIC;FIND^DIC;GETS^DIQ
+
+ DATA^PSN50P68
+  Globals: ^PSNDF(50.68,
+  FileMan calls: $$FIND1^DIC;FIND^DIC;GETS^DIQ
+
+ BEGIN^PSNDELTE
+  Globals: ^VA(200,
+  FileMan calls: ^DIC
+
+ EN^PSNFDAMG
+  Globals: ^PS(59.7,
+  FileMan calls: $$GET1^DIQ
+
+ $$EN^PSNPPIO
+  Globals: ^PS(55,
+  FileMan calls: $$GET1^DIQ
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+61. PACKAGE NAME: OUTPATIENT PHARMACY
+
+ $$STAT^PSO52CLR
+  Globals: ^PSRX(
+  FileMan calls: $$EXTERNAL^DILFD
+
+ ARC^PSOARCS2
+  Globals: ^PS(52.4;^PS(52.41;^PS(52.5;^PS(55;^PSRX("
+  FileMan calls: ^DIK;^DIR
+
+ SETUP^PSOATRF
+  Globals: ^DIC(19.2
+  FileMan calls: ^DIC;^DIR
+
+ SETUP^PSOAUTOC
+  Globals: ^DIC(19.2
+  FileMan calls: ^DIC
+
+ ECMESND^PSOBPSU1
+  Globals: UNDETERMINED (52.1);^PSRX(
+  FileMan calls: $$GET1^DIQ
+
+ $$MWC^PSOBPSU2
+  Globals: ^PSRX(;^PSRX("_RX,1,
+  FileMan calls: $$GET1^DIQ
+
+ RXACT^PSOBPSU2
+  Globals: ^PSRX("_RX_"
+  FileMan calls: FILE^DICN
+
+ $$RETRX^PSOBPSUT
+  Globals: ^PSRX(;^PSRX("_RX,1,
+  FileMan calls: $$GET1^DIQ
+
+ $$RXFLDT^PSOBPSUT
+  Globals: ^PSRX(;^PSRX("_RX,1,
+  FileMan calls: $$GET1^DIQ
+
+ $$RXRLDT^PSOBPSUT
+  Globals: ^PSRX(;^PSRX("_RX,1,
+  FileMan calls: $$GET1^DIQ
+
+ $$RXSITE^PSOBPSUT
+  Globals: ^PSRX(;^PSRX("_RX,1,
+  FileMan calls: $$GET1^DIQ
+
+ BBWAIT^PSOBRPRT
+  Globals: ^PS(52.11
+  FileMan calls: EN1^DIP
+
+ AGAIN^PSOCLUTL
+  Globals: ^PS(55,
+  FileMan calls: ^DIC;^DIR
+
+ REG^PSOCLUTL
+  Globals: ^PS(55,
+  FileMan calls: ^DIC
+
+ S^PSOCMOPR
+  Globals: ^PS(59,
+  FileMan calls: ^DIC;^DIR
+
+ RESET^PSOCPB
+  Globals: ^IBE(350.3;^PSRX("
+  FileMan calls: ^DIC;^DIR
+
+ EXM^PSOCPTRI
+  Globals: ^PS(53
+  FileMan calls: ^DIC;^DIE
+
+ LABEL^PSOCPTRI
+  Globals: ^PSRX("
+  FileMan calls: DT^DICRW;^DIE
+
+ 1^PSOCST
+  Globals: ^PSCST("
+  FileMan calls: EN1^DIP
+
+ 11^PSOCST
+  Globals: ^PSCST("
+  FileMan calls: EN1^DIP
+
+ 13^PSOCST
+  Globals: ^PSCST("
+  FileMan calls: EN1^DIP
+
+ $$GET1^PSODI
+  Globals: UNDETERMINED (PSOFILE)
+  FileMan calls: $$GET1^DIQ
+
+ STATUS^PSODI
+  Globals: UNDETERMINED (PSOFILE)
+  FileMan calls: FIELD^DID
+
+ CREATE^PSODLKP
+  Globals: ^PSRX("
+  FileMan calls: ^DIC
+
+ PRINT^PSODUE
+  Globals: ^PS(50.073
+  FileMan calls: ^DIC;^DIR
+
+ SETUP^PSOHLEXP
+  Globals: ^DIC(19.2
+  FileMan calls: ^DIC
+
+ $$EN^PSOHLNE3
+  Globals: ^PSRX(
+  FileMan calls: $$GET1^DIQ;GETS^DIQ
+
+ $$GETNDC^PSONDCUT
+  Globals: ^PSRX(;^PSRX("_RX,1,
+  FileMan calls: $$GET1^DIQ
+
+ $$RPH^PSOPFSU0
+  Globals: UNDETERMINED (52.3);^PSRX(;^PSRX("_PSORXN,1,
+  FileMan calls: $$GET1^DIQ;GETS^DIQ
+
+ RPH^PSOPFSU0
+  Globals: UNDETERMINED (52.3);^PSRX(;^PSRX("_PSORXN,1,
+  FileMan calls: $$GET1^DIQ;GETS^DIQ
+
+ $$AP1^PSOPRA
+  Globals: ^DIC(4,
+  FileMan calls: EN^DIQ1
+
+ $$AP5^PSOPRA
+  Globals: ^PS(52.43
+  FileMan calls: ^DIE
+
+ NVA^PSOPXRM1
+  Globals: UNDETERMINED (55.05)
+  FileMan calls: $$EXTERNAL^DILFD
+
+ PSRX^PSOPXRM1
+  Globals: ^PSRX(
+  FileMan calls: $$GET1^DIQ
+
+ OCL^PSOQ0496
+  Globals: ^VA(200,
+  FileMan calls: ^DIC
+
+ AUTOREJ^PSOREJU4
+  Globals: ^PS(52.86,
+  FileMan calls: $$GET1^DIQ
+
+ 2^PSORPTS
+  Globals: ^PSDRUG("
+  FileMan calls: EN1^DIP
+
+ 3^PSORPTS
+  Globals: ^PSDRUG("
+  FileMan calls: EN1^DIP
+
+ 5^PSORPTS
+  Globals: ^PSDRUG("
+  FileMan calls: EN1^DIP
+
+ 7^PSORPTS
+  Globals: ^PSRX(
+  FileMan calls: EN1^DIP
+
+ 9^PSORPTS
+  Globals: ^PSDRUG("
+  FileMan calls: EN1^DIP
+
+ 10^PSORPTS
+  Globals: ^PSRX("
+  FileMan calls: EN1^DIP
+
+ CHANGE^PSOSUCH1
+  Globals: ^PSRX(;^PSRX("_DA(1)_"
+  FileMan calls: ^DIE
+
+ RTN^PSOSUCHG
+  Globals: ^PS(52.5,
+  FileMan calls: ^DIE
+
+ SPEC^PSOSUCHG
+  Globals: ^PS(52.5
+  FileMan calls: ^DIC;^DIR
+
+ AUTO^PSOSUDEL
+  Globals: ^DIC(19.2
+  FileMan calls: ^DIC
+
+ BARE^PSOTALK
+  Globals: ^PSRX("
+  FileMan calls: ^DIC
+
+ ENROLL^PSOTALK2
+  Globals: ^PS(55
+  FileMan calls: EN^DIK;FILE^DICN;^DIR
+
+ PRINT^PSOTPCLP
+  Globals: ^PS(52.92,
+  FileMan calls: $$GET1^DIQ;^DIR
+
+ CLERK^PSOVER
+  Globals: ^VA(200
+  FileMan calls: ^DIC
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+62. PACKAGE NAME: PHARMACY DATA MANAGEMENT
+
+ DRGIEN^PSS50P7
+  Globals: ^PSDRUG(
+  FileMan calls: FIND^DIC
+
+ ZERO^PSS50P7
+  Globals: ^PS(50.7,
+  FileMan calls: $$FIND1^DIC;FIND^DIC;GETS^DIQ
+
+ ZERO^PSS51P1
+  Globals: ^PS(51.1,
+  FileMan calls: $$FIND1^DIC;FIND^DIC;GETS^DIQ
+
+ ALL^PSS51P2
+  Globals: ^PS(51.2,
+  FileMan calls: $$FIND1^DIC;FIND^DIC
+
+ ZERO^PSS52P6
+  Globals: ^PS(52.6,
+  FileMan calls: $$FIND1^DIC;FIND^DIC;GETS^DIQ
+
+ ZERO^PSS52P7
+  Globals: ^PS(52.7,
+  FileMan calls: $$FIND1^DIC;FIND^DIC;GETS^DIQ
+
+ STATUS^PSS55MIS
+  Globals: UNDETERMINED (PSSFILE)
+  FileMan calls: FIELD^DID
+
+ PSS^PSS59P7
+  Globals: ^PS(59.7,
+  FileMan calls: EN^DIQ1
+
+ $$NCPDPQTY^PSSBPSUT
+  Globals: ^PSDRUG(
+  FileMan calls: $$GET1^DIQ
+
+ NCPDPQTY^PSSBPSUT
+  Globals: ^PSDRUG(
+  FileMan calls: $$GET1^DIQ
+
+ $$DAWEXT^PSSDAWUT
+  Globals: ^BPS(9002313.24,
+  FileMan calls: ^DIC
+
+ DF^PSSDFEE
+  Globals: ^PS(50.606
+  FileMan calls: ^DIC
+
+ MR^PSSDFEE
+  Globals: ^PS(51.2
+  FileMan calls: ^DIC
+
+ DRG^PSSDGUPD
+  Globals: UNDETERMINED ("Drug Update Protocol NOT Installed ")
+  FileMan calls: EN^DDIOL
+
+ DOS^PSSDOSER
+  Globals: ^PSDRUG("
+  FileMan calls: ^DIC;^DIR
+
+ $$IV^PSSDSAPA
+  Globals: ^PS(52.6,
+  FileMan calls: GETS^DIQ
+
+ ENMI^PSSFILED
+  Globals: ^PS(51
+  FileMan calls: ^DIC;^DIE
+
+ DRG^PSSHUIDG
+  Globals: UNDETERMINED ("Drug Update Protocol NOT Installed ")
+  FileMan calls: EN^DDIOL
+
+ DRIVER^PSSMEDCH
+  Globals: ^PS(51.2
+  FileMan calls: ^DIC;^DIR
+
+ DOSE^PSSMEDRQ
+  Globals: ^PS(51.24,;^TMP($J
+  FileMan calls: EN^DIWE;^DIC;^DIR
+
+ REQ^PSSMEDRQ
+  Globals: ^PS(51.23,;^TMP($J
+  FileMan calls: EN^DIWE;^DIC;^DIR
+
+ $$GETNDC^PSSNDCUT
+  Globals: ^PSDRUG(;^PSDRUG("_DRG,"NDCOP",;^PSNDF(50.68,
+  FileMan calls: $$GET1^DIQ
+
+ SAVNDC^PSSNDCUT
+  Globals: ^PSDRUG("_DRG_"
+  FileMan calls: FILE^DICN;^DIE
+
+ ELECTRO^PSSVIDRG
+  Globals: UNDETERMINED (DIC);^PS(50.4
+  FileMan calls: ^DIC;^DIE
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+63. PACKAGE NAME: PHARMACY BENEFITS MANAGEMENT
+
+ LOGDFN^PSUHL
+  Globals: UNDETERMINED ()
+  FileMan calls: UPDATE^DIE
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+64. PACKAGE NAME: CMOP
+
+ DELREL^PSXBKD
+  Globals: ^PSX(554
+  FileMan calls: FILE^DICN;^DIR
+
+ X^PSXCH
+  Globals: ^PS(52.5
+  FileMan calls: EN^DIK
+
+ EN^PSXDODNT
+  Globals: ^PSX(554,
+  FileMan calls: $$GET1^DIQ
+
+ QUE^PSXPURG
+  Globals: ^PSX(554
+  FileMan calls: FILE^DICN;^DIR
+
+ REPT^PSXPURG
+  Globals: ^PSX(550,
+  FileMan calls: ^DIC
+
+ QUE^PSXRTN
+  Globals: ^PSX(554
+  FileMan calls: FILE^DICN;^DIR
+
+ EN1^PSXSITE
+  Globals: ^PSX(550,
+  FileMan calls: ^DIE
+
+ COMM514^PSXSTAT
+  Globals: ^PSX(552.1
+  FileMan calls: ^DIE
+
+ SHOW^PSXSTAT
+  Globals: ^PSX(552.1,
+  FileMan calls: ^DIC
+
+ HOST^PSXTNRPT
+  Globals: ^PSX(552,
+  FileMan calls: $$GET1^DIQ;^DIC
+
+ EN^PSXUNHLD
+  Globals: ^PSX(552.1,
+  FileMan calls: ^DIC;^DIR
+
+ EN^PSXUNREL
+  Globals: ^PSX(552.1,
+  FileMan calls: ^DIC
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+65. PACKAGE NAME: PCE PATIENT CARE ENCOUNTER
+
+ $$VALVST^PXAPIOE
+  Globals: UNDETERMINED (1509000.001)
+  FileMan calls: BLD^DIALOG
+
+ IMMUN^PXRHS03
+  Globals: ^AUPNVIMM(
+  FileMan calls: EN^DIQ1
+
+ SKIN^PXRHS04
+  Globals: ^AUPNVSK(
+  FileMan calls: EN^DIQ1
+
+ EXAM^PXRHS05
+  Globals: ^AUPNVXAM(
+  FileMan calls: EN^DIQ1
+
+ TREAT^PXRHS06
+  Globals: ^AUPNVTRT(
+  FileMan calls: EN^DIQ1
+
+ LOC^PXRHS13
+  Globals: ^AUPNPAT(
+  FileMan calls: EN^DIQ1
+
+ VISIT^PXRHS14
+  Globals: ^AUPNVSIT(
+  FileMan calls: EN^DIQ1
+
+ DEV^PXRMDEV
+  Globals: ^DPT(;^PXD(811.9,
+  FileMan calls: ^DIC;^DIR
+
+ INSTALL^PXRMEXSI
+  Globals: ^PXD(811.9
+  FileMan calls: ^DIE
+
+ DELETE^PXRMEXU1
+  Globals: ^PXD(811.8
+  FileMan calls: ^DIK
+
+ DEL^PXRMGECU
+  Globals: ^PXRMD(801.5
+  FileMan calls: ^DIK
+
+ FINISHED^PXRMGECU
+  Globals: ^PXRMD(801.5
+  FileMan calls: ^DIK
+
+ LIST^PXRMLIST
+  Globals: ^PXRMD(810.9
+  FileMan calls: EN1^DIP
+
+ SPONSOR^PXRMLIST
+  Globals: ^PXRMD(811.6
+  FileMan calls: EN1^DIP
+
+ EEDIT^PXRMREDT
+  Globals: ^PXD(811.9
+  FileMan calls: --
+
+ START^PXRMREV
+  Globals: ^PXD(801;^PXD(811.2;^PXD(811.9;^PXRMD(801.41;^PXRMD(810.9
+           ^PXRMD(811.4;^PXRMD(811.5;^PXRMD(811.6
+  FileMan calls: EN1^DIP
+
+ APPL^PXRMRPCA
+  Globals: ^VA(200,
+  FileMan calls: $$GET1^DIQ
+
+ CATEGORY^PXRMRPCA
+  Globals: ^VA(200,
+  FileMan calls: $$GET1^DIQ
+
+ LIST^PXRMRPCA
+  Globals: ^VA(200,
+  FileMan calls: $$GET1^DIQ
+
+ EDS^PXRMRPCB
+  Globals: ^AUTTEDT(
+  FileMan calls: EN^DIQ1
+
+ EDU^PXRMRPCB
+  Globals: ^AUTTEDT(
+  FileMan calls: EN^DIQ1
+
+ HDR^PXRMRPCC
+  Globals: ^VA(200,
+  FileMan calls: $$GET1^DIQ
+
+ COMMSG^PXRMSXRM
+  Globals: ^VA(200,;^XMB(3.8,
+  FileMan calls: $$GET1^DIQ
+
+ ERRMSG^PXRMSXRM
+  Globals: ^VA(200,;^XMB(3.8,
+  FileMan calls: $$GET1^DIQ
+
+ $$KILL^VSITKIL
+  Globals: ^AUPNVSIT("
+  FileMan calls: IX^DIK;^DIK
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+66. PACKAGE NAME: PATIENT REPRESENTATIVE
+
+ EN^QACI1
+  Globals: UNDETERMINED ();^QA(745.1,
+  FileMan calls: FILE^DIE;WP^DIE;^DIR
+
+ EN^QACI5
+  Globals: ^DIC(19,
+  FileMan calls: $$FIND1^DIC;$$GET1^DIQ;^DIR
+
+ ENRSTAT^QACI5
+  Globals: ^QA(745.1
+  FileMan calls: ^DIC
+
+ EN^QACVEMPX
+  Globals: ^XTV(8989.3,
+  FileMan calls: $$GET1^DIQ
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+67. PACKAGE NAME: CLINICAL MONITORING SYSTEM
+
+ EN3^QAMARCH1
+  Globals: ^QA(743.6
+  FileMan calls: --
+
+ EN2^QAMEDT3
+  Globals: ^QA(743.3
+  FileMan calls: ^DIC;^DIE
+
+ EN4^QAMEDT3
+  Globals: ^QA(743.91
+  FileMan calls: ^DIC;^DIE
+
+ EN5^QAMEDT3
+  Globals: ^QA(743.92
+  FileMan calls: ^DIC;^DIE
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+68. PACKAGE NAME: INCIDENT REPORTING
+
+ EN1^QANAUX1
+  Globals: ^QA(740
+  FileMan calls: ^DIE
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+69. PACKAGE NAME: OCCURRENCE SCREEN
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+70. PACKAGE NAME: QUALITY ASSURANCE INTEGRATION
+
+ EN1^QAQSELCT
+  Globals: UNDETERMINED (QAQDIC)
+  FileMan calls: DO^DIC1
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+71. PACKAGE NAME: RADIOLOGY/NUCLEAR MEDICINE
+
+ 2^RABTCH
+  Globals: ^RABTCH(74.2
+  FileMan calls: ^DIC
+
+ 3^RABTCH
+  Globals: ^RABTCH(74.2
+  FileMan calls: ^DIC
+
+ 4^RABTCH
+  Globals: ^RABTCH(74.2
+  FileMan calls: ^DIC;^DIE
+
+ VERIFY^RABTCH1
+  Globals: ^RABTCH(74.2
+  FileMan calls: ^DIC
+
+ DEL^RABTCH3
+  Globals: ^RABTCH(74.2
+  FileMan calls: ^DIK;^DIR
+
+ $$CPRSUPD^RABWORD1
+  Globals: ^RAO(75.1
+  FileMan calls: ^DIK
+
+ $$RAPTREG^RAMAGU04
+  Globals: UNDETERMINED ("E")
+  FileMan calls: UPDATE^DIE
+
+ 4^RAMAIN
+  Globals: ^RA(78.4
+  FileMan calls: ^DIC;^DIE
+
+ 5^RAMAIN
+  Globals: ^RA(78.3
+  FileMan calls: ^DIC;^DIE
+
+ 6^RAMAIN
+  Globals: ^RA(78.2
+  FileMan calls: ^DIC;^DIE
+
+ 7^RAMAIN
+  Globals: ^RA(78.1
+  FileMan calls: ^DIC;^DIE
+
+ 8^RAMAIN
+  Globals: ^DIC(34
+  FileMan calls: ^DIC;^DIE
+
+ 9^RAMAIN
+  Globals: ^RA(74.1
+  FileMan calls: ^DIC;^DIE
+
+ 10^RAMAIN
+  Globals: ^RAMIS(71.2
+  FileMan calls: ^DIC;^DIE
+
+ 11^RAMAIN
+  Globals: ^RABTCH(74.3
+  FileMan calls: ^DIC;^DIE
+
+ 12^RAMAIN
+  Globals: ^RAMIS(71.4
+  FileMan calls: ^DIC;^DIE;^DIR
+
+ 1^RAMAIN1
+  Globals: ^RA(72;^RA(79.2
+  FileMan calls: ^DIC;^DIE
+
+ 2^RAMAIN2
+  Globals: ^RAMIS(71
+  FileMan calls: ^DIC;^DIE;^DIK;^DIR
+
+ 2^RAMAINP
+  Globals: ^RAMIS(71
+  FileMan calls: --
+
+ 3^RAMAINP
+  Globals: ^RAMIS(71.1
+  FileMan calls: EN1^DIP
+
+ 4^RAMAINP
+  Globals: ^RA(78.4
+  FileMan calls: EN1^DIP
+
+ 5^RAMAINP
+  Globals: ^RA(78.3
+  FileMan calls: EN1^DIP
+
+ 6^RAMAINP
+  Globals: ^RA(78.2
+  FileMan calls: EN1^DIP
+
+ 7^RAMAINP
+  Globals: ^RA(78.1
+  FileMan calls: EN1^DIP
+
+ 8^RAMAINP
+  Globals: ^DIC(34
+  FileMan calls: EN1^DIP
+
+ 9^RAMAINP
+  Globals: ^RAMIS(71
+  FileMan calls: --
+
+ 10^RAMAINP
+  Globals: ^RAMIS(71
+  FileMan calls: --
+
+ 11^RAMAINP
+  Globals: ^RAMIS(71
+  FileMan calls: --
+
+ 12^RAMAINP
+  Globals: ^RAMIS(71
+  FileMan calls: --
+
+ 13^RAMAINP
+  Globals: ^RA(74.1
+  FileMan calls: EN1^DIP
+
+ 14^RAMAINP
+  Globals: ^RAMIS(71.2
+  FileMan calls: EN1^DIP
+
+ 15^RAMAINP
+  Globals: ^RAMIS(71
+  FileMan calls: --
+
+ 16^RAMAINP
+  Globals: ^RABTCH(74.3
+  FileMan calls: EN1^DIP
+
+ 17^RAMAINP
+  Globals: ^RAMIS(71.4
+  FileMan calls: EN1^DIP
+
+ 18^RAMAINP1
+  Globals: ^RAMIS(71
+  FileMan calls: --
+
+ LOT^RANMED1
+  Globals: UNDETERMINED (DIC);^RAMIS(71.9
+  FileMan calls: ^DIC;^DIE
+
+ ROUTE^RANMED1
+  Globals: UNDETERMINED (DIC);^RAMIS(71.6
+  FileMan calls: ^DIC;^DIE;^DIR
+
+ SITE^RANMED1
+  Globals: UNDETERMINED (DIC);^RAMIS(71.7
+  FileMan calls: ^DIC;^DIE
+
+ SOURCE^RANMED1
+  Globals: UNDETERMINED (DIC);^RAMIS(71.8
+  FileMan calls: ^DIC;^DIE
+
+ LOT^RANMPRT1
+  Globals: ^RAMIS(71.9
+  FileMan calls: EN1^DIP
+
+ ROUTE^RANMPRT1
+  Globals: ^RAMIS(71.6
+  FileMan calls: EN1^DIP
+
+ SITE^RANMPRT1
+  Globals: ^RAMIS(71.7
+  FileMan calls: EN1^DIP
+
+ SOURCE^RANMPRT1
+  Globals: ^RAMIS(71.8
+  FileMan calls: EN1^DIP
+
+ PARM^RAO7MFN
+  Globals: ^RA(79
+  FileMan calls: ENALL^DIK
+
+ SET1^RAO7PC4
+  Globals: ^RAMIS(71.2,;^VA(200,
+  FileMan calls: $$GET1^DIQ
+
+ 9^RAORD
+  Globals: ^DPT("
+  FileMan calls: ^DIC;^DIR
+
+ 1^RAOUT
+  Globals: ^RADPT("
+  FileMan calls: ^DIE
+
+ 2^RAOUT
+  Globals: ^RADPT("
+  FileMan calls: ^DIE
+
+ 3^RAOUT
+  Globals: ^RADPT("
+  FileMan calls: ^DIE
+
+ 4^RAOUT
+  Globals: ^RADPT("
+  FileMan calls: EN1^DIP
+
+ EN1^RAPM3
+  Globals: ^RA(79
+  FileMan calls: ^DIE
+
+ RESCH^RAPM3
+  Globals: --
+  FileMan calls: EN^DDIOL
+
+ TASKLM^RAPM3
+  Globals: ^DIC(4,
+  FileMan calls: $$GET1^DIQ;^DIR
+
+ 1^RAPNL
+  Globals: ^VA(200
+  FileMan calls: ^DIC;^DIE
+
+ 2^RAPNL
+  Globals: ^VA(200
+  FileMan calls: EN1^DIP
+
+ 3^RAPNL
+  Globals: ^VA(200
+  FileMan calls: EN1^DIP
+
+ 4^RAPNL
+  Globals: ^VA(200
+  FileMan calls: EN1^DIP
+
+ 5^RAPNL
+  Globals: ^VA(200
+  FileMan calls: EN1^DIP
+
+ PTUPD^RAPTLU
+  Globals: ^RADPT("
+  FileMan calls: ^DIE
+
+ EN1^RAPXRM
+  Globals: ^VA(200,
+  FileMan calls: $$GET1^DIQ
+
+ CREATE^RARIC
+  Globals: UNDETERMINED ()
+  FileMan calls: FILE^DIE;UPDATE^DIE
+
+ PTR^RARIC
+  Globals: UNDETERMINED ("RAFDA")
+  FileMan calls: UPDATE^DIE
+
+ STUFPHY^RARIC1
+  Globals: ^RADPT("_DA(1)_"
+  FileMan calls: ^DIE
+
+ DEL^RARTE1
+  Globals: ^RARPT("
+  FileMan calls: ^DIC;^DIR
+
+ RSTR^RARTE6
+  Globals: ^RARPT("
+  FileMan calls: ^DIC
+
+ PURGE1^RARTST
+  Globals: ^RABTCH(74.3;^RABTCH(74.4
+  FileMan calls: ^DIK
+
+ 1^RARTST1
+  Globals: ^RABTCH(74.3
+  FileMan calls: ^DIC
+
+ 4^RARTST1
+  Globals: ^RABTCH(74.3
+  FileMan calls: ^DIC
+
+ 6^RARTST1
+  Globals: ^SC("
+  FileMan calls: --
+
+ 7^RARTST1
+  Globals: ^DIC(42
+  FileMan calls: --
+
+ 8^RARTST1
+  Globals: ^RARPT("
+  FileMan calls: ^DIC
+
+ 3^RASITE
+  Globals: ^RA(79.2
+  FileMan calls: ^DIC;^DIE
+
+ 5^RASITE
+  Globals: ^RA(79.2
+  FileMan calls: EN1^DIP
+
+ 1^RASYS
+  Globals: ^RA(79
+  FileMan calls: ^DIC;^DIE
+
+ 2^RASYS
+  Globals: ^RA(79
+  FileMan calls: EN1^DIP
+
+ 3^RASYS
+  Globals: ^RA(79.1
+  FileMan calls: ^DIC;^DIE
+
+ 4^RASYS
+  Globals: ^RA(79.1
+  FileMan calls: ^DIR
+
+ 5^RASYS
+  Globals: ^RA(78.6
+  FileMan calls: ^DIC;^DIE
+
+ 6^RASYS
+  Globals: ^RA(79.1
+  FileMan calls: EN1^DIP
+
+ UPDATE^RAUTL1
+  Globals: UNDETERMINED ("E");UNDETERMINED ("RAFDA")
+  FileMan calls: FILE^DIE;UPDATE^DIE
+
+ EN1^RAUTL21
+  Globals: UNDETERMINED (" ")
+           UNDETERMINED ("RAD/NUC MED UTILITY TO LIST/DELETE LEFT-OVER REPORT X-
+REFS")
+  FileMan calls: EN^DDIOL;^DIR
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+72. PACKAGE NAME: CLINICAL INFO RESOURCE NETWORK
+
+ EN^RGEX01
+  Globals: ^RGSITE(991.8
+  FileMan calls: WAIT^DICD;^DIE
+
+ EXC^RGHLLOG
+  Globals: UNDETERMINED (DIC);^RGHL7(991.1;^XMB(3.8;^XMB(3.8,
+  FileMan calls: ^DIC;^DIE
+
+ STOP^RGHLLOG
+  Globals: ^RGHL7(991.1
+  FileMan calls: ^DIE
+
+ EN^RGRPC
+  Globals: ^VA(200
+  FileMan calls: ^DIC
+
+ EN^RGRSPARM
+  Globals: ^RGSITE(991.8,
+  FileMan calls: ^DIE
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+73. PACKAGE NAME: FUNCTIONAL INDEPENDENCE
+
+ AL^RMIMRP
+  Globals: ^VA(200,
+  FileMan calls: FIND^DIC
+
+ LL^RMIMRP
+  Globals: ^SC(
+  FileMan calls: FIND^DIC
+
+ PL^RMIMRP
+  Globals: ^DPT(
+  FileMan calls: FIND^DIC
+
+ RPC^RMIMV
+  Globals: ^DIC(19,
+  FileMan calls: FIND^DIC
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+74. PACKAGE NAME: REMOTE ORDER/ENTRY SYSTEM
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+75. PACKAGE NAME: PROSTHETICS
+
+ PREBILL^RMPOBIL0
+  Globals: ^RMPR(665
+  FileMan calls: EN1^DIP;^DIR
+
+ SITE^RMPOPED
+  Globals: UNDETERMINED (DIC);^RMPR(669.9
+  FileMan calls: ^DIC;^DIE
+
+ EDT^RMPR29LI
+  Globals: ^RMPR(664.1
+  FileMan calls: ^DIC;^DIR
+
+ EN^RMPR4P21
+  Globals: ^RMPR(664
+  FileMan calls: ^DIC
+
+ EN1^RMPR9CA
+  Globals: ^RMPR(664
+  FileMan calls: ^DIK
+
+ EIT^RMPRAVR
+  Globals: ^RMPR(667.1;^RMPR(667.1,
+  FileMan calls: ^DIC;^DIE
+
+ EMN^RMPRAVR
+  Globals: ^RMPR(667.2,
+  FileMan calls: ^DIC;^DIE
+
+ MENT^RMPRDVN
+  Globals: ^RMPR(660
+  FileMan calls: ^DIC
+
+ QUICK^RMPRE29
+  Globals: UNDETERMINED (DIC);^RMPR(660
+  FileMan calls: ^DIC;^DIE;^DIR
+
+ EN2^RMPRFO1
+  Globals: ^DPT(
+  FileMan calls: --
+
+ EN3^RMPRFO2
+  Globals: ^RMPR(665.2
+  FileMan calls: ^DIC
+
+ EN4^RMPRFO2
+  Globals: ^RMPR(665.2
+  FileMan calls: ^DIC;^DIE
+
+ TASK^RMPRN6XM
+  Globals: ^RMPR(660
+  FileMan calls: ^DIE
+
+ EN^RMPRP55
+  Globals: ^RMPR(664
+  FileMan calls: ^DIC
+
+ LINK^RMPRPCE1
+  Globals: ^RMPR(660
+  FileMan calls: ^DIC
+
+ EN^RMPRPFFS
+  Globals: ^IBA(355.3,
+  FileMan calls: $$GET1^DIQ
+
+ PSC^RMPRPSC
+  Globals: ^RMPR(665
+  FileMan calls: ^DIC
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+76. PACKAGE NAME: CLINICAL CASE REGISTRIES
+
+ $$PATITER^RORAPI01
+  Globals: ^RORDATA(798,
+  FileMan calls: $$ROOT^DILFD
+
+ EDITHDE^RORHDT
+  Globals: UNDETERMINED ($$ROOT^DILFD(1));UNDETERMINED (799.6
+)
+  FileMan calls: $$ROOT^DILFD;^DIE
+
+ MSGLIST^RORRP007
+  Globals: UNDETERMINED (798.74);^RORDATA(798.7,
+  FileMan calls: $$ROOT^DILFD;GETS^DIQ
+
+ GETXSL^RORRP011
+  Globals: UNDETERMINED (7981000);UNDETERMINED (7981000+TYPE)
+           UNDETERMINED (DLG)
+  FileMan calls: BLD^DIALOG
+
+ ACREGLST^RORRP013
+  Globals: UNDETERMINED (7980000.006);^ROR(798.1,
+  FileMan calls: BLD^DIALOG;GETS^DIQ
+
+ AVLIST^RORRP013
+  Globals: ^RORDATA(798.7,;^RORDATA(798.7,"_IEN,2,
+  FileMan calls: $$GET1^DIQ;$$ROOT^DILFD;GETS^DIQ
+
+ USERLIST^RORRP013
+  Globals: ^VA(200,
+  FileMan calls: $$GET1^DIQ
+
+ REGINFO^RORRP014
+  Globals: ^ROR(798.1,
+  FileMan calls: $$EXTERNAL^DILFD;GETS^DIQ
+
+ SELRULES^RORRP014
+  Globals: UNDETERMINED (798.13)
+  FileMan calls: LIST^DIC
+
+ DIVLIST^RORRP015
+  Globals: ^DG(40.8,
+  FileMan calls: LIST^DIC
+
+ HLOCLIST^RORRP015
+  Globals: ^SC(
+  FileMan calls: LIST^DIC
+
+ LABTLIST^RORRP018
+  Globals: ^LAB(60,
+  FileMan calls: $$GET1^DIQ;LIST^DIC
+
+ PTLIST^RORRP019
+  Globals: ^DPT(
+  FileMan calls: FIND^DIC
+
+ PTRULES^RORRP022
+  Globals: UNDETERMINED (798.01);^ROR(798.2,
+  FileMan calls: $$GET1^DIQ;LIST^DIC
+
+ RCLIST^RORRP023
+  Globals: UNDETERMINED (798.114)
+  FileMan calls: LIST^DIC
+
+ RCLUPD^RORRP023
+  Globals: UNDETERMINED ("RORFDA");UNDETERMINED ($$OREF^DILF(1))
+           UNDETERMINED (798.114);UNDETERMINED (ROOT
+1
+);^VA(200,
+  FileMan calls: $$FIND1^DIC;$$OREF^DILF;$$ROOT^DILFD;UPDATE^DIE;^DIK
+
+ USERINFO^RORRP024
+  Globals: ^VA(200,
+  FileMan calls: GETS^DIQ
+
+ USERLIST^RORRP024
+  Globals: ^VA(200,
+  FileMan calls: LIST^DIC
+
+ SAVECDC^RORRP027
+  Globals: UNDETERMINED ("RORFDAFI");UNDETERMINED ("RORFDAUP")
+  FileMan calls: FILE^DIE;UPDATE^DIE
+
+ STATELST^RORRP029
+  Globals: ^DIC(5,
+  FileMan calls: LIST^DIC
+
+ DELETE^RORRP030
+  Globals: UNDETERMINED ("RORFDA")
+  FileMan calls: FILE^DIE
+
+ LTLIST^RORRP031
+  Globals: UNDETERMINED (798.128)
+  FileMan calls: LIST^DIC
+
+ LTLUPD^RORRP031
+  Globals: UNDETERMINED ("RORFDA");UNDETERMINED ($$OREF^DILF(1))
+           UNDETERMINED (798.128);UNDETERMINED (ROOT
+1
+);^LAB(60,
+  FileMan calls: $$FIND1^DIC;$$OREF^DILF;$$ROOT^DILFD;UPDATE^DIE;^DIK
+
+ LDLIST^RORRP032
+  Globals: UNDETERMINED (798.129)
+  FileMan calls: LIST^DIC
+
+ LDLUPD^RORRP032
+  Globals: UNDETERMINED ("RORFDA");UNDETERMINED ($$OREF^DILF(1))
+           UNDETERMINED (798.129);UNDETERMINED (ROOT
+1
+)
+  FileMan calls: $$OREF^DILF;$$ROOT^DILFD;UPDATE^DIE;^DIK
+
+ LOAD^RORRP033
+  Globals: ^RORDATA(799.4,
+  FileMan calls: GETS^DIQ
+
+ GDLIST^RORRP035
+  Globals: ^ROR(799.51,
+  FileMan calls: LIST^DIC
+
+ LFLIST^RORRP040
+  Globals: ^ROR(799.53,
+  FileMan calls: $$ROOT^DILFD;GETS^DIQ
+
+ LFLUPD^RORRP040
+  Globals: UNDETERMINED ("RORFDA");UNDETERMINED ($$ROOT^DILFD(1))
+           UNDETERMINED (799.53
+);UNDETERMINED (DIK
+)
+  FileMan calls: $$CREF^DILF;$$ROOT^DILFD;FILE^DIE;UPDATE^DIE;^DIK
+
+ RNDXACL^RORVM001
+  Globals: UNDETERMINED (7980000.007)
+  FileMan calls: BLD^DIALOG;^DIR
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+77. PACKAGE NAME: RECORD TRACKING
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+78. PACKAGE NAME: SCHEDULING
+
+ ERROR^SCDXPRN
+  Globals: ^SD(409.75
+  FileMan calls: EN1^DIP
+
+ TRANS^SCDXPRN
+  Globals: ^SD(409.73
+  FileMan calls: EN1^DIP
+
+ PATHIST^SCDXPRN1
+  Globals: ^DPT(;^SD(409.77
+  FileMan calls: EN1^DIP;^DIC
+
+ FULLHIST^SCDXPRN2
+  Globals: UNDETERMINED (SCDXGLO
+)
+  FileMan calls: $$OREF^DILF
+
+ CODE^SCDXRT03
+  Globals: ^SD(409.76
+  FileMan calls: ^DIC
+
+ MAIN^SCMCCV4
+  Globals: UNDETERMINED (SCY)
+  FileMan calls: EN^DDIOL
+
+ ECRPRT^SCMCHLR7
+  Globals: ^SCPT(404.472
+  FileMan calls: EN1^DIP
+
+ FILE^SCMCTSK
+  Globals: UNDETERMINED ("E")
+  FileMan calls: FILE^DIE
+
+ FTEE^SCMCTSK
+  Globals: ^VA(200,
+  FileMan calls: $$GET1^DIQ
+
+ FILE^SCMCTSK1
+  Globals: UNDETERMINED ("E")
+  FileMan calls: FILE^DIE
+
+ INCONR^SCMCTSK1
+  Globals: ^SCTM(404.57
+  FileMan calls: EN1^DIP
+
+ POSCHK^SCMCTSK1
+  Globals: ^VA(200,
+  FileMan calls: $$GET1^DIQ
+
+ SEED^SCMCTSK1
+  Globals: ^DPT("
+  FileMan calls: ^DIC
+
+ EXRPT^SCMCTSK2
+  Globals: ^SCPT(404.43
+  FileMan calls: EN1^DIP
+
+ FLRPT^SCMCTSK2
+  Globals: ^SCPT(404.43
+  FileMan calls: EN1^DIP
+
+ IN30^SCMCTSK2
+  Globals: ^SCPT(404.43
+  FileMan calls: EN1^DIP
+
+ INRPT^SCMCTSK2
+  Globals: ^SCPT(404.43
+  FileMan calls: EN1^DIP
+
+ FILEIN^SCMCTSK3
+  Globals: UNDETERMINED ("E")
+  FileMan calls: FILE^DIE
+
+ SETASC^SCMCTSK7
+  Globals: ^SCTM(404.57
+  FileMan calls: ^DICN;^DIK
+
+ ERRLST^SCRPIUT1
+  Globals: ^DG(40.8,;^SD(409.75,;^SD(409.76,
+  FileMan calls: EN1^DIP;^DIC;^DIR
+
+ PURT^SCRPW21
+  Globals: UNDETERMINED (DIC);^SDD(409.91
+  FileMan calls: ^DIC;^DIK;^DIR
+
+ EN^SCRPW301
+  Globals: UNDETERMINED (SCRNARR
+);UNDETERMINED (SORTARR
+)
+  FileMan calls: $$OREF^DILF
+
+ EN^SCRPW304
+  Globals: UNDETERMINED (SCRNARR
+);UNDETERMINED (SORTARR
+)
+  FileMan calls: $$OREF^DILF
+
+ FILEC^SCUTBK
+  Globals: UNDETERMINED ()
+  FileMan calls: FILE^DIE;UPDATE^DIE
+
+ LISTC^SCUTBK
+  Globals: UNDETERMINED (SCFILE)
+  FileMan calls: LIST^DIC
+
+ VALC^SCUTBK
+  Globals: UNDETERMINED (SCFILE)
+  FileMan calls: VAL^DIE
+
+ DIKC^SCUTBK1
+  Globals: UNDETERMINED ($GET^1;2(4))
+  FileMan calls: ^DIK
+
+ FINDP^SCUTBK11
+  Globals: ^DPT(
+  FileMan calls: CLEAN^DILF;FIND^DIC
+
+ VFILE^SCUTBK11
+  Globals: UNDETERMINED ("K")
+  FileMan calls: FILE^DIE
+
+ FINDC^SCUTBK2
+  Globals: UNDETERMINED (SCFILE)
+  FileMan calls: FIND^DIC
+
+ GETSC^SCUTBK2
+  Globals: UNDETERMINED (SCFILE)
+  FileMan calls: GETS^DIQ
+
+ GETUSER^SCUTBK3
+  Globals: UNDETERMINED (4030005.001)
+  FileMan calls: BLD^DIALOG
+
+ SETDEF^SCUTBK3
+  Globals: UNDETERMINED ("K");UNDETERMINED ();^SCRS(403.35,
+  FileMan calls: FDA^DILF;FILE^DIE;UPDATE^DIE
+
+ 19^SDAPP
+  Globals: UNDETERMINED (DIC);^DPT("
+  FileMan calls: ^DIC;^DIE
+
+ EN^SDCODEL
+  Globals: ^DPT("_DFN_"
+  FileMan calls: ^DIE
+
+ $$GETARN^SDPFSS2
+  Globals: ^SD(409.55,
+  FileMan calls: $$GET1^DIQ
+
+ GETARN^SDPFSS2
+  Globals: ^SD(409.55,
+  FileMan calls: $$GET1^DIQ
+
+ START^SDRPA00
+  Globals: UNDETERMINED (2.98);UNDETERMINED (DIC);^SDWL(409.6;^SDWL(409.6,
+  FileMan calls: $$GET1^DIQ;FILE^DICN;^DIE;^DIK
+
+ COVER^SDRROR
+  Globals: ^SC(
+  FileMan calls: $$GET1^DIQ
+
+ START^SDSCEDT
+  Globals: --
+  FileMan calls: EN^DDIOL;^DIR
+
+ START1^SDSCEDT
+  Globals: UNDETERMINED ("Cannot edit encounter# "_SDOE_". Missing data. ")
+           UNDETERMINED ("Cannot edit encounter.");^SDSC(409.48
+  FileMan calls: EN^DDIOL;^DIC
+
+ COMPILE^SDSCOMP
+  Globals: UNDETERMINED ("<Compile Aborted> ")
+           UNDETERMINED ("Comparing Rated Disabilities and Diagnosis Code per En
+counter ...")
+           UNDETERMINED ("Extract's TaskMan ID is "_ZTSK)
+  FileMan calls: EN^DDIOL;^DIR
+
+ START^SDSCRP1
+  Globals: UNDETERMINED ("You do not have privileges to run this report.")
+  FileMan calls: EN^DDIOL;^DIR
+
+ $$ELSTAT^SDUTL2
+  Globals: ^DPT(
+  FileMan calls: $$GET1^DIQ
+
+ UPDLOCAL^SDUTL3
+  Globals: ^DIC(40.7,
+  FileMan calls: ^DIC;^DIE
+
+ EN^SDWLAHR2
+  Globals: ^SDWL(409.3,
+  FileMan calls: EN1^DIP
+
+ EN^SDWLAHR3
+  Globals: ^SDWL(409.3,
+  FileMan calls: EN^DIS
+
+ EN^SDWLFUL1
+  Globals: ^DPT(;^SDWL(409.39
+  FileMan calls: $$GET1^DIQ;FILE^DICN;^DIE
+
+ EN^SDWLFULP
+  Globals: ^SDWL(409.39,
+  FileMan calls: EN1^DIP
+
+ EN^SDWLFULZ
+  Globals: ^DIC(19;^DIC(19,
+  FileMan calls: $$FIND1^DIC;^DIK;^DIR;^DIU
+
+ EN^SDWLQSC
+  Globals: ^DPT(;^SDWL(409.3,
+  FileMan calls: $$GET1^DIQ;^DIE
+
+ OUTPUT^SDWLRP1
+  Globals: ^SDWL(409.3,
+  FileMan calls: CLEAN^DILF;FIND^DIC
+
+ OUTPUT3^SDWLRP1
+  Globals: ^SDWL(409.3,
+  FileMan calls: CLEAN^DILF;FIND^DIC
+
+ OUTPROV^SDWLRP2
+  Globals: ^SCTM(404.51,
+  FileMan calls: CLEAN^DILF;LIST^DIC
+
+ OUTSC0^SDWLRP2
+  Globals: ^SDWL(409.32,
+  FileMan calls: CLEAN^DILF;LIST^DIC
+
+ OUTSC2^SDWLRP2
+  Globals: ^SC(
+  FileMan calls: CLEAN^DILF;LIST^DIC
+
+ OUTSP^SDWLRP2
+  Globals: ^SCTM(404.57,
+  FileMan calls: CLEAN^DILF;LIST^DIC
+
+ OUTSS^SDWLRP2
+  Globals: ^SDWL(409.31,
+  FileMan calls: CLEAN^DILF;LIST^DIC
+
+ OUTST^SDWLRP2
+  Globals: ^SCTM(404.51,
+  FileMan calls: CLEAN^DILF;LIST^DIC
+
+ SDDISOUT^SDWLRP3
+  Globals: ^SDWL(409.3,
+  FileMan calls: FIELD^DID
+
+ SDNEOUT^SDWLRP3
+  Globals: ^SDWL(409.3,
+  FileMan calls: FIELD^DID
+
+ SDPACOUT^SDWLRP3
+  Globals: ^SDWL(409.3,
+  FileMan calls: FIELD^DID
+
+ SDPRIOUT^SDWLRP3
+  Globals: ^SDWL(409.3,
+  FileMan calls: FIELD^DID
+
+ SDREQOUT^SDWLRP3
+  Globals: ^SDWL(409.3,
+  FileMan calls: FIELD^DID
+
+ SDSTOUT^SDWLRP3
+  Globals: ^SDWL(409.3,
+  FileMan calls: FIELD^DID
+
+ SDTYOUT^SDWLRP3
+  Globals: ^SDWL(409.3,
+  FileMan calls: FIELD^DID
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+79. PACKAGE NAME: SOCIAL WORK
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+80. PACKAGE NAME: SPINAL CORD DYSFUNCTION
+
+ EN^SPNHS0
+  Globals: UNDETERMINED (154.004);^SPNL(154,;^SPNL(154.1,
+  FileMan calls: $$GET1^DIQ
+
+ COL^SPNJRPCC
+  Globals: ^VA(200,
+  FileMan calls: LIST^DIC
+
+ COL^SPNJRPCS
+  Globals: ^DPT(
+  FileMan calls: $$GET1^DIQ
+
+ COL^SPNJRPPM
+  Globals: ^DIC(4,;^DIC(45.7,;^VA(200,
+  FileMan calls: $$GET1^DIQ
+
+ COL^SPNJRPRE
+  Globals: ^DIC(4,
+  FileMan calls: $$GET1^DIQ
+
+ INQ^SPNLEGA
+  Globals: ^SPNL(154.1
+  FileMan calls: EN^DIQ;^DIC
+
+ ACT^SPNLPIN
+  Globals: ^SPNL(154;^SPNL(154,
+  FileMan calls: ^DIC;^DIE;^DIR
+
+ INA^SPNLPIN
+  Globals: ^SPNL(154;^SPNL(154,
+  FileMan calls: ^DIC;^DIE;^DIR
+
+ PRT1^SPNLPIN
+  Globals: ^SPNL(154,
+  FileMan calls: EN1^DIP;^DIR
+
+ PRT2^SPNLPIN
+  Globals: ^SPNL(154,
+  FileMan calls: EN1^DIP;^DIR
+
+ EN1^SPNLSPAR
+  Globals: ^SPNL(154.91
+  FileMan calls: ^DIE
+
+ EDIT^SPNMAIN
+  Globals: ^SPNL(154.91
+  FileMan calls: ^DIE
+
+ EN1^SPNRPC13
+  Globals: ^DPT(
+  FileMan calls: $$GET1^DIQ
+
+ COL^SPNRPCB
+  Globals: ^RARPT(
+  FileMan calls: GETS^DIQ
+
+ COL^SPNRPCE
+  Globals: ^LAB(62,;^VA(200,
+  FileMan calls: $$GET1^DIQ
+
+ COL^SPNRPCF
+  Globals: ^LAB(62,;^VA(200,
+  FileMan calls: $$GET1^DIQ
+
+ COL^SPNRPCO
+  Globals: ^LAB(62,
+  FileMan calls: $$GET1^DIQ
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+81. PACKAGE NAME: SURGERY
+
+ AUDIT^SRBLOOD
+  Globals: ^XUSEC(19,
+  FileMan calls: EN1^DIP
+
+ CHNG^SRHLU
+  Globals: ^SRO(133,
+  FileMan calls: ^DIE
+
+ $$ANESTIME^SROANEST
+  Globals: UNDETERMINED (130.213)
+  FileMan calls: $$GET1^DIQ
+
+ OP^SROMENU
+  Globals: ^SRF(
+  FileMan calls: --
+
+ PACU^SROMENU
+  Globals: ^SRF(
+  FileMan calls: --
+
+ POST^SROMENU
+  Globals: ^SRF(
+  FileMan calls: --
+
+ REF^SROMENU
+  Globals: ^SRF(
+  FileMan calls: ^DIE
+
+ REV^SROMENU
+  Globals: ^SRF(
+  FileMan calls: --
+
+ SHORT^SROMENU
+  Globals: ^SRF(
+  FileMan calls: --
+
+ STAFF^SROMENU
+  Globals: ^SRF(
+  FileMan calls: --
+
+ START^SROMENU
+  Globals: ^SRF(
+  FileMan calls: --
+
+ TECH^SROMENU
+  Globals: ^SRF(
+  FileMan calls: ^DIE
+
+ EDIT^SRONOP
+  Globals: ^SRF(
+  FileMan calls: --
+
+ PARAM^SROVAR
+  Globals: ^DIC(4,;^SRO(133,
+  FileMan calls: $$GET1^DIQ;^DIC
+
+ EDIT^SROWL0
+  Globals: ^DPT(
+  FileMan calls: ^DIC
+
+ PARAM^SRTPSS
+  Globals: ^DIC(4,;^SRO(133,
+  FileMan calls: $$GET1^DIQ;^DIC
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+82. PACKAGE NAME: TEXT INTEGRATION UTILITIES
+
+ EN^TIU199
+  Globals: ^VA(200
+  FileMan calls: ^DIC
+
+ $$CANDO^TIULP
+  Globals: ^VA(200,
+  FileMan calls: $$GET1^DIQ
+
+ EXTRACT^TIULQ
+  Globals: ^TIU(8925,
+  FileMan calls: EN^DIQ1
+
+ GETSIGNR^TIULX
+  Globals: ^TIU(8925.7
+  FileMan calls: CLEAN^DILF;EN^DIQ1
+
+ IDSIGNRS^TIULX
+  Globals: UNDETERMINED (DIC)
+  FileMan calls: ^DIC;^DIE
+
+ GETPATDT^TIUMED1
+  Globals: ^DGSL(38.1,;^DPT(
+  FileMan calls: $$GET1^DIQ;FIND^DIC
+
+ PLISTMEM^TIUMED1
+  Globals: ^OR(100.21,
+  FileMan calls: GETS^DIQ
+
+ PLISTS^TIUMED1
+  Globals: ^OR(100.21,
+  FileMan calls: FIND^DIC
+
+ NEW^TIUPNAPI
+  Globals: ^TIU(8925,
+  FileMan calls: ^DIE
+
+ GETNOTES^TIUPRF2
+  Globals: ^TIU(8925,
+  FileMan calls: GETS^DIQ
+
+ AUTHOR^TIUPRPN3
+  Globals: ^VA(200,
+  FileMan calls: ^DIC
+
+ LOC^TIUPRPN3
+  Globals: ^SC(
+  FileMan calls: ^DIC
+
+ PT^TIUPRPN3
+  Globals: ^DPT(
+  FileMan calls: ^DIC
+
+ ADD^TIUPRPN4
+  Globals: UNDETERMINED (DIC)
+  FileMan calls: ^DIC;^DIE
+
+ DIV^TIUPRPN4
+  Globals: UNDETERMINED (DIC)
+  FileMan calls: ^DIC;^DIE
+
+ ADM^TIUPRPN6
+  Globals: ^DPT(
+  FileMan calls: ^DIC
+
+ BATCH^TIUPRPN7
+  Globals: ^TIU(8925.94,
+  FileMan calls: ^DIC
+
+ $$WHATITLE^TIUPUTU
+  Globals: ^TIU(8925.1,
+  FileMan calls: ^DIC
+
+ SIGNER^TIURA1
+  Globals: UNDETERMINED (DIC)
+  FileMan calls: ^DIC;^DIE
+
+ ES^TIURS
+  Globals: ^TIU(8925,
+  FileMan calls: ^DIE
+
+ URGENCY^TIUSRVA
+  Globals: ^TIU(8925,
+  FileMan calls: FIELD^DID
+
+ USRINACT^TIUSRVA
+  Globals: ^VA(200,
+  FileMan calls: $$GET1^DIQ
+
+ DELETE^TIUSRVF1
+  Globals: ^TIU(8927.1
+  FileMan calls: ^DIK
+
+ $$RESOLVE^TIUSRVLO
+  Globals: ^VA(200,
+  FileMan calls: $$GET1^DIQ
+
+ DELETE^TIUSRVP
+  Globals: UNDETERMINED (89250003
+)
+  FileMan calls: $$EZBLD^DIALOG
+
+ FILE^TIUSRVP
+  Globals: UNDETERMINED (FLAGS)
+  FileMan calls: FILE^DIE
+
+ MAKE^TIUSRVP
+  Globals: UNDETERMINED (89250001
+);UNDETERMINED (89250002
+)
+  FileMan calls: $$EZBLD^DIALOG
+
+ UPDATE^TIUSRVP
+  Globals: ^TIU(8925,
+  FileMan calls: ^DIE
+
+ SIGN^TIUSRVP2
+  Globals: UNDETERMINED (89250005
+);^VA(200,
+  FileMan calls: $$EZBLD^DIALOG;$$GET1^DIQ
+
+ PUTIMAGE^TIUSRVPL
+  Globals: UNDETERMINED (DIC)
+  FileMan calls: ^DIC;^DIE
+
+ LISTOWNR^TIUSRVT
+  Globals: ^VA(200,
+  FileMan calls: LIST^DIC
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+83. PACKAGE NAME: UNKNOWN
+
+ ADD^A1B2UTL
+  Globals: UNDETERMINED (DIC);^A1B2("_A1B2FL_"
+  FileMan calls: FILE^DICN;^DIE
+
+ PAT^GMRPNOR1
+  Globals: ^DPT("
+  FileMan calls: ^DIC
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+84. PACKAGE NAME: AUTHORIZATION/SUBSCRIPTION
+
+ $$ISA^USRLM
+  Globals: ^VA(200,
+  FileMan calls: $$FIND1^DIC
+
+ $$ISTERM^USRLM
+  Globals: ^VA(200,
+  FileMan calls: $$GET1^DIQ
+
+ ISA^USRLM
+  Globals: ^VA(200,
+  FileMan calls: $$FIND1^DIC
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+85. PACKAGE NAME: VBECS
+
+ PAT^VBECA1A
+  Globals: ^DPT(
+  FileMan calls: ^DIC
+
+ EN613^VBECDCM0
+  Globals: UNDETERMINED ()
+  FileMan calls: FILE^DIE
+
+ SINGLE^VBECDCM1
+  Globals: ^VBEC(6005
+  FileMan calls: IX^DIC
+
+ EN654^VBECDCM2
+  Globals: UNDETERMINED ();^VBEC(6005
+  FileMan calls: FILE^DIE;^DIK
+
+ EN^VBECDCSP
+  Globals: ^DIC(4,
+  FileMan calls: $$GET1^DIQ;^DIC;^DIE
+
+ DEL6001^VBECDCU2
+  Globals: ^VBEC(6001
+  FileMan calls: ^DIK;^DIR
+
+ EN^VBECDSS
+  Globals: UNDETERMINED ("E");UNDETERMINED ();^VBEC(6002.03,
+  FileMan calls: $$FIND1^DIC;DT^DICRW;FILE^DIE;UPDATE^DIE
+
+ LABTEST^VBECRPCA
+  Globals: ^LAB(60,
+  FileMan calls: FIND^DIC
+
+ ORDER^VBECRPCB
+  Globals: ^DPT(;^LAB(60,
+  FileMan calls: $$GET1^DIQ
+
+ ORDNUM^VBECRPCB
+  Globals: ^DPT(;^LAB(60,
+  FileMan calls: $$GET1^DIQ
+
+ PROVIDER^VBECRPCE
+  Globals: ^DIC(4,
+  FileMan calls: $$FIND1^DIC
+
+ HCPCS^VBECRPCH
+  Globals: ^DIC(81.1,;^ICPT(
+  FileMan calls: $$FIND1^DIC;LIST^DIC
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+86. PACKAGE NAME: VDEF
+
+ SITE^VDEFMNU
+  Globals: ^VDEFHL7(579.5,
+  FileMan calls: ^DIE
+
+ $$QUEUE^VDEFQM
+  Globals: UNDETERMINED ();^HL(771.2,;^HL(779.001,;^VDEFHL7(577.4,
+  FileMan calls: $$FIND1^DIC;FILE^DIE;UPDATE^DIE
+
+ QUEUE^VDEFQM
+  Globals: UNDETERMINED ();^HL(771.2,;^HL(779.001,;^VDEFHL7(577.4,
+  FileMan calls: $$FIND1^DIC;FILE^DIE;UPDATE^DIE
+
+ ERR^VDEFREQ
+  Globals: UNDETERMINED ()
+  FileMan calls: FILE^DIE
+
+ POSTKID^VDEFVU
+  Globals: UNDETERMINED ();^DIC(9.4,;^HL(771.2,;^HL(779.001,;^ORD(101,
+           ^VDEFHL7(577.4,;^VDEFHL7(579.6,
+  FileMan calls: $$FIND1^DIC;UPDATE^DIE
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+87. PACKAGE NAME: WOUNDED INJURED & ILL WARRIORS
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+88. PACKAGE NAME: WOMEN'S HEALTH
+
+ PRINTSYN^WVDIAGS
+  Globals: ^WV(790.31
+  FileMan calls: EN1^DIP
+
+ EDC^WVMGRP
+  Globals: ^WV(790.05
+  FileMan calls: --
+
+ PLOG^WVMGRP
+  Globals: ^WV(790.04
+  FileMan calls: --
+
+ PRINT^WVRAD
+  Globals: ^WV(790.32
+  FileMan calls: EN1^DIP
+
+ EDREF^WVREFUSE
+  Globals: ^WV(790.3
+  FileMan calls: ^DIC
+
+ UNIV^WVREFUSE
+  Globals: ^WV(790;^WV(790.3
+  FileMan calls: FILE^DICN;^DIC;^DIR
+
+ SNOMED^WVSITE
+  Globals: UNDETERMINED (DIC);^WV(790.2
+  FileMan calls: ^DIC;^DIE
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+89. PACKAGE NAME: HEALTHEVET DESKTOP
+
+ VERSRV^XHDX
+  Globals: ^DIC(19,
+  FileMan calls: FIND^DIC
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+90. PACKAGE NAME: MAILMAN
+
+ NEWMBOX^XM
+  Globals: UNDETERMINED (38165.1
+);^VA(200
+  FileMan calls: $$EZBLD^DIALOG;^DIC
+
+ DX^XMA21
+  Globals: UNDETERMINED (34110
+)
+  FileMan calls: $$EZBLD^DIALOG
+
+ WHO^XMA21
+  Globals: UNDETERMINED (39101)
+  FileMan calls: $$EZBLD^DIALOG
+
+ SCAN^XMA3
+  Globals: UNDETERMINED ("WM");UNDETERMINED (36425);UNDETERMINED (36426)
+           UNDETERMINED (36427);UNDETERMINED (36428);UNDETERMINED (39053
+)
+  FileMan calls: $$EZBLD^DIALOG;BLD^DIALOG;MSG^DIALOG;WAIT^DICD;^DIR
+
+ KILL^XMA32A
+  Globals: UNDETERMINED (36416
+XMCRE8)
+  FileMan calls: $$EZBLD^DIALOG
+
+ ENTER^XMAI2
+  Globals: UNDETERMINED (36600
+)
+  FileMan calls: $$EZBLD^DIALOG
+
+ FROMWHOM^XMAPHOST
+  Globals: UNDETERMINED (34239
+);UNDETERMINED (34240
+)
+           UNDETERMINED (34241
+);UNDETERMINED (34242)
+  FileMan calls: $$EZBLD^DIALOG;BLD^DIALOG;^DIR
+
+ READ^XMAPHOST
+  Globals: UNDETERMINED (34234
+)
+  FileMan calls: $$EZBLD^DIALOG
+
+ SENDMSG^XMAPHOST
+  Globals: UNDETERMINED (34213
+);UNDETERMINED (34217)
+  FileMan calls: $$EZBLD^DIALOG
+
+ EN^XMB
+  Globals: UNDETERMINED (XMTEXT
+)
+  FileMan calls: $$CREF^DILF
+
+ $$DM^XMBGRP
+  Globals: ^XMB(3.8
+  FileMan calls: ^DIK
+
+ RESUME^XMC1
+  Globals: UNDETERMINED (42236
+)
+  FileMan calls: $$EZBLD^DIALOG;^DIR
+
+ GLBIN^XMCB
+  Globals: ^%ZISL(4.281
+  FileMan calls: ^DIK
+
+ GLBOUT^XMCB
+  Globals: UNDETERMINED ("WM");UNDETERMINED ();UNDETERMINED (42250
+)
+           UNDETERMINED (42251)
+  FileMan calls: $$EZBLD^DIALOG;BLD^DIALOG;FILE^DIE;MSG^DIALOG;UPDATE^DIE
+
+ TAPEIN^XMCB
+  Globals: UNDETERMINED (42257)
+  FileMan calls: $$EZBLD^DIALOG
+
+ EDIT42^XMCE
+  Globals: ^DIC(4.2,;^XMBS(4.2999,
+  FileMan calls: ^DIE
+
+ EDIT46^XMCE
+  Globals: ^XMB(4.6,
+  FileMan calls: ^DIC;^DIE
+
+ OUT^XMCE
+  Globals: ^DIC(4.2
+  FileMan calls: ^DIE
+
+ VAL^XMCE
+  Globals: ^DIC(4.2,
+  FileMan calls: ^DIE
+
+ POLL^XMCP
+  Globals: UNDETERMINED (42150
+)
+  FileMan calls: $$EZBLD^DIALOG
+
+ STATUS^XMCQ
+  Globals: UNDETERMINED (42135
+)
+  FileMan calls: $$EZBLD^DIALOG
+
+ ACTIVE^XMCQA
+  Globals: UNDETERMINED (42110
+)
+  FileMan calls: $$EZBLD^DIALOG
+
+ ALL^XMCQA
+  Globals: UNDETERMINED (42120
+)
+  FileMan calls: $$EZBLD^DIALOG
+
+ ENTER^XMCQH
+  Globals: UNDETERMINED (42100
+)
+  FileMan calls: $$EZBLD^DIALOG
+
+ QALL^XMCX
+  Globals: UNDETERMINED (39053
+);UNDETERMINED (42125
+)
+           UNDETERMINED (42126
+);UNDETERMINED (42127
+)
+           UNDETERMINED (42128
+);UNDETERMINED (42129);UNDETERMINED (42130
+)
+           UNDETERMINED (42132
+)
+  FileMan calls: $$EZBLD^DIALOG;BLD^DIALOG;^DIR
+
+ LIST^XMCXT
+  Globals: UNDETERMINED ("WM");UNDETERMINED (39053
+);UNDETERMINED (42170)
+           UNDETERMINED (42171
+);UNDETERMINED (42171.1
+)
+           UNDETERMINED (42172
+);UNDETERMINED (42173
+)
+  FileMan calls: $$EZBLD^DIALOG;BLD^DIALOG;MSG^DIALOG;^DIR
+
+ ENL^XMD
+  Globals: UNDETERMINED (XMTEXT
+)
+  FileMan calls: $$CREF^DILF
+
+ REMOTES^XMDIR1B
+  Globals: ^XMD(4.2997,
+  FileMan calls: ^DIC;^DIE
+
+ EDIT^XMDIRQST
+  Globals: ^DIC(4.2
+  FileMan calls: ^DIC;^DIE
+
+ GROUP^XMDIRQST
+  Globals: ^DIC(4.2
+  FileMan calls: IX^DIC;^DIR
+
+ SINGLE^XMDIRQST
+  Globals: ^DIC(4.2
+  FileMan calls: ^DIC
+
+ HELP^XMHIG
+  Globals: ^XMB(3.8
+  FileMan calls: ^DIC
+
+ HELP^XMHIU
+  Globals: UNDETERMINED (38009
+);^VA(200,
+  FileMan calls: $$EZBLD^DIALOG;MIX^DIC1
+
+ LISTMBOX^XMJBL
+  Globals: UNDETERMINED (34650
+);UNDETERMINED (34651
+)
+           UNDETERMINED (34652
+);UNDETERMINED (34654
+)
+           UNDETERMINED (34655
+)
+  FileMan calls: $$EZBLD^DIALOG;^DIR
+
+ NEW^XMJBN
+  Globals: UNDETERMINED (34018
+);UNDETERMINED (34085
+)
+  FileMan calls: $$EZBLD^DIALOG
+
+ EDIT^XMJMD
+  Globals: UNDETERMINED (34638
+)
+  FileMan calls: $$EZBLD^DIALOG
+
+ REPORT^XMJMD
+  Globals: UNDETERMINED (34639
+)
+  FileMan calls: $$EZBLD^DIALOG
+
+ FIND^XMJMF
+  Globals: UNDETERMINED (34410
+)
+  FileMan calls: $$EZBLD^DIALOG
+
+ SEND^XMJMS
+  Globals: UNDETERMINED (34260
+)
+  FileMan calls: $$EZBLD^DIALOG
+
+ SEND^XMJMSA
+  Globals: UNDETERMINED (34067
+)
+  FileMan calls: $$EZBLD^DIALOG
+
+ R^XMJMT
+  Globals: UNDETERMINED (34149
+);^XMD(4.2997
+  FileMan calls: $$EZBLD^DIALOG;EN^DIQ;^DIC
+
+ START^XMKPL
+  Globals: UNDETERMINED (36229.2
+)
+  FileMan calls: $$EZBLD^DIALOG
+
+ STOP^XMKPL
+  Globals: UNDETERMINED (36229);UNDETERMINED (36229.1
+)
+           UNDETERMINED (39053
+)
+  FileMan calls: $$EZBLD^DIALOG;BLD^DIALOG;^DIR
+
+ GET^XML
+  Globals: ^DIC(3.4
+  FileMan calls: ^DIC
+
+ $$SRVTIME^XMS1
+  Globals: ^XMB(3.9,"_XMZ_",1,
+  FileMan calls: $$FIND1^DIC
+
+ $$STATUS^XMS1
+  Globals: ^XMB(3.9,"_XMZ_",1,
+  FileMan calls: $$FIND1^DIC
+
+ VALID8^XMUDCHK
+  Globals: ^DIC(4.2,
+  FileMan calls: $$FIND1^DIC
+
+ ENTER^XMUT2
+  Globals: UNDETERMINED (36200
+)
+  FileMan calls: $$EZBLD^DIALOG
+
+ CHKFILES^XMUT4
+  Globals: UNDETERMINED (36080
+)
+  FileMan calls: $$EZBLD^DIALOG
+
+ CHECK^XMUT5
+  Globals: UNDETERMINED (36210
+);UNDETERMINED (36211);UNDETERMINED (36219)
+           UNDETERMINED (36220);UNDETERMINED (36222);UNDETERMINED (39054
+)
+  FileMan calls: $$EZBLD^DIALOG;BLD^DIALOG;^DIR
+
+ ALL1^XMUTERM
+  Globals: UNDETERMINED ("WM");UNDETERMINED (36309);UNDETERMINED (36309.5)
+           UNDETERMINED (36321
+);UNDETERMINED (36321
+36322
+)
+           UNDETERMINED (36322
+);UNDETERMINED (36323
+);UNDETERMINED (36324)
+           UNDETERMINED (36325);UNDETERMINED (36326
+)
+  FileMan calls: $$EZBLD^DIALOG;BLD^DIALOG;MSG^DIALOG;^DIR
+
+ ALL2^XMUTERM
+  Globals: UNDETERMINED ("WM");UNDETERMINED (36312);UNDETERMINED (36314)
+           UNDETERMINED (36325);UNDETERMINED (36327
+)
+  FileMan calls: $$EZBLD^DIALOG;BLD^DIALOG;MSG^DIALOG
+
+ CHOOSE^XMUTERM
+  Globals: UNDETERMINED ("WM");UNDETERMINED (36310);UNDETERMINED (36330
+)
+           UNDETERMINED (36332)
+  FileMan calls: $$EZBLD^DIALOG;BLD^DIALOG;MSG^DIALOG;^DIR
+
+ MESSAGE^XMUTERM
+  Globals: UNDETERMINED ("WM");UNDETERMINED (36301);UNDETERMINED (36302
+)
+           UNDETERMINED (36303
+);UNDETERMINED (36304
+"B"
+39053
+)
+           UNDETERMINED (36305
+);UNDETERMINED (36306);UNDETERMINED (39053
+)
+  FileMan calls: $$EZBLD^DIALOG;BLD^DIALOG;MSG^DIALOG;^DIR
+
+ EDITMG^XMVGROUP
+  Globals: ^XMB(3.8
+  FileMan calls: ^DIC
+
+ ENROLL^XMVGROUP
+  Globals: UNDETERMINED (38020
+38021
+);UNDETERMINED (38021
+)
+           UNDETERMINED (38022
+);UNDETERMINED (38022.1
+);^XMB(3.8
+  FileMan calls: $$EZBLD^DIALOG;^DIC
+
+ PERSONAL^XMVGROUP
+  Globals: ^XMB(3.8
+  FileMan calls: ^DIC
+
+ ASSUME^XMVSURR
+  Globals: UNDETERMINED ("WE");UNDETERMINED (38055);^VA(200
+  FileMan calls: BLD^DIALOG;MIX^DIC1;MSG^DIALOG
+
+ BANNER^XMVVITA
+  Globals: ^XMB(3.7,
+  FileMan calls: ^DIE
+
+ BASKET^XMVVITA
+  Globals: ^XMB(3.7,
+  FileMan calls: ^DIE
+
+ EDIT^XMVVITA
+  Globals: UNDETERMINED (38132);UNDETERMINED (38133);^VA(200;^VA(200,
+           ^XMB(3.7;^XMB(3.7,
+  FileMan calls: $$EZBLD^DIALOG;$$GET1^DID;^DIE
+
+ FILTER^XMVVITA
+  Globals: UNDETERMINED (38131
+);^XMB(3.7,
+  FileMan calls: $$EZBLD^DIALOG;^DIE
+
+ FORWARD^XMVVITA
+  Globals: ^XMB(3.7,
+  FileMan calls: ^DIE
+
+ SURR^XMVVITA
+  Globals: ^XMB(3.7
+  FileMan calls: ^DIE
+
+ $$GOTLOCAL^XMXAPIG
+  Globals: ^XMB(3.8,"_XMGIEN_",1,
+  FileMan calls: LIST^DIC
+
+ $$NAME^XMXUTIL
+  Globals: UNDETERMINED (34009
+);UNDETERMINED (34010)
+  FileMan calls: $$EZBLD^DIALOG
+
+ MAKENEW^XMXUTIL
+  Globals: UNDETERMINED ()
+  FileMan calls: FILE^DIE
+
+ NONEW^XMXUTIL
+  Globals: UNDETERMINED ()
+  FileMan calls: FILE^DIE
+
+ WAIT^XMXUTIL
+  Globals: UNDETERMINED (37003
+)
+  FileMan calls: $$EZBLD^DIALOG;^DIR
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+91. PACKAGE NAME: ELECTRONIC SIGNATURE
+
+ GETCODE^XOBESIG
+  Globals: ^VA(200,
+  FileMan calls: $$GET1^DIQ
+
+ GETDATA^XOBESIG
+  Globals: ^VA(200,
+  FileMan calls: GETS^DIQ
+
+ ISDEF^XOBESIG
+  Globals: ^VA(200,
+  FileMan calls: $$GET1^DIQ
+
+ SETCODE^XOBESIG
+  Globals: UNDETERMINED ();^VA(200,
+  FileMan calls: $$GET1^DIQ;FILE^DIE
+
+ SETDATA^XOBESIG
+  Globals: UNDETERMINED ("ET")
+  FileMan calls: FILE^DIE
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+92. PACKAGE NAME: VISTALINK SECURITY
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+93. PACKAGE NAME: FOUNDATIONS
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+94. PACKAGE NAME: VISTALINK
+
+ RPCRP^XOBVLT
+  Globals: ^XWB(8994,
+  FileMan calls: LIST^DIC
+
+ CLEARLOG^XOBVTCP
+  Globals: ^XOB(18.04
+  FileMan calls: ^DIK
+
+ UPDATE^XOBVTCP
+  Globals: ^XOB(18.04
+  FileMan calls: ^DIC
+
+ UPDLOG^XOBVTCP
+  Globals: ^XOB(18.04
+  FileMan calls: ^DIE
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+95. PACKAGE NAME: WEB SERVICES CLIENT
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+96. PACKAGE NAME: TOOLKIT
+
+ ADD^XDRDADDS
+  Globals: UNDETERMINED ();^DPT(;^VA(15.1,
+  FileMan calls: $$GET1^DIQ;UPDATE^DIE
+
+ EN^XDRDEFLG
+  Globals: UNDETERMINED ()
+  FileMan calls: FILE^DIE
+
+ RMOVPAIR^XDRDVAL1
+  Globals: UNDETERMINED ();^VA(15.2
+  FileMan calls: FILE^DIE;^DIK
+
+ SENDMESG^XDRDVAL1
+  Globals: ^VA(15.1,;^XMB(3.8,
+  FileMan calls: $$GET1^DIQ
+
+ EN2^XDRMAIN
+  Globals: ^VA(15
+  FileMan calls: ^DIC
+
+ EN3^XDRMAIN
+  Globals: ^VA(15
+  FileMan calls: ^DIC
+
+ STOP^XDRMERGA
+  Globals: ^VA(15.2
+  FileMan calls: ^DIE;^DIR
+
+ SAVEMERG^XDRMERGB
+  Globals: UNDETERMINED ();^XDRM(;^XDRM("_XDRDA_",1,;^XDRM("_XDRDA_",2,
+  FileMan calls: $$FIND1^DIC;UPDATE^DIE
+
+ NDEL^XPAR
+  Globals: ^XTV(8989.5
+  FileMan calls: ^DIK
+
+ DELUSR^XPAR3
+  Globals: ^XTV(8989.5
+  FileMan calls: ^DIK
+
+ LOOKUP^XPAREDIT
+  Globals: UNDETERMINED (FN
+);UNDETERMINED (FN)
+  FileMan calls: $$ROOT^DILFD;^DIC
+
+ PURGE^XTERSUM1
+  Globals: ^%ZTER(3.077
+  FileMan calls: ^DIK
+
+ RFILE^XTKERM4
+  Globals: UNDETERMINED (DIC);^DIZ(8980
+  FileMan calls: ^DIC;^DIE
+
+ PICKSET^XTMUNIT
+  Globals: ^XTV(8992.8,
+  FileMan calls: ^DIC;^DIR
+
+ INQUIRE^XTPMKPCF
+  Globals: ^XPD(9.9
+  FileMan calls: ^DIC
+
+ NIGHT^XTPMKPTC
+  Globals: ^XPD(9.9
+  FileMan calls: ^DIK
+
+ $$BUILD^XTRUTL1
+  Globals: ^XPD(9.6
+  FileMan calls: ^DIC
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+97. PACKAGE NAME: KERNEL
+
+ CCODE^XIPUTIL
+  Globals: ^XIP(5.13,
+  FileMan calls: $$FIND1^DIC;GETS^DIQ
+
+ POSTAL^XIPUTIL
+  Globals: ^XIP(5.12,
+  FileMan calls: LIST^DIC
+
+ DELCOMP^XLFNAME2
+  Globals: UNDETERMINED ();UNDETERMINED (XUREC
+);^VA(20;^VA(20,
+  FileMan calls: $$FIND1^DIC;$$IENS^DILF;FILE^DIE;^DIK
+
+ UPDCOMP^XLFNAME2
+  Globals: UNDETERMINED ("K");UNDETERMINED ();UNDETERMINED (XUREC
+)
+  FileMan calls: $$IENS^DILF;FILE^DIE;UPDATE^DIE
+
+ CVALID^XLFNAME8
+  Globals: ^VA(20,
+  FileMan calls: CHK^DIE
+
+ EN1^XPDDI
+  Globals: ^XPD(9.7
+  FileMan calls: ^DIC
+
+ EN1^XPDDPCK
+  Globals: UNDETERMINED (DIC_XPD0_",22,");^DIC(9.4
+  FileMan calls: ^DIC;^DIR
+
+ BUILD^XPDE
+  Globals: UNDETERMINED ();UNDETERMINED (XPDF)
+  FileMan calls: $$GET1^DIQ;LIST^DIC;UPDATE^DIE;WAIT^DICD;^DIR
+
+ COPY^XPDE
+  Globals: ^XPD(9.6
+  FileMan calls: EN1^DIK;WAIT^DICD;^DIK;^DIR
+
+ EN1^XPDER
+  Globals: UNDETERMINED ();^XPD(9.6
+  FileMan calls: IXALL^DIK;UPDATE^DIE;WAIT^DICD;^DIR
+
+ EN^XPDI
+  Globals: UNDETERMINED ();^XPD(9.7
+  FileMan calls: FILE^DIE;UPDATE^DIE;^DIE;^DIR
+
+ $$LOOK^XPDI1
+  Globals: ^XPD(9.7
+  FileMan calls: ^DIC
+
+ $$PKGPAT^XPDIP
+  Globals: UNDETERMINED ()
+  FileMan calls: FILE^DIE
+
+ EN^XPDIR
+  Globals: UNDETERMINED ()
+  FileMan calls: FILE^DIE
+
+ EN1^XPDIU
+  Globals: ^XPD(9.7
+  FileMan calls: ^DIK;^DIR
+
+ EN2^XPDIU
+  Globals: ^DIC(9.4;^XPD(9.7
+  FileMan calls: ^DIC;^DIK;^DIR
+
+ $$RENAME^XPDKEY
+  Globals: UNDETERMINED ();^VA(200
+  FileMan calls: EN1^DIK;UPDATE^DIE
+
+ DEL^XPDKEY
+  Globals: ^DIC(19.1;^VA(200
+  FileMan calls: ^DIK
+
+ $$ADD^XPDMENU
+  Globals: ^DIC(19
+  FileMan calls: FILE^DICN;^DIE
+
+ $$DELETE^XPDMENU
+  Globals: ^DIC(19
+  FileMan calls: ^DIK
+
+ DELETE^XPDMENU
+  Globals: ^DIC(19
+  FileMan calls: ^DIK
+
+ OUT^XPDMENU
+  Globals: UNDETERMINED ()
+  FileMan calls: FILE^DIE
+
+ RENAME^XPDMENU
+  Globals: UNDETERMINED ()
+  FileMan calls: FILE^DIE
+
+ PURGE^XPDR
+  Globals: ^XPD("_XPDF_"
+  FileMan calls: ^DIK;^DIR
+
+ UPDT^XPDR
+  Globals: UNDETERMINED ()
+  FileMan calls: ADD^DICA;WAIT^DICD;^DIR
+
+ $$COMCP^XPDUTL
+  Globals: UNDETERMINED ()
+  FileMan calls: FILE^DIE
+
+ $$NEWCP^XPDUTL
+  Globals: UNDETERMINED ();UNDETERMINED (XPDI)
+  FileMan calls: $$FIND1^DIC;UPDATE^DIE
+
+ $$PARCP^XPDUTL
+  Globals: UNDETERMINED (XPDI)
+  FileMan calls: $$GET1^DIQ
+
+ $$UPCP^XPDUTL
+  Globals: UNDETERMINED ()
+  FileMan calls: FILE^DIE
+
+ $$VERCP^XPDUTL
+  Globals: UNDETERMINED (XPDI)
+  FileMan calls: $$GET1^DIQ
+
+ MES^XPDUTL
+  Globals: ^XPD(9.7,
+  FileMan calls: WP^DIE
+
+ ATOD^XQ6
+  Globals: ^VA(200
+  FileMan calls: ENALL^DIK;^DIC;^DIR
+
+ LIST^XQ6
+  Globals: ^VA(200
+  FileMan calls: ^DIC
+
+ SHOW^XQ6
+  Globals: ^DIC(19.1
+  FileMan calls: ^DIC
+
+ EXCLUSE^XQ6B
+  Globals: ^DIC(19.1;^DIC(19.1,
+  FileMan calls: ^DIC;^DIE
+
+ ACTUAL^XQABLIST
+  Globals: ^XTV(8989.3
+  FileMan calls: ^DIC
+
+ LOW^XQABLIST
+  Globals: ^XTV(8989.3
+  FileMan calls: ^DIC
+
+ GETUSER1^XQALDATA
+  Globals: ^VA(200,
+  FileMan calls: $$GET1^DIQ
+
+ $$GETSURO^XQALSURO
+  Globals: ^XTV(8992,
+  FileMan calls: GETS^DIQ
+
+ DTPT^XQARPRT2
+  Globals: ^DPT(
+  FileMan calls: $$GET1^DIQ;^DIR
+
+ ACTION^XQH4
+  Globals: ^DIC(9.2,
+  FileMan calls: ^DIC
+
+ EN^XQOR
+  Globals: ^DIC(19,;^ORD(101,
+  FileMan calls: ^DIC
+
+ MSG^XQOR
+  Globals: ^ORD(101,
+  FileMan calls: --
+
+ DJMP^XQOR4
+  Globals: ^ORD(101
+  FileMan calls: IX^DIC
+
+ WP^XQORD1
+  Globals: UNDETERMINED (DIC);^XUTL(""XQORW""
+  FileMan calls: ^DIC;^DIE
+
+ XREF^XQORM
+  Globals: ^"_$PIECE^2;4(5)
+  FileMan calls: ^DIE
+
+ SHOW^XQSMD21
+  Globals: ^VA(200,
+  FileMan calls: ^DIC
+
+ ENTRY^XQSMD5
+  Globals: ^VA(200
+  FileMan calls: ^DIC;^DIE
+
+ RNAM^XQT4
+  Globals: UNDETERMINED (DIC);^VA(200
+  FileMan calls: ^DIC;^DIE
+
+ REMOVE^XUA4A72
+  Globals: ^VA(200
+  FileMan calls: ^DIK;^DIR
+
+ $$LKUP^XUAF4
+  Globals: ^DIC(4,
+  FileMan calls: $$FIND1^DIC
+
+ $$WHAT^XUAF4
+  Globals: ^DIC(4,
+  FileMan calls: $$GET1^DIQ
+
+ RELONE^XUDHRES
+  Globals: UNDETERMINED (DIC_ZISD0_",1,");^%ZISL(3.54
+  FileMan calls: ^DIC
+
+ $$RES^XUDHSET
+  Globals: UNDETERMINED ();^%ZIS(1;^%ZISL(3.54
+  FileMan calls: UPDATE^DIE;^DIC
+
+ $$PUT^XUESSO1
+  Globals: UNDETERMINED (200.06);^DIC(4,
+  FileMan calls: CHK^DIE
+
+ COPY^XUFILE
+  Globals: ^VA(200,
+  FileMan calls: ^DIC
+
+ ACC^XUFILE1
+  Globals: ^VA(200
+  FileMan calls: EN1^DIP;L^DICRW1
+
+ DELF^XUFILE1
+  Globals: UNDETERMINED ($SELECT^1;999(12))
+  FileMan calls: ^DIC
+
+ DELI^XUFILE1
+  Globals: ^VA(200,
+  FileMan calls: ^DIC
+
+ $$IEN^XUMF
+  Globals: UNDETERMINED (IFN)
+  FileMan calls: $$ROOT^DILFD
+
+ RPT1^XUP468
+  Globals: ^VA(200
+  FileMan calls: EN1^DIP
+
+ CHECK^XUPROD
+  Globals: UNDETERMINED ()
+  FileMan calls: FILE^DIE
+
+ EDIT^XUPROD
+  Globals: ^XTV(8989.3
+  FileMan calls: ^DIE
+
+ $$CHECKAV^XUS
+  Globals: ^XUSEC(4
+  FileMan calls: ^DIK
+
+ $$SLOG^XUS1
+  Globals: ^XUSEC(0
+  FileMan calls: IX^DIK
+
+ $$PROHIBIT^XUS1A
+  Globals: UNDETERMINED (30810.61
+$$FMTE^XLFDT(7))
+  FileMan calls: $$EZBLD^DIALOG
+
+ CLRFAC^XUS3
+  Globals: ^XUSEC(4
+  FileMan calls: ^DIK
+
+ EUC^XUS5
+  Globals: ^VA(200
+  FileMan calls: --
+
+ TESTM^XUS91
+  Globals: ^VA(200,
+  FileMan calls: ^DIC
+
+ $$APFIND^XUSAP
+  Globals: ^VA(200,
+  FileMan calls: $$FIND1^DIC
+
+ $$CREATE^XUSAP
+  Globals: UNDETERMINED ("E");^VA(200;^VA(200,
+  FileMan calls: $$FIND1^DIC;UPDATE^DIE;^DIC
+
+ $$USERTYPE^XUSAP
+  Globals: ^VA(201,
+  FileMan calls: $$FIND1^DIC
+
+ CONT^XUSAP
+  Globals: ^VA(200
+  FileMan calls: ^DIC;^DIE
+
+ $$WEBADDRS^XUSBSE1
+  Globals: ^MAG(2005.2,
+  FileMan calls: FIND^DIC
+
+ LOUT^XUSCLEAN
+  Globals: ^XUSEC(0
+  FileMan calls: EN1^DIK
+
+ DIVCHG^XUSER1
+  Globals: ^VA(200
+  FileMan calls: ^DIC
+
+ $$ADD^XUSERNEW
+  Globals: ^DIC(16;^DIC(3;^VA(20;^VA(200
+  FileMan calls: ^DIC;^DIE;^DIK
+
+ CLEAR^XUSESIG
+  Globals: ^VA(200,
+  FileMan calls: ^DIC;^DIE;^DIR
+
+ FAILED^XUSFACHK
+  Globals: ^XTV(8989.3;^XTV(8989.3,
+  FileMan calls: $$GET1^DIQ;^DIE
+
+ USERINFO^XUSKAAJ
+  Globals: ^VA(20,;^VA(200,
+  FileMan calls: GETS^DIQ
+
+ IXKEY^XUSMGR
+  Globals: ^VA(200
+  FileMan calls: ENALL^DIK
+
+ CLEREDIT^XUSNPIED
+  Globals: ^VA(200
+  FileMan calls: ^DIC
+
+ SCPURG^XUSPURGE
+  Globals: ^XUSEC(0
+  FileMan calls: ^DIK
+
+ DIVSET^XUSRB2
+  Globals: ^VA(200,"_DUZ_",2,
+  FileMan calls: $$FIND1^DIC
+
+ $$CRLURL^XUSSPKI
+  Globals: UNDETERMINED ("S")
+  FileMan calls: UPDATE^DIE
+
+ $$STORESIG^XUSSPKI
+  Globals: UNDETERMINED ("S")
+  FileMan calls: UPDATE^DIE
+
+ $$VERIFY^XUSSPKI
+  Globals: ^XUSSPKI(8980.2,
+  FileMan calls: $$FIND1^DIC
+
+ CRLUP^XUSSPKI
+  Globals: UNDETERMINED ("K")
+  FileMan calls: FILE^DIE
+
+ STORESIG^XUSSPKI
+  Globals: UNDETERMINED ("S")
+  FileMan calls: UPDATE^DIE
+
+ $$TAXIND^XUSTAX
+  Globals: ^USC(8932.1,;^VA(200,
+  FileMan calls: $$GET1^DIQ;EN^DIQ1
+
+ $$TAXORG^XUSTAX
+  Globals: ^DIC(4,;^USC(8932.1,
+  FileMan calls: $$GET1^DIQ;EN^DIQ1
+
+ $$RA^XUSTZ
+  Globals: UNDETERMINED (30810.43);UNDETERMINED (30810.44
+)
+  FileMan calls: $$EZBLD^DIALOG
+
+ X6IP^XUSTZIP
+  Globals: UNDETERMINED ()
+  FileMan calls: UPDATE^DIE;^DIR
+
+ $$FIND^XUTMOPT
+  Globals: ^DIC(19.2
+  FileMan calls: ^DIC
+
+ DISP^XUTMOPT
+  Globals: ^DIC(19.2
+  FileMan calls: EN1^DIP
+
+ EDIT^XUTMOPT
+  Globals: ^DIC(19.2
+  FileMan calls: --
+
+ OPTSTAT^XUTMOPT
+  Globals: ^DIC(19.2,
+  FileMan calls: FIND^DIC
+
+ RESCH^XUTMOPT
+  Globals: ^DIC(19.2
+  FileMan calls: ^DIE
+
+ BROWSE^ZISPL
+  Globals: UNDETERMINED ($NAME^1;2(4))
+  FileMan calls: BROWSE^DDBR
+
+ DSD^ZISPL
+  Globals: ^XMBS(3.519
+  FileMan calls: ^DIK
+
+ DSDOC^ZISPL
+  Globals: ^XMB(3.51
+  FileMan calls: ^DIK
+
+ MAIL^ZISPL
+  Globals: UNDETERMINED (34501.1);UNDETERMINED (39054
+)
+  FileMan calls: $$EZBLD^DIALOG;^DIR
+
+ CLOSE^ZISPL1
+  Globals: ^XMB(3.51
+  FileMan calls: --
+
+ 1^ZISPL2
+  Globals: ^XMB(3.51
+  FileMan calls: IXALL^DIK
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+98. PACKAGE NAME: RPC BROKER
+
+ WPTEXT^XWBEXMPL
+  Globals: ^XWB(8994,
+  FileMan calls: FILE^DID
+
+ APILIST^XWBFM
+  Globals: ^XWB(8994,
+  FileMan calls: LIST^DIC
+
+ FILECHK^XWBFM
+  Globals: ^DIC(
+  FileMan calls: $$FIND1^DIC
+
+ FILELIST^XWBFM
+  Globals: ^DIC(
+  FileMan calls: LIST^DIC
+
+ STOP^XWBTCP
+  Globals: UNDETERMINED ("New listener should stop on its own")
+           UNDETERMINED ("Shutdown Failed!")
+           UNDETERMINED ("Stop TCP Listener...")
+           UNDETERMINED ("TCP Listener does not appear to be running.")
+           UNDETERMINED ("TCP Listener has been shutdown.")
+  FileMan calls: EN^DDIOL
+
+ STOPALL^XWBTCP
+  Globals: UNDETERMINED (8994.171);^XWB(8994.1,1,7,
+  FileMan calls: LIST^DIC
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+
+99. PACKAGE NAME: MENTAL HEALTH
+
+ MAIN^YSASES
+  Globals: ^YSTX(604,
+  FileMan calls: $$GET1^DIQ;^DIR
+
+ ALPHADT^YSASFM
+  Globals: ^YSTX(604
+  FileMan calls: EN1^DIP
+
+ CLEAR^YSASFM
+  Globals: ^YSTX(604
+  FileMan calls: ^DIK;^DIR
+
+ DTORD^YSASFM
+  Globals: ^YSTX(604
+  FileMan calls: EN1^DIP
+
+ INTDATE^YSASFM
+  Globals: ^YSTX(604
+  FileMan calls: EN1^DIP
+
+ PARAM^YSASFM
+  Globals: ^YSTX(604.8
+  FileMan calls: ^DIE
+
+ PROGRAM^YSASFM
+  Globals: UNDETERMINED (DIC);^YSTX(604.26
+  FileMan calls: ^DIC;^DIE
+
+ SINGLEI^YSASFM
+  Globals: ^VA(200;^YSTX(604
+  FileMan calls: EN1^DIP;^DIC
+
+ SSNORD^YSASFM
+  Globals: ^YSTX(604
+  FileMan calls: EN1^DIP
+
+ UNSIGN^YSASFM
+  Globals: ^YSTX(604
+  FileMan calls: EN1^DIP
+
+ AA^YSASRU1
+  Globals: ^YSTX(604
+  FileMan calls: EN1^DIP
+
+ RESENDI^YSASRU1
+  Globals: ^YSTX(604
+  FileMan calls: ^DIC;^DIE
+
+ 1^YSCEN1
+  Globals: ^YSG(""CEN""
+  FileMan calls: ^DIC;^DIE
+
+ 2^YSCEN1
+  Globals: UNDETERMINED (DIC);^YSG(""SUB""
+  FileMan calls: ^DIC;^DIE
+
+ TLIST^YSCLTST3
+  Globals: UNDETERMINED ("FDA");^YSCL(603.04,1,1,
+  FileMan calls: UPDATE^DIE;VAL^DIE;^DIR
+
+ UPD^YSGAF
+  Globals: ^YSD(627.8
+  FileMan calls: FILE^DICN;^DIE
+
+ EDENT^YSGAF2
+  Globals: ^YSD(627.8
+  FileMan calls: ^DIE;^DIR
+
+ PRT^YSJOB
+  Globals: ^YSG(""JOB""
+  FileMan calls: EN1^DIP
+
+ ENF^YSPROB
+  Globals: ^YS(615
+  FileMan calls: ^DIC
+
+ ENALT^YSSITE
+  Globals: UNDETERMINED (DIC);^YSR(615.8
+  FileMan calls: ^DIC;^DIE
+
+ ENCAT^YSSITE
+  Globals: UNDETERMINED (DIC);^YSR(615.6
+  FileMan calls: ^DIC;^DIE
+
+ ENCKL^YSSITE
+  Globals: UNDETERMINED (DIC);^YSR(615.9
+  FileMan calls: ^DIC;^DIE
+
+ ENREA^YSSITE
+  Globals: UNDETERMINED (DIC);^YSR(615.5
+  FileMan calls: ^DIC;^DIE
+
+ ENRELC^YSSITE
+  Globals: UNDETERMINED (DIC);^YSR(615.7
+  FileMan calls: ^DIC;^DIE
+
+ ENSIGB^YSSITE
+  Globals: UNDETERMINED (DIC);^VA(200
+  FileMan calls: ^DIC;^DIE
+
+ ENWWU^YSSITE
+  Globals: UNDETERMINED (DIC);^YSA(602
+  FileMan calls: ^DIC;^DIE
+
+ INST^YSSITE
+  Globals: UNDETERMINED (DIC);^YSA(602
+  FileMan calls: ^DIC;^DIE
+
+ ENCK^YSSR1
+  Globals: UNDETERMINED (DIC);UNDETERMINED (DIE);^YS(615.2
+  FileMan calls: ^DIC;^DIE;^DIK
+
+ ENRLS^YSSR1
+  Globals: ^YS(615.2
+  FileMan calls: IX^DIC;^DIE
+
+ ENEDIT^YSSR2
+  Globals: UNDETERMINED (DIC);^YS(615.2
+  FileMan calls: IX^DIC;^DIE
+
+ ENTRYD^YSSR2
+  Globals: ^YS(615.2
+  FileMan calls: EN^DIQ;IX^DIC
+
+ YSDATE^YSSRU
+  Globals: ^YS(615.2
+  FileMan calls: --
+
+ YSINQ^YSSRU
+  Globals: ^YS(615.2
+  FileMan calls: IX^DIC
+
+ YSMGT^YSSRU
+  Globals: ^YS(615.2
+  FileMan calls: --
+
+ YSNURSE^YSSRU
+  Globals: ^YS(615.2
+  FileMan calls: --
+
+ YSREV^YSSRU
+  Globals: ^YS(615.2
+  FileMan calls: --
+
+ YSWARD^YSSRU
+  Globals: ^YS(615.2
+  FileMan calls: --
+
+ SAVEIT^YTAPI1
+  Globals: ^YTD(601.2
+  FileMan calls: IX^DIK
+
+ PRIVL^YTAPI5
+  Globals: ^YTT(601.71,
+  FileMan calls: $$GET1^DIQ
+
+ ADDER^YTAPI8
+  Globals: ^YSTX(604
+  FileMan calls: ^DIC
+
+ GETASI^YTAPI8
+  Globals: ^YSTX(604,
+  FileMan calls: $$GET1^DIQ
+
+ LISTASI^YTAPI8
+  Globals: ^YSTX(604,
+  FileMan calls: $$GET1^DIQ
+
+ SIGN^YTAPI8
+  Globals: ^YSTX(604,
+  FileMan calls: $$GET1^DIQ
+
+ SAVASI^YTAPI9
+  Globals: UNDETERMINED ("K");^YSTX(604,
+  FileMan calls: CHK^DIE;FILE^DIE
+
+ TSLIST^YTQAPI
+  Globals: ^YTT(601.71,
+  FileMan calls: $$GET1^DIQ
+
+ TSLIST1^YTQAPI
+  Globals: ^YTT(601.71,
+  FileMan calls: $$GET1^DIQ;FIELD^DID
+
+ CAPIE^YTQAPI1
+  Globals: UNDETERMINED (YSFILEN)
+  FileMan calls: $$GET1^DID;$$VFIELD^DILFD;GETS^DIQ
+
+ EDAD^YTQAPI1
+  Globals: UNDETERMINED ("E");UNDETERMINED (YSFILEN)
+  FileMan calls: UPDATE^DIE;VAL^DIE
+
+ WPED^YTQAPI1
+  Globals: UNDETERMINED (YSFILEN)
+  FileMan calls: $$VFIELD^DILFD;WP^DIE
+
+ FINDP^YTQAPI11
+  Globals: ^DPT(
+  FileMan calls: CLEAN^DILF;FIND^DIC
+
+ FULLWP^YTQAPI11
+  Globals: UNDETERMINED (YSFILEN)
+  FileMan calls: $$VFIELD^DILFD
+
+ IMPORT^YTQAPI12
+  Globals: ^XMB(3.9,
+  FileMan calls: $$GET1^DIQ
+
+ LISTASI^YTQAPI12
+  Globals: ^YSTX(604,
+  FileMan calls: $$GET1^DIQ
+
+ CKHL7^YTQAPI14
+  Globals: ^HLCS(870,;^YTT(601.84
+  FileMan calls: EN^DIQ;^DIC;^DIR
+
+ EXEMPT^YTQAPI14
+  Globals: ^YTT(601.71
+  FileMan calls: ^DIC;^DIE
+
+ NOPNOTE^YTQAPI14
+  Globals: ^YTT(601.71
+  FileMan calls: ^DIC;^DIE
+
+ SIGNOK^YTQAPI14
+  Globals: ^YSTX(604,
+  FileMan calls: $$GET1^DIQ
+
+ ADMINS^YTQAPI2
+  Globals: ^YTT(601.84,
+  FileMan calls: $$GET1^DIQ
+
+ ALLANS^YTQAPI2
+  Globals: ^YTT(601.84,
+  FileMan calls: $$GET1^DIQ
+
+ LISTER^YTQAPI2
+  Globals: UNDETERMINED (YSFILEN
+);UNDETERMINED (YSFILEN)
+  FileMan calls: $$VFIELD^DILFD;$$VFILE^DILFD;LIST^DIC
+
+ BATTC^YTQAPI3
+  Globals: ^YTT(601.78,
+  FileMan calls: $$GET1^DIQ
+
+ FIRSTWP^YTQAPI3
+  Globals: UNDETERMINED (YSFILEN)
+  FileMan calls: $$VFIELD^DILFD
+
+ PURGE^YTQAPI3
+  Globals: UNDETERMINED (YSFILEN
+);UNDETERMINED (YSROOT)
+  FileMan calls: $$ROOT^DILFD;^DIK
+
+ SCALEG^YTQAPI3
+  Globals: ^YTT(601.86,
+  FileMan calls: $$GET1^DIQ
+
+ ADDCH^YTQAPI4
+  Globals: ^YTT(601.75
+  FileMan calls: IX1^DIK
+
+ CTADD^YTQAPI4
+  Globals: ^YTT(601.751
+  FileMan calls: IX1^DIK
+
+ CTDEL^YTQAPI4
+  Globals: ^YTT(601.751
+  FileMan calls: ^DIK
+
+ IDENTAE^YTQAPI4
+  Globals: ^YTT(601.89
+  FileMan calls: IX1^DIK
+
+ ORPHCH^YTQAPI4
+  Globals: ^YTT(601.75
+  FileMan calls: ^DIK
+
+ ORPHCT^YTQAPI4
+  Globals: ^YTT(601.751
+  FileMan calls: ^DIK
+
+ TESTADD^YTQAPI4
+  Globals: ^YTT(601.71
+  FileMan calls: IX1^DIK
+
+ ADMINS^YTQAPI5
+  Globals: ^YTT(601.71,;^YTT(601.84,
+  FileMan calls: $$GET1^DIQ
+
+ DELADMIN^YTQAPI5
+  Globals: ^YTT(601.84;^YTT(601.85;^YTT(601.92
+  FileMan calls: ^DIK
+
+ DELETEME^YTQAPI6
+  Globals: ^YTT(601.71;^YTT(601.76
+  FileMan calls: ^DIK
+
+ BATDEL^YTQAPI7
+  Globals: ^YTT(601.77;^YTT(601.78;^YTT(601.781
+  FileMan calls: ^DIK
+
+ RULEDEL^YTQAPI7
+  Globals: ^YTT(601.79;^YTT(601.82;^YTT(601.83
+  FileMan calls: ^DIK
+
+ SNDBUL^YTQAPI7
+  Globals: ^XMB(3.8,
+  FileMan calls: ^DIC
+
+ VERSRV^YTQAPI7
+  Globals: ^DIC(19,
+  FileMan calls: FIND^DIC
+
+ DELSG^YTQAPI8
+  Globals: ^YTT(601.86;^YTT(601.87
+  FileMan calls: ^DIK
+
+ GETSCORE^YTQAPI8
+  Globals: ^YTT(601.71,;^YTT(601.84,
+  FileMan calls: $$GET1^DIQ
+
+ LEGACY^YTQAPI8
+  Globals: ^YTT(601.84,
+  FileMan calls: $$GET1^DIQ
+
+ HL7^YTQHL7
+  Globals: ^YTT(601.84
+  FileMan calls: ^DIE
+
+ FORM^YTQPRT
+  Globals: ^YTT(601.71
+  FileMan calls: ^DIC
+
+ PRTTEST^YTQPRT
+  Globals: ^YTT(601.71
+  FileMan calls: ^DIC
+
+ $$RL^YTQPXRM3
+  Globals: ^YTT(601.71,
+  FileMan calls: $$GET1^DIQ
+
+ CHECKCR^YTQPXRM4
+  Globals: ^YTT(601.84;^YTT(601.85
+  FileMan calls: ^DIK
+
+ ENDAS71^YTQPXRM6
+  Globals: ^YTT(601.84,
+  FileMan calls: $$GET1^DIQ
+
+ KILLSCR^YTQPXRM8
+  Globals: ^YTT(601.94
+  FileMan calls: ^DIK
+
+ PCREATE^YTQTIU
+  Globals: ^TIU(8925,;^YTT(601.71,;^YTT(601.84,
+  FileMan calls: $$GET1^DIQ
+
+ ADDCOMM^YTRPEXT
+  Globals: UNDETERMINED (DIC);^YTD(601.2
+  FileMan calls: ^DIC;^DIE
+--------------------------------------------------------------
