@@ -146,7 +146,7 @@ WPKGAPIO(GL,SPKG,I) ;
  . F  S RTN=$O(@GL@(8,SPKG,PKG,RTN)) Q:RTN=""  D
  . . S ATAG=""
  . . F  S ATAG=$O(@GL@(8,SPKG,PKG,RTN,ATAG)) Q:ATAG=""  D
- . . . W !," "_ATAG_"^"_RTN_" ("_$$GPKGNAME^ZZRGND19(PKG,GL)_")"
+ . . . W !," "_$$LTRIM^ZZRGND20(ATAG," ")_"^"_RTN_" ("_$$GPKGNAME^ZZRGND19(PKG,GL)_")"
  Q
  ;
 WAPIO(GL) ; 

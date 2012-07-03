@@ -43,7 +43,7 @@ NDXFI(GL) ;
  . F  S T=$O(@GL@(1,RTN,"X",T)) Q:T=""  D
  . . S TRTN=$P(T," ",1)
  . . S TTAG=$P(T," ",2)
- . . Q:TTAG=""
+ . . S:TTAG="" TTAG=" "
  . . S TPKG=$$GETPKG^ZZRGND19(TRTN,GL)
  . . Q:PKG=TPKG
  . . I '$D(@GL@(4,TPKG,PKG)) S @GL@(4,TPKG)=+$G(@GL@(4,TPKG))+1,@GL@(4,TPKG,PKG)="" 
