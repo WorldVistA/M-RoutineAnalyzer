@@ -183,4 +183,3 @@ PRUNE(S1,S2) ;String,prune char from front and back
  F  Q:$E(S1,$L(S1))'=S2  S S1=$E(S1,1,$L(S1)-1)
  Q S1
  
- 
