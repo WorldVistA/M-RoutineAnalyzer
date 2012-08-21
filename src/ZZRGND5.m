@@ -1,6 +1,5 @@
-ZZRGND5 ;SF-ISC/RWF - CROSS REFERENCE ALL ROUTINES ;03/26/2002  09:57
- ;;7.3;TOOLKIT;**20,27,61,121**;Apr 25, 1995;Build 7
- ; Per VHA Directive 2004-038, this routine should not be modified.
+ZZRGND5 ;;CBR/AU - XINDEX based routines ;08/15/12
+ ;;1.0;RGI Dependency Tool;**260004**;08/15/2012
 MAIN(SILENT) ;
  G END:$D(IND("QUIT")) I INP(8) W:'SILENT !,"Called Routines",! D MAIN^ZZRGND52(SILENT) ;Get called routines
  K ARG,CCN,CH,COM,ERR,GK,GRB,I,INDDA,INDDS,L,LAB,LAB0,LC,LIN,LOC,PC,PRV,R,RTN,S,STR,TXT,V,X,Y

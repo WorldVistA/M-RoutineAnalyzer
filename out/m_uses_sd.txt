@@ -1,0 +1,2473 @@
+Directly Used Globals By SCHEDULING
+
+Routine SC53286P: ^SCTM(404.44 
+Routine SCAPMC1: ^SCTM(404.51 
+Routine SCAPMC1: ^SCTM(404.57 
+Routine SCAPMC10: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCAPMC11: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCAPMC11: ^SCPT(404.42 
+Routine SCAPMC11: ^SCPT(404.43 
+Routine SCAPMC11: ^SCTM(404.57 
+Routine SCAPMC12: ^SCTM(404.51 
+Routine SCAPMC12: ^SCTM(404.52 
+Routine SCAPMC12: ^SCTM(404.57 
+Routine SCAPMC12: ^VA(200 (Dependency to KERNEL, NEW PERSON File)
+Routine SCAPMC13: ^SCTM(404.51 
+Routine SCAPMC13: ^SCTM(404.52 
+Routine SCAPMC13: ^SCTM(404.57 
+Routine SCAPMC13: ^VA(200 (Dependency to KERNEL, NEW PERSON File)
+Routine SCAPMC14: ^VA(200 (Dependency to KERNEL, NEW PERSON File)
+Routine SCAPMC15: ^SCTM(404.51 
+Routine SCAPMC15: ^SCTM(404.58 
+Routine SCAPMC16: ^SCTM(404.51 
+Routine SCAPMC17: ^SCTM(404.51 
+Routine SCAPMC17: ^SCTM(404.57 
+Routine SCAPMC17: ^SCTM(404.59 
+Routine SCAPMC18: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCAPMC18: ^SC( 
+Routine SCAPMC19: ^SCTM(404.52 
+Routine SCAPMC19: ^SCTM(404.57 
+Routine SCAPMC19: ^VA(200 (Dependency to KERNEL, NEW PERSON File)
+Routine SCAPMC2: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCAPMC2: ^SCPT(404.42 
+Routine SCAPMC2: ^SCTM(404.51 
+Routine SCAPMC20: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCAPMC20: ^SCPT(404.41 
+Routine SCAPMC21: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCAPMC21: ^SCTM(404.57 
+Routine SCAPMC22: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCAPMC22: ^SCPT(404.43 
+Routine SCAPMC22: ^SCTM(404.57 
+Routine SCAPMC23: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCAPMC23: ^SCPT(404.43 
+Routine SCAPMC23: ^SCTM(404.51 
+Routine SCAPMC23: ^SCTM(404.57 
+Routine SCAPMC24: ^SCTM(404.51 
+Routine SCAPMC24: ^SCTM(404.57 
+Routine SCAPMC24: ^SCTM(404.59 
+Routine SCAPMC24: ^SD(403.46 
+Routine SCAPMC24: ^USR(8930 (Dependency to AUTHORIZATION/SUBSCRIPTION, USR CLASS File)
+Routine SCAPMC25: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCAPMC25: ^SCTM(404.57 
+Routine SCAPMC26: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCAPMC26: ^DPT("AEB1" (Dependency to Registration, PATIENT File)
+Routine SCAPMC26: ^SC( 
+Routine SCAPMC27: ^DIC(40.7 
+Routine SCAPMC27: ^SC( 
+Routine SCAPMC28: ^SC( 
+Routine SCAPMC29: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCAPMC29: ^SCTM(404.57 
+Routine SCAPMC3: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCAPMC3: ^SC(403.47 
+Routine SCAPMC3: ^SCPT(404.42 
+Routine SCAPMC3: ^SCTM(404.51 
+Routine SCAPMC30: ^SC( 
+Routine SCAPMC30: ^SCTM(404.51 
+Routine SCAPMC30: ^SCTM(404.57 
+Routine SCAPMC33: ^SCPT(404.43 
+Routine SCAPMC34: ^SCPT(404.43 
+Routine SCAPMC4: ^DIC(4 (Dependency to Kernel, INSTITUTION File)
+Routine SCAPMC4: ^SCTM(404.51 
+Routine SCAPMC5: ^SCTM(404.51 
+Routine SCAPMC5: ^SCTM(404.56 
+Routine SCAPMC6: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCAPMC6: ^SCTM(404.51 
+Routine SCAPMC7: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCAPMC7: ^SCPT(404.42 
+Routine SCAPMC8: ^SCTM(404.52 
+Routine SCAPMC8: ^SCTM(404.57 
+Routine SCAPMC8: ^SD(403.46 
+Routine SCAPMC8: ^USR(8930 (Dependency to AUTHORIZATION/SUBSCRIPTION, USR CLASS File)
+Routine SCAPMC8: ^VA(200 (Dependency to KERNEL, NEW PERSON File)
+Routine SCAPMC8A: ^SCTM( 
+Routine SCAPMC8P: ^SCTM(404.53 
+Routine SCAPMC9: ^SC( 
+Routine SCAPMC9: ^SCTM(404.57 
+Routine SCAPMCA: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCAPMCA1: ^SCPT(404.43 
+Routine SCAPMCA1: ^SCTM(404.57 
+Routine SCAPMCA1: ^SD(403.46 
+Routine SCAPMCA1: ^USR(8930 (Dependency to AUTHORIZATION/SUBSCRIPTION, USR CLASS File)
+Routine SCAPMCU1: ^SCPT(404.42 
+Routine SCAPMCU1: ^SCPT(404.43 
+Routine SCAPMCU1: ^SCTM(404.51 
+Routine SCAPMCU1: ^SCTM(404.57 
+Routine SCAPMCU1: ^SD(403.43 
+Routine SCAPMCU2: ^SCPT(404.41 
+Routine SCAPMCU2: ^SCPT(404.42 
+Routine SCAPMCU2: ^SCPT(404.43 
+Routine SCAPMCU2: ^SCTM(404.51 
+Routine SCAPMCU2: ^SCTM(404.57 
+Routine SCAPMCU3: ^SCTM(404.51 
+Routine SCAPMCU3: ^SCTM(404.56 
+Routine SCAPMCU4: ^SCPT(404.42 
+Routine SCAPMCU4: ^SCTM(404.51 
+Routine SCAPMCU5: ^SCTM( 
+Routine SCAPMCU5: ^SCTM(404.57 
+Routine SCCVCDS1: ^SCE( 
+Routine SCCVCDS1: ^SD(404.98 
+Routine SCCVCDSP: ^SD(404.91 
+Routine SCCVCST: ^SD(404.91 
+Routine SCCVCST: ^SD(404.98 
+Routine SCCVCST1: ^SD(404.91 
+Routine SCCVCST1: ^SD(404.98 
+Routine SCCVCST2: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCCVCST2: ^SCE( 
+Routine SCCVCST2: ^SCE("APAR" 
+Routine SCCVCST2: ^SDD( 
+Routine SCCVCST2: ^SDD(409.42 
+Routine SCCVCST2: ^SDV( 
+Routine SCCVCST3: ^DIC(40.7 
+Routine SCCVCST3: ^SCE( 
+Routine SCCVCST3: ^SCE("ADFN" 
+Routine SCCVCST4: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCCVCST5: ^SC( 
+Routine SCCVCST5: ^SCE( 
+Routine SCCVDEL: ^DIC( (Dependency to ENGINEERING, ENGINEERING SECTION LIST File)
+Routine SCCVDEL: ^SD(404.91 
+Routine SCCVDEL: ^SD(404.98 
+Routine SCCVDEL1: ^DD( (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SCCVDEL1: ^DIC( (Dependency to ENGINEERING, ENGINEERING SECTION LIST File)
+Routine SCCVDSP: ^SD(404.91 
+Routine SCCVDSP: ^SD(404.98 
+Routine SCCVDSP: ^SD(404.99 (Dependency to AUTOMATED INFO COLLECTION SYS, PRINT MANAGER DIVISION SETUP File)
+Routine SCCVDSP1: ^SD(404.98 
+Routine SCCVE: ^DIC(40.7 
+Routine SCCVE: ^SCE( 
+Routine SCCVE: ^SD(404.91 
+Routine SCCVE: ^SD(404.98 
+Routine SCCVEAE: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCCVEAE: ^SCE( 
+Routine SCCVEAE: ^SDV( 
+Routine SCCVEAE1: ^DIC(9.4 (Dependency to Kernel, PACKAGE File)
+Routine SCCVEAE1: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCCVEAE1: ^SC( 
+Routine SCCVEAE1: ^SCE( 
+Routine SCCVEAE1: ^SDV( 
+Routine SCCVEAE3: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SCCVEAE3: ^DG(43 (Dependency to REGISTRATION, MAS PARAMETERS File)
+Routine SCCVEAE3: ^DIC(40.7 
+Routine SCCVEAE3: ^SC( 
+Routine SCCVEAE3: ^SCE( 
+Routine SCCVEAE3: ^SDV( 
+Routine SCCVEAP: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCCVEAP: ^SC( 
+Routine SCCVEAP1: ^DIC(9.4 (Dependency to Kernel, PACKAGE File)
+Routine SCCVEAP1: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCCVEAP1: ^SC( 
+Routine SCCVEAP1: ^SCE( 
+Routine SCCVEAP1: ^SCE("APAR" 
+Routine SCCVEAP2: ^DIC(40.7 
+Routine SCCVEAP2: ^SC( 
+Routine SCCVEAP2: ^SCE( 
+Routine SCCVEAP2: ^SCE("APAR" 
+Routine SCCVEAP2: ^SDV( 
+Routine SCCVEAP3: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCCVEAP3: ^SC( 
+Routine SCCVEAP3: ^SCE( 
+Routine SCCVEAP3: ^SCE("APAR" 
+Routine SCCVEAP4: ^DIC(40.7 
+Routine SCCVEAP4: ^SCE( 
+Routine SCCVEAP4: ^SCE("APAR" 
+Routine SCCVEAP4: ^SDV( 
+Routine SCCVEDI: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCCVEDI: ^DPT("ADIS" (Dependency to Registration, PATIENT File)
+Routine SCCVEDI1: ^DIC(9.4 (Dependency to Kernel, PACKAGE File)
+Routine SCCVEDI1: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCCVEDI1: ^PX(815 (Dependency to PCE PATIENT CARE ENCOUNTER, PCE PARAMETERS File)
+Routine SCCVEDI1: ^SC( 
+Routine SCCVEDI1: ^SCE( 
+Routine SCCVEDI1: ^SD(404.91 
+Routine SCCVEDI3: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCCVEDI3: ^SCE( 
+Routine SCCVEDI3: ^SCE("APAR" 
+Routine SCCVEGD0: ^SD(404.98 
+Routine SCCVEGD1: ^SD(404.98 
+Routine SCCVEGD2: ^SD(404.98 
+Routine SCCVEGU1: ^SD(404.98 
+Routine SCCVLOG: ^SD( (Dependency to AUTOMATED INFO COLLECTION SYS, PRINT MANAGER DIVISION SETUP File)
+Routine SCCVLOG: ^SD(404.98 
+Routine SCCVLOG1: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCCVLOG1: ^SC( 
+Routine SCCVLOG2: ^SD(404.98 
+Routine SCCVPAR: ^SD(404.91 
+Routine SCCVPAR: ^SD(404.98 
+Routine SCCVPCE: ^AUPNVCPT("AD" (Dependency to PCE PATIENT CARE ENCOUNTER, V CPT File)
+Routine SCCVPCE: ^AUPNVPOV("AD" (Dependency to PCE PATIENT CARE ENCOUNTER, V POV File)
+Routine SCCVPCE: ^AUPNVPRV("AD" (Dependency to PCE PATIENT CARE ENCOUNTER, V PROVIDER File)
+Routine SCCVPCE: ^AUPNVSIT( (Dependency to PCE PATIENT CARE ENCOUNTER, VISIT File)
+Routine SCCVPCE: ^ICD9( (Dependency to DRG GROUPER, ICD DIAGNOSIS File)
+Routine SCCVPCE: ^ICPT( (Dependency to CPT/HCPCS CODES, CPT File)
+Routine SCCVPCE: ^SCE( 
+Routine SCCVPCE: ^SCE("APAR" 
+Routine SCCVPCE: ^SDD( 
+Routine SCCVPCE: ^SDV( 
+Routine SCCVPCE: ^VA(200 (Dependency to KERNEL, NEW PERSON File)
+Routine SCCVU: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCCVU: ^SCE( 
+Routine SCCVU: ^SDV( 
+Routine SCCVU: ^SDV("ADT" 
+Routine SCCVU1: ^SD(404.98 
+Routine SCCVU2: ^SD(404.91 
+Routine SCCVU2: ^SD(404.98 
+Routine SCCVU2: ^SD(404.99 (Dependency to AUTOMATED INFO COLLECTION SYS, PRINT MANAGER DIVISION SETUP File)
+Routine SCDD: ^DIC(40.7 
+Routine SCDDI1: ^SCE( 
+Routine SCDDI1: ^SD(409.73 
+Routine SCDDI1: ^SD(409.74 
+Routine SCDDI1: ^SD(409.75 
+Routine SCDDI1: ^SD(409.76 
+Routine SCDXFU01: ^SCE( 
+Routine SCDXFU01: ^SD(409.73 
+Routine SCDXFU01: ^SD(409.74 
+Routine SCDXFU01: ^VA(200 (Dependency to KERNEL, NEW PERSON File)
+Routine SCDXFU02: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCDXFU02: ^SD(409.73 
+Routine SCDXFU02: ^SD(409.74 
+Routine SCDXFU02: ^SD(409.75 
+Routine SCDXFU02: ^SD(409.76 
+Routine SCDXFU03: ^SCE( 
+Routine SCDXFU03: ^SCE("AVSIT" 
+Routine SCDXFU03: ^SD(409.73 
+Routine SCDXFU04: ^SCE( 
+Routine SCDXFU04: ^SD(409.73 
+Routine SCDXFU04: ^SD(409.74 
+Routine SCDXFU10: ^SD(409.73 
+Routine SCDXFU10: ^SD(409.77 
+Routine SCDXFU11: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SCDXFU11: ^SC( 
+Routine SCDXFU11: ^SCE( 
+Routine SCDXFU11: ^SD(409.73 
+Routine SCDXFU11: ^SD(409.74 
+Routine SCDXFU11: ^SD(409.77 
+Routine SCDXFU12: ^SD(409.77 
+Routine SCDXFU13: ^SD(409.73 
+Routine SCDXFU13: ^SD(409.77 
+Routine SCDXFX01: ^SD(404.91 
+Routine SCDXFX01: ^SD(409.73 
+Routine SCDXHLDR: ^SC( 
+Routine SCDXHLDR: ^SCE( 
+Routine SCDXHLDR: ^SCE("AVSIT" 
+Routine SCDXHLDR: ^SD(409.73 
+Routine SCDXMSG: ^ORD(101 (Dependency to KERNEL, PROTOCOL File)
+Routine SCDXMSG: ^SCE( 
+Routine SCDXMSG: ^SD(404.91 
+Routine SCDXMSG: ^SD(409.73 
+Routine SCDXMSG: ^SD(409.74 
+Routine SCDXMSG0: ^SCE( 
+Routine SCDXMSG0: ^SD(409.73 
+Routine SCDXMSG0: ^SD(409.74 
+Routine SCDXMSG1: ^DIC(8 (Dependency to Registration, ELIGIBILITY CODE File)
+Routine SCDXMSG1: ^SCE( 
+Routine SCDXMSG2: ^DG(43 (Dependency to REGISTRATION, MAS PARAMETERS File)
+Routine SCDXMSG2: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCDXMSG2: ^SC( 
+Routine SCDXMSG2: ^SCE( 
+Routine SCDXMSG2: ^SD(409.73 
+Routine SCDXMSG2: ^SD(409.74 
+Routine SCDXMSG2: ^VA(200 (Dependency to KERNEL, NEW PERSON File)
+Routine SCDXPOV: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SCDXPOV: ^DIC(4 (Dependency to Kernel, INSTITUTION File)
+Routine SCDXPOV: ^DIC(8 (Dependency to Registration, ELIGIBILITY CODE File)
+Routine SCDXPOV: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCDXPOV: ^SCE( 
+Routine SCDXPOV: ^SCE("B" 
+Routine SCDXPOV: ^SD(409.73 
+Routine SCDXPOV1: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SCDXPOV1: ^DIC(8 (Dependency to Registration, ELIGIBILITY CODE File)
+Routine SCDXPOV1: ^VA(389.9 (Dependency to REGISTRATION, STATION NUMBER (TIME SENSITIVE File)
+Routine SCDXPOV2: ^DIC(8 (Dependency to Registration, ELIGIBILITY CODE File)
+Routine SCDXPOV3: ^DIC(8 (Dependency to Registration, ELIGIBILITY CODE File)
+Routine SCDXPRG0: ^SCE("B" 
+Routine SCDXPRG0: ^SD(409.74 
+Routine SCDXPRN2: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SCDXPRN2: ^DG(43 (Dependency to REGISTRATION, MAS PARAMETERS File)
+Routine SCDXPRN2: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCDXPRN2: ^SC( 
+Routine SCDXPRN2: ^SD(409.77 
+Routine SCDXRT01: ^SCE("B" 
+Routine SCDXRT01: ^SD(404.91 
+Routine SCDXRT01: ^SD(409.73 
+Routine SCDXRT01: ^SD(409.74 
+Routine SCDXRT03: ^SD(409.75 
+Routine SCDXSUP: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCDXSUP: ^SC( 
+Routine SCDXSUP: ^SCE( 
+Routine SCDXSUP: ^SCE("B" 
+Routine SCDXSUP: ^SD(409.73 
+Routine SCDXSUP1: ^DD("DD" (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SCDXSUP1: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCDXSUP1: ^SC( 
+Routine SCDXSUP1: ^SCE( 
+Routine SCDXSUP1: ^SCE("ADFN" 
+Routine SCDXSUP1: ^SCE("C" 
+Routine SCDXSUP1: ^SD(409.1 
+Routine SCDXSUP2: ^SD(409.75 
+Routine SCDXUAPI: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SCDXUAPI: ^DIC(4 (Dependency to Kernel, INSTITUTION File)
+Routine SCDXUAPI: ^DIC(40.7 
+Routine SCDXUAPI: ^DIC(9.4 (Dependency to Kernel, PACKAGE File)
+Routine SCDXUAPI: ^SC( 
+Routine SCDXUTL: ^DIC(40.7 
+Routine SCDXUTL: ^SC( 
+Routine SCDXUTL: ^SCE( 
+Routine SCDXUTL: ^SD(404.91 
+Routine SCDXUTL: ^SD(409.45 
+Routine SCDXUTL: ^SD(409.63 
+Routine SCDXUTL: ^SD(409.73 
+Routine SCDXUTL: ^SD(409.74 
+Routine SCDXUTL0: ^DIC(21 (Dependency to Registration, PERIOD OF SERVICE File)
+Routine SCDXUTL0: ^DIC(8 (Dependency to Registration, ELIGIBILITY CODE File)
+Routine SCDXUTL0: ^DIC(8.1 (Dependency to Registration, MAS ELIGIBILITY CODE File)
+Routine SCDXUTL0: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCDXUTL0: ^SCE( 
+Routine SCDXUTL0: ^SCE("APAR" 
+Routine SCDXUTL0: ^SD(409.1 
+Routine SCDXUTL0: ^SDD(409.42 
+Routine SCDXUTL1: ^SCE("APAR" 
+Routine SCDXUTL2: ^DD("DD" (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SCDXUTL2: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SCDXUTL2: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCDXUTL2: ^SC( 
+Routine SCDXUTL2: ^SCE( 
+Routine SCDXUTL2: ^SD(409.73 
+Routine SCDXUTL2: ^SD(409.74 
+Routine SCDXUTL2: ^SD(409.75 
+Routine SCDXUTL3: ^SD(409.73 
+Routine SCDXUTL3: ^SD(409.75 
+Routine SCDXUTL3: ^SD(409.76 
+Routine SCDXUTL4: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCDXUTL4: ^SCE( 
+Routine SCDXUTL4: ^SCE("C" 
+Routine SCDXUTL4: ^SD(409.73 
+Routine SCDXUTL4: ^SD(409.74 
+Routine SCDXUTL4: ^SD(409.75 
+Routine SCDXUTL5: ^SCE( 
+Routine SCDXUTL5: ^SCE("B" 
+Routine SCDXUTL5: ^SD(404.91 
+Routine SCDXUTL5: ^SD(409.73 
+Routine SCDXUTL5: ^SD(409.74 
+Routine SCENI0: ^DG(43 (Dependency to REGISTRATION, MAS PARAMETERS File)
+Routine SCENI0: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCENI0: ^SC( 
+Routine SCENI0: ^SCE( 
+Routine SCENI0: ^SD(409.73 
+Routine SCENI0: ^SD(409.74 
+Routine SCENI0: ^SD(409.75 
+Routine SCENI0: ^SD(409.76 
+Routine SCENI01: ^DG(43 (Dependency to REGISTRATION, MAS PARAMETERS File)
+Routine SCENI01: ^SC( 
+Routine SCENIA0: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCENIA0: ^SC( 
+Routine SCENIA0: ^SD(409.75 
+Routine SCENIA0: ^SD(409.76 
+Routine SCENIA1: ^SCE( 
+Routine SCENIA1: ^SD(409.73 
+Routine SCENIA1: ^SD(409.75 
+Routine SCENIA1: ^SD(409.76 
+Routine SCENIA2: ^DIC(8 (Dependency to Registration, ELIGIBILITY CODE File)
+Routine SCENIA2: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCENIA2: ^SC( 
+Routine SCENIA2: ^SCE( 
+Routine SCENIA2: ^SCE("APAR" 
+Routine SCENIA2: ^SD(409.1 
+Routine SCENIA2: ^SD(409.73 
+Routine SCENIA2: ^XUSEC("SCENI ENCOUNTER EDIT" (Dependency to Kernel, AUDIT LOG FOR OPTIONS File)
+Routine SCMCBK1: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCMCBK1: ^SCTM(404.57 
+Routine SCMCBK6: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCMCBK6: ^SCPT(404.42 
+Routine SCMCBK6: ^SCTM(404.51 
+Routine SCMCBK7: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCMCBK7: ^SCTM(404.51 
+Routine SCMCBK8: ^SCTM(404.57 
+Routine SCMCBK9: ^SCTM(404.51 
+Routine SCMCBK9: ^SCTM(404.57 
+Routine SCMCCON: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCMCCV: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCMCCV: ^SCTM(404.51 
+Routine SCMCCV: ^SCTM(404.57 
+Routine SCMCCV: ^SCTM(404.58 
+Routine SCMCCV: ^VA(200 (Dependency to KERNEL, NEW PERSON File)
+Routine SCMCCV1: ^SCTM(404.51 
+Routine SCMCCV1: ^SCTM(404.57 
+Routine SCMCCV2: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCMCCV2: ^SCPT(404.42 
+Routine SCMCCV2: ^SCPT(404.43 
+Routine SCMCCV2: ^SCTM(404.51 
+Routine SCMCCV2: ^SCTM(404.57 
+Routine SCMCCV3: ^SCTM(404.51 
+Routine SCMCCV3: ^SCTM(404.53 
+Routine SCMCCV3: ^SCTM(404.57 
+Routine SCMCCV4: ^SCPT(404.43 
+Routine SCMCCV4: ^SCTM(404.51 
+Routine SCMCCV4: ^SCTM(404.57 
+Routine SCMCCV5: ^DD("DD" (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SCMCCV5: ^SCTM(404.52 
+Routine SCMCCV5: ^SCTM(404.57 
+Routine SCMCCV5: ^USR(8930.3 (Dependency to AUTHORIZATION/SUBSCRIPTION, USR CLASS MEMBERSHIP File)
+Routine SCMCCV5: ^VA(200 (Dependency to KERNEL, NEW PERSON File)
+Routine SCMCCV6: ^SCPT(404.43 
+Routine SCMCCV6: ^SCTM(404.44 
+Routine SCMCCV6: ^SCTM(404.57 
+Routine SCMCDD: ^SC( 
+Routine SCMCDD: ^SCTM(404.57 
+Routine SCMCDD1: ^ORD(101 (Dependency to KERNEL, PROTOCOL File)
+Routine SCMCDD1: ^SC( 
+Routine SCMCDD1: ^SCPT(404.42 
+Routine SCMCDD1: ^SCPT(404.43 
+Routine SCMCDD1: ^SCTM(404.51 
+Routine SCMCDD1: ^SCTM(404.57 
+Routine SCMCDD2: ^SC("TEAM" 
+Routine SCMCDD2: ^SCTM(404.51 
+Routine SCMCDD2: ^SCTM(404.57 
+Routine SCMCDDA: ^SCTM(404.51 
+Routine SCMCDDA: ^SCTM(404.57 
+Routine SCMCEV1: ^SC( 
+Routine SCMCEV1: ^SCPT(404.42 
+Routine SCMCEV1: ^SCTM(404.51 
+Routine SCMCEV2: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCMCEV2: ^SCPT(404.42 
+Routine SCMCEV2: ^SCTM(404.51 
+Routine SCMCEV3: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCMCEV3: ^ORD(101 (Dependency to KERNEL, PROTOCOL File)
+Routine SCMCEV3: ^SC( 
+Routine SCMCHL: ^ORD(101 (Dependency to KERNEL, PROTOCOL File)
+Routine SCMCHL: ^SCPT(404.48 
+Routine SCMCHL: ^SCTM(404.44 
+Routine SCMCHLA: ^SCPT(404.471 
+Routine SCMCHLA1: ^SCPT(404.471 
+Routine SCMCHLA2: ^SCPT(404.472 
+Routine SCMCHLA2: ^SCPT(404.49 
+Routine SCMCHLB: ^SCPT(404.42 
+Routine SCMCHLB: ^SCPT(404.43 
+Routine SCMCHLB: ^SCTM(404.51 
+Routine SCMCHLB: ^SCTM(404.52 
+Routine SCMCHLB: ^SCTM(404.53 
+Routine SCMCHLB: ^SCTM(404.57 
+Routine SCMCHLB: ^SD(403.46 
+Routine SCMCHLB: ^SD(403.47 
+Routine SCMCHLB1: ^SCPT(404.42 
+Routine SCMCHLB2: ^SCPT(404.43 
+Routine SCMCHLB2: ^SCPT(404.48 
+Routine SCMCHLB2: ^SCPT(404.49 
+Routine SCMCHLE: ^SCPT(404.48 
+Routine SCMCHLE: ^VA(200 (Dependency to KERNEL, NEW PERSON File)
+Routine SCMCHLL: ^SCPT(404.471 
+Routine SCMCHLL: ^SCTM(404.52 
+Routine SCMCHLM: ^SCPT(404.42 
+Routine SCMCHLM: ^SCPT(404.43 
+Routine SCMCHLM: ^SCPT(404.471 
+Routine SCMCHLM: ^SCPT(404.49 
+Routine SCMCHLM: ^SCTM(404.51 
+Routine SCMCHLM: ^SCTM(404.57 
+Routine SCMCHLP: ^DD("SITE" (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SCMCHLP: ^SCPT(404.471 
+Routine SCMCHLP: ^SCPT(404.48 
+Routine SCMCHLP: ^SCTM(404.51 
+Routine SCMCHLP: ^SCTM(404.52 
+Routine SCMCHLP: ^SCTM(404.57 
+Routine SCMCHLR: ^DISV( (Dependency Unknown)
+Routine SCMCHLR: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCMCHLR: ^SCPT(404.43 
+Routine SCMCHLR: ^SCPT(404.49 
+Routine SCMCHLR2: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCMCHLR2: ^SCPT(404.42 
+Routine SCMCHLR2: ^SCPT(404.43 
+Routine SCMCHLR2: ^SCPT(404.471 
+Routine SCMCHLR2: ^SCPT(404.49 
+Routine SCMCHLR2: ^SCTM(404.51 
+Routine SCMCHLR2: ^SCTM(404.52 
+Routine SCMCHLR2: ^SCTM(404.57 
+Routine SCMCHLR3: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCMCHLR3: ^SCTM(404.52 
+Routine SCMCHLR9: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCMCHLR9: ^SCPT(404.471 
+Routine SCMCHLR9: ^SCTM(404.52 
+Routine SCMCHLRI: ^SCPT(404.471 
+Routine SCMCHLRI: ^SCPT(404.49 
+Routine SCMCHLRR: ^SCPT(404.43 
+Routine SCMCHLRR: ^SCPT(404.471 
+Routine SCMCHLRR: ^SCPT(404.49 
+Routine SCMCHLRR: ^SCTM(404.44 
+Routine SCMCHLX: ^SCPT(404.48 
+Routine SCMCHLX1: ^SCPT(404.42 
+Routine SCMCHLX1: ^SCPT(404.43 
+Routine SCMCHLX1: ^SCPT(404.48 
+Routine SCMCHLX1: ^SCTM(404.52 
+Routine SCMCHLX1: ^SCTM(404.53 
+Routine SCMCHLX1: ^SCTM(404.57 
+Routine SCMCHLZ: ^SCPT(404.43 
+Routine SCMCHLZ: ^SCPT(404.49 
+Routine SCMCHLZ: ^SCTM(404.51 
+Routine SCMCHLZ: ^SCTM(404.57 
+Routine SCMCHLZ: ^SD(403.47 
+Routine SCMCLK: ^SCTM(404.53 
+Routine SCMCLK: ^SCTM(404.57 
+Routine SCMCLN: ^SCPT(404.42 
+Routine SCMCLN: ^SCPT(404.43 
+Routine SCMCLN: ^SCPT(404.48 
+Routine SCMCLN1: ^DIC(4 (Dependency to Kernel, INSTITUTION File)
+Routine SCMCLN1: ^SCTM(404.51 
+Routine SCMCMM: ^SCTM(404.51 
+Routine SCMCMU: ^SC( 
+Routine SCMCMU: ^SCTM(404.51 
+Routine SCMCMU: ^SCTM(404.57 
+Routine SCMCMU1: ^SC( 
+Routine SCMCMU1: ^SCTM(404.51 
+Routine SCMCMU1: ^SCTM(404.57 
+Routine SCMCMU11: ^SC( 
+Routine SCMCMU11: ^SCTM(404.51 
+Routine SCMCMU11: ^SCTM(404.57 
+Routine SCMCMU2: ^SCPT(404.42 
+Routine SCMCMU2: ^SCPT(404.43 
+Routine SCMCMU2: ^SCTM(404.51 
+Routine SCMCMU2: ^SCTM(404.57 
+Routine SCMCMU3: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCMCMU4: ^SC( 
+Routine SCMCMU4: ^SCTM(404.51 
+Routine SCMCMU4: ^SCTM(404.57 
+Routine SCMCMU4: ^VA(200 (Dependency to KERNEL, NEW PERSON File)
+Routine SCMCPM: ^DD("DD" (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SCMCPM: ^DG(405.1 (Dependency to REGISTRATION, FACILITY MOVEMENT TYPE File)
+Routine SCMCPM: ^DG(405.3 (Dependency to REGISTRATION, MAS MOVEMENT TRANSACTION TYPE File)
+Routine SCMCPM: ^DG(405.4 (Dependency to REGISTRATION, ROOM-BED File)
+Routine SCMCPM: ^DGPM( (Dependency to REGISTRATION, PATIENT MOVEMENT File)
+Routine SCMCPM: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCMCPM1: ^SD(404.91 
+Routine SCMCPR1: ^SD(403.46 
+Routine SCMCPREC: ^SCTM(404.53 
+Routine SCMCPT2: ^DIPT(1448 (Dependency to VA FileMan, PRINT TEMPLATE File)
+Routine SCMCPT2: ^SCTM(404.57 
+Routine SCMCPT2: ^SD(403.46 
+Routine SCMCPT6: ^DD(404.52 (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SCMCPT6: ^DIPT(1452 (Dependency to VA FileMan, PRINT TEMPLATE File)
+Routine SCMCPT6: ^SC( 
+Routine SCMCPT6: ^SCTM(404.51 
+Routine SCMCPT6: ^SCTM(404.52 
+Routine SCMCPT6: ^SCTM(404.57 
+Routine SCMCPT6: ^VA(200 (Dependency to KERNEL, NEW PERSON File)
+Routine SCMCQK: ^XUSEC("SC PCMM SETUP" (Dependency to Kernel, AUDIT LOG FOR OPTIONS File)
+Routine SCMCQK1: ^DD("DD" (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SCMCQK1: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCMCQK1: ^SC( 
+Routine SCMCQK1: ^SCTM(404.51 
+Routine SCMCQK1: ^SCTM(404.52 
+Routine SCMCQK1: ^SCTM(404.57 
+Routine SCMCQK2: ^DD("DD" (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SCMCQK2: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCMCQK2: ^SC( 
+Routine SCMCQK2: ^SCTM(404.51 
+Routine SCMCQK2: ^SCTM(404.52 
+Routine SCMCQK2: ^SCTM(404.57 
+Routine SCMCRPT: ^SCTM(404.51 
+Routine SCMCRT1: ^SCTM(404.51 
+Routine SCMCRT1: ^SCTM(404.57 
+Routine SCMCRT1: ^SD(403.46 
+Routine SCMCRT1A: ^DIC(4 (Dependency to Kernel, INSTITUTION File)
+Routine SCMCRT1A: ^DIC(49 (Dependency to KERNEL, SERVICE/SECTION File)
+Routine SCMCRT1A: ^SD(403.47 
+Routine SCMCRT1A: ^UTILTIY($J (Dependency Unknown)
+Routine SCMCTMM: ^DD("DD" (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SCMCTMM: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCMCTMM: ^SCTM(404.51 
+Routine SCMCTMU: ^DIC(4 (Dependency to Kernel, INSTITUTION File)
+Routine SCMCTMU: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCMCTMU: ^ORD(101 (Dependency to KERNEL, PROTOCOL File)
+Routine SCMCTMU: ^SCPT(404.42 
+Routine SCMCTMU: ^SCPT(404.43 
+Routine SCMCTMU: ^SCTM(404.51 
+Routine SCMCTMU: ^SCTM(404.57 
+Routine SCMCTMU: ^VA(200 (Dependency to KERNEL, NEW PERSON File)
+Routine SCMCTMU2: ^SCPT(404.42 
+Routine SCMCTMU2: ^SCPT(404.43 
+Routine SCMCTMU2: ^SCTM(404.51 
+Routine SCMCTMU2: ^SCTM(404.57 
+Routine SCMCTPM: ^DD("DD" (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SCMCTPM: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCMCTPM: ^SCPT(404.42 
+Routine SCMCTPM: ^SCTM(404.51 
+Routine SCMCTPM: ^SCTM(404.57 
+Routine SCMCTPU: ^SC( 
+Routine SCMCTPU: ^SCPT(404.42 
+Routine SCMCTPU: ^SCPT(404.43 
+Routine SCMCTPU: ^SCTM(404.57 
+Routine SCMCTPU: ^SD(404.91 
+Routine SCMCTPU: ^SD(404.92 
+Routine SCMCTPU: ^SD(404.93 
+Routine SCMCTPU2: ^SCPT(404.43 
+Routine SCMCTPU2: ^SCTM(404.51 
+Routine SCMCTPU2: ^SCTM(404.57 
+Routine SCMCTPU3: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCMCTPU3: ^SCPT(404.42 
+Routine SCMCTPU3: ^SCPT(404.43 
+Routine SCMCTPU3: ^SCTM(404.51 
+Routine SCMCTPU3: ^SCTM(404.57 
+Routine SCMCTPUR: ^SCTM(404.51 
+Routine SCMCTPUR: ^SD(403.47 
+Routine SCMCTSK: ^AUPNVPRV( (Dependency to PCE PATIENT CARE ENCOUNTER, V PROVIDER File)
+Routine SCMCTSK: ^AUPNVPRV("AD" (Dependency to PCE PATIENT CARE ENCOUNTER, V PROVIDER File)
+Routine SCMCTSK: ^AUPNVSIT("AA" (Dependency to PCE PATIENT CARE ENCOUNTER, VISIT File)
+Routine SCMCTSK: ^DPT("AEXP1" (Dependency to Registration, PATIENT File)
+Routine SCMCTSK: ^SCPT(404.42 
+Routine SCMCTSK: ^SCPT(404.43 
+Routine SCMCTSK: ^SCTM(404.45 
+Routine SCMCTSK: ^SCTM(404.46 
+Routine SCMCTSK: ^SCTM(404.51 
+Routine SCMCTSK: ^SCTM(404.52 
+Routine SCMCTSK: ^SCTM(404.57 
+Routine SCMCTSK: ^SDWL(409.3 
+Routine SCMCTSK1: ^AUPNVPRV( (Dependency to PCE PATIENT CARE ENCOUNTER, V PROVIDER File)
+Routine SCMCTSK1: ^AUPNVPRV("AD" (Dependency to PCE PATIENT CARE ENCOUNTER, V PROVIDER File)
+Routine SCMCTSK1: ^SCE( 
+Routine SCMCTSK1: ^SCE("ADFN" 
+Routine SCMCTSK1: ^SCPT(404.43 
+Routine SCMCTSK1: ^SCPT(404.48 
+Routine SCMCTSK1: ^SCTM(404.51 
+Routine SCMCTSK1: ^SCTM(404.52 
+Routine SCMCTSK1: ^SCTM(404.53 
+Routine SCMCTSK1: ^SCTM(404.57 
+Routine SCMCTSK1: ^SD(403.46 
+Routine SCMCTSK1: ^SDD(409.44 
+Routine SCMCTSK2: ^DD("DD" (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SCMCTSK2: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCMCTSK2: ^SC( 
+Routine SCMCTSK2: ^SCPT(404.42 
+Routine SCMCTSK2: ^SCPT(404.43 
+Routine SCMCTSK2: ^SCTM(404.44 
+Routine SCMCTSK2: ^SCTM(404.52 
+Routine SCMCTSK2: ^SCTM(404.53 
+Routine SCMCTSK2: ^SCTM(404.57 
+Routine SCMCTSK2: ^SD(403.46 
+Routine SCMCTSK3: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCMCTSK3: ^SC( 
+Routine SCMCTSK3: ^SCPT(404.42 
+Routine SCMCTSK3: ^SCPT(404.43 
+Routine SCMCTSK3: ^SCTM(404.44 
+Routine SCMCTSK3: ^SCTM(404.51 
+Routine SCMCTSK3: ^SCTM(404.52 
+Routine SCMCTSK3: ^SCTM(404.57 
+Routine SCMCTSK3: ^SD(403.46 
+Routine SCMCTSK4: ^SD(403.46 
+Routine SCMCTSK5: ^DD("DD" (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SCMCTSK5: ^SCPT(404.42 
+Routine SCMCTSK5: ^SCPT(404.43 
+Routine SCMCTSK5: ^SCTM(404.57 
+Routine SCMCTSK6: ^SC( 
+Routine SCMCTSK6: ^SC("B" 
+Routine SCMCTSK6: ^SCPT(404.42 
+Routine SCMCTSK6: ^SCPT(404.43 
+Routine SCMCTSK6: ^SCTM(404.51 
+Routine SCMCTSK6: ^SCTM(404.52 
+Routine SCMCTSK6: ^SCTM(404.53 
+Routine SCMCTSK6: ^SCTM(404.57 
+Routine SCMCTSK6: ^SD(403.46 
+Routine SCMCTSK6: ^VA(200 (Dependency to KERNEL, NEW PERSON File)
+Routine SCMCTSK7: ^SCPT(404.42 
+Routine SCMCTSK7: ^SCPT(404.43 
+Routine SCMCTSK7: ^SCTM(404.44 
+Routine SCMCTSK7: ^SCTM(404.57 
+Routine SCMCTSK9: ^AUPNVPRV( (Dependency to PCE PATIENT CARE ENCOUNTER, V PROVIDER File)
+Routine SCMCTSK9: ^AUPNVPRV("AD" (Dependency to PCE PATIENT CARE ENCOUNTER, V PROVIDER File)
+Routine SCMCTSK9: ^SCE( 
+Routine SCMCTSK9: ^SCE("ADFN" 
+Routine SCMCTSK9: ^SCPT(404.43 
+Routine SCMCTSK9: ^SCTM(404.57 
+Routine SCMCTSK9: ^SDD(409.44 
+Routine SCMCTSKG: ^SCPT(404.43 
+Routine SCMCTSKG: ^SCTM(404.52 
+Routine SCMCTSKI: ^SCTM(404.44 
+Routine SCMCTSKI: ^SCTM(404.52 
+Routine SCMCU1: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCMCUT: ^SCTM(404.44 
+Routine SCMCUT: ^SCTM(404.45 
+Routine SCMCUT: ^SCTM(404.46 
+Routine SCMCWAIT: ^SCPT(404.42 
+Routine SCMCWAIT: ^SCPT(404.43 
+Routine SCMCWAIT: ^SCTM(404.51 
+Routine SCMCWAIT: ^SCTM(404.52 
+Routine SCMCWAIT: ^SCTM(404.57 
+Routine SCMCWAIT: ^SD(403.46 
+Routine SCMCWAIT: ^SDWL(409.3 
+Routine SCMCYPC: ^DD(404.52 (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SCMCYPC: ^DIPT(1320 (Dependency to VA FileMan, PRINT TEMPLATE File)
+Routine SCMCYPC: ^SC( 
+Routine SCMCYPC: ^SCTM(404.51 
+Routine SCMCYPC: ^SCTM(404.52 
+Routine SCMCYPC: ^SCTM(404.57 
+Routine SCMCYPC: ^VA(200 (Dependency to KERNEL, NEW PERSON File)
+Routine SCMRTMM: ^DD("DD" (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SCMRTMM: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCMRTMM: ^SCTM(404.51 
+Routine SCMRTMM: ^SD(404.91 
+Routine SCMRTPM: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCMRTPM: ^SCTM(404.51 
+Routine SCMRTPM: ^SCTM(404.57 
+Routine SCMRTPM: ^SD(404.91 
+Routine SCMSP0: ^DD(3.8 (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SCMSP0: ^DD(779.001 (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SCMSP66: ^DD(409.76 (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SCMSP66: ^SC( 
+Routine SCMSP66: ^SC("B" 
+Routine SCMSP66: ^SD(409.75 
+Routine SCMSP66: ^SD(409.76 
+Routine SCMSPU1: ^DG(43 (Dependency to REGISTRATION, MAS PARAMETERS File)
+Routine SCMSPU1: ^XMB(3.8 (Dependency to Mailman, MAIL GROUP File)
+Routine SCMSPX1: ^DGS(41.1 (Dependency to REGISTRATION, SCHEDULED ADMISSION File)
+Routine SCMSPX1: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCMSPX1: ^SC( 
+Routine SCMSPX1: ^SD(409.1 
+Routine SCMSPX2: ^DGS(41.1 (Dependency to REGISTRATION, SCHEDULED ADMISSION File)
+Routine SCMSPX2: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCMSPX2: ^SC( 
+Routine SCMSPX2: ^SD(409.1 
+Routine SCMSVDG1: ^SC( 
+Routine SCMSVDG1: ^SCE( 
+Routine SCMSVPID: ^DIC(5 (Dependency to Kernel, STATE File)
+Routine SCMSVUT0: ^DIC(13 (Dependency to Registration, RELIGION File)
+Routine SCMSVUT0: ^DIC(5 (Dependency to Kernel, STATE File)
+Routine SCMSVUT0: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCMSVUT0: ^SCE( 
+Routine SCMSVUT0: ^SCE("APAR" 
+Routine SCMSVUT0: ^SD(404.91 
+Routine SCMSVUT0: ^SD(409.76 
+Routine SCMSVUT1: ^DIC(21 (Dependency to Registration, PERIOD OF SERVICE File)
+Routine SCMSVUT1: ^DIC(4 (Dependency to Kernel, INSTITUTION File)
+Routine SCMSVUT1: ^DIC(40.7 
+Routine SCMSVUT1: ^DIC(8.1 (Dependency to Registration, MAS ELIGIBILITY CODE File)
+Routine SCMSVUT1: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCMSVUT1: ^SCE( 
+Routine SCMSVUT1: ^SD(409.41 
+Routine SCMSVUT2: ^ORD(101 (Dependency to KERNEL, PROTOCOL File)
+Routine SCMSVUT2: ^SC( 
+Routine SCMSVUT2: ^SCE( 
+Routine SCMSVUT2: ^SD(409.73 
+Routine SCMSVUT2: ^SD(409.75 
+Routine SCMSVUT2: ^SD(409.76 
+Routine SCMSVUT3: ^DIC(21 (Dependency to Registration, PERIOD OF SERVICE File)
+Routine SCMSVUT3: ^DIC(4 (Dependency to Kernel, INSTITUTION File)
+Routine SCMSVUT3: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCMSVZPD: ^DIC(40.7 
+Routine SCMSVZSC: ^DIC(40.7 
+Routine SCRPBK: ^SD(404.92 
+Routine SCRPBK: ^SD(404.93 
+Routine SCRPBK: ^SD(404.94 
+Routine SCRPBK0: ^SD(404.92 
+Routine SCRPBK0: ^SD(404.93 
+Routine SCRPBK0: ^SD(404.95 
+Routine SCRPBK0: ^VA(200 (Dependency to KERNEL, NEW PERSON File)
+Routine SCRPBK1: ^DIC(4 (Dependency to Kernel, INSTITUTION File)
+Routine SCRPBK1: ^SC( 
+Routine SCRPBK1: ^SCTM(404.51 
+Routine SCRPBK1: ^SD(403.46 
+Routine SCRPBK1: ^USR(8930 (Dependency to AUTHORIZATION/SUBSCRIPTION, USR CLASS File)
+Routine SCRPBK1: ^VA(200 (Dependency to KERNEL, NEW PERSON File)
+Routine SCRPBK11: ^SCTM(404.51 
+Routine SCRPBK11: ^SCTM(404.57 
+Routine SCRPBK2: ^SCRS(403.35 
+Routine SCRPBK2: ^SD(404.91 
+Routine SCRPBK2: ^SD(404.92 
+Routine SCRPBK2: ^SD(404.93 
+Routine SCRPBK2: ^SD(404.95 
+Routine SCRPBK3: ^SD(404.92 
+Routine SCRPBK4: ^DIC(4 (Dependency to Kernel, INSTITUTION File)
+Routine SCRPBK4: ^SC( 
+Routine SCRPBK4: ^SCTM(404.51 
+Routine SCRPBK4: ^SD(403.46 
+Routine SCRPBK4: ^SD(404.93 
+Routine SCRPBK4: ^USR(8930 (Dependency to AUTHORIZATION/SUBSCRIPTION, USR CLASS File)
+Routine SCRPBK4: ^VA(200 (Dependency to KERNEL, NEW PERSON File)
+Routine SCRPEC: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCRPEC2: ^DIC(4 (Dependency to Kernel, INSTITUTION File)
+Routine SCRPEC2: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCRPEC2: ^SCPT(404.42 
+Routine SCRPEC2: ^SCTM(404.51 
+Routine SCRPI01: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SCRPI01: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCRPI01: ^SC( 
+Routine SCRPI01: ^SCE( 
+Routine SCRPI01: ^SD(409.74 
+Routine SCRPI01: ^SD(409.75 
+Routine SCRPI01A: ^SD(409.75 
+Routine SCRPI01A: ^SD(409.76 
+Routine SCRPI02: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SCRPI02: ^SC( 
+Routine SCRPI02: ^SCE( 
+Routine SCRPI02: ^SCE("B" 
+Routine SCRPI02: ^SD(409.73 
+Routine SCRPI02: ^SD(409.74 
+Routine SCRPI02: ^SD(409.75 
+Routine SCRPI02A: ^SD(409.76 
+Routine SCRPITP: ^SCTM(404.57 
+Routine SCRPITP2: ^DIC(4 (Dependency to Kernel, INSTITUTION File)
+Routine SCRPITP2: ^DIC(49 (Dependency to KERNEL, SERVICE/SECTION File)
+Routine SCRPITP2: ^SCTM(404.51 
+Routine SCRPITP2: ^SD(403.46 
+Routine SCRPITP2: ^SD(403.47 
+Routine SCRPIUT1: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SCRPIUT1: ^DG(43 (Dependency to REGISTRATION, MAS PARAMETERS File)
+Routine SCRPM21U: ^SCPT(404.42 
+Routine SCRPM21U: ^SCPT(404.43 
+Routine SCRPM21U: ^SCTM(404.57 
+Routine SCRPMPSP: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCRPMPSP: ^SCPT(404.42 
+Routine SCRPMPSP: ^SCPT(404.43 
+Routine SCRPMPSP: ^SCTM(404.57 
+Routine SCRPMTA: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCRPMTA: ^SCPT(404.42 
+Routine SCRPMTA: ^SCPT(404.43 
+Routine SCRPMTA: ^SCTM(404.51 
+Routine SCRPO: ^DD("DD" (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SCRPO: ^DIC(8 (Dependency to Registration, ELIGIBILITY CODE File)
+Routine SCRPO: ^DIC(8.1 (Dependency to Registration, MAS ELIGIBILITY CODE File)
+Routine SCRPO: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCRPO1: ^DD("DD" (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SCRPO1: ^DIC(4 (Dependency to Kernel, INSTITUTION File)
+Routine SCRPO1: ^SC( 
+Routine SCRPO1: ^SCTM(404.51 
+Routine SCRPO1: ^SCTM(404.57 
+Routine SCRPO2: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCRPO2: ^SCPT(404.43 
+Routine SCRPO3: ^DD("DD" (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SCRPO3: ^SCTM(404.57 
+Routine SCRPO4: ^SCPT(404.43 
+Routine SCRPO4: ^SCTM(404.53 
+Routine SCRPO4: ^SCTM(404.57 
+Routine SCRPO5: ^DD("DD" (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SCRPO5: ^VA(200 (Dependency to KERNEL, NEW PERSON File)
+Routine SCRPO6: ^DD("DD" (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SCRPO6: ^SCTM(404.51 
+Routine SCRPO7: ^DIC(4 (Dependency to Kernel, INSTITUTION File)
+Routine SCRPO7: ^SCPT(404.43 
+Routine SCRPO7: ^SCTM(404.51 
+Routine SCRPPAT2: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCRPPAT2: ^SC( 
+Routine SCRPPAT2: ^SCPT(404.42 
+Routine SCRPPAT2: ^SCPT(404.43 
+Routine SCRPPAT2: ^SCTM(404.51 
+Routine SCRPPAT2: ^SCTM(404.57 
+Routine SCRPPAT2: ^VA(200 (Dependency to KERNEL, NEW PERSON File)
+Routine SCRPPAT3: ^DIC(4 (Dependency to Kernel, INSTITUTION File)
+Routine SCRPPAT3: ^SCTM(404.51 
+Routine SCRPRAC2: ^DIC(49 (Dependency to KERNEL, SERVICE/SECTION File)
+Routine SCRPRAC2: ^SC( 
+Routine SCRPRAC2: ^SCTM(404.51 
+Routine SCRPRAC2: ^SCTM(404.57 
+Routine SCRPRAC2: ^VA(200 (Dependency to KERNEL, NEW PERSON File)
+Routine SCRPSLT: ^SCTM(404.51 
+Routine SCRPSLT: ^SCTM(404.57 
+Routine SCRPSLT2: ^DIC(4 (Dependency to Kernel, INSTITUTION File)
+Routine SCRPSLT2: ^SCTM(404.51 
+Routine SCRPSLT2: ^SCTM(404.52 
+Routine SCRPSLT2: ^SD(403.46 
+Routine SCRPSLT2: ^VA(200 (Dependency to KERNEL, NEW PERSON File)
+Routine SCRPTA2: ^DIC(4 (Dependency to Kernel, INSTITUTION File)
+Routine SCRPTA2: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCRPTA2: ^SCPT(404.42 
+Routine SCRPTA2: ^SCPT(404.43 
+Routine SCRPTA2: ^SCTM(404.51 
+Routine SCRPTA2: ^SCTM(404.57 
+Routine SCRPTA2: ^SD(403.46 
+Routine SCRPTM: ^SCTM(404.51 
+Routine SCRPTM: ^SCTM(404.57 
+Routine SCRPTM: ^SD(404.91 
+Routine SCRPTM2: ^DIC(4 (Dependency to Kernel, INSTITUTION File)
+Routine SCRPTM2: ^DIC(49 (Dependency to KERNEL, SERVICE/SECTION File)
+Routine SCRPTM2: ^SCTM(404.51 
+Routine SCRPTM2: ^SCTM(404.57 
+Routine SCRPTM2: ^VA(200 (Dependency to KERNEL, NEW PERSON File)
+Routine SCRPTP: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCRPTP: ^SCTM(404.51 
+Routine SCRPTP3: ^DIC(4 (Dependency to Kernel, INSTITUTION File)
+Routine SCRPTP3: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCRPTP3: ^SCPT(404.43 
+Routine SCRPTP3: ^SCTM(404.57 
+Routine SCRPTP3: ^SD(403.46 
+Routine SCRPU1: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SCRPU1: ^SCTM(404.52 
+Routine SCRPU1: ^SCTM(404.57 
+Routine SCRPU1: ^SD(404.91 
+Routine SCRPU2: ^SCPT(404.42 
+Routine SCRPU2: ^SCTM(404.57 
+Routine SCRPU3: ^DIC(8 (Dependency to Registration, ELIGIBILITY CODE File)
+Routine SCRPU3: ^DIC(8.1 (Dependency to Registration, MAS ELIGIBILITY CODE File)
+Routine SCRPU3: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCRPV1: ^SCTM(404.51 
+Routine SCRPV1A: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCRPV1A: ^SCPT(404.42 
+Routine SCRPV1A: ^SCPT(404.43 
+Routine SCRPV1A: ^SCTM(404.51 
+Routine SCRPV1A: ^SCTM(404.53 
+Routine SCRPV1A: ^SCTM(404.57 
+Routine SCRPV1B: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCRPV1B: ^SCTM(404.51 
+Routine SCRPW1: ^AUPNPROB("AC" (Dependency to PROBLEM LIST, PROBLEM File)
+Routine SCRPW1: ^AUPNVSIT( (Dependency to PCE PATIENT CARE ENCOUNTER, VISIT File)
+Routine SCRPW1: ^AUPNVSIT("AA" (Dependency to PCE PATIENT CARE ENCOUNTER, VISIT File)
+Routine SCRPW1: ^AUPNVSIT("AD" (Dependency to PCE PATIENT CARE ENCOUNTER, VISIT File)
+Routine SCRPW1: ^DD("DD" (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SCRPW1: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCRPW1: ^SC( 
+Routine SCRPW1: ^SCE( 
+Routine SCRPW1: ^SCE("ADFN" 
+Routine SCRPW1: ^SCE("APAR" 
+Routine SCRPW1: ^SD(409.73 
+Routine SCRPW1: ^SD(409.75 
+Routine SCRPW1: ^SD(409.76 
+Routine SCRPW1: ^SD(409.77 
+Routine SCRPW1: ^SDD(409.42 
+Routine SCRPW10: ^DD("DD" (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SCRPW10: ^SC( 
+Routine SCRPW10: ^SC("ASCRPW" 
+Routine SCRPW10: ^SC("B" 
+Routine SCRPW10: ^SD(409.67 
+Routine SCRPW11: ^DD("DD" (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SCRPW11: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SCRPW11: ^DIC(40.7 
+Routine SCRPW11: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCRPW11: ^SC( 
+Routine SCRPW11: ^SC("ASCRPW" 
+Routine SCRPW14: ^AUPNVCPT( (Dependency to PCE PATIENT CARE ENCOUNTER, V CPT File)
+Routine SCRPW14: ^DD("DD" (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SCRPW14: ^SCE("APAR" 
+Routine SCRPW14: ^SCE("B" 
+Routine SCRPW15: ^DD("DD" (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SCRPW15: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SCRPW15: ^DIC(40.7 
+Routine SCRPW15: ^SC( 
+Routine SCRPW15: ^SD(409.63 
+Routine SCRPW15: ^VA(200 (Dependency to KERNEL, NEW PERSON File)
+Routine SCRPW16: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SCRPW16: ^DIC(40.7 
+Routine SCRPW16: ^SC( 
+Routine SCRPW16: ^SCE("B" 
+Routine SCRPW16: ^SCRPW16("ACTION REQUIRED REPORT" (Dependency Unknown)
+Routine SCRPW16: ^SD(409.41 
+Routine SCRPW16: ^SD(409.67 
+Routine SCRPW17: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SCRPW17: ^DG(43 (Dependency to REGISTRATION, MAS PARAMETERS File)
+Routine SCRPW18: ^AUPNVSIT( (Dependency to PCE PATIENT CARE ENCOUNTER, VISIT File)
+Routine SCRPW18: ^DD("DD" (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SCRPW18: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCRPW18: ^ORD(101 (Dependency to KERNEL, PROTOCOL File)
+Routine SCRPW18: ^SC( 
+Routine SCRPW18: ^SD(409.63 
+Routine SCRPW18: ^SD(409.76 
+Routine SCRPW18: ^VA(200 (Dependency to KERNEL, NEW PERSON File)
+Routine SCRPW2: ^DD("DD" (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SCRPW2: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SCRPW20: ^DD("DD" (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SCRPW20: ^SDD(409.91 
+Routine SCRPW21: ^DD("DD" (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SCRPW21: ^SD(409.92 
+Routine SCRPW21: ^SDD(409.91 
+Routine SCRPW21: ^VA(200 (Dependency to KERNEL, NEW PERSON File)
+Routine SCRPW21: ^XUSEC("SC AD HOC TEMPLATE" (Dependency to Kernel, AUDIT LOG FOR OPTIONS File)
+Routine SCRPW22: ^SDD(409.91 
+Routine SCRPW23: ^DD("DD" (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SCRPW23: ^DIC(40.7 
+Routine SCRPW24: ^AUPNVSIT( (Dependency to PCE PATIENT CARE ENCOUNTER, VISIT File)
+Routine SCRPW24: ^DD("DD" (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SCRPW24: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SCRPW24: ^DGEN(27.11 (Dependency to Registration, PATIENT ENROLLMENT File)
+Routine SCRPW24: ^DIC(4 (Dependency to Kernel, INSTITUTION File)
+Routine SCRPW24: ^DIC(8 (Dependency to Registration, ELIGIBILITY CODE File)
+Routine SCRPW24: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCRPW24: ^SC( 
+Routine SCRPW24: ^SD(409.1 
+Routine SCRPW24: ^SD(409.63 
+Routine SCRPW24: ^SD(409.67 
+Routine SCRPW24: ^YSD(627.8 (Dependency to MENTAL HEALTH, DIAGNOSTIC RESULTS - MENTAL HE File)
+Routine SCRPW241: ^IBE(357.69 (Dependency to AUTOMATED INFO COLLECTION SYS, TYPE OF VISIT File)
+Routine SCRPW25: ^AUPNVHF( (Dependency to PCE PATIENT CARE ENCOUNTER, V HEALTH FACTORS File)
+Routine SCRPW25: ^AUPNVHF("AD" (Dependency to PCE PATIENT CARE ENCOUNTER, V HEALTH FACTORS File)
+Routine SCRPW25: ^AUPNVIMM( (Dependency to PCE PATIENT CARE ENCOUNTER, V IMMUNIZATION File)
+Routine SCRPW25: ^AUPNVIMM("AD" (Dependency to PCE PATIENT CARE ENCOUNTER, V IMMUNIZATION File)
+Routine SCRPW25: ^AUPNVPED( (Dependency to PCE PATIENT CARE ENCOUNTER, V PATIENT ED File)
+Routine SCRPW25: ^AUPNVPED("AD" (Dependency to PCE PATIENT CARE ENCOUNTER, V PATIENT ED File)
+Routine SCRPW25: ^AUPNVSK( (Dependency to PCE PATIENT CARE ENCOUNTER, V SKIN TEST File)
+Routine SCRPW25: ^AUPNVSK("AD" (Dependency to PCE PATIENT CARE ENCOUNTER, V SKIN TEST File)
+Routine SCRPW25: ^AUPNVTRT( (Dependency to PCE PATIENT CARE ENCOUNTER, V TREATMENT File)
+Routine SCRPW25: ^AUPNVTRT("AD" (Dependency to PCE PATIENT CARE ENCOUNTER, V TREATMENT File)
+Routine SCRPW25: ^AUPNVXAM( (Dependency to PCE PATIENT CARE ENCOUNTER, V EXAM File)
+Routine SCRPW25: ^AUPNVXAM("AD" (Dependency to PCE PATIENT CARE ENCOUNTER, V EXAM File)
+Routine SCRPW25: ^AUTTEDT( (Dependency to PCE PATIENT CARE ENCOUNTER, EDUCATION TOPICS File)
+Routine SCRPW25: ^AUTTEXAM( (Dependency to PCE PATIENT CARE ENCOUNTER, EXAM File)
+Routine SCRPW25: ^AUTTHF( (Dependency to PCE PATIENT CARE ENCOUNTER, HEALTH FACTORS File)
+Routine SCRPW25: ^AUTTIMM( (Dependency to PCE PATIENT CARE ENCOUNTER, IMMUNIZATION File)
+Routine SCRPW25: ^AUTTSK( (Dependency to PCE PATIENT CARE ENCOUNTER, SKIN TEST File)
+Routine SCRPW25: ^AUTTTRT( (Dependency to PCE PATIENT CARE ENCOUNTER, TREATMENT File)
+Routine SCRPW25: ^DG(408.32 (Dependency to ENROLLMENT APPLICATION SYSTEM, MEANS TEST STATUS File)
+Routine SCRPW25: ^DIC(40.7 
+Routine SCRPW25: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCRPW25: ^SCE("APAR" 
+Routine SCRPW25: ^USC(8932.1 (Dependency to KERNEL, PERSON CLASS File)
+Routine SCRPW25: ^VA(200 (Dependency to KERNEL, NEW PERSON File)
+Routine SCRPW26: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCRPW26: ^DPT("ATEST" (Dependency to Registration, PATIENT File)
+Routine SCRPW26: ^SCE("B" 
+Routine SCRPW27: ^DD("DD" (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SCRPW27: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCRPW27: ^SC( 
+Routine SCRPW28: ^DD("DD" (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SCRPW28: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCRPW28: ^SC( 
+Routine SCRPW3: ^DIC(40.7 
+Routine SCRPW3: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCRPW3: ^HOLIDAY( (Dependency to KERNEL, HOLIDAY File)
+Routine SCRPW3: ^SC( 
+Routine SCRPW3: ^SC("ADPR" 
+Routine SCRPW3: ^SC("ASCRPW" 
+Routine SCRPW3: ^SC("B" 
+Routine SCRPW3: ^VA(200 (Dependency to KERNEL, NEW PERSON File)
+Routine SCRPW301: ^DIC(40.7 
+Routine SCRPW301: ^SC( 
+Routine SCRPW301: ^SCE( 
+Routine SCRPW301: ^VA(200 (Dependency to KERNEL, NEW PERSON File)
+Routine SCRPW303: ^DIC(40.7 
+Routine SCRPW306: ^VA(200 (Dependency to KERNEL, NEW PERSON File)
+Routine SCRPW40: ^DD("DD" (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SCRPW40: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SCRPW40: ^SCE("B" 
+Routine SCRPW41: ^DD("DD" (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SCRPW41: ^DGPM( (Dependency to REGISTRATION, PATIENT MOVEMENT File)
+Routine SCRPW41: ^DGPM("APRD" (Dependency to REGISTRATION, PATIENT MOVEMENT File)
+Routine SCRPW41: ^DIC(42 (Dependency to REGISTRATION, WARD LOCATION File)
+Routine SCRPW41: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCRPW41: ^SC( 
+Routine SCRPW41: ^SCE("ADFN" 
+Routine SCRPW41: ^SDV("ADT" 
+Routine SCRPW42: ^DD("DD" (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SCRPW42: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SCRPW43: ^DIC(8 (Dependency to Registration, ELIGIBILITY CODE File)
+Routine SCRPW43: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCRPW43: ^SCE("B" 
+Routine SCRPW45: ^DD("DD" (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SCRPW46: ^DD("DD" (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SCRPW46: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SCRPW46: ^SCE("ADFN" 
+Routine SCRPW47: ^DD("DD" (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SCRPW47: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SCRPW47: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCRPW47: ^SC( 
+Routine SCRPW50: ^DD("DD" (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SCRPW51: ^DD("DD" (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SCRPW51: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SCRPW51: ^DIC(40.7 
+Routine SCRPW51: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCRPW51: ^SC( 
+Routine SCRPW51: ^SCE("B" 
+Routine SCRPW54: ^DD("DD" (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SCRPW54: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SCRPW54: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCRPW54: ^SC( 
+Routine SCRPW54: ^SCE("ADFN" 
+Routine SCRPW56: ^DD("DD" (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SCRPW56: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SCRPW56: ^SC( 
+Routine SCRPW56: ^SCE("B" 
+Routine SCRPW57: ^DD("DD" (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SCRPW57: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SCRPW57: ^SC( 
+Routine SCRPW57: ^SCE("B" 
+Routine SCRPW58: ^DD("DD" (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SCRPW58: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SCRPW58: ^SC( 
+Routine SCRPW58: ^SCE("B" 
+Routine SCRPW59: ^DD("DD" (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SCRPW59: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SCRPW59: ^SC( 
+Routine SCRPW59: ^SCE("B" 
+Routine SCRPW6: ^DD("DD" (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SCRPW6: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SCRPW6: ^SC( 
+Routine SCRPW6: ^SCE("ADFN" 
+Routine SCRPW60: ^DD("DD" (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SCRPW60: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SCRPW61: ^DD("DD" (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SCRPW61: ^DIC(40.7 
+Routine SCRPW61: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCRPW61: ^SC( 
+Routine SCRPW61: ^SC("ASCRPW" 
+Routine SCRPW61: ^SC("B" 
+Routine SCRPW62: ^DIC(8 (Dependency to Registration, ELIGIBILITY CODE File)
+Routine SCRPW62: ^DIC(8.1 (Dependency to Registration, MAS ELIGIBILITY CODE File)
+Routine SCRPW63: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SCRPW63: ^DIC(31 (Dependency to HINQ, DISABILITY CONDITION File)
+Routine SCRPW63: ^DIC(5 (Dependency to Kernel, STATE File)
+Routine SCRPW63: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCRPW63: ^SC( 
+Routine SCRPW7: ^DD("DD" (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SCRPW7: ^SC( 
+Routine SCRPW7: ^SCE("ADFN" 
+Routine SCRPW7: ^SD(409.63 
+Routine SCRPW70: ^DD("DD" (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SCRPW70: ^SC( 
+Routine SCRPW70: ^SD(404.91 
+Routine SCRPW71: ^DIC(40.7 
+Routine SCRPW71: ^HOLIDAY( (Dependency to KERNEL, HOLIDAY File)
+Routine SCRPW71: ^SC( 
+Routine SCRPW72: ^DIC(40.7 
+Routine SCRPW72: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCRPW72: ^SC( 
+Routine SCRPW72: ^SCE("B" 
+Routine SCRPW73: ^DD("DD" (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SCRPW73: ^DIC(40.7 
+Routine SCRPW73: ^SC( 
+Routine SCRPW74: ^DD("DD" (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SCRPW74: ^SD(404.91 
+Routine SCRPW75: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCRPW75: ^DPT("ASADM" (Dependency to Registration, PATIENT File)
+Routine SCRPW76: ^DD("DD" (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SCRPW76: ^SC( 
+Routine SCRPW77: ^DD("DD" (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SCRPW77: ^SC( 
+Routine SCRPW78: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SCRPW78: ^SC( 
+Routine SCRPW78: ^SCE( 
+Routine SCRPW8: ^DD("DD" (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SCRPW8: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SCRPW8: ^DG(43 (Dependency to REGISTRATION, MAS PARAMETERS File)
+Routine SCRPW8: ^SC( 
+Routine SCRPW8: ^SCE("B" 
+Routine SCRPW8: ^SD(409.63 
+Routine SCRPW8: ^SD(409.67 
+Routine SCRPW8: ^SD(409.73 
+Routine SCRPW8: ^SD(409.75 
+Routine SCRPW8: ^SD(409.76 
+Routine SCRPW81: ^DGMT(408.31 (Dependency to ENROLLMENT APPLICATION SYSTEM, ANNUAL MEANS TEST File)
+Routine SCRPW81: ^SCE( 
+Routine SCRPW81: ^SCE("B" 
+Routine SCRPW81: ^SD(409.73 
+Routine SCRPW9: ^DD("DD" (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SCRPW9: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SCRPW9: ^DG(43 (Dependency to REGISTRATION, MAS PARAMETERS File)
+Routine SCRPW9: ^SC( 
+Routine SCRPW9: ^SCE("ADFN" 
+Routine SCRPW9: ^SD(409.63 
+Routine SCUTBK1: ^DIC("B" (Dependency to ENGINEERING, ENGINEERING SECTION LIST File)
+Routine SCUTBK11: ^SCPT(404.43 
+Routine SCUTBK11: ^SCTM(404.57 
+Routine SCUTBK11: ^XUSEC( (Dependency to Kernel, AUDIT LOG FOR OPTIONS File)
+Routine SCUTBK12: ^SD(404.91 
+Routine SCUTBK2: ^DD( (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SCUTBK3: ^DIC(4 (Dependency to Kernel, INSTITUTION File)
+Routine SCUTBK3: ^SCRS(403.35 
+Routine SCUTBK3: ^SCTM(404.44 
+Routine SCUTBK3: ^SD(404.95 
+Routine SCUTBK3: ^VA(200 (Dependency to KERNEL, NEW PERSON File)
+Routine SCUTBK4: ^SD(404.91 
+Routine SCUTIE1: ^SCE( 
+Routine SCUTIE1: ^SD(409.73 
+Routine SCUTIE1: ^SD(409.74 
+Routine SD: ^DOPT("SD" (Dependency Unknown)
+Routine SD08STOP: ^DIC(40.7 
+Routine SD08SUPP: ^DIC(40.7 
+Routine SD11SUPP: ^DD(40.7 (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SD11SUPP: ^DIC(40.7 
+Routine SD12STOP: ^DIC(40.7 
+Routine SD44AUDI: ^DIA( (Dependency to VA FileMan, AUDIT File)
+Routine SD44AUDI: ^DIA(44 (Dependency to VA FileMan, AUDIT File)
+Routine SD44AUDI: ^DIC(40.7 
+Routine SD44AUDI: ^SC( 
+Routine SD53103A: ^AUPNVCPT("AD" (Dependency to PCE PATIENT CARE ENCOUNTER, V CPT File)
+Routine SD53103A: ^AUPNVPOV("AD" (Dependency to PCE PATIENT CARE ENCOUNTER, V POV File)
+Routine SD53103A: ^AUPNVPRV("AD" (Dependency to PCE PATIENT CARE ENCOUNTER, V PROVIDER File)
+Routine SD53103A: ^AUPNVSIT( (Dependency to PCE PATIENT CARE ENCOUNTER, VISIT File)
+Routine SD53103A: ^AUPNVSIT("VID" (Dependency to PCE PATIENT CARE ENCOUNTER, VISIT File)
+Routine SD53103A: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SD53103A: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SD53103A: ^PX(815 (Dependency to PCE PATIENT CARE ENCOUNTER, PCE PARAMETERS File)
+Routine SD53103A: ^SC( 
+Routine SD53103A: ^SCE( 
+Routine SD53103A: ^SCE("APAR" 
+Routine SD53103A: ^SCE("B" 
+Routine SD53103A: ^SDD( 
+Routine SD53103B: ^DIC(9.4 (Dependency to Kernel, PACKAGE File)
+Routine SD53105A: ^SCE( 
+Routine SD53105A: ^SD(409.73 
+Routine SD53105A: ^SD(409.74 
+Routine SD53105A: ^SD(409.75 
+Routine SD53430P: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SD53430P: ^SC( 
+Routine SD53430P: ^XMB(3.9 (Dependency to Mailman, MESSAGE File)
+Routine SD5384NC: ^SCE( 
+Routine SD5384NC: ^SCE("B" 
+Routine SD5384PT: ^SC( 
+Routine SD5384PT: ^SCE( 
+Routine SD5384PT: ^SCE("B" 
+Routine SD5384PT: ^SD(409.75 
+Routine SD53FY12: ^DD(40.7 (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SD53FY12: ^DIC(40.7 
+Routine SD53P177: ^HL(771 (Dependency to HEALTH LEVEL SEVEN, HL7 APPLICATION PARAMETER File)
+Routine SD53P177: ^SCPT(404.43 
+Routine SD53P177: ^SD(409.92 
+Routine SD53P389: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SD53P389: ^DPT("ASDCN" (Dependency to Registration, PATIENT File)
+Routine SD53P487: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SD53P487: ^DPT("ASDCN" (Dependency to Registration, PATIENT File)
+Routine SD53P504: ^SCPT(404.42 
+Routine SD53P504: ^SCPT(404.43 
+Routine SD53P504: ^SCPT(404.471 
+Routine SD53P504: ^SCTM(404.51 
+Routine SD53P504: ^SCTM(404.57 
+Routine SD53P504: ^SCTM(404.58 
+Routine SD53P504: ^SCTM(404.59 
+Routine SD53P504: ^SD(404.91 
+Routine SD53P568: ^DD(40.7 (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SD53P568: ^DIC(40.7 
+Routine SD53P568: ^DIE("B" (Dependency to VA FileMan, INPUT TEMPLATE File)
+Routine SD53P568: ^ECX(728.44 (Dependency to DSS EXTRACTS, CLINICS AND STOP CODES File)
+Routine SD53P568: ^XUSEC( (Dependency to Kernel, AUDIT LOG FOR OPTIONS File)
+Routine SD6USTOP: ^DIC(40.7 
+Routine SDACSCG: ^SCE( 
+Routine SDACSCG: ^SCE("ACG" 
+Routine SDACSCGB: ^SCE( 
+Routine SDACSCGB: ^SCE("ACG" 
+Routine SDACSCGP: ^DD("DD" (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SDACSCGP: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SDACSCGP: ^DIC(40.7 
+Routine SDACSCGP: ^SCE( 
+Routine SDAL: ^DD("DD" (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SDAL: ^SC( 
+Routine SDAL: ^SD(409.41 
+Routine SDAL0: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SDAL0: ^DIC(8 (Dependency to Registration, ELIGIBILITY CODE File)
+Routine SDAL0: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDAL0: ^SC( 
+Routine SDAM: ^SD(409.62 
+Routine SDAM: ^SD(409.63 
+Routine SDAM1: ^DD(2.98 (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SDAM1: ^DG(43 (Dependency to REGISTRATION, MAS PARAMETERS File)
+Routine SDAM1: ^DGPM( (Dependency to REGISTRATION, PATIENT MOVEMENT File)
+Routine SDAM1: ^DIC(42 (Dependency to REGISTRATION, WARD LOCATION File)
+Routine SDAM1: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDAM1: ^GMR(123 (Dependency to CONSULT/REQUEST TRACKING, REQUEST/CONSULTATION File)
+Routine SDAM1: ^SC( 
+Routine SDAM1: ^SCE( 
+Routine SDAM1: ^SD(409.63 
+Routine SDAM10: ^DD(2.98 (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SDAM10: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDAM2: ^DG(43 (Dependency to REGISTRATION, MAS PARAMETERS File)
+Routine SDAM2: ^DGPM( (Dependency to REGISTRATION, PATIENT MOVEMENT File)
+Routine SDAM2: ^DIC(42 (Dependency to REGISTRATION, WARD LOCATION File)
+Routine SDAM2: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDAM2: ^SC( 
+Routine SDAM2: ^SD(409.63 
+Routine SDAM3: ^DG(43 (Dependency to REGISTRATION, MAS PARAMETERS File)
+Routine SDAM3: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDAM3: ^GMR(123 (Dependency to CONSULT/REQUEST TRACKING, REQUEST/CONSULTATION File)
+Routine SDAM3: ^SC( 
+Routine SDAMA200: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDAMA200: ^SC( 
+Routine SDAMA200: ^SDAM(44.3 
+Routine SDAMA203: ^SC( 
+Routine SDAMA203: ^SC("AE" 
+Routine SDAMA300: ^DIC(40.7 
+Routine SDAMA300: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDAMA300: ^SC( 
+Routine SDAMA302: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDAMA302: ^SC( 
+Routine SDAMA303: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDAMA303: ^SC( 
+Routine SDAMA304: ^DIC(40.7 
+Routine SDAMA304: ^SC( 
+Routine SDAMA305: ^DIC(40.7 
+Routine SDAMA305: ^DIC(8 (Dependency to Registration, ELIGIBILITY CODE File)
+Routine SDAMA305: ^DIC(8.1 (Dependency to Registration, MAS ELIGIBILITY CODE File)
+Routine SDAMA305: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDAMA305: ^SC( 
+Routine SDAMA305: ^SD(409.1 
+Routine SDAMA307: ^SC( 
+Routine SDAMA307: ^XOB(18.08 (Dependency to VistA Link, VISTALINK MESSAGE TYPE File)
+Routine SDAMA308: ^DG(43 (Dependency to REGISTRATION, MAS PARAMETERS File)
+Routine SDAMA308: ^DGPM( (Dependency to REGISTRATION, PATIENT MOVEMENT File)
+Routine SDAMA308: ^DIC(42 (Dependency to REGISTRATION, WARD LOCATION File)
+Routine SDAMA308: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDAMA308: ^SC( 
+Routine SDAMA308: ^SCE( 
+Routine SDAMA308: ^SD(409.63 
+Routine SDAMBAE2: ^DIC(8 (Dependency to Registration, ELIGIBILITY CODE File)
+Routine SDAMBAE2: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDAMBAE2: ^SDV( 
+Routine SDAMBAE3: ^SDV( 
+Routine SDAMBAE3: ^SDV("AP" 
+Routine SDAMBAE4: ^SDV( 
+Routine SDAMBAE6: ^SCE( 
+Routine SDAMBMR: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDAMBMR: ^SC( 
+Routine SDAMBMR: ^SCE( 
+Routine SDAMBMR: ^SCE("B" 
+Routine SDAMBMR1: ^DD(44 (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SDAMBMR1: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SDAMBMR1: ^SC( 
+Routine SDAMBMR3: ^SC( 
+Routine SDAMC: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDAMC: ^SC( 
+Routine SDAMC: ^SD(409.63 
+Routine SDAMC: ^SDWL(409.3 
+Routine SDAMEP: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDAMEP: ^SC( 
+Routine SDAMEP1: ^DIC(8 (Dependency to Registration, ELIGIBILITY CODE File)
+Routine SDAMEP1: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDAMEP1: ^SC( 
+Routine SDAMEP2: ^DGPM( (Dependency to REGISTRATION, PATIENT MOVEMENT File)
+Routine SDAMEP2: ^DGPM("C" (Dependency to REGISTRATION, PATIENT MOVEMENT File)
+Routine SDAMEP2: ^DIC(11 (Dependency to Registration, MARITAL STATUS File)
+Routine SDAMEP2: ^DIC(13 (Dependency to Registration, RELIGION File)
+Routine SDAMEP2: ^DIC(21 (Dependency to Registration, PERIOD OF SERVICE File)
+Routine SDAMEP2: ^DIC(5 (Dependency to Kernel, STATE File)
+Routine SDAMEP2: ^DIC(8 (Dependency to Registration, ELIGIBILITY CODE File)
+Routine SDAMEP2: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDAMEVT: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDAMEVT: ^ORD(101 (Dependency to KERNEL, PROTOCOL File)
+Routine SDAMEVT: ^SC( 
+Routine SDAMEVT: ^SCE( 
+Routine SDAMEVT: ^SCE("APAR" 
+Routine SDAMEVT: ^SDD( 
+Routine SDAMEVT1: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SDAMEVT1: ^DG(43 (Dependency to REGISTRATION, MAS PARAMETERS File)
+Routine SDAMEVT2: ^SCE( 
+Routine SDAMEVT3: ^AUPNVSIT( (Dependency to PCE PATIENT CARE ENCOUNTER, VISIT File)
+Routine SDAMEVT3: ^DD(2.101 (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SDAMEVT3: ^DD(815 (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SDAMEVT3: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SDAMEVT3: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDAMEVT3: ^SCE( 
+Routine SDAMEX: ^DD(2.98 (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SDAMEX: ^DISV( (Dependency Unknown)
+Routine SDAMEX: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDAMEX: ^RT( (Dependency to RECORD TRACKING, RECORDS File)
+Routine SDAMEX: ^SC( 
+Routine SDAMEX1: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDAMEX1: ^SD(409.63 
+Routine SDAMLD: ^DOPT( (Dependency Unknown)
+Routine SDAMLD: ^SDD(409.65 
+Routine SDAMN: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SDAMN: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDAMN: ^SC( 
+Routine SDAMN: ^SD(409.63 
+Routine SDAMO: ^DG(43 (Dependency to REGISTRATION, MAS PARAMETERS File)
+Routine SDAMOC: ^DD(2.98 (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SDAMOC: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDAMOC: ^DPT("ASDCN" (Dependency to Registration, PATIENT File)
+Routine SDAMOC: ^SC( 
+Routine SDAMOC0: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SDAMOC0: ^DIC(40.7 
+Routine SDAMOC0: ^SCE( 
+Routine SDAMOC0: ^SCE("B" 
+Routine SDAMOCC: ^DG(43 (Dependency to REGISTRATION, MAS PARAMETERS File)
+Routine SDAMOCP: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SDAMOCP: ^SC( 
+Routine SDAMOCP1: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SDAMODO: ^DG(43 (Dependency to REGISTRATION, MAS PARAMETERS File)
+Routine SDAMODO2: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDAMODO2: ^SC( 
+Routine SDAMODO2: ^SCE( 
+Routine SDAMODO2: ^SCE("B" 
+Routine SDAMODO2: ^VA(200 (Dependency to KERNEL, NEW PERSON File)
+Routine SDAMODO3: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SDAMODO3: ^DIC(40.7 
+Routine SDAMODO3: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDAMODO3: ^VA(200 (Dependency to KERNEL, NEW PERSON File)
+Routine SDAMOL1: ^AUPNVSIT( (Dependency to PCE PATIENT CARE ENCOUNTER, VISIT File)
+Routine SDAMOL1: ^DIC(40.7 
+Routine SDAMOL1: ^SC( 
+Routine SDAMOL1: ^SCE( 
+Routine SDAMOLP: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SDAMOLP: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDAMOLP: ^VA(200 (Dependency to KERNEL, NEW PERSON File)
+Routine SDAMOS: ^DD(2.98 (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SDAMOS: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDAMOS: ^SC( 
+Routine SDAMOS0: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SDAMOS0: ^DIC(40.7 
+Routine SDAMOS0: ^SCE( 
+Routine SDAMOS0: ^SCE("B" 
+Routine SDAMOSP: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SDAMOW: ^DG(43 (Dependency to REGISTRATION, MAS PARAMETERS File)
+Routine SDAMOW1: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDAMOW1: ^SC( 
+Routine SDAMOW1: ^SCE( 
+Routine SDAMOW1: ^SCE("B" 
+Routine SDAMOWB: ^DIC(40.7 
+Routine SDAMOWB: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDAMOWB: ^SC( 
+Routine SDAMOWP: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SDAMOWP: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDAMOWP1: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SDAMQ: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SDAMQ: ^DG(43 (Dependency to REGISTRATION, MAS PARAMETERS File)
+Routine SDAMQ: ^SCE( 
+Routine SDAMQ: ^SDD(409.65 
+Routine SDAMQ1: ^DG(43 (Dependency to REGISTRATION, MAS PARAMETERS File)
+Routine SDAMQ2: ^SDD(409.65 
+Routine SDAMQ3: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SDAMQ3: ^DG(43 (Dependency to REGISTRATION, MAS PARAMETERS File)
+Routine SDAMQ3: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDAMQ3: ^SC( 
+Routine SDAMQ4: ^DIC(40.7 
+Routine SDAMQ4: ^SCE( 
+Routine SDAMQ4: ^SCE("B" 
+Routine SDAMQ5: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDAMQ5: ^DPT("ADIS" (Dependency to Registration, PATIENT File)
+Routine SDAMQ5: ^PX(815 (Dependency to PCE PATIENT CARE ENCOUNTER, PCE PARAMETERS File)
+Routine SDAMQ5: ^SCE( 
+Routine SDAMQ5: ^XPD(9.7 (Dependency to Kernel, INSTALL File)
+Routine SDAMU: ^%ZIS(2 (Dependency to Kernel, TERMINAL TYPE File)
+Routine SDAMU: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SDAMU: ^DG(43 (Dependency to REGISTRATION, MAS PARAMETERS File)
+Routine SDAMU: ^DIC(19 (Dependency to Kernel, OPTION File)
+Routine SDAMU: ^DIC(195.4 (Dependency to RECORD TRACKING, RECORD TRACKING SYSTEM PARAMET File)
+Routine SDAMU: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDAMU: ^SC( 
+Routine SDAMVSC: ^AUPNVSIT( (Dependency to PCE PATIENT CARE ENCOUNTER, VISIT File)
+Routine SDAMVSC: ^AUPNVSIT("AD" (Dependency to PCE PATIENT CARE ENCOUNTER, VISIT File)
+Routine SDAMVSC: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDAMVSC: ^SCE( 
+Routine SDAMVSC: ^SCE("AVSIT" 
+Routine SDAMWI: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDAMWI: ^SC( 
+Routine SDAMWI1: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDAMWI1: ^SC( 
+Routine SDAMXLD: ^DIPT(232 (Dependency to VA FileMan, PRINT TEMPLATE File)
+Routine SDAMXLD: ^SDD(409.65 
+Routine SDAMXLD: ^VA(200 (Dependency to KERNEL, NEW PERSON File)
+Routine SDAMXLG: ^DD( (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SDAMXLG: ^DD("DD" (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SDAMXLG: ^DISV( (Dependency Unknown)
+Routine SDAMXLG: ^SCE( 
+Routine SDAMXLG: ^SCE("ACG" 
+Routine SDAMXLG: ^SCE("AG" 
+Routine SDAMXOE: ^DD( (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SDAMXOE: ^DD("DD" (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SDAMXOE: ^DD(409.68 (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SDAMXOE: ^DISV( (Dependency Unknown)
+Routine SDAMXOE: ^SCE( 
+Routine SDAMXOE: ^SCE("ACG" 
+Routine SDAMXOE: ^SCE("ADFN" 
+Routine SDAMXOE: ^SCE("APAR" 
+Routine SDAMXOE: ^SCE("AVSIT" 
+Routine SDAMXOE: ^SCE("C" 
+Routine SDAMXOE1: ^DD( (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SDAMXOE1: ^DD("DD" (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SDAMXOE1: ^DD(409.68 (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SDAMXOE1: ^DISV( (Dependency Unknown)
+Routine SDAMXOE1: ^SCE( 
+Routine SDAMXOE1: ^SCE("APAR" 
+Routine SDAPI: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDAPI: ^SC( 
+Routine SDAPI: ^SCE( 
+Routine SDAPI: ^SCE("AVSIT" 
+Routine SDAPI: ^SD(409.63 
+Routine SDAPI: ^VA(200 (Dependency to KERNEL, NEW PERSON File)
+Routine SDAPIAE0: ^DIC(8 (Dependency to Registration, ELIGIBILITY CODE File)
+Routine SDAPIAE0: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDAPIAE0: ^SCE( 
+Routine SDAPIAE0: ^SCE("ADFN" 
+Routine SDAPIAE0: ^SCE("AVSIT" 
+Routine SDAPIAP: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDAPIAP: ^SC( 
+Routine SDAPIAP: ^SCE( 
+Routine SDAPIAP: ^SD(409.63 
+Routine SDAPICO: ^SCE( 
+Routine SDAPICO: ^SDD( 
+Routine SDAPICO1: ^SD(409.41 
+Routine SDAPP: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDAPP: ^SC( 
+Routine SDAPP: ^XUSEC("SC CONSULT" (Dependency to Kernel, AUDIT LOG FOR OPTIONS File)
+Routine SDASO: ^DD("FUNC" (Dependency to VA FileMan, FUNCTION File)
+Routine SDASO: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDASO: ^SC( 
+Routine SDASO: ^SCE( 
+Routine SDAUT1: ^HOLIDAY( (Dependency to KERNEL, HOLIDAY File)
+Routine SDAUT1: ^SC( 
+Routine SDAUT2: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SDAUT2: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDAUT2: ^HOLIDAY( (Dependency to KERNEL, HOLIDAY File)
+Routine SDAUT2: ^SC( 
+Routine SDAUT2: ^SC("ARAD" 
+Routine SDB: ^SC( 
+Routine SDB0: ^SC( 
+Routine SDB1: ^HOLIDAY( (Dependency to KERNEL, HOLIDAY File)
+Routine SDB1: ^SC( 
+Routine SDBT: ^DD( (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SDBT: ^DD("DD" (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SDBT: ^DD("KEY" (Dependency to VA FileMan, KEY File)
+Routine SDBT: ^DD(44 (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SDBT: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SDBT: ^DG(43 (Dependency to REGISTRATION, MAS PARAMETERS File)
+Routine SDBT: ^DIE(485 (Dependency to VA FileMan, INPUT TEMPLATE File)
+Routine SDBT: ^DISV( (Dependency Unknown)
+Routine SDBT: ^SC( 
+Routine SDBT: ^SC("ACST" 
+Routine SDBT: ^SC("AE" 
+Routine SDBT: ^SC("ALTA" 
+Routine SDBT: ^SC("ALTC" 
+Routine SDBT: ^SC("ALTN" 
+Routine SDBT: ^SC("ALTP" 
+Routine SDBT: ^SC("AST" 
+Routine SDBT: ^SC("B" 
+Routine SDBT: ^SC("C" 
+Routine SDBT1: ^DD( (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SDBT1: ^DD("DD" (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SDBT1: ^DD("KEY" (Dependency to VA FileMan, KEY File)
+Routine SDBT1: ^DISV( (Dependency Unknown)
+Routine SDBT1: ^SC( 
+Routine SDBT1: ^SC("ADPR" 
+Routine SDBT2: ^DD( (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SDBT2: ^DD("DD" (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SDBT2: ^DD("KEY" (Dependency to VA FileMan, KEY File)
+Routine SDBT2: ^DISV( (Dependency Unknown)
+Routine SDBT2: ^SC( 
+Routine SDBT2: ^SC("ADDX" 
+Routine SDBT3: ^DD( (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SDBT3: ^DD("DD" (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SDBT3: ^DD("KEY" (Dependency to VA FileMan, KEY File)
+Routine SDBT3: ^DISV( (Dependency Unknown)
+Routine SDBT3: ^SC( 
+Routine SDBT4: ^DD( (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SDBT4: ^DD("DD" (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SDBT4: ^DD("KEY" (Dependency to VA FileMan, KEY File)
+Routine SDBT4: ^DD(44 (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SDBT4: ^DISV( (Dependency Unknown)
+Routine SDBT4: ^SC( 
+Routine SDBT5: ^DD( (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SDBT5: ^DD("DD" (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SDBT5: ^DD("KEY" (Dependency to VA FileMan, KEY File)
+Routine SDBT5: ^DISV( (Dependency Unknown)
+Routine SDBT5: ^SC( 
+Routine SDC: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SDC: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDC: ^DPT("ASDCN" (Dependency to Registration, PATIENT File)
+Routine SDC: ^DPT("ASDPSD" (Dependency to Registration, PATIENT File)
+Routine SDC: ^SC( 
+Routine SDC: ^SC("AAS" 
+Routine SDC: ^SC("ARAD" 
+Routine SDC: ^SCE( 
+Routine SDC0: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SDC0: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDC0: ^SC( 
+Routine SDC1: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDC1: ^SC( 
+Routine SDC2: ^SC( 
+Routine SDC3: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDC3: ^SC( 
+Routine SDC4: ^SC( 
+Routine SDCAN: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDCAN: ^DPT("ASDCN" (Dependency to Registration, PATIENT File)
+Routine SDCAN: ^SC( 
+Routine SDCCP: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDCCP: ^SC( 
+Routine SDCD: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDCD: ^SC( 
+Routine SDCI: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDCI: ^SC( 
+Routine SDCIAL: ^DIC(42 (Dependency to REGISTRATION, WARD LOCATION File)
+Routine SDCIAL: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDCIAL: ^DPT("ACN" (Dependency to Registration, PATIENT File)
+Routine SDCIAL: ^SC( 
+Routine SDCLAS: ^DIC(8 (Dependency to Registration, ELIGIBILITY CODE File)
+Routine SDCLAS: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDCLAS: ^SC( 
+Routine SDCLAS0: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDCLAS0: ^DPT("AEB1" (Dependency to Registration, PATIENT File)
+Routine SDCLAS0: ^SC( 
+Routine SDCLAS0: ^SC("B" 
+Routine SDCLAS1: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SDCLAS1: ^DIC(40.7 
+Routine SDCLAS1: ^DIC(8 (Dependency to Registration, ELIGIBILITY CODE File)
+Routine SDCLAS1: ^SC( 
+Routine SDCLAV: ^SC( 
+Routine SDCLAV0: ^DG(43 (Dependency to REGISTRATION, MAS PARAMETERS File)
+Routine SDCLAV0: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDCLAV0: ^SC( 
+Routine SDCLAV0: ^SCE( 
+Routine SDCLAV0: ^SCE("B" 
+Routine SDCLAV1: ^DD("DD" (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SDCLAV1: ^DD("FUNC" (Dependency to VA FileMan, FUNCTION File)
+Routine SDCLAV1: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SDCLAV1: ^DG(43 (Dependency to REGISTRATION, MAS PARAMETERS File)
+Routine SDCLAV1: ^HOLIDAY( (Dependency to KERNEL, HOLIDAY File)
+Routine SDCLAV1: ^SC( 
+Routine SDCLDOW: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SDCLDOW: ^DIC(4 (Dependency to Kernel, INSTITUTION File)
+Routine SDCLDOW: ^SC( 
+Routine SDCLDOW: ^SC("B" 
+Routine SDCLK: ^DD(2.98 (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SDCLK: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDCLK: ^SC( 
+Routine SDCLK: ^SD(409.1 
+Routine SDCLK: ^SD(409.2 
+Routine SDCLK: ^VA(200 (Dependency to KERNEL, NEW PERSON File)
+Routine SDCNL: ^DG(43 (Dependency to REGISTRATION, MAS PARAMETERS File)
+Routine SDCNL: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDCNL: ^DPT("ASDCN" (Dependency to Registration, PATIENT File)
+Routine SDCNL: ^SC( 
+Routine SDCNL: ^VA(200 (Dependency to KERNEL, NEW PERSON File)
+Routine SDCNP: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDCNP0: ^DD("FUNC" (Dependency to VA FileMan, FUNCTION File)
+Routine SDCNP0: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDCNP0: ^DPT("ASDCN" (Dependency to Registration, PATIENT File)
+Routine SDCNP0: ^DPT("ASDPSD" (Dependency to Registration, PATIENT File)
+Routine SDCNP0: ^GMR(123 (Dependency to CONSULT/REQUEST TRACKING, REQUEST/CONSULTATION File)
+Routine SDCNP0: ^SC( 
+Routine SDCNP0: ^SC("AAS" 
+Routine SDCNP0: ^SC("ARAD" 
+Routine SDCNP0: ^SC("AWAS1" 
+Routine SDCNP0: ^SCE( 
+Routine SDCNP1: ^DD("FUNC" (Dependency to VA FileMan, FUNCTION File)
+Routine SDCNP1: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDCNP1: ^SC( 
+Routine SDCNP1A: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SDCNP1A: ^DIR(0 (Dependency Unknown)
+Routine SDCNP1A: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDCNP1A: ^SC( 
+Routine SDCNP2: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDCNP2: ^SC( 
+Routine SDCNP2: ^VA(200 (Dependency to KERNEL, NEW PERSON File)
+Routine SDCNSLT: ^%ZIS(1 (Dependency to Kernel, DEVICE File)
+Routine SDCNSLT: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDCNSLT: ^GMR(123 (Dependency to CONSULT/REQUEST TRACKING, REQUEST/CONSULTATION File)
+Routine SDCNSLT: ^GMR(123.5 (Dependency to CONSULT/REQUEST TRACKING, REQUEST SERVICES File)
+Routine SDCNSLT: ^ORD(100.01 (Dependency to ORDER ENTRY/RESULTS REPORTING, ORDER STATUS File)
+Routine SDCNSLT: ^SC( 
+Routine SDCNSLT: ^SC("AWAS1" 
+Routine SDCNSLT: ^VA(200 (Dependency to KERNEL, NEW PERSON File)
+Routine SDCO: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDCO: ^SC( 
+Routine SDCO: ^SCE( 
+Routine SDCO0: ^DIC(40.7 
+Routine SDCO0: ^SCE( 
+Routine SDCO0: ^SCE("APAR" 
+Routine SDCO0: ^SD(409.41 
+Routine SDCO1: ^DIC(8 (Dependency to Registration, ELIGIBILITY CODE File)
+Routine SDCO1: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDCO1: ^SC( 
+Routine SDCO1: ^SCE( 
+Routine SDCO2: ^SCE( 
+Routine SDCO20: ^DG(43 (Dependency to REGISTRATION, MAS PARAMETERS File)
+Routine SDCO20: ^SCE( 
+Routine SDCO20: ^SD(409.41 
+Routine SDCO20: ^SDD(409.42 
+Routine SDCO21: ^SCE( 
+Routine SDCO21: ^SD(409.41 
+Routine SDCO21: ^SDD(409.42 
+Routine SDCO22: ^AUPNVSIT( (Dependency to PCE PATIENT CARE ENCOUNTER, VISIT File)
+Routine SDCO22: ^DIC(21 (Dependency to Registration, PERIOD OF SERVICE File)
+Routine SDCO22: ^DIC(8 (Dependency to Registration, ELIGIBILITY CODE File)
+Routine SDCO22: ^DIC(8.1 (Dependency to Registration, MAS ELIGIBILITY CODE File)
+Routine SDCO22: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDCO22: ^PX(839.7 (Dependency to PCE PATIENT CARE ENCOUNTER, PCE DATA SOURCE File)
+Routine SDCO22: ^SCE( 
+Routine SDCO22: ^SDD(409.42 
+Routine SDCO23: ^DIC(31 (Dependency to HINQ, DISABILITY CONDITION File)
+Routine SDCO23: ^DIC(391 (Dependency to ENGINEERING, ENGINEERING SECTION LIST File)
+Routine SDCO23: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDCO3: ^SCE( 
+Routine SDCO31: ^SC( 
+Routine SDCO31: ^SC("ADPR" 
+Routine SDCO31: ^VA(200 (Dependency to KERNEL, NEW PERSON File)
+Routine SDCO4: ^SCE( 
+Routine SDCO41: ^SC( 
+Routine SDCO41: ^SC("ADDX" 
+Routine SDCO5: ^SCE( 
+Routine SDCO6: ^SCE( 
+Routine SDCO7: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDCO7: ^SC( 
+Routine SDCO7: ^SCE( 
+Routine SDCO9: ^SCE( 
+Routine SDCOAM: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDCOAM: ^SCE( 
+Routine SDCOAM: ^XUSEC("SD SUPERVISOR" (Dependency to Kernel, AUDIT LOG FOR OPTIONS File)
+Routine SDCODD: ^SD(409.41 
+Routine SDCODEL: ^SCE( 
+Routine SDCODEL: ^SCE("APAR" 
+Routine SDCODEL: ^SDD( 
+Routine SDCODEL: ^SDD(409.42 
+Routine SDCOM: ^SCE( 
+Routine SDCOU: ^DD(409.68 (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SDCOU: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDCOU: ^SC( 
+Routine SDCOU: ^SCE( 
+Routine SDCOU: ^SCE("APAR" 
+Routine SDCOU: ^SD(409.63 
+Routine SDCOU1: ^SCE( 
+Routine SDCOU2: ^DIC(40.7 
+Routine SDCOU2: ^SC( 
+Routine SDCOU2: ^SCE( 
+Routine SDCOU2: ^SD(409.45 
+Routine SDCP: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SDCP: ^DIC(40.7 
+Routine SDCP: ^SC( 
+Routine SDCP: ^SC("B" 
+Routine SDCWL: ^DIC(40.7 
+Routine SDCWL: ^SC( 
+Routine SDCWL: ^SCE( 
+Routine SDCWL: ^SCE("B" 
+Routine SDCWL1: ^DD("DD" (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SDCWL2: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SDCWL2: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDCWL2: ^SC( 
+Routine SDCWL3: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SDCWL3: ^DIC(40.7 
+Routine SDCWL3: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDCWL3: ^DPT("ASDCN" (Dependency to Registration, PATIENT File)
+Routine SDCWL3: ^SC( 
+Routine SDD: ^DD("DD" (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SDD: ^SC( 
+Routine SDD: ^SC("B" 
+Routine SDD0: ^HOLIDAY( (Dependency to KERNEL, HOLIDAY File)
+Routine SDD0: ^SC( 
+Routine SDDIV: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SDDIV: ^DG(43 (Dependency to REGISTRATION, MAS PARAMETERS File)
+Routine SDDPA: ^DD("FUNC" (Dependency to VA FileMan, FUNCTION File)
+Routine SDDPA: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDDPA: ^SC( 
+Routine SDDPA: ^VA(200 (Dependency to KERNEL, NEW PERSON File)
+Routine SDDSO: ^DD("FUNC" (Dependency to VA FileMan, FUNCTION File)
+Routine SDDSO: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDDSO: ^SC( 
+Routine SDF: ^DIC(8 (Dependency to Registration, ELIGIBILITY CODE File)
+Routine SDF: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDF: ^SC( 
+Routine SDF: ^SC("B" 
+Routine SDF: ^SD(409.1 
+Routine SDF1: ^DIC(8 (Dependency to Registration, ELIGIBILITY CODE File)
+Routine SDF1: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDF1: ^SC( 
+Routine SDF1: ^SD(409.1 
+Routine SDGAF: ^XUSEC("SD GAF SCORE" (Dependency to Kernel, AUDIT LOG FOR OPTIONS File)
+Routine SDHPIB: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDHPIB: ^DPT("SSN" (Dependency to Registration, PATIENT File)
+Routine SDHPIB: ^XMB(3.9 (Dependency to Mailman, MESSAGE File)
+Routine SDL1: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SDL1: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDL1: ^SC( 
+Routine SDLT: ^DD("FUNC" (Dependency to VA FileMan, FUNCTION File)
+Routine SDLT: ^DG(43 (Dependency to REGISTRATION, MAS PARAMETERS File)
+Routine SDLT: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDLT: ^SC( 
+Routine SDLT: ^VA(407.5 
+Routine SDLTE: ^VA(407.6 
+Routine SDLTP: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SDLTP: ^DG(43 (Dependency to REGISTRATION, MAS PARAMETERS File)
+Routine SDM: ^DGS(41.1 (Dependency to REGISTRATION, SCHEDULED ADMISSION File)
+Routine SDM: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDM: ^SC( 
+Routine SDM: ^SD(409.1 
+Routine SDM0: ^DGPM( (Dependency to REGISTRATION, PATIENT MOVEMENT File)
+Routine SDM0: ^DGPM("ATID1" (Dependency to REGISTRATION, PATIENT MOVEMENT File)
+Routine SDM0: ^DISV( (Dependency Unknown)
+Routine SDM0: ^HOLIDAY( (Dependency to KERNEL, HOLIDAY File)
+Routine SDM0: ^SC( 
+Routine SDM0: ^SCE( 
+Routine SDM0: ^SCE("ADFN" 
+Routine SDM1: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDM1: ^HOLIDAY( (Dependency to KERNEL, HOLIDAY File)
+Routine SDM1: ^SC( 
+Routine SDM1: ^SDWL(409.31 
+Routine SDM1: ^SDWL(409.32 
+Routine SDM1: ^XUSEC("SDOB" (Dependency to Kernel, AUDIT LOG FOR OPTIONS File)
+Routine SDM1A: ^DG(43 (Dependency to REGISTRATION, MAS PARAMETERS File)
+Routine SDM1A: ^DIC(40.7 
+Routine SDM1A: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDM1A: ^DPT("ASDCN" (Dependency to Registration, PATIENT File)
+Routine SDM1A: ^SC( 
+Routine SDM1A: ^SC("ARAD" 
+Routine SDM1A: ^SCE( 
+Routine SDM1A: ^SDD(409.65 
+Routine SDM1A: ^SDWL(409.3 
+Routine SDM1A: ^SDWL(409.32 
+Routine SDM1T: ^DD( (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SDM1T: ^DD("DD" (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SDM1T: ^DD("KEY" (Dependency to VA FileMan, KEY File)
+Routine SDM1T: ^DIE(486 (Dependency to VA FileMan, INPUT TEMPLATE File)
+Routine SDM1T: ^DISV( (Dependency Unknown)
+Routine SDM1T: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDM1T1: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDM1T10: ^DD( (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SDM1T10: ^DD("DD" (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SDM1T10: ^DD("KEY" (Dependency to VA FileMan, KEY File)
+Routine SDM1T10: ^DISV( (Dependency Unknown)
+Routine SDM1T10: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDM1T2: ^DD( (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SDM1T2: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDM1T3: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDM1T4: ^DD( (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SDM1T4: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDM1T5: ^DD( (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SDM1T5: ^DD("DD" (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SDM1T5: ^DD("KEY" (Dependency to VA FileMan, KEY File)
+Routine SDM1T5: ^DD(2 (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SDM1T5: ^DIC(5 (Dependency to Kernel, STATE File)
+Routine SDM1T5: ^DISV( (Dependency Unknown)
+Routine SDM1T5: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDM1T6: ^DD( (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SDM1T8: ^DD( (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SDM1T9: ^DD( (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SDM2: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDM2: ^DPT("ASDCN" (Dependency to Registration, PATIENT File)
+Routine SDM2: ^DPT("ASDPSD" (Dependency to Registration, PATIENT File)
+Routine SDM2: ^GMR(123 (Dependency to CONSULT/REQUEST TRACKING, REQUEST/CONSULTATION File)
+Routine SDM2: ^GMR(123.5 (Dependency to CONSULT/REQUEST TRACKING, REQUEST SERVICES File)
+Routine SDM2: ^SC( 
+Routine SDM2: ^SC("AAS" 
+Routine SDM2: ^SC("ARAD" 
+Routine SDM2: ^SC("AWAS1" 
+Routine SDM2: ^SCE( 
+Routine SDM2A: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDM2A: ^SC( 
+Routine SDM2A: ^SDWL(409.3 
+Routine SDM2A: ^SDWL(409.32 
+Routine SDM3: ^DIC(4 (Dependency to Kernel, INSTITUTION File)
+Routine SDM3: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDM3: ^DPT("ASDPSD" (Dependency to Registration, PATIENT File)
+Routine SDM3: ^SC( 
+Routine SDM3: ^XUSEC("SDMOB" (Dependency to Kernel, AUDIT LOG FOR OPTIONS File)
+Routine SDM4: ^DIC(8 (Dependency to Registration, ELIGIBILITY CODE File)
+Routine SDM4: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDM4: ^SC( 
+Routine SDM4: ^SD(409.1 
+Routine SDM4: ^SD(409.45 
+Routine SDMANA: ^HOLIDAY( (Dependency to KERNEL, HOLIDAY File)
+Routine SDMANA: ^SC( 
+Routine SDMEAN: ^DIC(37 (Dependency to Registration, DISPOSITION File)
+Routine SDMEAN: ^DIC(8 (Dependency to Registration, ELIGIBILITY CODE File)
+Routine SDMEAN: ^DIC(8.1 (Dependency to Registration, MAS ELIGIBILITY CODE File)
+Routine SDMEAN: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDMEAN: ^SC( 
+Routine SDMEAN: ^SCE( 
+Routine SDMEAN: ^SCE("B" 
+Routine SDMEAN: ^SD(409.1 
+Routine SDMM: ^DISV( (Dependency Unknown)
+Routine SDMM: ^HOLIDAY( (Dependency to KERNEL, HOLIDAY File)
+Routine SDMM: ^SC( 
+Routine SDMM1: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDMM1: ^DPT("ASDCN" (Dependency to Registration, PATIENT File)
+Routine SDMM1: ^SC( 
+Routine SDMM1: ^SC("ARAD" 
+Routine SDMM1: ^XUSEC("SDMOB" (Dependency to Kernel, AUDIT LOG FOR OPTIONS File)
+Routine SDMM1: ^XUSEC("SDOB" (Dependency to Kernel, AUDIT LOG FOR OPTIONS File)
+Routine SDMULT: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDMULT: ^SC( 
+Routine SDMULT0: ^HOLIDAY( (Dependency to KERNEL, HOLIDAY File)
+Routine SDMULT0: ^SC( 
+Routine SDMULT1: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDMULT1: ^SC( 
+Routine SDN: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SDN: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDN: ^SC( 
+Routine SDN0: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SDN0: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDN0: ^SC( 
+Routine SDN1: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SDN1: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDN1: ^SC( 
+Routine SDN2: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDN2: ^SD(409.2 
+Routine SDNACT: ^SC( 
+Routine SDNACT1: ^SC( 
+Routine SDNDIS: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDNDIS: ^SC( 
+Routine SDNEXT: ^SC( 
+Routine SDNEXT: ^SCTM(404.57 
+Routine SDNOS: ^DG(43 (Dependency to REGISTRATION, MAS PARAMETERS File)
+Routine SDNOS: ^SC( 
+Routine SDNOS0: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SDNOS0: ^DG(43 (Dependency to REGISTRATION, MAS PARAMETERS File)
+Routine SDNOS0: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDNOS0: ^SC( 
+Routine SDNOS0: ^SC("B" 
+Routine SDNOS1: ^DD("DD" (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SDNOS1: ^DD("FUNC" (Dependency to VA FileMan, FUNCTION File)
+Routine SDNOS1: ^VA(200 (Dependency to KERNEL, NEW PERSON File)
+Routine SDNOS1A: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SDNOS1A: ^DG(43 (Dependency to REGISTRATION, MAS PARAMETERS File)
+Routine SDNOS1A: ^SC( 
+Routine SDNOS2: ^DD("DD" (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SDNOS2: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SDNOS2: ^DG(43 (Dependency to REGISTRATION, MAS PARAMETERS File)
+Routine SDNP: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDNP: ^SC( 
+Routine SDOE: ^SCE( 
+Routine SDOECPT: ^DIC(40.7 
+Routine SDOECPT: ^SCE( 
+Routine SDOECPT: ^SDV( 
+Routine SDOECPT: ^SDV("ADT" 
+Routine SDOEDX: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDOEDX: ^ICD9( (Dependency to DRG GROUPER, ICD DIAGNOSIS File)
+Routine SDOEDX: ^SCE( 
+Routine SDOEDX: ^SDD(409.43 
+Routine SDOEOE: ^AUPNVSIT( (Dependency to PCE PATIENT CARE ENCOUNTER, VISIT File)
+Routine SDOEOE: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SDOEOE: ^DIC(40.7 
+Routine SDOEOE: ^DIC(8 (Dependency to Registration, ELIGIBILITY CODE File)
+Routine SDOEOE: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDOEOE: ^SC( 
+Routine SDOEOE: ^SCE( 
+Routine SDOEOE: ^SCE("ADFN" 
+Routine SDOEOE: ^SD(409.1 
+Routine SDOEOE: ^SD(409.63 
+Routine SDOEPRV: ^SDD(409.44 
+Routine SDOEPRV: ^VA(200 (Dependency to KERNEL, NEW PERSON File)
+Routine SDOEQ: ^SCE( 
+Routine SDOEQ: ^SCE("ADFN" 
+Routine SDOEQ: ^SCE("AVSIT" 
+Routine SDOEQ: ^SCE("B" 
+Routine SDOEQ: ^SCE("C" 
+Routine SDOEUT: ^SCE( 
+Routine SDOPC0: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDOPC1: ^DGPM( (Dependency to REGISTRATION, PATIENT MOVEMENT File)
+Routine SDOPC1: ^DGPM("APTT1" (Dependency to REGISTRATION, PATIENT MOVEMENT File)
+Routine SDOPC1: ^DIC(42 (Dependency to REGISTRATION, WARD LOCATION File)
+Routine SDOPC4: ^DG(43 (Dependency to REGISTRATION, MAS PARAMETERS File)
+Routine SDOPC4: ^DIC(42 (Dependency to REGISTRATION, WARD LOCATION File)
+Routine SDOQMP: ^DD("DD" (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SDOQMP: ^SC( 
+Routine SDOQMP: ^SC("AC" 
+Routine SDOQMP: ^XMB("NETNAME" (Dependency to Mailman, TRANSMISSION SCRIPT File)
+Routine SDOQMP0: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SDOQMP0: ^DG(43 (Dependency to REGISTRATION, MAS PARAMETERS File)
+Routine SDOQMP0: ^DIC(19 (Dependency to Kernel, OPTION File)
+Routine SDOQMP0: ^DIC(19.2 (Dependency to Kernel, OPTION SCHEDULING File)
+Routine SDOQMP0: ^DIC(40.7 
+Routine SDOQMP0: ^SC( 
+Routine SDOQMP0: ^SC("AC" 
+Routine SDOQMP1: ^HOLIDAY( (Dependency to KERNEL, HOLIDAY File)
+Routine SDOQMP1: ^SC( 
+Routine SDOQMP2: ^SC( 
+Routine SDOQMPR: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SDOQMPR: ^DIC(40.7 
+Routine SDOQMPR: ^SC( 
+Routine SDOUTPUT: ^DOPT("SDOUTPUT" (Dependency Unknown)
+Routine SDPARM: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SDPARM2: ^DG(43 (Dependency to REGISTRATION, MAS PARAMETERS File)
+Routine SDPBP: ^DIC(4 (Dependency to Kernel, INSTITUTION File)
+Routine SDPBP: ^DIC(40.7 
+Routine SDPBP: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDPBP: ^SC( 
+Routine SDPCE: ^DIC(8 (Dependency to Registration, ELIGIBILITY CODE File)
+Routine SDPCE: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDPCE: ^SCE( 
+Routine SDPCE: ^SCE("AVSIT" 
+Routine SDPCE: ^SD(409.1 
+Routine SDPCE: ^SD(409.63 
+Routine SDPCE: ^VA(200 (Dependency to KERNEL, NEW PERSON File)
+Routine SDPCE2: ^DG(43 (Dependency to REGISTRATION, MAS PARAMETERS File)
+Routine SDPCE2: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDPCE2: ^SC( 
+Routine SDPFSS: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDPFSS: ^SC( 
+Routine SDPFSS2: ^AUPNVPRV( (Dependency to PCE PATIENT CARE ENCOUNTER, V PROVIDER File)
+Routine SDPFSS2: ^AUPNVPRV("AD" (Dependency to PCE PATIENT CARE ENCOUNTER, V PROVIDER File)
+Routine SDPFSS2: ^SC( 
+Routine SDPFSS2: ^SD(409.55 
+Routine SDPFSS2: ^XMB(3.8 (Dependency to Mailman, MAIL GROUP File)
+Routine SDPHARM1: ^DIC(40.7 
+Routine SDPHARM1: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDPHARM1: ^SC( 
+Routine SDPHARM1: ^SCE( 
+Routine SDPHARM1: ^SCE("ADFN" 
+Routine SDPMHLA: ^HL(772 (Dependency to HEALTH LEVEL SEVEN, HL7 MESSAGE TEXT File)
+Routine SDPMUT1: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SDPMUT1: ^DIC(40.7 
+Routine SDPMUT1: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDPMUT1: ^SC( 
+Routine SDPMUT1: ^SCE( 
+Routine SDPMUT1: ^SCE("B" 
+Routine SDPMUT1: ^VA(200 (Dependency to KERNEL, NEW PERSON File)
+Routine SDPMUT2: ^SC( 
+Routine SDPMUT2: ^SCE( 
+Routine SDPMUT2: ^SCE("APAR" 
+Routine SDPMUT2: ^SD(409.1 
+Routine SDPP: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDPPADD1: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SDPPADD1: ^DIC(40.7 
+Routine SDPPADD1: ^DIC(8 (Dependency to Registration, ELIGIBILITY CODE File)
+Routine SDPPADD1: ^SC( 
+Routine SDPPADD1: ^SCE( 
+Routine SDPPADD1: ^SD(409.1 
+Routine SDPPADD1: ^SD(409.63 
+Routine SDPPADD1: ^VA(200 (Dependency to KERNEL, NEW PERSON File)
+Routine SDPPAPP1: ^DIC(8 (Dependency to Registration, ELIGIBILITY CODE File)
+Routine SDPPAPP1: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDPPAPP1: ^SC( 
+Routine SDPPAPP1: ^SD(409.1 
+Routine SDPPAPP1: ^VA(200 (Dependency to KERNEL, NEW PERSON File)
+Routine SDPPAPP2: ^SD(409.2 
+Routine SDPPAPP2: ^VA(200 (Dependency to KERNEL, NEW PERSON File)
+Routine SDPPAT1: ^DG(391 (Dependency to REGISTRATION, TYPE OF PATIENT File)
+Routine SDPPAT1: ^DIC(11 (Dependency to Registration, MARITAL STATUS File)
+Routine SDPPAT1: ^DIC(13 (Dependency to Registration, RELIGION File)
+Routine SDPPAT1: ^DIC(31 (Dependency to HINQ, DISABILITY CONDITION File)
+Routine SDPPAT1: ^DIC(5 (Dependency to Kernel, STATE File)
+Routine SDPPAT1: ^DIC(8 (Dependency to Registration, ELIGIBILITY CODE File)
+Routine SDPPAT1: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDPPAT1: ^VA(200 (Dependency to KERNEL, NEW PERSON File)
+Routine SDPPAT2: ^DIC(21 (Dependency to Registration, PERIOD OF SERVICE File)
+Routine SDPPAT2: ^DIC(5 (Dependency to Kernel, STATE File)
+Routine SDPPDIS1: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SDPPDIS1: ^DIC(30 (Dependency to REGISTRATION, DISPOSITION LATE REASON File)
+Routine SDPPDIS1: ^DIC(37 (Dependency to Registration, DISPOSITION File)
+Routine SDPPDIS1: ^DIC(8 (Dependency to Registration, ELIGIBILITY CODE File)
+Routine SDPPDIS1: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDPPDIS1: ^VA(200 (Dependency to KERNEL, NEW PERSON File)
+Routine SDPPDIS2: ^DIC(5 (Dependency to Kernel, STATE File)
+Routine SDPPDIS2: ^SCE( 
+Routine SDPPDIS2: ^SD(409.63 
+Routine SDPPENR1: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDPPENR1: ^SC( 
+Routine SDPPMT1: ^DG(408.32 (Dependency to ENROLLMENT APPLICATION SYSTEM, MEANS TEST STATUS File)
+Routine SDPPMT1: ^DGMT(408.21 (Dependency to ENROLLMENT APPLICATION SYSTEM, INDIVIDUAL ANNUAL INCOME File)
+Routine SDPPMT1: ^DGMT(408.22 (Dependency to ENROLLMENT APPLICATION SYSTEM, INCOME RELATION File)
+Routine SDPPMT1: ^DGMT(408.31 (Dependency to ENROLLMENT APPLICATION SYSTEM, ANNUAL MEANS TEST File)
+Routine SDPPMT1: ^VA(200 (Dependency to KERNEL, NEW PERSON File)
+Routine SDPPMT2: ^DGMT(408.21 (Dependency to ENROLLMENT APPLICATION SYSTEM, INDIVIDUAL ANNUAL INCOME File)
+Routine SDPPMT2: ^DGMT(408.22 (Dependency to ENROLLMENT APPLICATION SYSTEM, INCOME RELATION File)
+Routine SDPPMT2: ^DGPR(408.13 (Dependency to REGISTRATION, INCOME PERSON File)
+Routine SDPPRT: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDPPTEM: ^SCTM(404.51 
+Routine SDPURG1: ^SC( 
+Routine SDPURG1: ^SC("AAS" 
+Routine SDPURG2: ^DPT("ASDPSD" (Dependency to Registration, PATIENT File)
+Routine SDQ: ^DIC( (Dependency to ENGINEERING, ENGINEERING SECTION LIST File)
+Routine SDQ: ^SD(409.64 
+Routine SDQQCN2: ^GMR(123 (Dependency to CONSULT/REQUEST TRACKING, REQUEST/CONSULTATION File)
+Routine SDQVAL: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDREACT: ^SC( 
+Routine SDREV: ^DIC(8 (Dependency to Registration, ELIGIBILITY CODE File)
+Routine SDREV: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDRFC: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDRFC: ^SC( 
+Routine SDRFC: ^SC("ARAD" 
+Routine SDROUT: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SDROUT: ^SC( 
+Routine SDROUT0: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SDROUT0: ^DIC(4 (Dependency to Kernel, INSTITUTION File)
+Routine SDROUT0: ^DIC(8 (Dependency to Registration, ELIGIBILITY CODE File)
+Routine SDROUT0: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDROUT0: ^SC( 
+Routine SDROUT1: ^DD("DD" (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SDROUT1: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SDROUT1: ^DIC(8 (Dependency to Registration, ELIGIBILITY CODE File)
+Routine SDROUT1: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDROUT1: ^SC( 
+Routine SDROUT2: ^DG(391 (Dependency to REGISTRATION, TYPE OF PATIENT File)
+Routine SDROUT2: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SDROUT2: ^DIC(31 (Dependency to HINQ, DISABILITY CONDITION File)
+Routine SDROUT2: ^DIC(5 (Dependency to Kernel, STATE File)
+Routine SDROUT2: ^DIC(8 (Dependency to Registration, ELIGIBILITY CODE File)
+Routine SDROUT2: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDROUT2: ^SC( 
+Routine SDROUT2: ^SD(409.41 
+Routine SDRPA00: ^DPT("ASADM" (Dependency to Registration, PATIENT File)
+Routine SDRPA00: ^HLCS(870 (Dependency to HEALTH LEVEL SEVEN, HL LOGICAL LINK File)
+Routine SDRPA00: ^SDWL(409.6 
+Routine SDRPA02: ^DIC(19 (Dependency to Kernel, OPTION File)
+Routine SDRPA02: ^DIC(19.2 (Dependency to Kernel, OPTION SCHEDULING File)
+Routine SDRPA02: ^SDWL(409.6 
+Routine SDRPA04: ^HLCS(870 (Dependency to HEALTH LEVEL SEVEN, HL LOGICAL LINK File)
+Routine SDRPA04: ^SDWL(409.6 
+Routine SDRPA05: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDRPA05: ^DPT("ASADM" (Dependency to Registration, PATIENT File)
+Routine SDRPA05: ^SC( 
+Routine SDRPA05: ^SCE( 
+Routine SDRPA06: ^SCPT(404.472 
+Routine SDRPA06: ^SDWL(409.6 
+Routine SDRPA07: ^GMR(123 (Dependency to CONSULT/REQUEST TRACKING, REQUEST/CONSULTATION File)
+Routine SDRPA07: ^SC( 
+Routine SDRPA07: ^SDWL(409.6 
+Routine SDRPA08: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDRPA08: ^SC( 
+Routine SDRPA09: ^SDWL(409.6 
+Routine SDRPA10: ^SDWL(409.6 
+Routine SDRPA11: ^SDWL(409.6 
+Routine SDRPA12: ^SDWL(409.6 
+Routine SDRPA13: ^SDWL(409.6 
+Routine SDRPA14: ^SDWL(409.6 
+Routine SDRPA15: ^SDWL(409.6 
+Routine SDRPA16: ^SDWL(409.6 
+Routine SDRPA17: ^SDWL(409.6 
+Routine SDRPA18: ^SDWL(409.6 
+Routine SDRPA20: ^SCE( 
+Routine SDRR1: ^SD(403.5 
+Routine SDRR1: ^SD(403.54 
+Routine SDRR5: ^SD(403.5 
+Routine SDRR5: ^SD(403.54 
+Routine SDRRCLR: ^SD(403.5 
+Routine SDRRCLR: ^SD(403.53 
+Routine SDRRCLR: ^SD(403.54 
+Routine SDRRCLR: ^SD(403.55 
+Routine SDRRCLR2: ^SD(403.5 
+Routine SDRRCLR2: ^SD(403.54 
+Routine SDRRCRR: ^SD(403.5 
+Routine SDRRCRR: ^SD(403.54 
+Routine SDRRCRR1: ^SD(403.5 
+Routine SDRRCRR1: ^SD(403.54 
+Routine SDRRCRR1: ^SD(403.55 
+Routine SDRRDEL: ^SD(403.5 
+Routine SDRRINQ: ^SD(403.5 
+Routine SDRRINQ: ^SD(403.51 
+Routine SDRRINQ: ^SD(403.54 
+Routine SDRRINQ: ^SD(403.56 
+Routine SDRRINQ1: ^SD(403.5 
+Routine SDRRINQ1: ^SD(403.51 
+Routine SDRRINQ1: ^SD(403.54 
+Routine SDRRINQ1: ^SD(403.56 
+Routine SDRRISRA: ^SD(403.56 
+Routine SDRRISRD: ^SD(403.5 
+Routine SDRRISRL: ^SD(403.5 
+Routine SDRRISRU: ^HOLIDAY( (Dependency to KERNEL, HOLIDAY File)
+Routine SDRRISRU: ^SC( 
+Routine SDRRISRU: ^SD(403.5 
+Routine SDRRISRX: ^SD(403.56 
+Routine SDRRLRP: ^SD(403.53 
+Routine SDRROR: ^DD(403.5 (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SDRROR: ^SD(403.5 
+Routine SDRROR: ^SD(403.51 
+Routine SDRRPXC: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SDRRPXC: ^DIC(40.7 
+Routine SDRRPXC: ^SC( 
+Routine SDRRPXC: ^SC("B" 
+Routine SDRRRECL: ^SD(403.5 
+Routine SDRRRECL: ^SD(403.52 
+Routine SDRRRECL: ^SD(403.54 
+Routine SDRRRECP: ^SD(403.5 
+Routine SDRRRECP: ^SD(403.54 
+Routine SDRRSEG3: ^SD(403.5 
+Routine SDRRSEG3: ^SD(403.54 
+Routine SDRRTSK: ^SD(403.5 
+Routine SDRRTSK: ^SD(403.52 
+Routine SDRRTSK: ^SD(403.53 
+Routine SDRRTSK: ^SD(403.54 
+Routine SDRRTSK: ^SD(403.55 
+Routine SDRRTSK1: ^SD(403.5 
+Routine SDRRTSK1: ^SD(403.53 
+Routine SDRRTSK1: ^SD(403.54 
+Routine SDRRTSK1: ^SD(403.55 
+Routine SDRRUTL: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SDRRUTL: ^DIC(40.7 
+Routine SDRRUTL1: ^DIC(40.7 
+Routine SDRRUTL1: ^SC( 
+Routine SDRRUTL1: ^SC("B" 
+Routine SDSCAPI: ^AUPNVSIT( (Dependency to PCE PATIENT CARE ENCOUNTER, VISIT File)
+Routine SDSCAPI: ^DIC(31 (Dependency to HINQ, DISABILITY CONDITION File)
+Routine SDSCAPI: ^DIC(8 (Dependency to Registration, ELIGIBILITY CODE File)
+Routine SDSCAPI: ^SCE("AVSIT" 
+Routine SDSCAPI: ^SDSC(409.48 
+Routine SDSCCHK: ^SC( 
+Routine SDSCCHK: ^SCE("B" 
+Routine SDSCCHK: ^SDSC(409.48 
+Routine SDSCCLM: ^SDSC(409.48 
+Routine SDSCE: ^SC( 
+Routine SDSCEDT: ^AUPNVPOV( (Dependency to PCE PATIENT CARE ENCOUNTER, V POV File)
+Routine SDSCEDT: ^AUPNVPOV("AD" (Dependency to PCE PATIENT CARE ENCOUNTER, V POV File)
+Routine SDSCEDT: ^AUPNVSIT( (Dependency to PCE PATIENT CARE ENCOUNTER, VISIT File)
+Routine SDSCEDT: ^DGSL(38.1 (Dependency to REGISTRATION, DG SECURITY LOG File)
+Routine SDSCEDT: ^DIC(31 (Dependency to HINQ, DISABILITY CONDITION File)
+Routine SDSCEDT: ^SC( 
+Routine SDSCEDT: ^SDSC(409.48 
+Routine SDSCINS: ^DIA(2 (Dependency to VA FileMan, AUDIT File)
+Routine SDSCINS: ^SCE( 
+Routine SDSCINS: ^SCE("ADFN" 
+Routine SDSCINS: ^SDSC(409.48 
+Routine SDSCLM: ^SCE( 
+Routine SDSCLM: ^SDSC(409.48 
+Routine SDSCMSR: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SDSCMSR: ^SCE( 
+Routine SDSCMSR: ^SCE("B" 
+Routine SDSCMSR: ^SDSC(409.48 
+Routine SDSCNSCP: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SDSCNSCP: ^SDSC(409.48 
+Routine SDSCOMP: ^DIC(8 (Dependency to Registration, ELIGIBILITY CODE File)
+Routine SDSCOMP: ^SCE("B" 
+Routine SDSCOMP: ^SDSC(409.48 
+Routine SDSCPRG: ^SDSC(409.48 
+Routine SDSCPRM: ^XTV(8989.51 (Dependency to TOOLKIT, PARAMETER DEFINITION File)
+Routine SDSCPRV: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SDSCPRV: ^SDSC(409.48 
+Routine SDSCRP: ^DIC(40.7 
+Routine SDSCRP: ^SC( 
+Routine SDSCRP1: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SDSCRP1: ^SDSC(409.48 
+Routine SDSCRP2: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SDSCRP2: ^SDSC(409.48 
+Routine SDSCRPT1: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SDSCRPT1: ^SDSC(409.48 
+Routine SDSCRPT2: ^AUPNVPOV( (Dependency to PCE PATIENT CARE ENCOUNTER, V POV File)
+Routine SDSCRPT2: ^AUPNVPOV("AD" (Dependency to PCE PATIENT CARE ENCOUNTER, V POV File)
+Routine SDSCRPT2: ^DIC(31 (Dependency to HINQ, DISABILITY CONDITION File)
+Routine SDSCSSD: ^SDSC(409.48 
+Routine SDSCUSR: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SDSCUSR: ^SDSC(409.48 
+Routine SDSCUTL: ^AUPNVSIT( (Dependency to PCE PATIENT CARE ENCOUNTER, VISIT File)
+Routine SDSCUTL: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SDSCUTL: ^DGSL(38.1 (Dependency to REGISTRATION, DG SECURITY LOG File)
+Routine SDSCUTL: ^SC( 
+Routine SDSCUTL: ^SDSC(409.48 
+Routine SDSCUTL: ^XUSEC("DG SENSITIVITY" (Dependency to Kernel, AUDIT LOG FOR OPTIONS File)
+Routine SDSCUTL: ^XUSEC("SDSC CLINICAL" (Dependency to Kernel, AUDIT LOG FOR OPTIONS File)
+Routine SDSCUTL: ^XUSEC("SDSC SUPER" (Dependency to Kernel, AUDIT LOG FOR OPTIONS File)
+Routine SDST: ^DIC(8 (Dependency to Registration, ELIGIBILITY CODE File)
+Routine SDST: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDST: ^DPT("AEB" (Dependency to Registration, PATIENT File)
+Routine SDST: ^SC( 
+Routine SDSTAT: ^DGPM( (Dependency to REGISTRATION, PATIENT MOVEMENT File)
+Routine SDSTAT: ^DIC(42 (Dependency to REGISTRATION, WARD LOCATION File)
+Routine SDSTAT: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDSTAT: ^SC( 
+Routine SDSTAT: ^SCE( 
+Routine SDSTAT: ^SCE("ADFN" 
+Routine SDSTAT: ^SCE("APAR" 
+Routine SDUL: ^SD(409.61 (Dependency to LIST MANAGER, LIST TEMPLATE File)
+Routine SDUL0: ^DISV( (Dependency Unknown)
+Routine SDUL0: ^ORD(101 (Dependency to KERNEL, PROTOCOL File)
+Routine SDUL0: ^SD(409.61 (Dependency to LIST MANAGER, LIST TEMPLATE File)
+Routine SDUL2: ^DISV( (Dependency Unknown)
+Routine SDUNC: ^SC( 
+Routine SDUTL: ^DG(43 (Dependency to REGISTRATION, MAS PARAMETERS File)
+Routine SDUTL: ^DIC(195.4 (Dependency to RECORD TRACKING, RECORD TRACKING SYSTEM PARAMET File)
+Routine SDUTL: ^SC( 
+Routine SDUTL1: ^DD(2 (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SDUTL1: ^DD(2.001 (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SDUTL1: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDUTL1: ^SC( 
+Routine SDUTL2: ^DIC(40.7 
+Routine SDUTL2: ^SC( 
+Routine SDUTL2: ^XMB(3.8 (Dependency to Mailman, MAIL GROUP File)
+Routine SDUTL3: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDUTL3: ^SCTM(404.51 
+Routine SDUTL3: ^VA(200 (Dependency to KERNEL, NEW PERSON File)
+Routine SDV53PR: ^DIC(19 (Dependency to Kernel, OPTION File)
+Routine SDV53PR: ^ORD(101 (Dependency to KERNEL, PROTOCOL File)
+Routine SDVLT: ^SD(409.61 (Dependency to LIST MANAGER, LIST TEMPLATE File)
+Routine SDVSIT: ^AUPNVSIT( (Dependency to PCE PATIENT CARE ENCOUNTER, VISIT File)
+Routine SDVSIT: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SDVSIT: ^DG(43 (Dependency to REGISTRATION, MAS PARAMETERS File)
+Routine SDVSIT: ^DIC(40.7 
+Routine SDVSIT: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDVSIT: ^SC( 
+Routine SDVSIT: ^SCE("ADFN" 
+Routine SDVSIT: ^SCE("AVSIT" 
+Routine SDVSIT0: ^DG(40.8 (Dependency to REGISTRATION, MEDICAL CENTER DIVISION File)
+Routine SDVSIT0: ^DISV( (Dependency Unknown)
+Routine SDVSIT0: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDVSIT0: ^SC( 
+Routine SDVSIT0: ^SCE( 
+Routine SDVSIT0: ^SCE("B" 
+Routine SDVSIT0: ^SCE(0 
+Routine SDVSIT2: ^AUPNVSIT( (Dependency to PCE PATIENT CARE ENCOUNTER, VISIT File)
+Routine SDVSIT2: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDVSIT2: ^SCE( 
+Routine SDVSIT2: ^SCE("AVSIT" 
+Routine SDWARD: ^DGPM("AMV1" (Dependency to REGISTRATION, PATIENT MOVEMENT File)
+Routine SDWARD: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDWARD: ^SC( 
+Routine SDWLAHRC: ^SDWL(409.3 
+Routine SDWLAHRP: ^DD("DD" (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SDWLBACC: ^SC( 
+Routine SDWLBACC: ^SDWL(409.3 
+Routine SDWLCU1: ^SCTM(404.51 
+Routine SDWLCU1: ^SCTM(404.57 
+Routine SDWLCU1: ^SDWL(409.3 
+Routine SDWLCU1: ^SDWL(409.31 
+Routine SDWLCU1: ^SDWL(409.32 
+Routine SDWLCU3: ^SDWL(409.31 
+Routine SDWLCU3: ^SDWL(409.32 
+Routine SDWLCU4: ^SCTM(404.45 
+Routine SDWLCU4: ^SCTM(404.46 
+Routine SDWLCU5: ^DIC(4 (Dependency to Kernel, INSTITUTION File)
+Routine SDWLCU5: ^SCTM(404.51 
+Routine SDWLCU5: ^SCTM(404.57 
+Routine SDWLCU5: ^SDWL(409.3 
+Routine SDWLCU5: ^SDWL(409.31 
+Routine SDWLCU5: ^SDWL(409.32 
+Routine SDWLCU6: ^SDWL(409.3 
+Routine SDWLCU6: ^SDWL(409.32 
+Routine SDWLD: ^DIC(4 (Dependency to Kernel, INSTITUTION File)
+Routine SDWLD: ^SC( 
+Routine SDWLD: ^SCTM(404.51 
+Routine SDWLD: ^SCTM(404.57 
+Routine SDWLD: ^SDWL(409.3 
+Routine SDWLDISP: ^SDWL(409.3 
+Routine SDWLDISP: ^SDWL(409.32 
+Routine SDWLE: ^SDWL(409.3 
+Routine SDWLE1: ^SDWL(409.3 
+Routine SDWLE10: ^SDWL(409.3 
+Routine SDWLE10: ^SDWL(409.32 
+Routine SDWLE11: ^DGCN(391.91 (Dependency to REGISTRATION, TREATING FACILITY LIST File)
+Routine SDWLE11: ^SDWL(409.3 
+Routine SDWLE110: ^SDWL(409.3 
+Routine SDWLE111: ^SCTM(404.51 
+Routine SDWLE111: ^SCTM(404.57 
+Routine SDWLE111: ^SDWL(409.3 
+Routine SDWLE112: ^SDWL(409.3 
+Routine SDWLE113: ^SDWL(409.3 
+Routine SDWLE2: ^SDWL(409.3 
+Routine SDWLE3: ^SCTM(404.51 
+Routine SDWLE3: ^SCTM(404.57 
+Routine SDWLE3: ^SCTM(404.58 
+Routine SDWLE3: ^SDWL(409.3 
+Routine SDWLE4: ^SDWL(409.3 
+Routine SDWLE5: ^SCPT(404.42 
+Routine SDWLE5: ^SCTM(404.51 
+Routine SDWLE5: ^SCTM(404.57 
+Routine SDWLE5: ^SDWL(409.3 
+Routine SDWLE6: ^DGCN(391.91 (Dependency to REGISTRATION, TREATING FACILITY LIST File)
+Routine SDWLE6: ^SCTM(404.51 
+Routine SDWLE6: ^SCTM(404.57 
+Routine SDWLE6: ^SCTM(404.58 
+Routine SDWLE6: ^SDWL(409.3 
+Routine SDWLE6: ^SDWL(409.36 
+Routine SDWLE7: ^SDWL(409.3 
+Routine SDWLEC: ^SDWL(409.3 
+Routine SDWLEVAL: ^SDWL(409.3 
+Routine SDWLEVAL: ^SDWL(409.32 
+Routine SDWLFUL: ^DPT("SSN" (Dependency to Registration, PATIENT File)
+Routine SDWLFUL1: ^DGCN(391.91 (Dependency to REGISTRATION, TREATING FACILITY LIST File)
+Routine SDWLFUL1: ^DIC(409.39 (Dependency to ENGINEERING, ENGINEERING SECTION LIST File)
+Routine SDWLFUL1: ^SDWL(409.3 
+Routine SDWLFUL1: ^SDWL(409.39 
+Routine SDWLFUL1: ^XPD(9.7 (Dependency to Kernel, INSTALL File)
+Routine SDWLFUL2: ^SDWL(409.39 
+Routine SDWLFULU: ^SDWL(409.3 
+Routine SDWLFULZ: ^DISV( (Dependency Unknown)
+Routine SDWLI: ^SDWL(409.3 
+Routine SDWLIFT: ^SDWL(409.36 
+Routine SDWLIFT: ^XMB(3.9 (Dependency to Mailman, MESSAGE File)
+Routine SDWLIFT1: ^SDWL(409.35 
+Routine SDWLIFT1: ^VA(200 (Dependency to KERNEL, NEW PERSON File)
+Routine SDWLIFT3: ^SDWL(409.3 
+Routine SDWLIFT3: ^SDWL(409.36 
+Routine SDWLIFT6: ^DPT("AICN" (Dependency to Registration, PATIENT File)
+Routine SDWLIFT6: ^DPT("SSN" (Dependency to Registration, PATIENT File)
+Routine SDWLIFT6: ^SDWL(409.36 
+Routine SDWLMR: ^SDWL(409.3 
+Routine SDWLPE: ^SC( 
+Routine SDWLPE: ^SDWL(409.3 
+Routine SDWLPE: ^SDWL(409.31 
+Routine SDWLPE: ^SDWL(409.32 
+Routine SDWLPL: ^SDWL(409.3 
+Routine SDWLQSC: ^SCTM(404.58 
+Routine SDWLQSC: ^SCTM(404.59 
+Routine SDWLQSC: ^SDWL(409.3 
+Routine SDWLQSC: ^SDWL(409.32 
+Routine SDWLQSC1: ^SDWL(409.3 
+Routine SDWLR31: ^SDWL(409.3 
+Routine SDWLREB: ^SDWL(409.3 
+Routine SDWLROF: ^SDWL(409.3 
+Routine SDWLROIS: ^DIC(4 (Dependency to Kernel, INSTITUTION File)
+Routine SDWLROIS: ^SDWL(409.3 
+Routine SDWLROS: ^DIC(4 (Dependency to Kernel, INSTITUTION File)
+Routine SDWLROS: ^SDWL( 
+Routine SDWLROS: ^SDWL(409.3 
+Routine SDWLRP1: ^DGCN(391.91 (Dependency to REGISTRATION, TREATING FACILITY LIST File)
+Routine SDWLRP1: ^SCTM(404.51 
+Routine SDWLRP1: ^SCTM(404.57 
+Routine SDWLRP1: ^SDWL(409.3 
+Routine SDWLRP2: ^DD("SITE" (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SDWLRP2: ^DIC(4 (Dependency to Kernel, INSTITUTION File)
+Routine SDWLRP2: ^SC( 
+Routine SDWLRP2: ^SCTM(404.51 
+Routine SDWLRP2: ^SDWL(409.32 
+Routine SDWLRP3: ^DIC(31 (Dependency to HINQ, DISABILITY CONDITION File)
+Routine SDWLRP3: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDWLRP4: ^DGCN(391.91 (Dependency to REGISTRATION, TREATING FACILITY LIST File)
+Routine SDWLRP4: ^DIC(4 (Dependency to Kernel, INSTITUTION File)
+Routine SDWLRP4: ^DIC(40.7 
+Routine SDWLRP4: ^SC("B" 
+Routine SDWLRP4: ^SCTM(404.51 
+Routine SDWLRP4: ^SCTM(404.57 
+Routine SDWLRP4: ^SDWL(409.3 
+Routine SDWLRP4: ^SDWL(409.31 
+Routine SDWLRP4: ^SDWL(409.32 
+Routine SDWLRPS1: ^DIC(4 (Dependency to Kernel, INSTITUTION File)
+Routine SDWLRPS1: ^SDWL( 
+Routine SDWLRPS1: ^SDWL(409.3 
+Routine SDWLRPS2: ^DIC(4 (Dependency to Kernel, INSTITUTION File)
+Routine SDWLRPS2: ^SDWL(409.3 
+Routine SDWLRPT1: ^DIC(4 (Dependency to Kernel, INSTITUTION File)
+Routine SDWLRPT1: ^DIC(40.7 
+Routine SDWLRPT1: ^SC( 
+Routine SDWLRPT1: ^SDWL(409.3 
+Routine SDWLRPT2: ^DIC(4 (Dependency to Kernel, INSTITUTION File)
+Routine SDWLRPT2: ^SDWL(409.3 
+Routine SDWLRQ2: ^DIC(4 (Dependency to Kernel, INSTITUTION File)
+Routine SDWLRQ2: ^SCTM(404.51 
+Routine SDWLRQ2: ^SCTM(404.58 
+Routine SDWLRSRS: ^DIC(4 (Dependency to Kernel, INSTITUTION File)
+Routine SDWLRSRS: ^SDWL(409.3 
+Routine SDWLSC: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDWLSC: ^SDWL(409.3 
+Routine SDWLSCPE: ^SDWL(409.3 
+Routine SDWLTR: ^SC( 
+Routine SDWLTR: ^SCTM(404.51 
+Routine SDWLTR: ^SCTM(404.57 
+Routine SDWLTR: ^SDWL(409.3 
+Routine SDWLTR: ^SDWL(409.31 
+Routine SDWLTR: ^SDWL(409.32 
+Routine SDWU: ^SC( 
+Routine SDWU: ^SC("B" 
+Routine SDXA: ^DD( (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SDXA: ^DD("DD" (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SDXA: ^DISV( (Dependency Unknown)
+Routine SDXA: ^SDV( 
+Routine SDXA1: ^DD( (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SDXA1: ^DD("DD" (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SDXA1: ^DD(409.51 (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SDXA1: ^DIC(8 (Dependency to Registration, ELIGIBILITY CODE File)
+Routine SDXA1: ^DISV( (Dependency Unknown)
+Routine SDXA1: ^SCE( 
+Routine SDXA1: ^SD(409.1 
+Routine SDXA1: ^SDV( 
+Routine SDXA1: ^SDV("ACG" 
+Routine SDXA2: ^DD( (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SDXA2: ^DD("DD" (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SDXA2: ^DISV( (Dependency Unknown)
+Routine SDXA2: ^SDV( 
+Routine SDXACSE: ^DD( (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SDXACSE: ^DD("DD" (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SDXACSE: ^DISV( (Dependency Unknown)
+Routine SDXACSE: ^SDV( 
+Routine SDXACSE1: ^DD( (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SDXACSE1: ^DD("DD" (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SDXACSE1: ^DD(409.51 (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SDXACSE1: ^DIC(8 (Dependency to Registration, ELIGIBILITY CODE File)
+Routine SDXACSE1: ^DISV( (Dependency Unknown)
+Routine SDXACSE1: ^SCE( 
+Routine SDXACSE1: ^SD(409.1 
+Routine SDXACSE1: ^SDV( 
+Routine SDXACSE1: ^SDV("ACG" 
+Routine SDXACSE2: ^DD( (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SDXACSE2: ^DD("DD" (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SDXACSE2: ^DISV( (Dependency Unknown)
+Routine SDXACSE2: ^SDV( 
+Routine SDXACSE2: ^SDV("AG" 
+Routine SDXAMB: ^DD(409.71 (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SDXAMB: ^DIPT(229 (Dependency to VA FileMan, PRINT TEMPLATE File)
+Routine SDXAMB: ^ICPT( (Dependency to CPT/HCPCS CODES, CPT File)
+Routine SDXAMB: ^SD(409.71 (Dependency to AUTOMATED INFO COLLECTION SYS, PRINT MANAGER DIVISION SETUP File)
+Routine SDXAMB: ^SD(409.72 (Dependency to AUTOMATED INFO COLLECTION SYS, PRINT MANAGER DIVISION SETUP File)
+Routine SDXAMB: ^SD(409.81 (Dependency to AUTOMATED INFO COLLECTION SYS, PRINT MANAGER DIVISION SETUP File)
+Routine SDXAMB: ^SD(409.82 (Dependency to AUTOMATED INFO COLLECTION SYS, PRINT MANAGER DIVISION SETUP File)
+Routine SDXLST: ^DD(409.72 (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SDXLST: ^DIPT(231 (Dependency to VA FileMan, PRINT TEMPLATE File)
+Routine SDXLST: ^ICPT( (Dependency to CPT/HCPCS CODES, CPT File)
+Routine SDXLST: ^SD(409.71 (Dependency to AUTOMATED INFO COLLECTION SYS, PRINT MANAGER DIVISION SETUP File)
+Routine SDXLST: ^SD(409.72 (Dependency to AUTOMATED INFO COLLECTION SYS, PRINT MANAGER DIVISION SETUP File)
+Routine SDXLST: ^SD(409.82 (Dependency to AUTOMATED INFO COLLECTION SYS, PRINT MANAGER DIVISION SETUP File)
+Routine SDXRAM: ^DIPT(230 (Dependency to VA FileMan, PRINT TEMPLATE File)
+Routine SDXRAM: ^SD(409.81 (Dependency to AUTOMATED INFO COLLECTION SYS, PRINT MANAGER DIVISION SETUP File)
+Routine SDXRAM: ^SD(409.82 (Dependency to AUTOMATED INFO COLLECTION SYS, PRINT MANAGER DIVISION SETUP File)
+Routine SDYBSTOP: ^DIC(40.7 
+Routine SDYCENR: ^DPT( (Dependency to Registration, PATIENT File)
+Routine SDYCENR: ^DPT("AEB1" (Dependency to Registration, PATIENT File)
+Routine SDYCENR: ^SC( 
+Routine SDYMPOST: ^DG(43 (Dependency to REGISTRATION, MAS PARAMETERS File)
+Routine SDYMPOST: ^DIC(40.7 
+Routine SDYQOECL: ^DD(409.45 (Dependency to VA FileMan, MUMPS OPERATING SYSTEM File)
+Routine SDYQOECL: ^SD(409.45 
+Routine SDYQSTOP: ^DIC(40.7 
+Routine SDYRENR: ^DPT( (Dependency to Registration, PATIENT File)
+

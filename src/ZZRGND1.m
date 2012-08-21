@@ -1,4 +1,5 @@
-ZZRGND1 ;
+ZZRGND1 ;;CBR/AU - XINDEX routines ;08/15/12
+ ;;1.0;RGI Dependency Tool;**260004**;08/15/2012
  ;;
  G A
 E(ERR) ;

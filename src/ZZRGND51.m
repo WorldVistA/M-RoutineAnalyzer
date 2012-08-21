@@ -1,5 +1,5 @@
-ZZRGND51 ;ISC/REL,GRK,RWF - PRINT ROUTINE ;06/24/08  16:06
- ;;7.3;TOOLKIT;**20,48,61,110**;Apr 25, 1995;Build 11
+ZZRGND51 ;;CBR/AU - XINDEX based routines ;08/15/12
+ ;;1.0;RGI Dependency Tool;**260004**;08/15/2012
  ;Setup Local IO paramiters
 B S RTN="",INL(1)=IOM-2,INL(2)=IOSL-4,INL(3)=("C"=$E(IOST)),INL(4)=IOM-1,PG=0,INL(5)="Compiled list of Errors and Warnings "
  K ER,HED D HD1 ;Do header

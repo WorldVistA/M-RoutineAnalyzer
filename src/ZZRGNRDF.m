@@ -1,5 +1,5 @@
-ZZRGNRDF ;CBR/ - RDF/OWL generator ;02/14/12
- ;;7.3;TOOLKIT;**to be determined**;
+ZZRGNRDF ;;CBR/ - RDF/OWL generator ;08/15/12
+ ;;1.0;RGI Dependency Tool;**260004**;08/15/2012
 WRITE(GLB,PATH)
  N PKG,PKGN,RTN,GLOB,CALL
  S:$G(GLB)="" GLB="^ZZRG"

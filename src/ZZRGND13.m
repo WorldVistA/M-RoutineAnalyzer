@@ -1,16 +1,31 @@
-ZZRGND13 ;CBR/ - REPORTS ;02/07/12
- ;;7.3;TOOLKIT;**to be determined**;
-REPORTAPI(GLB) ;
+ZZRGND13 ;;CBR/AU -REPORTS ;08/15/12
+ ;;1.0;RGI Dependency Tool;**260004**;08/15/2012
+ Q ; Call Tags
+ ;
+ ; Report faninss for the package (PKG specified) or all packages
+ ;  GLB (Optional): Data global.
+ ;  PKG (Optional): Primary namespace for the package.
+ ;  FILEPATH (Optional): Output file path.
+ ;  FILENAME (Optional): Output file name. 
+REPORTFI(GLB,PKG,FILEPATH,FILENAME) ;
+ I $G(FILENAME)]"",$G(FILEPATH)]"" D TEXTOPEN^ZZRGND23("OUTFILE",FILEPATH,FILENAME)
  S:$G(GLB)="" GLB="^ZZRG"
- D READPKGS^ZZRGND19(GLB,0) ;Read Packages.csv file
- D RGDEP(GLB)
- D WAPI(GLB)
+ I $G(PKG)]"" D WPKGFI(GLB,PKG) Q
+ D WFI(GLB)
+ I $G(FILENAME)]"",$G(FILEPATH)]"" D TEXTCLS^ZZRGND23("OUTFILE",FILENAME)
  Q
  ;
-REPORTAPIO(GLB) ;
+ ; Report fanouts for the package (PKG specified) or all packages
+ ;  GLB (Optional): Data global.
+ ;  PKG (Optional): Primary namespace for the package.
+ ;  FILEPATH (Optional): Output file path.
+ ;  FILENAME (Optional): Output file name. 
+REPORTFO(GLB,PKG,FILEPATH,FILENAME) ; Report fanouts
+ I $G(FILENAME)]"",$G(FILEPATH)]"" D TEXTOPEN^ZZRGND23("OUTFILE",FILEPATH,FILENAME)
  S:$G(GLB)="" GLB="^ZZRG"
- D READPKGS^ZZRGND19(GLB,0)
- D WAPIO(GLB)
+ I $G(PKG)]"" D WFOPKG(GLB,PKG) Q
+ D WFO(GLB)
+ I $G(FILENAME)]"",$G(FILEPATH)]"" D TEXTCLS^ZZRGND23("OUTFILE",FILENAME)
  Q
  ;
 REPORTRPC(GLB) ; RPC calls
@@ -46,7 +61,7 @@ NDXPRTNS(PKG,TARGET) ;
  Q 
  ;
 REPORTGL(TITLE,GL,ADDVALUE,SEP) ;
- N X,OUT,EXISTS,SPC
+ N X,OUT,EXISTS,SPC,I
  S:$G(SEP)="" SEP=","
  S X="",OUT=1,SPC=""
  F I=1:1:$L(TITLE) S SPC=SPC_" " 
@@ -61,16 +76,32 @@ REPORTGL(TITLE,GL,ADDVALUE,SEP) ;
  D REPORT(TITLE,.OUT)
  Q
  ;
+REPORTG2(TITLE,GL,ADDVALUE,SEP) ;
+ N X,OUT,EXISTS,SPC,I,J
+ S:$G(SEP)="" SEP=","
+ S X="",OUT=1,SPC=""
+ F I=1:1:$L(TITLE) S SPC=SPC_" " 
+ S OUT(1)=TITLE
+ F J=1:1:+$G(@GL) S X=@GL@(J) D
+ . S:ADDVALUE X=X_@GL@(X)
+ . I $L(OUT(OUT))+$L(X)>75 D
+ . . S OUT=OUT+1
+ . . S OUT(OUT)=SPC 
+ . S OUT(OUT)=OUT(OUT)_X_SEP
+ S:$L(OUT(1))=$L(TITLE) OUT=0
+ D REPORT(TITLE,.OUT)
+ Q
+ ;
 REPORTCMD(TITLE,GL,CMD) ;
  N X
  S X=+$G(@GL@(CMD))
- W !,TITLE,X
+ W TITLE,X,!
  Q
  ;
 REPORT(TITLE,OUT) ;
  N I
- I 'OUT W !,TITLE,"--" Q
- F I=1:1:OUT W !,$E(OUT(I),1,$L(OUT(I))-1)
+ I 'OUT W TITLE,"--",! Q
+ F I=1:1:OUT W $E(OUT(I),1,$L(OUT(I))-1),!
  Q
  ;
 REPORTSR(GL,TITLE,GLB) ; 
@@ -88,78 +119,83 @@ REPORTSR(GL,TITLE,GLB) ;
  D REPORT(TITLE,.OUT)
  Q 
  ;
-WPKGAPI(GL,PKG,I,RTN,TAG) ;
- N P,SRCS
- S TAG=$G(TAG)
- I RTN="" D  Q
- . F  S RTN=$O(@GL@(7,PKG,RTN)) Q:RTN=""  D
- . . S TAG=""
- . . F  S TAG=$O(@GL@(7,PKG,RTN,TAG)) Q:TAG=""  D WRTNAPI(GL,PKG,RTN,TAG)
- I TAG'="" D WRTNAPI(GL,PKG,RTN,TAG) Q
- F  S TAG=$O(@GL@(7,PKG,RTN,TAG)) Q:TAG=""  D WRTNAPI(GL,PKG,RTN,TAG)
+WPKGFI(GLB,PKG,PKGNDX) ;
+ N NAME
+ S NAME=$$GPKGNAME^ZZRGND19(PKG,GLB)
+ S PKGNDX=$G(PKGNDX)
+ S:PKGNDX]"" PKGNDX=PKGNDX_". "
+ I $D(@GLB@(4,PKG)),@GLB@(4,PKG)>40 W PKGNDX,"COMMON SERVICE NAME: "_NAME,!! I 1
+ E  W PKGNDX,"PACKAGE NAME: "_NAME,!!
+ I '$D(@GLB@(9,PKG)) W "   Not used by other packages",!! Q
+ N RTN,TAG
+ S RTN=""
+ F  S RTN=$O(@GLB@(9,PKG,RTN)) Q:RTN=""  D
+ . S TAG=""
+ . F  S TAG=$O(@GLB@(9,PKG,RTN,TAG)) Q:TAG=""  D WRTNCLLS(GLB,PKG,RTN,TAG)
+ Q
+ ;
+WRTNCLLS(GLB,PKG,RTN,TAG)
+ W " "_TAG_"^"_RTN,!
+ D REPORTSR(GLB_"(9,"""_PKG_""","""_RTN_""","""_TAG_""")","   CALLING PACKAGES: ",GLB)
+ W !
  Q
  ;
 WRTNAPI(GL,PKG,RTN,TAG)
- W !!," "_TAG_"^"_RTN
- D REPORTSR(GL_"(9,"""_PKG_""","""_RTN_""","""_TAG_""")","  CALLING PACKAGES : ",GL)
- D REPORTRP(TAG_"^"_RTN,"  CALLING RPC's    : ")
- D REPOROPT(TAG_"^"_RTN,"  CALLING OPTIONS  : ")
- D REPORTGL("    FORMAL: ",GL_"(7,"""_PKG_""","""_RTN_""","""_TAG_""",""F"")",0)
- D REPORTGL("     INPUT: ",GL_"(7,"""_PKG_""","""_RTN_""","""_TAG_""",""I"")",1)
- D REPORTGL("    OUTPUT: ",GL_"(7,"""_PKG_""","""_RTN_""","""_TAG_""",""O"")",1)
+ W " "_TAG_"^"_RTN,!
+ S:TAG="" TAG=RTN
+ D REPORTG2("    FORMAL: ",GL_"(7,"""_PKG_""","""_RTN_""","""_TAG_""",""F"")",0)
+ D REPORTGL("   ASSUMED: ",GL_"(7,"""_PKG_""","""_RTN_""","""_TAG_""",""D"")",1)
  D REPORTGL("      GLBS: ",GL_"(7,"""_PKG_""","""_RTN_""","""_TAG_""",""G"")",0)
- D REPGLPKG("  GLS MDEP: ",GL_"(7,"""_PKG_""","""_RTN_""","""_TAG_""",""G"")",PKG,GL)
- D REPORTGL("   FM GLBS: ",GL_"(7,"""_PKG_""","""_RTN_""","""_TAG_""",""FMG"")",0)
- D REPGLPKG(" FM G MDEP: ",GL_"(7,"""_PKG_""","""_RTN_""","""_TAG_""",""FMG"")",PKG,GL)
  D REPORTCMD("      READ: ",GL_"(7,"""_PKG_""","""_RTN_""","""_TAG_""",""CMD"")","R")
  D REPORTCMD("     WRITE: ",GL_"(7,"""_PKG_""","""_RTN_""","""_TAG_""",""CMD"")","W")
- W !
- D REPORTGL("  PKG GLBS: ",GL_"(7,"""_PKG_""","""_RTN_""","""_TAG_""",""GL"")",0)
- D REPORTCMD("  PKG EXEC: ",GL_"(7,"""_PKG_""","""_RTN_""","""_TAG_""",""CMD"")","X")
- D REPORTCMD("   PKG IND: ",GL_"(7,"""_PKG_""","""_RTN_""","""_TAG_""",""CMD"")","@")
+ D REPORTCMD("      EXEC: ",GL_"(7,"""_PKG_""","""_RTN_""","""_TAG_""",""CMD"")","X")
+ D REPORTCMD("       IND: ",GL_"(7,"""_PKG_""","""_RTN_""","""_TAG_""",""CMD"")","@")
+ D REPORTGL("    FMGLBS: ",GL_"(7,"""_PKG_""","""_RTN_""","""_TAG_""",""FMG"")",0)
+ D REPORTGL("   FMCALLS: ",GL_"(7,"""_PKG_""","""_RTN_""","""_TAG_""",""FMGC"")",0)
  Q
  ;
-WAPI(GL) ; 
- N PKG,I,NAME,RTN,TAG
- S PKG="",I=0,RTN="",TAG=""
- R !,"ROUTINE TO BE INDEXED //All: ",RTN
- R:RTN'="" !,"TAG TO BE INDEXED //All: ",TAG
- I RTN="" D  Q
- . F  S PKG=$O(@GL@(4,PKG)) Q:PKG=""  S I=I+1 D 
- . . W !,"--------------------------------------------------------------",!
- . . S NAME=$$GPKGNAME^ZZRGND19(PKG,GL)
- . . I @GL@(4,PKG)>40 W !,I,". COMMON SERVICE NAME: "_NAME I 1
- . . E  W !,I,". PACKAGE NAME: "_NAME
- . . I '$D(@GL@(7,PKG)) W !!,"Not used by other packages",! I 1
- . . E  D RPCETAG^ZZRGND16(PKG,GL),WPKGAPI(GL,PKG,I,"","")
- . . W !,"--------------------------------------------------------------",!
- . W !
- S PKG=$$GETPKG^ZZRGND19(RTN,GL)
- D WPKGAPI(GL,PKG,1,RTN,TAG)
- Q
- ;
-WPKGAPIO(GL,SPKG,I) ;
- N RTN,TAG,P,SRCS,PKG,ATAG
+WFI(GLB) ; 
+ N PKG,PKGNDX
+ S PKGNDX=0
  S PKG=""
- F  S PKG=$O(@GL@(8,SPKG,PKG)) Q:PKG=""  D
- . S RTN=""
- . F  S RTN=$O(@GL@(8,SPKG,PKG,RTN)) Q:RTN=""  D
- . . S ATAG=""
- . . F  S ATAG=$O(@GL@(8,SPKG,PKG,RTN,ATAG)) Q:ATAG=""  D
- . . . W !," "_$$LTRIM^ZZRGND20(ATAG," ")_"^"_RTN_" ("_$$GPKGNAME^ZZRGND19(PKG,GL)_")"
+ F  S PKG=$O(@GLB@(10,PKG)) Q:PKG=""  D 
+ . Q:@GLB@(10,PKG,"D")'=PKG
+ . S PKGNDX=PKGNDX+1 
+ . W "--------------------------------------------------------------",!!
+ . D WPKGFI(GLB,PKG,PKGNDX)
+ . W "--------------------------------------------------------------",!!
  Q
  ;
-WAPIO(GL) ; 
- N PKG,I,NAME,RTN,TAG
- S PKG="",I=0,RTN=""
- F  S PKG=$O(@GL@(8,PKG)) Q:PKG=""  S I=I+1 D 
- . W !,"--------------------------------------------------------------",!
- . S NAME=$$GPKGNAME^ZZRGND19(PKG,GL)
- . I @GL@(4,PKG)>40 W !,I,". COMMON SERVICE NAME: "_NAME,! I 1
- . E  W !,I,". PACKAGE NAME: "_NAME,!
- . D WPKGAPIO(GL,PKG,I)
- . W !,"--------------------------------------------------------------",!
- W !
+WFOTAGS(GLB,SPKG) ;
+ N PKG,RTN,TAG
+ S PKG=""
+ F  S PKG=$O(@GLB@(8,SPKG,PKG)) Q:PKG=""  D
+ . S RTN=""
+ . F  S RTN=$O(@GLB@(8,SPKG,PKG,RTN)) Q:RTN=""  D
+ . . S TAG=""
+ . . F  S TAG=$O(@GLB@(8,SPKG,PKG,RTN,TAG)) Q:TAG=""  D
+ . . . W " "_$$LTRIM^ZZRGND20(TAG," ")_"^"_RTN_" ("_$$GPKGNAME^ZZRGND19(PKG,GLB)_")",!
+ Q
+ ;
+WFO(GLB) ; 
+ N PKG,NDX
+ S PKG="",NDX=0
+ F  S PKG=$O(@GLB@(8,PKG)) Q:PKG=""  D
+ . Q:PKG="UNCATEGORIZED"
+ . S NDX=NDX+1 
+ . W "--------------------------------------------------------------",!!
+ . D WFOPKG(GLB,PKG,NDX) 
+ . W !,"--------------------------------------------------------------",!!
+ Q
+ ;
+WFOPKG(GLB,PKG,PKGNDX) ; 
+ N NAME
+ S NAME=$$GPKGNAME^ZZRGND19(PKG,GLB)
+ S PKGNDX=$G(PKGNDX)
+ S:PKGNDX]"" PKGNDX=PKGNDX_". "
+ W PKGNDX,"PACKAGE NAME: "_NAME
+ W !!
+ D WFOTAGS(GLB,PKG)
  Q
  ;
 REPORTRP(RTN,TITLE)
@@ -331,7 +367,7 @@ RGDEP(GL)
  Q
  ;
 REPGLPKG(TITLE,GLBS,PKG,GL)
- N X,X1,OUT,SPC,NAME,OUTN,RTN,TAG,TMPGLB
+ N X,X1,OUT,SPC,NAME,OUTN,RTN,TAG,TMPGLB,I
  S X="",X1="",OUT=1,SPC=""
  F I=1:1:$L(TITLE) S SPC=SPC_" " 
  S OUT(1)=TITLE

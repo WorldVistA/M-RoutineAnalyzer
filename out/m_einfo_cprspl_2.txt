@@ -1,0 +1,476 @@
+ DETAIL^ORQQPL
+    FORMAL: Y,DFN,PROBIEN,ID
+   ASSUMED: DT,U
+      GLBS: ^GMPL(125.8
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ HASPROB^ORQQPL
+    FORMAL: ORDFN,ORPROB
+   ASSUMED: DT,U,X
+      GLBS: ^ORD(101.24,^XWB(8994
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ LIST^ORQQPL
+    FORMAL: ORPY,DFN,STATUS
+   ASSUMED: DT,U,X
+      GLBS: ^ORD(101.24,^XWB(8994
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ ^ORQQPL
+    FORMAL: --
+   ASSUMED: DT,U,X
+      GLBS: ^ORD(101.24,^XWB(8994
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ ADDSAVE^ORQQPL1
+    FORMAL: RETURN,GMPDFN,GMPROV,GMPVAMC,ADDARRAY
+   ASSUMED: --
+      GLBS: ^AUPNPROB(0
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 1
+    FMGLBS: --
+   FMCALLS: --
+
+ CLINSRCH^ORQQPL1
+    FORMAL: Y,X
+   ASSUMED: --
+      GLBS: ^SC(,^SC("B"
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ CLINUSER^ORQQPL1
+    FORMAL: ORDUZ
+   ASSUMED: --
+      GLBS: ^XUSEC("ORELSE",^XUSEC("ORES",^XUSEC("PROVIDER"
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ CPTREC^ORQQPL1
+    FORMAL: COD
+   ASSUMED: --
+      GLBS: --
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ DUP^ORQQPL1
+    FORMAL: Y,DFN,TERM,TEXT
+   ASSUMED: U
+      GLBS: ^AUPNPROB(
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ EDLOAD^ORQQPL1
+    FORMAL: RETURN,DA,GMPROV,GMPVAMC
+   ASSUMED: U
+      GLBS: --
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 4
+    FMGLBS: --
+   FMCALLS: GET1^DIQ(200
+
+ EDSAVE^ORQQPL1
+    FORMAL: RETURN,GMPIFN,GMPROV,GMPVAMC,UT,EDARRAY
+   ASSUMED: --
+      GLBS: ^AUPNPROB(
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 1
+    FMGLBS: --
+   FMCALLS: --
+
+ ICDREC^ORQQPL1
+    FORMAL: COD
+   ASSUMED: U
+      GLBS: --
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ INITPT^ORQQPL1
+    FORMAL: RETURN,DFN
+   ASSUMED: DUZ,U,VA,VADM
+      GLBS: --
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ INITUSER^ORQQPL1
+    FORMAL: RETURN,ORDUZ
+   ASSUMED: DUZ,GMPLUSER,GMPLVIEW,U
+      GLBS: ^GMPL(125.99,^VA(200,^XUSEC("ORELSE",^XUSEC("ORES"
+            ^XUSEC("PROVIDER"
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ LEXSRCH^ORQQPL1
+    FORMAL: LIST,FROM,N,VIEW,ORDATE
+   ASSUMED: DT,S,U
+      GLBS: ^TMP("LEXSCH"
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ LOADFLDS^ORQQPL1
+    FORMAL: RETURN,NAM,TYP,I
+   ASSUMED: U
+      GLBS: --
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 4
+    FMGLBS: --
+   FMCALLS: GET1^DIQ(200
+
+ ^ORQQPL1
+    FORMAL: --
+   ASSUMED: DT,S,U
+      GLBS: ^TMP("LEXSCH"
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ PROVSRCH^ORQQPL1
+    FORMAL: LST,FLAG,N,FROM,PART
+   ASSUMED: U
+      GLBS: ^VA(200
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 2
+    FMGLBS: --
+   FMCALLS: LIST^DIC(200
+
+ SRVCSRCH^ORQQPL1
+    FORMAL: Y,FROM,DIR,ALL
+   ASSUMED: U
+      GLBS: ^DIC(49
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ UPDATE^ORQQPL1
+    FORMAL: ORRETURN,UPDARRAY
+   ASSUMED: ORARRAY
+      GLBS: --
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 1
+    FMGLBS: --
+   FMCALLS: --
+
+ DELETE^ORQQPL2
+    FORMAL: RESULT,GMPIFN,GMPROV,GMPVAMC,REASON
+   ASSUMED: DUZ,GMPFLD,U
+      GLBS: ^AUPNPROB(
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ FLUSH^ORQQPL2
+    FORMAL: RETURN,I
+   ASSUMED: ORDT,TXT,U
+      GLBS: --
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ GETCOMM^ORQQPL2
+    FORMAL: ORY,PIFN
+   ASSUMED: U
+      GLBS: ^AUPNPROB(
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ HIST^ORQQPL2
+    FORMAL: RETURN,GMPIFN
+   ASSUMED: U
+      GLBS: ^GMPL(125.8
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ INACT^ORQQPL2
+    FORMAL: RETURN,GMPIFN
+   ASSUMED: DUZ,U
+      GLBS: ^AUPNPROB(
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ OLDCOMM^ORQQPL2
+    FORMAL: ORY,PIFN
+   ASSUMED: --
+      GLBS: --
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ ^ORQQPL2
+    FORMAL: --
+   ASSUMED: U
+      GLBS: ^GMPL(125.8
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ REPLACE^ORQQPL2
+    FORMAL: RETURN,DA
+   ASSUMED: DUZ,U
+      GLBS: ^AUPNPROB(
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: ^AUPNPROB(
+   FMCALLS: --
+
+ SAVEVIEW^ORQQPL2
+    FORMAL: Y,GMPLVIEW
+   ASSUMED: DUZ,U
+      GLBS: ^VA(200
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ STRIP^ORQQPL2
+    FORMAL: VAL
+   ASSUMED: --
+      GLBS: --
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ VERIFY^ORQQPL2
+    FORMAL: RETURN,GMPIFN
+   ASSUMED: DUZ,U
+      GLBS: ^AUPNPROB(
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ CAT^ORQQPL3
+    FORMAL: TMP,ORDUZ,CLIN
+   ASSUMED: DUZ,U
+      GLBS: ^GMPL(125,^GMPL(125.1,^VA(200
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 2
+    FMGLBS: --
+   FMCALLS: --
+
+ DELLIST^ORQQPL3
+    FORMAL: RETURN,GMPDFN
+   ASSUMED: DT,U
+      GLBS: ^AUPNPROB(,^AUPNPROB("ACTIVE",^ICD9(,^SC(
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ GETCLIN^ORQQPL3
+    FORMAL: RETURN,INP
+   ASSUMED: U
+      GLBS: ^SC(
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ GETRPRV^ORQQPL3
+    FORMAL: RETURN,INP
+   ASSUMED: I,U
+      GLBS: ^VA(200
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ GETSP^ORQQPL3
+    FORMAL: --
+   ASSUMED: L1,SP,U
+      GLBS: --
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ GETSRVC^ORQQPL3
+    FORMAL: RETURN,INP
+   ASSUMED: U
+      GLBS: ^DIC(49
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ GETUSLST^ORQQPL3
+    FORMAL: ORDUZ,CLIN
+   ASSUMED: DUZ,U
+      GLBS: ^GMPL(125,^VA(200
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ ICDCODE^ORQQPL3
+    FORMAL: COD
+   ASSUMED: U
+      GLBS: --
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ LIST^ORQQPL3
+    FORMAL: GMPL,GMPDFN,GMPSTAT
+   ASSUMED: DT,U
+      GLBS: ^AUPNPROB(,^DIC(49,^GMPL(125.99,^ICD9(,^SC(,^VA(200
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ ^ORQQPL3
+    FORMAL: --
+   ASSUMED: DT,LCNT,NUM,U
+      GLBS: ^AUPNPROB(,^AUPNPROB("ACTIVE",^DIC(49,^GMPL(125.99,^ICD9(,^SC(
+            ^VA(200
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ PROB^ORQQPL3
+    FORMAL: TMP,GROUP
+   ASSUMED: DT,LCNT,U
+      GLBS: ^GMPL(125.12
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 3
+    FMGLBS: --
+   FMCALLS: --
+
+ PROBL^ORQQPL3
+    FORMAL: ROOT,DFN,CONTEXT
+   ASSUMED: DT,LCNT,NUM,U
+      GLBS: ^AUPNPROB(,^AUPNPROB("ACTIVE",^DIC(49,^GMPL(125.99,^ICD9(,^SC(
+            ^VA(200
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+

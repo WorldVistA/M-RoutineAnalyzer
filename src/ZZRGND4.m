@@ -1,5 +1,5 @@
-ZZRGND4 ;CBR/ - PROCESS LIST OF PACKAGES AND GLOBAL OWNERSHIP FILES ;02/01/12
- ;;7.3;TOOLKIT;**to be determined**;
+ZZRGND4 ;;CBR/AU - XINDEX based routines ;08/15/12
+ ;;1.0;RGI Dependency Tool;**260004**;08/15/2012
  Q
  ;DO and GO; IND("DO1") checks if we already checked a DO at this level
 DG1(ARG,V,VADDL,CM,HASPOST) ; 
@@ -31,8 +31,8 @@ DG(ARG,V,VADDL,CM,HASPOST) ;
  . . S S=$E(ARG,S,I-1) 
  . . I S'="" D PRCSSEXP^ZZRGND2(S,.V,.VADDL) S POST=1
  . S ARG=$E(ARG,I+1,999)
- . I $E(LBL)="@" D PRCSSEXP^ZZRGND2($E(LBL,2,999),.V,.VADDL) S LBL="@("
- . I $E(PGM)="@" D PRCSSEXP^ZZRGND2($E(PGM,2,999),.V,.VADDL) S PGM="@("
+ . I $E(LBL)="@" D PRCSSEXP^ZZRGND2($E(LBL,1,999),.V,.VADDL) S LBL="@("
+ . I $E(PGM)="@" D PRCSSEXP^ZZRGND2($E(PGM,1,999),.V,.VADDL) S PGM="@("
  . I LBL[")" S PRM=$$INSIDE(LBL,"(",")"),LBL=$P(LBL,"(")
  . I PGM[")" S PRM=$$INSIDE(PGM,"(",")"),PGM=$P(PGM,"(")
  . I $L(PRM) D 
@@ -182,4 +182,3 @@ PRUNE(S1,S2) ;String,prune char from front and back
  F  Q:$E(S1)'=S2  S S1=$E(S1,2,999)
  F  Q:$E(S1,$L(S1))'=S2  S S1=$E(S1,1,$L(S1)-1)
  Q S1
- 

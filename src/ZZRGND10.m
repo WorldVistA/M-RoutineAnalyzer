@@ -1,5 +1,5 @@
-ZZRGND10 ;ISC/GRK - assemble DD executable code ;11/12/2002  11:40
- ;;7.3;TOOLKIT;**20,27,66,68**;Apr 25, 1995
+ZZRGND10 ;;CBR/AU - XINDEX routines ;08/15/12
+ ;;1.0;RGI Dependency Tool;**260004**;08/15/2012
 ASK ;Ask for Build file, Package file.
  N X,Y,P,V,RN S DA=0,INP(11)=""
  K DIC I $D(^DD(9.6,0)) S Y=$$BUILD^XTRUTL1

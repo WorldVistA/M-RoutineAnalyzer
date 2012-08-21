@@ -1,5 +1,5 @@
-ZZRGND52 ;SF-ISC/RWF - Add to list other routines called ;02/06/97  16:45
- ;;7.3;TOOLKIT;**20**;Apr 25, 1995
+ZZRGND52 ;;CBR/AU - XINDEX based routines ;08/15/12
+ ;;1.0;RGI Dependency Tool;**260004**;08/15/2012
 L1 S RTN="$",INDLC=0
  ;Loop thru routines and see what is called
  F I=0:0 S RTN=$O(^UTILITY($J,1,RTN)) Q:RTN=""  I '$D(^(RTN,52)) S ^(52)=1,S="$" F J=0:0 S S=$O(^UTILITY($J,1,RTN,"X",S)) Q:S=""  D L21

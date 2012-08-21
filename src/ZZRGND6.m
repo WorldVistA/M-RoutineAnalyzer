@@ -1,5 +1,5 @@
-ZZRGND6 ;ISC/REL,GRK - GET SET OF ROUTINES TO INDEX ;07/22/08  13:54
- ;;7.3;TOOLKIT;**20,27,66,110**;Apr 25, 1995;Build 11
+ZZRGND6 ;;CBR/AU - XINDEX based routines ;08/15/12
+ ;;1.0;RGI Dependency Tool;**260004**;08/15/2012
  ;INP(1=Print more than warnings, 2= Print routines, 3= Print warnings, 4= Print DDs & Functions & Options, 5= Type of List, 6= Summary only, 7= Save Parameters
  ;INP(8= Index called routines, 9= Include the Compiled template routines, 10 = Build or Package file DA
  ;INP(11= execute to check for version number on second line, 12= Patch number check.

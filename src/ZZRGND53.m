@@ -1,5 +1,5 @@
-ZZRGND53 ;SF-ISC/RWF - LOAD ROUTINE FILE ;05/13/97  16:11
- ;;7.3;TOOLKIT;**20**;Apr 25, 1995
+ZZRGND53 ;;CBR/AU - XINDEX based routines ;08/15/12
+ ;;1.0;RGI Dependency Tool;**260004**;08/15/2012
 A S RTN="$",DLAYGO=9.8 W !!," Loading the ROUTINE file now.",!
 B S RTN=$O(^UTILITY($J,1,RTN)) I RTN'?1U.UN&(RTN'?1"%".UN) G C
  D GETDA G B:DA'>0 W:$X>70 ! W $J(RTN,10)

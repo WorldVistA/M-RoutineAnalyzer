@@ -1,5 +1,5 @@
-ZZRGND3 ;
- ;;7.3;TOOLKIT;
+ZZRGND3 ;;CBR/AU - XINDEX based routines ;08/15/12
+ ;;1.0;RGI Dependency Tool;**260004**;08/15/2012
 DN S LI(LV)=LI,LI(LV,1)=AC,LV=LV+1,LI=LI(LV),AC=NOA
  Q
 UP ;Inc LI as we save to skip the $C(10).
@@ -17,13 +17,13 @@ SWAPLRHS(VADDL,LHSSTART,RHSSTART) ; Swap LHS and RHS in VADDL order
  S CNT=+$G(VADDL)
  S J=0
  F I=RHSSTART:1:CNT D
- . S V=VADDL(I)
- . S TMP(J)=VADDL(LHSSTART+J)
- . S VADDL(LHSSTART+J)=V
+ . S TMP(J)=VADDL(I)
  . S J=J+1
- S NSTART=LHSSTART+J
+ Q:J=0
+ F I=CNT:-1:LHSSTART+J D
+ . S VADDL(I)=VADDL(I-J)
  F I=0:1:J-1 D
- . S VADDL(I+NSTART)=TMP(I)
+ . S VADDL(I+LHSSTART)=TMP(I)
  Q
  ; 
 S(STR,V,VADDL) ;Set
@@ -42,7 +42,6 @@ S(STR,V,VADDL) ;Set
  . . S RHSSTART=$G(VADDL)+1 
  . . D:"!#&)*,/:;<=?\]_~"[$E(S1) E^ZZRGND1(10)
  . . D ADDARG^ZZRGND2($E($$ASM(.LV,.LI,","),2,999)) 
- . . I S1'="" S VADDL(LHSSTART,"VAL")=S1
  . I CH="$",'RHS D  D:% E^ZZRGND1(10) ;Can't be on RHS of set.
  . . S %=1
  . . I "$E$P$X$Y"[$E(S,1,2) S %=0 Q
@@ -53,11 +52,14 @@ S(STR,V,VADDL) ;Set
  . I CH="@" D  Q
  . . S Y=$$ASM(LV,LI,",") 
  . . S:Y'["=" RHS=1
- . . D SETVADDL^ZZRGND2("@",$$PEEK^ZZRGND2(.LV,.LI)) 
+ . . D SINDVADD^ZZRGND2(.LV,.LI)
  . . D INC^ZZRGND2(.LV,.LI,.S,.S1)
  . . D ARG^ZZRGND2(.LV,.LI,.S,.S1)
- . I CH="(" D MULT(.LV,.LI,.S,.S1) Q
- . I 'RHS D
+ . I CH="(" D  Q
+ . . D ADDCMD^ZZRGND2("S")
+ . . D ADDARG^ZZRGND2($$ASM^ZZRGND3(LV+1,LI(LV+1)+1,$C(10)))
+ . . D MULT(.LV,.LI,.S,.S1) Q
+ . I 'RHS,CH'=")" D
  . . D ADDCMD^ZZRGND2("S")
  . . D ADDARG^ZZRGND2($$ASM(.LV,.LI,"="))
  . D FL(.LV,.LI,.S,.S1) 
@@ -104,7 +106,7 @@ KL ;Process KILL
  Q
  ;
 KL1 ;
- D SETVADDL^ZZRGND2("@",$$PEEK^ZZRGND2(.LV,.LI))
+ D SINDVADD^ZZRGND2(.LV,.LI)
  D INC^ZZRGND2(.LV,.LI,.S,.S1)
  D ARG^ZZRGND2(.LV,.LI,.S,.S1) 
  Q
@@ -132,18 +134,24 @@ KL4 ;
  Q
  ;
 NE(STR,V,VADDL) ;Record newed variables
- N LV,LI,CH,ERTX
+ N LV,LI,CH,ERTX,LVIND,ININD
+ S ININD=0
  I "("[$E(STR) D  Q 
  . D E^ZZRGND1(26) ;Exclusive NEW command
  D PARSE^ZZRGND9(STR,.LV,.LI)
  F  D INC^ZZRGND2(.LV,.LI,.S,.S1) Q:S=""  D
- . S CH=$E(S) 
+ . S CH=$E(S)
+ . ;I ININD,CH'="," Q
+ . ;S ININD=0
+ . S:CH="," ININD=0
  . Q:CH=","
  . S ERTX=""
- . I CH?1P,(CH'=S) D  Q:$G(ERTX)]""
+ . I ('ININD),CH?1P,(CH'=S) D  Q:$G(ERTX)]""
  . . I "@("[CH,"$$E"'[$E(S,1,2),($P(S,CH,2)'?1A) D E^ZZRGND1(11) Q
  . . I "$"[CH,(LV(LV,1)'="@") D E^ZZRGND1(11) Q
- . S GK="~" D ARG^ZZRGND2(.LV,.LI,.S,.S1)
+ . I CH="@" D    ; Q
+ . . S ININD=1
+ . S GK="~" S:ININD GK="" D ARG^ZZRGND2(.LV,.LI,.S,.S1)
  Q
  ;
 RD(STR,V,VADDL) ;

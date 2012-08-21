@@ -1,11 +1,8 @@
-ZZRGND9 ;SF/RWF - XINDEX SYNTAX CHECKER ;06/24/08  15:39
- ;;7.3;TOOLKIT;**20,27,48,61,66,68,110,121**;Apr 25, 1995;Build 7
- ; Per VHA Directive 2004-038, this routine should not be modified.
+ZZRGND9 ;;CBR/AU - XINDEX based routines ;08/15/12
+ ;;1.0;RGI Dependency Tool;**260004**;08/15/2012
  Q
  ;LV is a set of Linked Values
 PARSE(STR,LV,LI,DUPABLE) ;
- I LAB="Com",LABO="1" D
- . S ZZZ=1
  N I,LL,CH,OP,CH1,EC,Q
  S (LI,I)=0,(LL,LV)=1,(OP,CH)="",Q=""""
  ;
@@ -33,7 +30,7 @@ PARSE(STR,LV,LI,DUPABLE) ;
  . . I $D(DUPABLE),DUPABLE[CH Q
  . . I ((CH=CH1)&(",_/\[]&|"[CH))&($$FNC(.LV,LI)'="$$") D E^ZZRGND1(21) ;p110
  D:CH="" PEND(STR,I,.LV,.LI,.LL)
- D:CH]"" E^ZZRGND1(11) 
+ D:CH]"" E^ZZRGND1(11)
  S LI=0,AC=255 F %=0:0 S %=$O(LV(%)) Q:%'>0  S LI(%)=0
  Q
  ;End of parse
@@ -135,7 +132,7 @@ INC(STR,I,CH) ;
 FUNC(STR,LV,LI,I,LL,CH) ;Functions and special var's.
  N F1
  D INC(STR,.I,.CH) 
- S X=CH,S=$$GVAR(STR,.I,.CH,.LL) 
+ S X=CH,S=$$GVAR(STR,.I,.CH,.LL)
  I S["$$" D EXT(S,.LV,.LI,.CH) Q
  I S["$&" D PKG(STR,.LV,.LI,.I,.LL,.CH) Q
  I CH'="(" D SPV(S,.LV,.LI,.CH) Q
