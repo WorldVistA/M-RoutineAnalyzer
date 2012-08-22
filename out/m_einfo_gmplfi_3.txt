@@ -1,0 +1,332 @@
+ VERIFY^GMPL1
+    FORMAL: --
+   ASSUMED: DT,DUZ,GMPIFN,GMPSAVED,U
+      GLBS: ^AUPNPROB(
+      READ: 0
+     WRITE: 8
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ GETFLDS^GMPLEDT3
+    FORMAL: DA
+   ASSUMED: GMPFLD,GMPLMGR,GMPORIG,GMPROV,GMPVAMC,U
+      GLBS: ^AUPNPROB(
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: ^AUPNPROB(
+   FMCALLS: --
+
+ DSELECT^GMPLENFM
+    FORMAL: --
+   ASSUMED: DFN,U
+      GLBS: ^AUPNPROB(,^GMPL(125.99,^ICD9(,^TMP("IB"
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ DT^GMPLHIST
+    FORMAL: --
+   ASSUMED: AIFN,GMPDT,LCNT,U
+      GLBS: ^GMPL(125.8,^VA(200
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 2
+    FMGLBS: --
+   FMCALLS: --
+
+ GETLIST^GMPLHS
+    FORMAL: GMPDFN,STATUS
+   ASSUMED: U
+      GLBS: ^AUPNPROB(,^DIC(49,^GMPL(125.99,^TMP("GMPLHS",^VA(200
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ GETPLIST^GMPLMGR1
+    FORMAL: PLIST,TOTAL,VIEW
+   ASSUMED: GMPARAM,GMPDFN,U
+      GLBS: ^AUPNPROB(,^AUPNPROB("ACTIVE"
+      READ: 0
+     WRITE: 1
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ EN^GMPLSAVE
+    FORMAL: --
+   ASSUMED: DT,DUZ,GMPFLD,GMPIFN,GMPLUSER,GMPORIG,GMPROV,GMPSAVED,GMPVAMC,U
+      GLBS: ^AUPNPROB(
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: ^AUPNPROB(
+   FMCALLS: --
+
+ NEW^GMPLSAVE
+    FORMAL: --
+   ASSUMED: DA,DT,GMPDFN,GMPFLD,GMPROV,GMPSAVED,GMPVAMC,U
+      GLBS: ^AUPNPROB(,^AUPNPROB("AA",^AUPNPROB("AC",^AUPNPROB("B"
+            ^AUPNPROB(0
+      READ: 0
+     WRITE: 2
+      EXEC: 0
+       IND: 0
+    FMGLBS: ^AUPNPROB(
+   FMCALLS: --
+
+ NEWNOTE^GMPLSAVE
+    FORMAL: --
+   ASSUMED: DT,GMPFLD,GMPIFN,GMPROV,GMPVAMC,U
+      GLBS: ^AUPNPROB(
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ ACTIVE^GMPLUTL
+    FORMAL: GMPDFN,GMPL
+   ASSUMED: U
+      GLBS: ^AUPNPROB(,^GMPL(125.99,^ICD9(
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ CREATE^GMPLUTL
+    FORMAL: PL,PLY
+   ASSUMED: DUZ,GMPLUSER,U
+      GLBS: ^DPT(,^GMPL(125.99,^VA(200
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 2
+    FMGLBS: --
+   FMCALLS: --
+
+ UPDATE^GMPLUTL
+    FORMAL: PL,PLY
+   ASSUMED: DUZ,GMPAGTOR,GMPGULF,GMPION,GMPLUSER,GMPSC,U
+      GLBS: ^AUPNPROB(,^DPT(,^GMPL(125.99,^VA(200
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 3
+    FMGLBS: --
+   FMCALLS: --
+
+ ADD^GMPLUTL2
+    FORMAL: DFN,LOC,GMPROV
+   ASSUMED: AUPNSEX,DT,DTOUT,DUOUT,DUZ,GMPLIST,HNC,U
+      GLBS: ^DPT(,^GMPL(125,^GMPL(125.99,^SC(,^VA(200
+      READ: 0
+     WRITE: 1
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ DETAIL^GMPLUTL2
+    FORMAL: IFN,GMPL
+   ASSUMED: U
+      GLBS: ^AUPNPROB(,^DPT(,^GMPL(125.8,^ICD9(,^SC(,^VA(200
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ EDIT^GMPLUTL2
+    FORMAL: DFN,LOC,GMPROV,GMPIFN
+   ASSUMED: DT,DUZ,GMPLIST,GMPVAMC,HNC,U
+      GLBS: ^AUPNPROB(,^DPT(,^GMPL(125.99,^SC(
+      READ: 0
+     WRITE: 1
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ LIST^GMPLUTL2
+    FORMAL: GMPL,GMPDFN,GMPSTAT,GMPCOMM
+   ASSUMED: U
+      GLBS: ^AUPNPROB(,^GMPL(125.99,^ICD9(
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ PARAM^GMPLUTL2
+    FORMAL: --
+   ASSUMED: --
+      GLBS: ^GMPL(125.99
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ REMOVE^GMPLUTL2
+    FORMAL: GMPIFN,GMPROV,TEXT,PLY
+   ASSUMED: DUZ,GMPFLD,U
+      GLBS: ^AUPNPROB(,^VA(200
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ VAF^GMPLUTL2
+    FORMAL: DFN,SILENT
+   ASSUMED: DUZ,U
+      GLBS: ^GMPL(125.99
+      READ: 0
+     WRITE: 1
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ CALL2^GMPLUTL3
+    FORMAL: GMPLZ
+   ASSUMED: GMPLCOND,GMPLDLM,GMPLICD,GMPLLEX,GMPLODAT,GMPLPNAM,GMPLPRIO
+            GMPLPRV,GMPLSTAT,GMPLTXT,GMPLXDAT,GMPLZ0,GMPLZ1,U
+      GLBS: ^AUPNPROB(
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ MOD^GMPLUTL3
+    FORMAL: DFN
+   ASSUMED: --
+      GLBS: ^AUPNPROB("MODIFIED"
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ AUDIT^GMPLX
+    FORMAL: DATA,OLD
+   ASSUMED: U
+      GLBS: ^GMPL(125.8
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: ^GMPL(125.8
+   FMCALLS: --
+
+ CODESTS^GMPLX
+    FORMAL: PROB,ADATE
+   ASSUMED: DT,U
+      GLBS: ^AUPNPROB(
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ DTMOD^GMPLX
+    FORMAL: DA
+   ASSUMED: --
+      GLBS: --
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: ^AUPNPROB(
+   FMCALLS: --
+
+ DUPL^GMPLX
+    FORMAL: DFN,TERM,TEXT
+   ASSUMED: U
+      GLBS: ^AUPNPROB(,^AUPNPROB("AC",^AUPNPROB("C",^AUTNPOV(
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ MSG^GMPLX
+    FORMAL: --
+   ASSUMED: --
+      GLBS: --
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ PROBTEXT^GMPLX
+    FORMAL: IFN
+   ASSUMED: U
+      GLBS: ^AUPNPROB(,^AUTNPOV(
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ SERVICE^GMPLX1
+    FORMAL: USER
+   ASSUMED: U
+      GLBS: ^DIC(49,^VA(200
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ VADPT^GMPLX1
+    FORMAL: DFN
+   ASSUMED: DT,GMPAGTOR,GMPCV,GMPGULF,GMPHNC,GMPION,GMPMST,GMPSC,GMPSHD,U
+      GLBS: ^DPT(
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ VIEW^GMPLX1
+    FORMAL: USER
+   ASSUMED: U
+      GLBS: ^VA(200
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+

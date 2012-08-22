@@ -1,0 +1,1373 @@
+ INSTPCTM^SCAPMC
+    FORMAL: DFN,SCEFF
+   ASSUMED: --
+      GLBS: --
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ PRCL^SCAPMC
+    FORMAL: SC44,SCDATES,SCPOSA,SCUSRA,SCROLEA,SCLIST,SCERR
+   ASSUMED: --
+      GLBS: --
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ PRPT^SCAPMC
+    FORMAL: DFN,SCDATES,SCPOSA,SCUSRA,SCROLEA,SCPURPA,SCLIST,SCERR
+   ASSUMED: --
+      GLBS: --
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ PTCL^SCAPMC
+    FORMAL: SC44,SCDATES,SCLIST,SCERR
+   ASSUMED: --
+      GLBS: --
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ PTPR^SCAPMC
+    FORMAL: SC200,SCDATES,SCPURPA,SCROLEA,SCLIST,SCERR,SCYESCL
+   ASSUMED: --
+      GLBS: --
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ PTTM^SCAPMC
+    FORMAL: SCTEAM,SCDATES,SCLIST,SCERR
+   ASSUMED: --
+      GLBS: --
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ TMPT^SCAPMC
+    FORMAL: DFN,SCDATES,SCPURPA,SCLIST,SCERR
+   ASSUMED: --
+      GLBS: --
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ TPPR^SCAPMC
+    FORMAL: SC200,SCDATES,SCPURPA,SCROLEA,SCLIST,SCERR
+   ASSUMED: --
+      GLBS: --
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ PCMMXMY^SCAPMC25
+    FORMAL: MSGTYPE,DFN,SCTEAMA,SCDATES,SCYESCL
+   ASSUMED: DT,PATIENT,U,XMY
+      GLBS: ^DPT(,^SCTM(404.57,^TMP(,^TMP("SC PCMM MAIL",^TMP("SCMSG1"
+            ^TMP("SCMSG2",^TMP("SCMSG3"
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 2
+    FMGLBS: --
+   FMCALLS: --
+
+ GETALL^SCAPMCA
+    FORMAL: DFN,SCDT,SCARR
+   ASSUMED: DT,U
+      GLBS: ^DPT(,^TMP("SCRATCH1",^TMP("SCRATCH2"
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 4
+    FMGLBS: --
+   FMCALLS: --
+
+ NMPCPR^SCAPMCU2
+    FORMAL: DFN,DATE,PCROLE
+   ASSUMED: DT,U
+      GLBS: ^SCPT(404.43,^SCTM(404.57
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ PCPROV^SCAPMCU3
+    FORMAL: SCTP,DATE,PCAP
+   ASSUMED: DT,U
+      GLBS: --
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ FINAL^SCDXHLDR
+    FORMAL: VISIT,PXKVST
+   ASSUMED: DIR,ERR,SDIEMM,U,VALQUIET,VALSTP,Y,ZTQUEUED
+      GLBS: ^SCE(,^SCE("AVSIT",^SD(409.73,^TMP("PXKSAVE"
+      READ: 0
+     WRITE: 2
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ EXEMPT^SCDXUAPI
+    FORMAL: --
+   ASSUMED: --
+      GLBS: --
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ LOC^SCDXUAPI
+    FORMAL: NAME,INST,STOP,PKG,IEN,INACT
+   ASSUMED: DT,Y
+      GLBS: ^DIC(4,^DIC(40.7,^DIC(9.4,^SC(
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 3
+    FMGLBS: ^SC(
+   FMCALLS: --
+
+ RAD^SCDXUAPI
+    FORMAL: IEN,PKG
+   ASSUMED: DT
+      GLBS: ^DG(40.8,^DIC(4,^DIC(40.7,^DIC(9.4,^SC(
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 1
+    FMGLBS: ^SC(
+   FMCALLS: --
+
+ DATE^SCDXUTL
+    FORMAL: DATE
+   ASSUMED: U
+      GLBS: ^SD(404.91
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ FMDATE^SCDXUTL
+    FORMAL: --
+   ASSUMED: U
+      GLBS: ^SD(404.91
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ INPATENC^SCDXUTL
+    FORMAL: PTR,PTR2
+   ASSUMED: --
+      GLBS: ^SCE(,^SD(409.63,^SD(409.73,^SD(409.74
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ CHKCLASS^SCDXUTL0
+    FORMAL: DFN,SDOE
+   ASSUMED: U
+      GLBS: ^SDD(409.42
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 2
+    FMGLBS: --
+   FMCALLS: --
+
+ MTI^SCDXUTL0
+    FORMAL: DFN,DATE,EC,AT,SDOE
+   ASSUMED: U
+      GLBS: ^DIC(21,^DIC(8,^DIC(8.1,^DPT(,^SD(409.1,^SDD(409.42
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ POV^SCDXUTL0
+    FORMAL: DFN,DATE,CLINIC,APTYP
+   ASSUMED: --
+      GLBS: ^DPT(
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ SCODE^SCDXUTL0
+    FORMAL: SDOE,SCDXARRY
+   ASSUMED: --
+      GLBS: ^SCE(,^SCE("APAR"
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 3
+    FMGLBS: --
+   FMCALLS: --
+
+ INSERT^SCDXUTL1
+    FORMAL: INSTR,OUTSTR,COLUMN,LENGTH
+   ASSUMED: --
+      GLBS: --
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ NEWPERSN^SCMCGU
+    FORMAL: IEN,ARY
+   ASSUMED: U
+      GLBS: ^TMP("SCMC_BLD_PERSON"
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 6
+    FMGLBS: --
+   FMCALLS: GETS^DIQ(200
+
+ PCMAIL^SCMCMM
+    FORMAL: DFN,SCARRAY,SCDATE
+   ASSUMED: DT,U
+      GLBS: ^SCTM(404.51
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 4
+    FMGLBS: --
+   FMCALLS: --
+
+ CHKOCC^SCMSVDG1
+    FORMAL: ENCPTR
+   ASSUMED: --
+      GLBS: ^SC(,^SCE(
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ SEGPRSE^SCMSVUT5
+    FORMAL: SEGMENT,OUTARR,FS
+   ASSUMED: --
+      GLBS: --
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 10
+    FMGLBS: --
+   FMCALLS: --
+
+ SEQPRSE^SCMSVUT5
+    FORMAL: SEQDATA,OUTARR,ENCODE
+   ASSUMED: --
+      GLBS: ^TMP("SCMSVUT5"
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 14
+    FMGLBS: --
+   FMCALLS: --
+
+ PCMM^SCRPU4
+    FORMAL: DFN,ADATE,PRINT
+   ASSUMED: DT
+      GLBS: --
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ EN3^SDACS
+    FORMAL: --
+   ASSUMED: SDERR
+      GLBS: --
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ LIST^SDAM
+    FORMAL: --
+   ASSUMED: I,SDAMLIST,SDAMTYP,VALMBCK,X
+      GLBS: ^SD(409.62,^SD(409.63
+      READ: 0
+     WRITE: 1
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ BLD^SDAM1
+    FORMAL: --
+   ASSUMED: DT,IOINHI,IOINORM,SDACNT,SDAMBOLD,SDAMLIST,SDATA,SDBEG,SDDA
+            SDEND,SDFN,SDGAF,SDGAFREQ,SDGAFST,U,VALMCNT,VALMWD
+      GLBS: ^DD(2.98,^DG(43,^DGPM(,^DIC(42,^DPT(,^GMR(123,^SC(,^SCE(
+            ^SD(409.63,^TMP("SDAM",^TMP("SDAMIDX"
+      READ: 0
+     WRITE: 1
+      EXEC: 1
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ STATUS^SDAM1
+    FORMAL: DFN,SDT,SDCL,SDATA,SDDA
+   ASSUMED: DT,U
+      GLBS: ^DD(2.98,^DG(43,^DGPM(,^DIC(42,^SC(,^SCE(,^SD(409.63
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ INP^SDAM2
+    FORMAL: DFN,VDATE
+   ASSUMED: U
+      GLBS: ^DG(43,^DGPM(,^DIC(42
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ BLD^SDAM3
+    FORMAL: --
+   ASSUMED: CNSTLNK,CSTAT,SDATA,SDBEG,SDCLN,SDEND,U,VALMCNT
+      GLBS: ^DPT(,^GMR(123,^SC(,^TMP("SDAM",^TMP("SDAMIDX"
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ GETAPPT^SDAMA201
+    FORMAL: SDPATIEN,SDFIELDS,SDAPSTAT,SDSTART,SDEND,SDRESULT,SDIOSTAT
+   ASSUMED: --
+      GLBS: --
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ GETPLIST^SDAMA202
+    FORMAL: SDCLIEN,SDFIELDS,SDAPSTAT,SDSTART,SDEND,SDRESULT,SDIOSTAT
+   ASSUMED: U
+      GLBS: ^TMP($J
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 3
+    FMGLBS: --
+   FMCALLS: --
+
+ SDAUTHCL^SDAMA203
+    FORMAL: SDCLIEN,SDBACK
+   ASSUMED: DT
+      GLBS: ^SC(,^SC("AE"
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ SDIMO^SDAMA203
+    FORMAL: SDCLIEN,SDPATDFN
+   ASSUMED: DT,SDDATA,SDIMO
+      GLBS: ^SC(,^SC("AE",^TMP($J
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ SDAPI^SDAMA301
+    FORMAL: SDINPUT
+   ASSUMED: --
+      GLBS: ^TMP($J
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ STATUS^SDAMBAE4
+    FORMAL: --
+   ASSUMED: U,X,X1
+      GLBS: --
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ BEFORE^SDAMEVT3
+    FORMAL: DFN,SDDT,SDEVT,SDHDL
+   ASSUMED: U
+      GLBS: ^DPT(,^TMP("SDEVT"
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ EVT^SDAMEVT3
+    FORMAL: DFN,SDDT,SDEVT,SDHDL
+   ASSUMED: SDOE,U
+      GLBS: ^AUPNVSIT(,^DD(2.101,^DD(815,^DG(40.8,^DPT(,^SCE(,^TMP("SDEVT"
+      READ: 0
+     WRITE: 6
+      EXEC: 0
+       IND: 0
+    FMGLBS: ^PX(815,^SCE(
+   FMCALLS: --
+
+ CLINIC^SDAMU
+    FORMAL: SDCL
+   ASSUMED: --
+      GLBS: ^SC(
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ EN^SDCO
+    FORMAL: SDOE,SDCOHDL,SDCOXQB
+   ASSUMED: --
+      GLBS: ^SCE(
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ CL^SDCO21
+    FORMAL: DFN,SDDT,SDOE,SDCLY
+   ASSUMED: --
+      GLBS: ^SD(409.41
+      READ: 0
+     WRITE: 0
+      EXEC: 1
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ CLOE^SDCO21
+    FORMAL: SDOE,SDCLOEY
+   ASSUMED: --
+      GLBS: ^SCE(,^SD(409.41,^SDD(409.42
+      READ: 0
+     WRITE: 0
+      EXEC: 1
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ SEQ^SDCO21
+    FORMAL: --
+   ASSUMED: --
+      GLBS: --
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ AO^SDCO22
+    FORMAL: DFN,SDOE
+   ASSUMED: U
+      GLBS: ^AUPNVSIT(,^DIC(8,^DIC(8.1,^DPT(,^PX(839.7,^SCE(,^SDD(409.42
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ EC^SDCO22
+    FORMAL: DFN,SDOE
+   ASSUMED: U
+      GLBS: ^AUPNVSIT(,^DIC(21,^DIC(8,^DIC(8.1,^DPT(,^PX(839.7,^SCE(
+            ^SDD(409.42
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ HNC^SDCO22
+    FORMAL: DFN,SDOE
+   ASSUMED: --
+      GLBS: --
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ IR^SDCO22
+    FORMAL: DFN,SDOE
+   ASSUMED: U
+      GLBS: ^AUPNVSIT(,^DIC(8,^DIC(8.1,^DPT(,^PX(839.7,^SCE(,^SDD(409.42
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ MST^SDCO22
+    FORMAL: DFN,SDOE
+   ASSUMED: U
+      GLBS: --
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ SC^SDCO22
+    FORMAL: DFN,SDOE
+   ASSUMED: U
+      GLBS: ^AUPNVSIT(,^DIC(8,^DIC(8.1,^DPT(,^PX(839.7,^SCE(
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ SHAD^SDCO22
+    FORMAL: DFN
+   ASSUMED: --
+      GLBS: --
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ SC^SDCO23
+    FORMAL: DFN
+   ASSUMED: --
+      GLBS: ^DIC(31,^DIC(391,^DPT(
+      READ: 0
+     WRITE: 8
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ LIST^SDCO3
+    FORMAL: SDPRY
+   ASSUMED: --
+      GLBS: --
+      READ: 0
+     WRITE: 2
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ SET^SDCO3
+    FORMAL: SDOE
+   ASSUMED: SDCNT,SDPRY
+      GLBS: --
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ LIST^SDCO4
+    FORMAL: SDDXY
+   ASSUMED: --
+      GLBS: --
+      READ: 0
+     WRITE: 2
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ SET^SDCO4
+    FORMAL: SDOE
+   ASSUMED: SDCNT,SDDXY
+      GLBS: --
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ ASK^SDCO6
+    FORMAL: SDPMTDF
+   ASSUMED: --
+      GLBS: --
+      READ: 0
+     WRITE: 1
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ INT^SDCO6
+    FORMAL: SDOE,SDCOQUIT
+   ASSUMED: U,X
+      GLBS: ^SCE(
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ VAL^SDCODD
+    FORMAL: SDCTI,Y
+   ASSUMED: U
+      GLBS: ^SD(409.41
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ CHLD^SDCODEL
+    FORMAL: SDOEP,SDMOD
+   ASSUMED: U,X
+      GLBS: ^SCE(,^SCE("APAR"
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: ^SCE(
+   FMCALLS: --
+
+ EN^SDCODEL
+    FORMAL: SDOE,SDMOD,SDELHDL,SDELSRC
+   ASSUMED: U,X
+      GLBS: ^SCE(,^SCE("APAR",^SDD(,^SDD(409.42
+      READ: 0
+     WRITE: 4
+      EXEC: 0
+       IND: 0
+    FMGLBS: ^SCE(
+   FMCALLS: --
+
+ COMDT^SDCOU
+    FORMAL: SDOE
+   ASSUMED: --
+      GLBS: ^SCE(
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ EX^SDCOU2
+    FORMAL: C,D
+   ASSUMED: DT
+      GLBS: ^DIC(40.7,^SD(409.45
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ EXOE^SDCOU2
+    FORMAL: E
+   ASSUMED: DT
+      GLBS: ^DIC(40.7,^SC(,^SCE(,^SD(409.45
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ SET^SDCWL3
+    FORMAL: --
+   ASSUMED: DFN,I,J,K,SDALL,SDAS,SDBD,SDCL,SDCR,SDDIV,SDED,SDF1,SDF2,SDN
+            SDOB,SDS,SDSC,SDST,U,VAUTD,Y
+      GLBS: ^DG(40.8,^DIC(40.7,^DPT(,^DPT("ASDCN",^SC(,^TMP($J
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ ASK2^SDDIV
+    FORMAL: --
+   ASSUMED: DIC,I,SDALL,SDEF,U,VAUTD,Y
+      GLBS: ^DG(40.8,^DG(43
+      READ: 0
+     WRITE: 1
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ EN^SDGAF
+    FORMAL: DFN
+   ASSUMED: DIC,DIROUT,DIRUT,DTOUT,DUOUT,Y
+      GLBS: --
+      READ: 0
+     WRITE: 2
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ ^SDM
+    FORMAL: --
+   ASSUMED: %,%DT,%Y,A,ARG,ASKC,CC,CCX,CCXN,CLNIEN,CN,CNIEN,CNPAT,CNSLTLNK
+            CNSULT,CNT,COLLAT,CONS,COV,CPRSTAT,CW,DA,DFN,DIC,DIE,DP,DR,DSH
+            DT,DTENTR,DTIN,DTLMT,DTR,DUZ,HEY,HSI,HX,HY,I,IOSL,J,ND,NOSHOW
+            ORACTION,P8,PROC,PT,PTIEN,PTNM,PXR,RTMP,S,SB,SC,SCCLNM,SCOKCONS
+            SCPTTM,SCREST,SD,SD1,SD17,SDAMERR,SDAMSCN,SDAP16,SDAPTYP,SDAT16
+            SDATE,SDCLN,SDDIF,SDDIS,SDDOT,SDEDT,SDFN,SDII,SDIN,SDINA,SDINC
+            SDINCM,SDJ,SDLEN,SDLN,SDMAX,SDMLT,SDMLT1,SDMM,SDMULT,SDNS,SDRE
+            SDSC,SDSI,SDST,SDSTR,SDSTRTDT,SDTY,SDU,SDW,SDXSCAT,SDXXX,SDYC
+            SENDER,SERVICE,SI,SL,SM,SRV,SS,SSC,ST,STARTDAY,STATUS,STPCOD
+            STR,TMP,TMPYCLNC,TYPE,U,VADM,VAEL,WY,X,XX,Y
+      GLBS: ^%ZOSF("XY",^DGS(41.1,^DPT(,^SC(,^SD(409.1
+      READ: 0
+     WRITE: 24
+      EXEC: 2
+       IND: 0
+    FMGLBS: ^DPT(,^SC(
+   FMCALLS: --
+
+ OERR^SDM
+    FORMAL: --
+   ASSUMED: %,%DT,%Y,A,ARG,ASKC,CC,CCX,CCXN,CLNIEN,CN,CNIEN,CNPAT,CNSLTLNK
+            CNSULT,CNT,COLLAT,CONS,COV,CPRSTAT,CW,DA,DFN,DIC,DIE,DP,DR,DSH
+            DT,DTENTR,DTIN,DTLMT,DTR,DUZ,HEY,HSI,HX,HY,I,IOSL,J,ND,NOSHOW
+            ORACTION,ORVP,P8,PROC,PT,PTIEN,PTNM,PXR,RTMP,S,SB,SC,SCCLNM
+            SCOKCONS,SCPTTM,SCREST,SD,SD1,SD17,SDAMERR,SDAMSCN,SDAP16
+            SDAPTYP,SDAT16,SDATE,SDCLN,SDDIF,SDDIS,SDDOT,SDEDT,SDFN,SDII
+            SDIN,SDINA,SDINC,SDINCM,SDJ,SDLEN,SDLN,SDMAX,SDMLT,SDMLT1,SDMM
+            SDMULT,SDNS,SDRE,SDSC,SDSI,SDST,SDSTR,SDSTRTDT,SDTY,SDU,SDW
+            SDXSCAT,SDXXX,SDYC,SENDER,SERVICE,SI,SL,SM,SRV,SS,SSC,ST
+            STARTDAY,STATUS,STPCOD,STR,TMP,TMPYCLNC,TYPE,U,VADM,VAEL,WY,X
+            XQORQUIT,XX,Y
+      GLBS: ^%ZOSF("XY",^DGS(41.1,^DPT(,^SC(,^SD(409.1
+      READ: 0
+     WRITE: 24
+      EXEC: 2
+       IND: 0
+    FMGLBS: ^DPT(,^SC(
+   FMCALLS: --
+
+ REQ^SDM1A
+    FORMAL: SDT
+   ASSUMED: U
+      GLBS: ^DG(43
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ ER^SDOE
+    FORMAL: SDOE
+   ASSUMED: U
+      GLBS: ^SCE(
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ EXAE^SDOE
+    FORMAL: DFN,SDBEG,SDEND,SDFLAGS,SDERR
+   ASSUMED: --
+      GLBS: --
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ EXOE^SDOE
+    FORMAL: DFN,SDBEG,SDEND,SDFLAGS,SDERR
+   ASSUMED: --
+      GLBS: --
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ GETCPT^SDOE
+    FORMAL: SDOE,SDCPT,SDERR
+   ASSUMED: --
+      GLBS: --
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ GETDX^SDOE
+    FORMAL: SDOE,SDDX,SDERR
+   ASSUMED: --
+      GLBS: --
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ GETGEN^SDOE
+    FORMAL: SDOE,SDAT,SDERR
+   ASSUMED: --
+      GLBS: --
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ GETLAST^SDOE
+    FORMAL: DFN,SDBEG,SDFLAGS,SDERR
+   ASSUMED: --
+      GLBS: --
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ GETOE^SDOE
+    FORMAL: SDOE,SDERR
+   ASSUMED: --
+      GLBS: --
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ GETPDX^SDOE
+    FORMAL: SDOE,SDERR
+   ASSUMED: --
+      GLBS: --
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ GETPRV^SDOE
+    FORMAL: SDOE,SDPRV,SDERR
+   ASSUMED: --
+      GLBS: --
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ PARSE^SDOE
+    FORMAL: SDATA,SDFMT,SDY,SDERR
+   ASSUMED: --
+      GLBS: --
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ EXOE^SDOEOE
+    FORMAL: DFN,SDBEG,SDEND,SDFLAGS,SDERR
+   ASSUMED: --
+      GLBS: ^SCE("ADFN"
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ LISTVST^SDOERPC
+    FORMAL: SDOEY,SDVST
+   ASSUMED: --
+      GLBS: ^TMP("SD ENCOUNTER LIST"
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ ELAP^SDPCE
+    FORMAL: DFN,SC
+   ASSUMED: U
+      GLBS: ^DIC(8,^SD(409.1
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ STATUS^SDPCE
+    FORMAL: SDVSIT
+   ASSUMED: U
+      GLBS: ^SCE(,^SCE("AVSIT",^SD(409.63
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ GETARN^SDPFSS2
+    FORMAL: SDT,DFN,SDCL
+   ASSUMED: --
+      GLBS: ^SD(409.55
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: GET1^DIQ(409.55
+
+ DEF^SDPHARM1
+    FORMAL: SDPSODFN
+   ASSUMED: DD,DT,U
+      GLBS: ^DIC(40.7,^DPT(,^SC(,^TMP($J,^UTILITY("DIQ1"
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ PRIAPT^SDPHARM1
+    FORMAL: SDPSOPAT
+   ASSUMED: DT,U
+      GLBS: ^DIC(40.7,^SC(,^SCE(,^SCE("ADFN",^TMP($J
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ PRINT^SDPPRT
+    FORMAL: --
+   ASSUMED: DFN,IO,IOF,IOSL,IOST,SDASH,SDBD,SDED,SDLN,SDPAGE,SDTYP,U,VA
+            ZTQUEUED
+      GLBS: ^DPT(,^TMP("SD",^TMP("SDAPT",^TMP("SDENR",^TMP("SDPP"
+            ^TMP("SDPPALL"
+      READ: 0
+     WRITE: 6
+      EXEC: 0
+       IND: 1
+    FMGLBS: --
+   FMCALLS: --
+
+ PCLINE^SDPPTEM
+    FORMAL: DFN,SDATE
+   ASSUMED: DT,SDII,U
+      GLBS: ^TMP("SDPLIST"
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ ACTIVE^SDQ
+    FORMAL: SDQ,SDSTAT,SDACT,SDERR
+   ASSUMED: --
+      GLBS: --
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ CLOSE^SDQ
+    FORMAL: SDQ,SDERR
+   ASSUMED: SDQUERY
+      GLBS: ^TMP("SDQUERY CLASS",^TMP("SDQUERY LIST"
+      READ: 0
+     WRITE: 0
+      EXEC: 1
+       IND: 3
+    FMGLBS: --
+   FMCALLS: --
+
+ DATE^SDQ
+    FORMAL: SDQ,SDBEG,SDEND,SDACT,SDERR
+   ASSUMED: --
+      GLBS: --
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ FILTER^SDQ
+    FORMAL: SDQ,SDFIL,SDACT,SDERR
+   ASSUMED: --
+      GLBS: --
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ INDEX^SDQ
+    FORMAL: SDQ,SDIDX,SDACT,SDERR
+   ASSUMED: --
+      GLBS: --
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ OPEN^SDQ
+    FORMAL: SDQ,SDERR
+   ASSUMED: SDQUERY,U,X
+      GLBS: ^DIC(,^SD(409.64,^TMP("SDQDATA",^TMP("SDQUERY CLASS"
+            ^TMP("SDQUERY LIST"
+      READ: 0
+     WRITE: 0
+      EXEC: 1
+       IND: 11
+    FMGLBS: --
+   FMCALLS: --
+
+ PAT^SDQ
+    FORMAL: SDQ,SDFN,SDACT,SDERR
+   ASSUMED: --
+      GLBS: --
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ SCAN^SDQ
+    FORMAL: SDQ,SDIR,SDERR
+   ASSUMED: --
+      GLBS: --
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ SCANCB^SDQ
+    FORMAL: SDQ,SDCB,SDACT,SDERR
+   ASSUMED: --
+      GLBS: --
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ VISIT^SDQ
+    FORMAL: SDQ,SDVST,SDACT,SDERR
+   ASSUMED: --
+      GLBS: --
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ ERRCHK^SDQUT
+    FORMAL: SDQERRS
+   ASSUMED: --
+      GLBS: ^TMP("DIERR"
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 1
+    FMGLBS: --
+   FMCALLS: --
+
+ EN1^SDROUT1
+    FORMAL: --
+   ASSUMED: %,%DT,%I,A,ADDR,ALL,APDATE,C,DFN,DGMT,DIC,DIV,DT,G,GDATE,H,HGDT
+            I,IO,IOF,J,K,L,LL,M,NAME,NDATE,ORD,ORDER,P,POP,PRDATE,SC,SCN,SD
+            SDA,SDATE,SDCNT,SDEF,SDHSC,SDI,SDI1,SDIQ,SDM,SDPARMS,SDREP
+            SDSCCOND,SDSP,SDSTART,SDTD,SDVA,SDX,SDX1,SSN,SZ,TDO,U,V,VAR,X
+            X1,Y,ZIP,ZX
+      GLBS: ^DD("DD",^DG(40.8,^DIC(8,^DPT(,^SC(,^UTILITY($J
+      READ: 0
+     WRITE: 11
+      EXEC: 2
+       IND: 2
+    FMGLBS: --
+   FMCALLS: --
+
+ DIS^SDROUT2
+    FORMAL: --
+   ASSUMED: DFN,DGKVAR,I,I1,I2,I3,VAEL
+      GLBS: ^DG(391,^DIC(31,^DPT(
+      READ: 0
+     WRITE: 6
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ COVER^SDRROR
+    FORMAL: --
+   ASSUMED: BEG,DATE1,DFN,END,RCCLIN,RCDT,RCIFN,RCNODE,RCTYPE,RCX,U
+      GLBS: ^SD(403.5,^SD(403.51,^TMP("ORVSTLIST"
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: GET1^DIQ(44
+
+ RCDTL^SDRROR
+    FORMAL: --
+   ASSUMED: APPTINFO,COMM,FAST,RCIFN,RPT,U
+      GLBS: ^DD(403.5,^SD(403.5
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ SC^SDSCAPI
+    FORMAL: SDFN,SDXS,SDENC,SDVST
+   ASSUMED: DT,U
+      GLBS: ^AUPNVSIT(,^DIC(31,^SCE("AVSIT"
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ RTSET^SDUTL
+    FORMAL: --
+   ASSUMED: DFN,RTPAR,SDPL,SDSC,SDTTM
+      GLBS: ^SC(
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ CLNCK^SDUTL2
+    FORMAL: CLN,DSP
+   ASSUMED: DT,IOST,U
+      GLBS: ^DIC(40.7,^SC(
+      READ: 0
+     WRITE: 3
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ COLLAT^SDUTL2
+    FORMAL: SDEC
+   ASSUMED: --
+      GLBS: --
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: GET1^DIQ(8
+
+ ELSTAT^SDUTL2
+    FORMAL: DA
+   ASSUMED: --
+      GLBS: --
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: GET1^DIQ(2
+
+ MHCLIN^SDUTL2
+    FORMAL: SDCL,SDSC
+   ASSUMED: --
+      GLBS: ^DIC(40.7,^SC(
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ NEWGAF^SDUTL2
+    FORMAL: DFN
+   ASSUMED: DT,X,X1,X2
+      GLBS: --
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ OUTPTAP^SDUTL3
+    FORMAL: DFN,SCDATE
+   ASSUMED: DT
+      GLBS: --
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ OUTPTPR^SDUTL3
+    FORMAL: DFN,SCDATE,SCPCROLE
+   ASSUMED: DT
+      GLBS: --
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ OUTPTTM^SDUTL3
+    FORMAL: DFN,SCDATE,ASSTYPE
+   ASSUMED: DT
+      GLBS: --
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+
+ GETDISP^SDVSIT2
+    FORMAL: DFN,SDT,SDVIEN
+   ASSUMED: U
+      GLBS: ^AUPNVSIT(,^DPT(,^SCE(
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: ^SCE(
+   FMCALLS: --
+
+ ACTLOC^SDWU
+    FORMAL: LOC
+   ASSUMED: DT,U
+      GLBS: ^SC(
+      READ: 0
+     WRITE: 0
+      EXEC: 0
+       IND: 0
+    FMGLBS: --
+   FMCALLS: --
+

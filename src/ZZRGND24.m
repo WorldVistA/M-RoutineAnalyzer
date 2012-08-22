@@ -177,10 +177,12 @@ GENRALL()
  D PFISINFO(GLB,"GMPL",0,"C:\Sandbox\","m_einfo_gmplfi_0.txt")
  D PFISINFO(GLB,"GMPL",1,"C:\Sandbox\","m_einfo_gmplfi_1.txt")
  D PFISINFO(GLB,"GMPL",2,"C:\Sandbox\","m_einfo_gmplfi_2.txt")
+ D PFISINFO(GLB,"GMPL",3,"C:\Sandbox\","m_einfo_gmplfi_3.txt")
  ;
  D PFISINFO(GLB,"SD",0,"C:\Sandbox\","m_einfo_sdfi_0.txt")
  D PFISINFO(GLB,"SD",1,"C:\Sandbox\","m_einfo_sdfi_1.txt")
  D PFISINFO(GLB,"SD",2,"C:\Sandbox\","m_einfo_sdfi_2.txt")
+ D PFISINFO(GLB,"SD",3,"C:\Sandbox\","m_einfo_sdfi_3.txt")
  ;
  N PATTERN
  S PATTERN="1""ORQQPL"".UN"
