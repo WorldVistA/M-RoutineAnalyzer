@@ -95,7 +95,7 @@ NDXOPT(GL)
  . S OPTNAME=$P(OPT,"^",1)
  . S BOTH=^DIC(19,I,25)
  . S TAG=" "
- . I $L(BOTH,"^") > 1 S RTN=$P(BOTH,"^",2),TAG=TAG_$P(BOTH,"^",1) I 1
+ . I $L(BOTH,"^")>1 S RTN=$P(BOTH,"^",2),TAG=TAG_$P(BOTH,"^",1) I 1
  . E  S RTN=BOTH
  . S RTN=$P(RTN,"(",1)
  . Q:$G(RTN)=""

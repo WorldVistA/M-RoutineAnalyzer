@@ -140,55 +140,56 @@ PFISINFO(GLB,PKG,FLAG,FILEPATH,FILENAME)
  Q
  ; 
  ; Generates Full suit of reports as example and testing purposes
- ; Packages.csv and Ownership.csv are assumed to be C:\Sandbox\
+ ; Packages.csv and Ownership.csv are assumed to be in DIR (default C:\Sandbox\)
  ; Information is stored in ZZRGI
  ; GMPL = Problem List Package
  ; SD = Scheduling Package
-GENRALL()
- N DIR,GLB
- S DIR="C:\Sandbox\",GLB="^ZZRGI" 
+GENRALL(DIR)
+ N GLB
+ S GLB="^ZZRGI" 
+ S:$G(DIR)="" DIR="C:\Sandbox\" 
  D MAIN^ZZRGND14(GLB,DIR)
  D RDOWNER^ZZRGND19(GLB,1,DIR)
  ;
- D REPORTFO^ZZRGND13(GLB,,"C:\Sandbox\","m_fo_all.txt") 
- D REPORTFO^ZZRGND13(GLB,"GMPL","C:\Sandbox\","m_fo_gmpl.txt") 
- D REPORTFO^ZZRGND13(GLB,"SD","C:\Sandbox\","m_fo_sd.txt") 
+ D REPORTFO^ZZRGND13(GLB,,DIR,"m_fo_all.txt") 
+ D REPORTFO^ZZRGND13(GLB,"GMPL",DIR,"m_fo_gmpl.txt") 
+ D REPORTFO^ZZRGND13(GLB,"SD",DIR,"m_fo_sd.txt") 
  ;
- D REPORTFI^ZZRGND13(GLB,,"C:\Sandbox\","m_fi_all.txt") 
- D REPORTFI^ZZRGND13(GLB,"GMPL","C:\Sandbox\","m_fi_gmpl.txt") 
- D REPORTFI^ZZRGND13(GLB,"SD","C:\Sandbox\","m_fi_sd.txt")
+ D REPORTFI^ZZRGND13(GLB,,DIR,"m_fi_all.txt") 
+ D REPORTFI^ZZRGND13(GLB,"GMPL",DIR,"m_fi_gmpl.txt") 
+ D REPORTFI^ZZRGND13(GLB,"SD",DIR,"m_fi_sd.txt")
  ;
- D OPTRTNS^ZZRGND24(GLB,,"C:\Sandbox\","m_opt_all.txt") 
- D OPTRTNS^ZZRGND24(GLB,"GMPL","C:\Sandbox\","m_opt_gmpl.txt") 
- D OPTRTNS^ZZRGND24(GLB,"SD","C:\Sandbox\","m_opt_sd.txt") 
+ D OPTRTNS^ZZRGND24(GLB,,DIR,"m_opt_all.txt") 
+ D OPTRTNS^ZZRGND24(GLB,"GMPL",DIR,"m_opt_gmpl.txt") 
+ D OPTRTNS^ZZRGND24(GLB,"SD",DIR,"m_opt_sd.txt") 
  ;
- D RPCRTNS^ZZRGND24(GLB,,"C:\Sandbox\","m_rpc_all.txt") 
- D RPCRTNS^ZZRGND24(GLB,"GMPL","C:\Sandbox\","m_rpc_gmpl.txt") 
- D RPCRTNS^ZZRGND24(GLB,"SD","C:\Sandbox\","m_rpc_sd.txt") 
+ D RPCRTNS^ZZRGND24(GLB,,DIR,"m_rpc_all.txt") 
+ D RPCRTNS^ZZRGND24(GLB,"GMPL",DIR,"m_rpc_gmpl.txt") 
+ D RPCRTNS^ZZRGND24(GLB,"SD",DIR,"m_rpc_sd.txt") 
  ;
- D USES^ZZRGND15(GLB,"GMPL","C:\Sandbox\","C:\Sandbox\","m_uses_gmpl.txt") 
- D USES^ZZRGND15(GLB,"SD","C:\Sandbox\","C:\Sandbox\","m_uses_sd.txt") 
+ D USES^ZZRGND15(GLB,"GMPL",DIR,DIR,"m_uses_gmpl.txt") 
+ D USES^ZZRGND15(GLB,"SD",DIR,DIR,"m_uses_sd.txt") 
  ; 
- D USED^ZZRGND15(GLB,"GMPL","C:\Sandbox\","C:\Sandbox\","m_used_gmpl.txt") 
- D USED^ZZRGND15(GLB,"SD","C:\Sandbox\","C:\Sandbox\","m_used_sd.txt") 
+ D USED^ZZRGND15(GLB,"GMPL",DIR,DIR,"m_used_gmpl.txt") 
+ D USED^ZZRGND15(GLB,"SD",DIR,DIR,"m_used_sd.txt") 
  ;
- D RFMCALLS^ZZRGND17(GLB,"C:\Sandbox\","m_fmc_all.txt") 
+ D RFMCALLS^ZZRGND17(GLB,DIR,"m_fmc_all.txt") 
  ; 
- D PFISINFO(GLB,"GMPL",0,"C:\Sandbox\","m_einfo_gmplfi_0.txt")
- D PFISINFO(GLB,"GMPL",1,"C:\Sandbox\","m_einfo_gmplfi_1.txt")
- D PFISINFO(GLB,"GMPL",2,"C:\Sandbox\","m_einfo_gmplfi_2.txt")
- D PFISINFO(GLB,"GMPL",3,"C:\Sandbox\","m_einfo_gmplfi_3.txt")
+ D PFISINFO(GLB,"GMPL",0,DIR,"m_einfo_gmplfi_0.txt")
+ D PFISINFO(GLB,"GMPL",1,DIR,"m_einfo_gmplfi_1.txt")
+ D PFISINFO(GLB,"GMPL",2,DIR,"m_einfo_gmplfi_2.txt")
+ D PFISINFO(GLB,"GMPL",3,DIR,"m_einfo_gmplfi_3.txt")
  ;
- D PFISINFO(GLB,"SD",0,"C:\Sandbox\","m_einfo_sdfi_0.txt")
- D PFISINFO(GLB,"SD",1,"C:\Sandbox\","m_einfo_sdfi_1.txt")
- D PFISINFO(GLB,"SD",2,"C:\Sandbox\","m_einfo_sdfi_2.txt")
- D PFISINFO(GLB,"SD",3,"C:\Sandbox\","m_einfo_sdfi_3.txt")
+ D PFISINFO(GLB,"SD",0,DIR,"m_einfo_sdfi_0.txt")
+ D PFISINFO(GLB,"SD",1,DIR,"m_einfo_sdfi_1.txt")
+ D PFISINFO(GLB,"SD",2,DIR,"m_einfo_sdfi_2.txt")
+ D PFISINFO(GLB,"SD",3,DIR,"m_einfo_sdfi_3.txt")
  ;
  N PATTERN
  S PATTERN="1""ORQQPL"".UN"
- D WRESINFP^ZZRGND23(GLB,PATTERN,"C:\Sandbox\","m_einfo_cprspl_0.txt",0)
- D WRESINFP^ZZRGND23(GLB,PATTERN,"C:\Sandbox\","m_einfo_cprspl_1.txt",1)
- D WRESINFP^ZZRGND23(GLB,PATTERN,"C:\Sandbox\","m_einfo_cprspl_2.txt",2)
- D WRESINFP^ZZRGND23(GLB,PATTERN,"C:\Sandbox\","m_einfo_cprspl_3.txt",3)
+ D WRESINFP^ZZRGND23(GLB,PATTERN,DIR,"m_einfo_cprspl_0.txt",0)
+ D WRESINFP^ZZRGND23(GLB,PATTERN,DIR,"m_einfo_cprspl_1.txt",1)
+ D WRESINFP^ZZRGND23(GLB,PATTERN,DIR,"m_einfo_cprspl_2.txt",2)
+ D WRESINFP^ZZRGND23(GLB,PATTERN,DIR,"m_einfo_cprspl_3.txt",3)
  Q
  ;
