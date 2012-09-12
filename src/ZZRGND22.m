@@ -5,13 +5,13 @@ ZZRGND22 ;;CBR/AU - UTILITY TAGS ;08/15/12
  ;
 ADDERR(RETURN,CODE,MSG) ; Adds an error message
  S RETURN=+$G(RETURN)+1
- S RETURN(RETURN)=CODE_"^"_$G(MSG) 
+ S RETURN(RETURN)=CODE_"^"_$G(MSG)
  Q
  ;
 GLCHECK(RETURN,GL) ; Checks if relevant information available in GL.    
  S RETURN=0
  I '$D(@GL@(2)) S RETURN=RETURN+1,RETURN(RETURN)="NOBASE"
- I '$D(@GL@(10)) S RETURN=RETURN+1,RETURN(RETURN)="NOPKG" 
+ I '$D(@GL@(10)) S RETURN=RETURN+1,RETURN(RETURN)="NOPKG"
  Q RETURN=0
  ;
 GETENTRS(RETURN,GL,PATTERN) ; Return entry points for specified routines.
@@ -23,8 +23,8 @@ GETENTRS(RETURN,GL,PATTERN) ; Return entry points for specified routines.
  N RTN,TAG
  S RTN="",TAG="",RETURN=0
  F  S RTN=$O(@GL@(2,RTN)) Q:RTN=""  D
- . Q:RTN'?@PATTERN  
- . S TAG="" 
+ . Q:RTN'?@PATTERN
+ . S TAG=""
  . F  S TAG=$O(@GL@(2,RTN,TAG)) Q:TAG=""  D
  . . S RETURN=RETURN+1
  . . S RETURN(RETURN)=TAG_"^"_RTN
@@ -49,10 +49,10 @@ UPDEINFO(RESULT,GLB,ENTRIES,RST,FLAG)  ; Updates result global @GLB@(7) for entr
  S RESULT=0
  K:+$G(RST) @GLB@(7)
  K @GLB@(20)
- S RESULT=0,ENTRY="" 
+ S RESULT=0,ENTRY=""
  F IX=1:1:ENTRIES D
  . I '$D(ENTRIES(IX)) D ADDERR(.RESULT,"EMPTYENTRY","Empty parameter") Q
- . S ENTRY=ENTRIES(IX)    
+ . S ENTRY=ENTRIES(IX)
  . I ENTRY="" D ADDERR(.RESULT,"EMPTYENTRY","Empty parameter") Q
  . S TAG=$P(ENTRY,"^",1)
  . S RTN=$P(ENTRY,"^",2)
@@ -64,6 +64,6 @@ UPDEINFO(RESULT,GLB,ENTRIES,RST,FLAG)  ; Updates result global @GLB@(7) for entr
  . I '$D(@GLB@(2,RTN,TAG)) D ADDERR(.RESULT,"INVALIDENTRY","Invalid entry point") Q
  . ; I '$D(@GLB@(20,RTN_"^"_TAG_"^0")) D ADDERR(.RESULT,"INVALIDENTRY","Invalid entry point") Q
  . S:TAG=RTN TAG=""
- . S RESULT=RESULT+1,RESULT(RESULT)=1_"^"_PKG_"^"_RTN_"^"_TAG  
+ . S RESULT=RESULT+1,RESULT(RESULT)=1_"^"_PKG_"^"_RTN_"^"_TAG
  Q 1
  ;

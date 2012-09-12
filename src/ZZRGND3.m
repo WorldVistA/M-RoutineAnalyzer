@@ -5,8 +5,8 @@ DN S LI(LV)=LI,LI(LV,1)=AC,LV=LV+1,LI=LI(LV),AC=NOA
 UP ;Inc LI as we save to skip the $C(10).
  N Y
  S Y=$$PEEK^ZZRGND2(.LV,.LI)
- S:$A(Y)=10 LI=LI+1 
- S LI(LV)=LI,LV=LV-1,LI=LI(LV),AC=LI(LV,1) 
+ S:$A(Y)=10 LI=LI+1
+ S LI(LV)=LI,LV=LV-1,LI=LI(LV),AC=LI(LV,1)
  Q
  ;
 SWAPLRHS(VADDL,LHSSTART,RHSSTART) ; Swap LHS and RHS in VADDL order 
@@ -28,20 +28,20 @@ SWAPLRHS(VADDL,LHSSTART,RHSSTART) ; Swap LHS and RHS in VADDL order
  ; 
 S(STR,V,VADDL) ;Set
  N RHS,LV,LI,LHSSTART,RHSSTART
- S RHS=0,LHSSTART=$G(VADDL)+1 
+ S RHS=0,LHSSTART=$G(VADDL)+1
  N CH
  D PARSE^ZZRGND9(STR,.LV,.LI)
  F  S GK="" D INC^ZZRGND2(.LV,.LI,.S,.S1) Q:S=""  D 
- . S CH=$E(S) 
+ . S CH=$E(S)
  . I CH=",","!""#&)*+-,./:;<=?\]_~"[$E(S1),RHS=1 D E^ZZRGND1(10) Q
  . I CH="," D  Q
  . . D:$D(RHSSTART) SWAPLRHS(.VADDL,LHSSTART,RHSSTART)
- . . S RHS=0,LHSSTART=$G(VADDL)+1 
+ . . S RHS=0,LHSSTART=$G(VADDL)+1
  . I CH="=" D  Q
  . . S RHS=1
- . . S RHSSTART=$G(VADDL)+1 
+ . . S RHSSTART=$G(VADDL)+1
  . . D:"!#&)*,/:;<=?\]_~"[$E(S1) E^ZZRGND1(10)
- . . D ADDARG^ZZRGND2($E($$ASM(.LV,.LI,","),2,999)) 
+ . . D ADDARG^ZZRGND2($E($$ASM(.LV,.LI,","),2,999))
  . I CH="$",'RHS D  D:% E^ZZRGND1(10) ;Can't be on RHS of set.
  . . S %=1
  . . I "$E$P$X$Y"[$E(S,1,2) S %=0 Q
@@ -50,7 +50,7 @@ S(STR,V,VADDL) ;Set
  . . Q
  . ;I CH="^" D FL(.LV,.LI,.S,.S1) Q
  . I CH="@" D  Q
- . . S Y=$$ASM(LV,LI,",") 
+ . . S Y=$$ASM(LV,LI,",")
  . . S:Y'["=" RHS=1
  . . D SINDVADD^ZZRGND2(.LV,.LI)
  . . D INC^ZZRGND2(.LV,.LI,.S,.S1)
@@ -62,25 +62,25 @@ S(STR,V,VADDL) ;Set
  . I 'RHS,CH'=")" D
  . . D ADDCMD^ZZRGND2("S")
  . . D ADDARG^ZZRGND2($$ASM(.LV,.LI,"="))
- . D FL(.LV,.LI,.S,.S1) 
+ . D FL(.LV,.LI,.S,.S1)
  D:'RHS E^ZZRGND1(10)
  D:RHS&$D(RHSSTART) SWAPLRHS(.VADDL,LHSSTART,RHSSTART)
  Q
  ;
 MULT(LV,LI,S,S1) ;
- D INC^ZZRGND2(.LV,.LI,.S,.S1) 
- S NOA=S 
+ D INC^ZZRGND2(.LV,.LI,.S,.S1)
+ S NOA=S
  I S'>0 D E^ZZRGND1(5) Q
- D DN 
- S AC=AC+LI 
+ D DN
+ S AC=AC+LI
  F  Q:AC'>LI  S:'RHS GK="*" D
  . D INC^ZZRGND2(.LV,.LI,.S,.S1)
  . D ARG^ZZRGND2(.LV,.LI,.S,.S1)
- D UP 
+ D UP
  Q
  ;
 FL(LV,LI,S,S1) ;
- S:'RHS GK="*" 
+ S:'RHS GK="*"
  D ARG^ZZRGND2(.LV,.LI,.S,.S1)
  Q
  ;
@@ -96,10 +96,10 @@ VGN ;Valid Global Name
  Q
 KL ;Process KILL
  N LV,LI,CH
- S STR=ARG,ARG(1)=ARG,ARG="" 
+ S STR=ARG,ARG(1)=ARG,ARG=""
  D PARSE^ZZRGND9(STR,.LV,.LI)
  F  D INC^ZZRGND2(.LV,.LI,.S,.S1) Q:S=""  D
- . S CH=$E(S) 
+ . S CH=$E(S)
  . Q:CH=","
  . S LOC="L"
  . D @$S(CH="@":"KL1",CH="^":"KL2",CH="(":"KL4",1:"KL3")
@@ -108,7 +108,7 @@ KL ;Process KILL
 KL1 ;
  D SINDVADD^ZZRGND2(.LV,.LI)
  D INC^ZZRGND2(.LV,.LI,.S,.S1)
- D ARG^ZZRGND2(.LV,.LI,.S,.S1) 
+ D ARG^ZZRGND2(.LV,.LI,.S,.S1)
  Q
 KL2 S GK="!"
  I S1'="(" S ERR=24 D ^ZZRGND1
@@ -117,20 +117,20 @@ KL2 S GK="!"
 KL3 ;
  I "^DT^DTIME^DUZ^IOST^IOM^U^"[("^"_S_"^") S ERR=39,ERR(1)=S D ^ZZRGND1
  I "IO"=S D
- . S:S1="(" Y=$$PEEKDN^ZZRGND2(.LV,.LI) 
- . S ERR=39,ERR(1)=S_$S(S1["(":S1_Y_")",1:"") 
- . D:S1'="(" ^ZZRGND1 
+ . S:S1="(" Y=$$PEEKDN^ZZRGND2(.LV,.LI)
+ . S ERR=39,ERR(1)=S_$S(S1["(":S1_Y_")",1:"")
+ . D:S1'="(" ^ZZRGND1
  . I S1="(",("QC"'[$E(Y,2)) D ^ZZRGND1
 KL5 ;
  S GK="!" D ARG^ZZRGND2(.LV,.LI,.S,.S1) Q  ;KILL SUBS
  Q
  ;
 KL4 ;
- S NOA=S1 
+ S NOA=S1
  D DN
  D ARGS^ZZRGND2(.LV,.LI,NOA)
  D UP
- D INC2^ZZRGND2(.LV,.LI,.S,.S1) 
+ D INC2^ZZRGND2(.LV,.LI,.S,.S1)
  Q
  ;
 NE(STR,V,VADDL) ;Record newed variables
@@ -156,13 +156,13 @@ NE(STR,V,VADDL) ;Record newed variables
  ;
 RD(STR,V,VADDL) ;
  N LV,LI,CH
- D PARSE^ZZRGND9(STR,.LV,.LI) 
+ D PARSE^ZZRGND9(STR,.LV,.LI)
  F  D INC^ZZRGND2(.LV,.LI,.S,.S1) Q:S=""  D
- . S CH=$E(S) 
+ . S CH=$E(S)
  . I '((CH="%")!(CH?1A)!(CH="*")) D RD3 Q
  . S Y=$$ASM(LV,LI,",")
  . I Y'[":" S ERR=33,RDTIME=1 D ^ZZRGND1
- . D RD2 
+ . D RD2
  Q
  ;
 RD2 ;
@@ -173,10 +173,10 @@ RD2 ;
  . . D ARG^ZZRGND2(.LV,.LI,.S,.S1)
  . . D INC^ZZRGND2(.LV,.LI,.S,.S1)
  . I (CH="%")!(CH?1A) D  Q
- . . S LOC="L",GK="*" 
+ . . S LOC="L",GK="*"
  . . D ARG^ZZRGND2(.LV,.LI,.S,.S1)
  . . D INC^ZZRGND2(.LV,.LI,.S,.S1)
- . D INC^ZZRGND2(.LV,.LI,.S,.S1) 
+ . D INC^ZZRGND2(.LV,.LI,.S,.S1)
  Q
  ;
 RD3 ;
@@ -187,13 +187,13 @@ RD3 ;
  . I (CH="%")!(CH?1A)!(CH="@") D  Q
  . . D ARG^ZZRGND2(.LV,.LI,.S,.S1)
  . . D INC^ZZRGND2(.LV,.LI,.S,.S1)
- . S DONE=1 
+ . S DONE=1
  Q
  ;
 O(STR,V,VADDL) ;
  N LV,LI
  D PARSE^ZZRGND9(STR,.LV,.LI)
- D INC^ZZRGND2(.LV,.LI,.S,.S1) 
+ D INC^ZZRGND2(.LV,.LI,.S,.S1)
  I S["@" D  Q 
  . D SETVADDL^ZZRGND2("@","")
  . D ARGS^ZZRGND2(.LV,.LI,255)
@@ -205,8 +205,8 @@ O(STR,V,VADDL) ;
  Q
  ;
 ASM(WL,SI,L,SEP) ;
- N %,CH,Y 
- S SEP=$G(SEP),Y="" 
+ N %,CH,Y
+ S SEP=$G(SEP),Y=""
  F %=SI:1 S CH=$G(LV(WL,%)) Q:L[CH  S Y=Y_SEP_CH
  Q Y
  ;

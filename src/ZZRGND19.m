@@ -1,6 +1,6 @@
 ZZRGND19 ;;CBR/AU - PROCESS LIST OF PACKAGES AND GLOBAL OWNERSHIP FILES ;08/01/12
  ;;1.0;RGI Dependency Tool;**260004**;08/01/2012
- Q ; Use tags
+ Q  ; Use tags
  ;
 GETPKG(RTN,GLB) ; Extracts the namespace prefix from a routine label
  N I,PREFIX,NUMCHAR,CAND
@@ -22,7 +22,7 @@ GPKGNAME(NS,GLB) ; Returns the package name based on namespace
  Q $G(@GLB@(10,NS),"UNCATEGORIZED")
  ;
 SAMEPKG(RTN,CMPRTN,GLB) ; True if the two routines belong to the same package
- Q $$GETPKG(RTN,GLB)=$$GETPKG(CMPRTN,GLB) 
+ Q $$GETPKG(RTN,GLB)=$$GETPKG(CMPRTN,GLB)
  ;
  ; Reads Packages.csv file and stores info in @GLB@(10)
  ;  GLB (INPUT): Global where information is stored.
@@ -34,7 +34,7 @@ READPKGS(GLB,CLEAN,PKGSPATH) ;
  K:+$G(CLEAN) @GLB@(10)
  Q:$D(@GLB@(10))
  S @GLB@(10,"UNCATEGORIZED")="UNCATEGORIZED"
- S @GLB@(10,"UNCATEGORIZED","D")="UNCATEGORIZED" 
+ S @GLB@(10,"UNCATEGORIZED","D")="UNCATEGORIZED"
  D READFILE^ZZRGND20("Packages.csv","RDPKGLIN^ZZRGND19",$G(PKGSPATH))
  Q
  ; 
@@ -53,14 +53,14 @@ RDPKGLIN(LINE) ; Process one csv line from Packages.csv
  ;  GLB: Global where information is stored.
  ;  CLEAN: Kill global first even when it is previously populated
  ;  OWNPATH: Path to Ownership.csv
-RDOWNER(GLB,CLEAN,OWNPATH) 
+RDOWNER(GLB,CLEAN,OWNPATH) ;
  S:$G(GLB)="" GLB="^ZZRG"
  K:+$G(CLEAN) @GLB@(11)
  Q:$D(@GLB@(11))
  D READFILE^ZZRGND20("Ownership.csv","RDOWNLIN^ZZRGND19",OWNPATH)
  Q
  ;
-RDOWNLIN(LINE)
+RDOWNLIN(LINE) ;
  Q:$G(LINE)=""
  N FLDS,GLOBAL,SUB,FN,NAME,NS,PKG
  D GCSVFLDS^ZZRGND20(LINE,.FLDS)

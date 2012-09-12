@@ -1,10 +1,10 @@
 ZZRGND15 ;;CBR/AU -  - REPORTS PACKAGE DEPENDENCIES INTRODUCED BY GLOBALS USED ;08/15/12
  ;;1.0;RGI Dependency Tool;**260004**;08/15/2012
- Q ; Use tags
+ Q  ; Use tags
  ;
  ; Print directly used globals by a package and their owner
  ; Assumes @GLB@(1 - created in CRTBASE^ZZRGND14
-USES(GLB,PKG,OWNPATH,FILEPATH,FILENAME)
+USES(GLB,PKG,OWNPATH,FILEPATH,FILENAME) ;
  I $G(PKG)="" W "Specify a package",! Q
  S:$G(GLB)="" GLB="^ZZRG"
  D:$G(OWNPATH)]"" RDOWNER^ZZRGND19(GLB,1,OWNPATH)
@@ -16,11 +16,11 @@ USES(GLB,PKG,OWNPATH,FILEPATH,FILENAME)
  . Q:$$GETPKG^ZZRGND19(RTN,GLB)'=PKG
  . S G=""
  . F  S G=$O(@GLB@(1,RTN,"G",G)) Q:G=""  D USESGLB(GLB,PKG,RTN,G)
- W ! 
+ W !
  I $G(FILENAME)]"",$G(FILEPATH)]"" D TEXTCLS^ZZRGND23("OUTFILE",FILENAME)
  Q
  ;
-USESGLB(GL,PKG,RTN,G)
+USESGLB(GL,PKG,RTN,G) ;
  N GINFO,SUB,TAG,UPKG
  Q:$E(G,1,4)="^TMP"
  Q:$E(G,1,5)="^XTMP"
@@ -29,14 +29,14 @@ USESGLB(GL,PKG,RTN,G)
  S GINFO=$$GLBINFO(GL,G)
  W "Routine ",RTN,": ",G," "
  S UPKG=$P(GINFO,"^",1)
- I UPKG="" W "(Dependency Unknown)" I 1 
+ I UPKG="" W "(Dependency Unknown)" I 1
  E  W:PKG'=UPKG "(Dependency to ",$P(GINFO,"^",2),", ",$P(GINFO,"^",3)," File)"
  W !
  Q
  ;
  ; Prints packages that use globals owned by PKG
  ; Assumes @GLB@(1 - created in CRTBASE^ZZRGND14
-USED(GLB,PKG,OWNPATH,FILEPATH,FILENAME)
+USED(GLB,PKG,OWNPATH,FILEPATH,FILENAME) ;
  I $G(PKG)="" W "Specify a package",! Q
  N GINFO
  S:$G(GLB)="" GLB="^ZZRG"
@@ -54,7 +54,7 @@ USED(GLB,PKG,OWNPATH,FILEPATH,FILENAME)
  I $G(FILENAME)]"",$G(FILEPATH)]"" D TEXTCLS^ZZRGND23("OUTFILE",FILENAME)
  Q
  ;
-GLBINFO(GL,G)
+GLBINFO(GL,G) ;
  N GINFO,GLB,SUB
  S GLB=$P(G,"(",1)
  S SUB=$P($P(G,"(",2),",",1)

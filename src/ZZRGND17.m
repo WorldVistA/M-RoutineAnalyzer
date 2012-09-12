@@ -23,7 +23,7 @@ RFMCALLS(GLB,FILEPATH,FILENAME) ; Prints FileMan calls per M TAG and globals use
  ;
  ; Indexes FileMan calls
  ;  GLB: Where the information is stored
-NDXFMAN(GLB) 
+NDXFMAN(GLB) ; 
  N I,RTN,TAG,PKG
  S:$G(GLB)="" GLB="^ZZRG"
  K @GLB@(7.5)
@@ -34,7 +34,7 @@ NDXFMAN(GLB)
  . K RESULT
  . S TAG=""
  . F  S TAG=$O(@GLB@(2,RTN,TAG)) Q:TAG=""  D
- . . S I="" 
+ . . S I=""
  . . F  S I=$O(@GLB@(2,RTN,TAG,I)) Q:I=""  D 
  . . . Q:I="N"  Q:I="P"  Q:I="L"
  . . . Q:'$D(@GLB@(2,RTN,TAG,I,"PRS"))
@@ -46,7 +46,7 @@ NDXFMAN(GLB)
 NDXFMANG(GL,RTN,TAG,RESULT,NDX) ; Indexes FileMan calls
  N J,K,NAME,SUB,CMDCNT,CMD,CX,ARG,R,IRTN,ITAG,I
  Q:'$D(@GL@(2,RTN,TAG,NDX,"PRS"))
- Q:$$GETPKG^ZZRGND19(RTN,GL)="DI"  Q:$$GETPKG^ZZRGND19(RTN,GL)="XU"  
+ Q:$$GETPKG^ZZRGND19(RTN,GL)="DI"  Q:$$GETPKG^ZZRGND19(RTN,GL)="XU"
  Q:$$GETPKG^ZZRGND19(RTN,GL)="UNCATEGORIZED"
  S CMDCNT=+@GL@(2,RTN,TAG,NDX,"PRS")
  F J=1:1:CMDCNT D 
@@ -82,7 +82,7 @@ NDXFMANG(GL,RTN,TAG,RESULT,NDX) ; Indexes FileMan calls
  ;
 ISFILEN(V) ;
  N CNT,P
- S CNT=$L(V,".") 
+ S CNT=$L(V,".")
  Q:CNT>2 0
  I CNT=1,V'?1.N Q 0
  S P=$P(V,".",2)

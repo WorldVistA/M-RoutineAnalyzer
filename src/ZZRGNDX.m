@@ -47,7 +47,7 @@ PRCSSLNS(RTN) ;
  N TXT,LIN,LAB,LABO
  F TXT=1:1:LC D
  . S LIN=^UTILITY($J,1,RTN,0,TXT,0)
- . S LN=$L(LIN),IND("SZT")=IND("SZT")+LN+2 
+ . S LN=$L(LIN),IND("SZT")=IND("SZT")+LN+2
  . S (IND("COM"),IND("DOL"),IND("F"))=""
  . D PRCSSLN(RTN,LIN,'INDLC,.LAB,.LABO)
  . S ^UTILITY($J,1,RTN,"COM",TXT)=IND("COM")
@@ -62,7 +62,7 @@ PRCSSLN(RTN,LIN,CHK,LAB,LABO) ;
  Q
  ;
 GETLEVEL(LIN) ;
- N X,I 
+ N X,I
  S I=0 ;Watch the scope of I, counts dots
  S X=0
  I " ."[$E(LIN) D  S X=$L($E(LIN,1,I),".")-1,LIN=$E(LIN,I,999)
@@ -82,7 +82,7 @@ UPDATLBL(RTN,LIN,CHK,LAB,LABO,V) ;
  S IND("COM")=LAB
  S ARG=$P($P(X,"(",2),")")
  I $L(ARG) D     ;Process formal parameters as New list.
- . D NE^ZZRGND3(ARG,.V,.VADDL) 
+ . D NE^ZZRGND3(ARG,.V,.VADDL)
  . F J=1:1:+$G(VADDL) S:$P(VADDL(J),$C(9),3)="~" $P(VADDL(J),$C(9),3)="n"
  . D UPDATGLB(RTN,LAB,LABO,.VADDL,0)
  I CHK,'$$VT^ZZRGND2(LAB) D E^ZZRGND1($S(LAB=$$CASE^ZZRGND52(LAB):37,1:55)) ;Check for bad labels
@@ -103,8 +103,8 @@ LN(RTN,LAB,LABO,LIN,V) ;
  . F I=1:1:245 Q:". "'[$E(LIN,I)
  . Q
  ;check dots against Do level IND("DO"), IND("DOL")=dot level
- D:'I&$G(IND("DO1")) E^ZZRGND1(51) 
- S IND("DO1")=0 
+ D:'I&$G(IND("DO1")) E^ZZRGND1(51)
+ S IND("DO1")=0
  S:'I IND("DO")=0
  I I D:X>IND("DO") E^ZZRGND1(51) S (IND("DO"),IND("DOL"))=X
  ;Count Comment lines, skip ;; lines
@@ -135,10 +135,10 @@ PRCSSCMS(RTN,LAB,LABO,LIN,LEVEL,V) ;GRB
  . S IND("COM")=IND("COM")_$C(9)_COM
  . D SEP(.LIN,.CH,.ARG) ;Extract command and postconditionals
  . S CM=$P(ARG,":",1),POST=$P(ARG,":",2,999)
- . I ARG[":",(POST="") D E^ZZRGND1(48) 
+ . I ARG[":",(POST="") D E^ZZRGND1(48)
  . I POST]"" S IND("COM")=IND("COM")_":" D HANDLARG(RTN,LAB,LABO,POST,.V,LEVEL)
- . I CM?.E1L.E S CM=$$CASE^ZZRGND52(CM),COM=$E(CM) 
- . I CM="" D E^ZZRGND1(21) Q ;Missing command
+ . I CM?.E1L.E S CM=$$CASE^ZZRGND52(CM),COM=$E(CM)
+ . I CM="" D E^ZZRGND1(21) Q  ;Missing command
  . S CX=$G(IND("CMD",CM)) I CX="" D  Q:CX=""
  . . I $E(CM)="Z" S CX="^Z" Q  ;Proccess Z commands
  . . D E^ZZRGND1(1) S LIN="" Q
@@ -170,7 +170,7 @@ ENDTRN(RTN,LAB,LABO) ;
  ;
 HANDLARG(RTN,LAB,LABO,ARG,V,LEVEL) ;
  N VADDL,PRSTREE
- D PRCSSEXP^ZZRGND2(ARG,.V,.VADDL) 
+ D PRCSSEXP^ZZRGND2(ARG,.V,.VADDL)
  D UPDATGLB(RTN,LAB,LABO,.VADDL,LEVEL)
  Q
  ;
@@ -204,7 +204,7 @@ UPDATGLB(RTN,LAB,LABO,VADDL,LEVEL) ;
 ST(RTN,LAB,LABO,V) ;
  N LOC,S,R
  S R=LAB_$S(LABO:"+"_LABO,1:"")
- S LOC="" 
+ S LOC=""
  F  S LOC=$O(V(LOC)) Q:LOC=""  D
  . S S=""
  . F  S S=$O(V(LOC,S)) Q:S=""  D SET(RTN,LOC,S,V(LOC,S),R)

@@ -22,13 +22,13 @@ DG(ARG,V,VADDL,CM,HASPOST) ;
  . . S (J,S)=I+1
  . . D:$E(ARG)'="@" E^ZZRGND1(30)
  . . S:$E(ARG,I)="^" S=I+1
- . . D LOOP(ARG,S,"+^:,",.I,.CH) 
+ . . D LOOP(ARG,S,"+^:,",.I,.CH)
  . . S OFF=$E(ARG,J,I-1)
  . . I OFF'?.N D PRCSSEXP^ZZRGND2(OFF,.V,.VADDL)
  . I CH="^" S S=I+1 D LOOP(ARG,S,"+^:,",.I,.CH) S PGM=$E(ARG,S,I-1)
  . I CH=":" D 
- . . S S=I+1 D LOOP(ARG,S,",",.I,.CH) 
- . . S S=$E(ARG,S,I-1) 
+ . . S S=I+1 D LOOP(ARG,S,",",.I,.CH)
+ . . S S=$E(ARG,S,I-1)
  . . I S'="" D PRCSSEXP^ZZRGND2(S,.V,.VADDL) S POST=1
  . S ARG=$E(ARG,I+1,999)
  . I $E(LBL)="@" D PRCSSEXP^ZZRGND2($E(LBL,1,999),.V,.VADDL) S LBL="@("
@@ -41,17 +41,17 @@ DG(ARG,V,VADDL,CM,HASPOST) ;
  . . D PARAMS(PRM,.V,.VADDL)
  . I $G(IND("DOL")),CM="G",PGM]"" D E^ZZRGND1(63) ;can't goto another routine out of block structure
  . S:OFF'="" LBL=LBL_"+"_OFF
- . S S="",LOC="I" 
+ . S S="",LOC="I"
  . I PGM'="" S S=PGM_" ",LOC="X"
  . S:LBL_PGM["&" LOC="X"
- . S:LBL'="" S=S_LBL 
+ . S:LBL'="" S=S_LBL
  . S POST=POST!HASPOST
  . I S'="" D ST(LOC,S,CM_POST)
  Q
  ;
 PARAMS(PRM,V,VADDL) ;
  N LV,LI
- D PARSE^ZZRGND9(PRM,.LV,.LI,",") 
+ D PARSE^ZZRGND9(PRM,.LV,.LI,",")
  D PARAMS^ZZRGND2(.LV,.LI,999)
  Q
  ; 
@@ -81,7 +81,7 @@ QUOTE(ARG,I) ;
  ;
 ST(LOC,S,GK) ;
  S R=$F(S,"(") S:R>1 S=$E(S,1,R-1) S:"IX"[LOC IND("COM")=IND("COM")_","_S
- S:'$D(V(LOC,S)) V(LOC,S)="" 
+ S:'$D(V(LOC,S)) V(LOC,S)=""
  D SETVADDL^ZZRGND2(LOC,S)
  D:LOC="X" ADDCMD^ZZRGND2("D")
  D:LOC="X" ADDARG^ZZRGND2(S)
@@ -89,9 +89,9 @@ ST(LOC,S,GK) ;
  ;
 FR(ARG,V,VADDL,POST) ;
  N CH,I
- I $E(ARG,1)="@" Q
- . D SETVADDL^ZZRGND2("@","")  
- D LOOP(ARG,2,"=",.I,.CH) 
+ I $E(ARG,1)="@" D  Q
+ . D SETVADDL^ZZRGND2("@","")
+ D LOOP(ARG,2,"=",.I,.CH)
  I CH="" D E^ZZRGND1(8) Q
  S STR=$E(ARG,1,I-1)
  S ARG=$E(ARG,I+1,999)
@@ -100,9 +100,9 @@ FR(ARG,V,VADDL,POST) ;
  Q
  ;
 WR ;
- N S0,WR,LV,LI 
+ N S0,WR,LV,LI
  S STR=ARG,WR="#!,",S0="" ;Need to handle /controlmnemonic
- D PARSE^ZZRGND9(STR,.LV,.LI) 
+ D PARSE^ZZRGND9(STR,.LV,.LI)
  S ARG=""
  F  D INC^ZZRGND2(.LV,.LI,.S,.S1) Q:S=""  D  S S0=S
  . I S="?" D:WR[S1 E^ZZRGND1(49) Q
@@ -116,7 +116,7 @@ SET S ARG=$E(ARG,1,I-1)_","_$E(ARG,I+1,999)
  Q
 XE ;
  D:ARG]"" PRCSSEXP^ZZRGND2(ARG,.V,.VADDL)
- S ARG=""  
+ S ARG=""
  Q
 REP ;
  S S=1 D LOOP(ARG,1,":",.I,.CH) I CH=":" S ARG=$E(ARG,I+1,999),L="," D LOOP(ARG,S,":",.I,.CH)
@@ -128,16 +128,16 @@ ZC I "ILRS"'[$E(CM,2)!($E(CM,2)="") S ARG="" Q  ;Zcommands
 U1 S S=1 D LOOP(ARG,S,",",.I,.CH) S S=$E(ARG,1,I-1),ARG=$E(ARG,I+1,999)
  I $E(S,1)="@" D
  . D SETVADDL^ZZRGND2("@","")
- . S S=$E(S,2,999) 
- . D:S]"" PRCSSEXP^ZZRGND2(S,.V,.VADDL) 
- Q:ARG=""  
+ . S S=$E(S,2,999)
+ . D:S]"" PRCSSEXP^ZZRGND2(S,.V,.VADDL)
+ Q:ARG=""
  G U1
  ;
-ZR Q:ARG=""  
+ZR Q:ARG=""
  S S=1 D LOOP(ARG,S,":,",.I,.CH) S S=$E(ARG,1,I-1),ARG=$E(ARG,I+1,999)
  I $E(S,1)="@" D  G ZR
  . D SETVADDL^ZZRGND2("@","")
- . D PRCSSEXP^ZZRGND2(S,.V,.VADDL) 
+ . D PRCSSEXP^ZZRGND2(S,.V,.VADDL)
  D:S["+" PRCSSEXP^ZZRGND2($P(S,"+",2,999),.V,.VADDL)
  G ZR
  ;

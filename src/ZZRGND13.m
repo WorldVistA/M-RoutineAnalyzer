@@ -1,6 +1,6 @@
 ZZRGND13 ;;CBR/AU -REPORTS ;08/15/12
  ;;1.0;RGI Dependency Tool;**260004**;08/15/2012
- Q ; Call Tags
+ Q  ; Call Tags
  ;
  ; Report faninss for the package (PKG specified) or all packages
  ;  GLB (Optional): Data global.
@@ -28,7 +28,7 @@ REPORTFO(GLB,PKG,FILEPATH,FILENAME) ; Report fanouts
  I $G(FILENAME)]"",$G(FILEPATH)]"" D TEXTCLS^ZZRGND23("OUTFILE",FILENAME)
  Q
  ;
-REPORTRPC(GLB) ; RPC calls
+REPRPC(GLB) ; RPC calls
  S:$G(GLB)="" GLB="^ZZRG"
  D WRPC(GLB)
  Q
@@ -40,14 +40,14 @@ NEWINP(INP) ;
  S INP(12)=""  ; Build
  S INP("MAX")=20000  ;Max routine size
  S INP("CMAX")=15000 ;Max Code in routine
- Q  
+ Q
  ;
 NDXPRTNS(PKG,TARGET) ;
- N CNT,RTN,INP,NRO,DA,INDDA,RTNPKG 
+ N CNT,RTN,INP,NRO,DA,INDDA,RTNPKG
  D NEWINP(.INP)
  S INP(10)=9.4,INP(1)=1,DA=-1,INDDA=DA
  S CNT=0,RTN=""
- K:TARGET]"" ^UTILITY($J) 
+ K:TARGET]"" ^UTILITY($J)
  S RTN=""
  F  S RTN=$O(^ROUTINE(RTN)) Q:RTN=""  D
  . I PKG]"",$$GETPKG^ZZRGND19(RTN)'=PKG Q 
@@ -57,20 +57,20 @@ NDXPRTNS(PKG,TARGET) ;
  D MAIN^ZZRGNDX(1)
  I TARGET]"" D
  . M @TARGET=^UTILITY($J)
- . K ^UTILITY($J) 
+ . K ^UTILITY($J)
  Q 
  ;
 REPORTGL(TITLE,GL,ADDVALUE,SEP) ;
  N X,OUT,EXISTS,SPC,I
  S:$G(SEP)="" SEP=","
  S X="",OUT=1,SPC=""
- F I=1:1:$L(TITLE) S SPC=SPC_" " 
+ F I=1:1:$L(TITLE) S SPC=SPC_" "
  S OUT(1)=TITLE
  F  S X=$O(@GL@(X)) Q:X=""  D
  . S:ADDVALUE X=X_@GL@(X)
  . I $L(OUT(OUT))+$L(X)>75 D
  . . S OUT=OUT+1
- . . S OUT(OUT)=SPC 
+ . . S OUT(OUT)=SPC
  . S OUT(OUT)=OUT(OUT)_X_SEP
  S:$L(OUT(1))=$L(TITLE) OUT=0
  D REPORT(TITLE,.OUT)
@@ -80,19 +80,19 @@ REPORTG2(TITLE,GL,ADDVALUE,SEP) ;
  N X,OUT,EXISTS,SPC,I,J
  S:$G(SEP)="" SEP=","
  S X="",OUT=1,SPC=""
- F I=1:1:$L(TITLE) S SPC=SPC_" " 
+ F I=1:1:$L(TITLE) S SPC=SPC_" "
  S OUT(1)=TITLE
  F J=1:1:+$G(@GL) S X=@GL@(J) D
  . S:ADDVALUE X=X_@GL@(X)
  . I $L(OUT(OUT))+$L(X)>75 D
  . . S OUT=OUT+1
- . . S OUT(OUT)=SPC 
+ . . S OUT(OUT)=SPC
  . S OUT(OUT)=OUT(OUT)_X_SEP
  S:$L(OUT(1))=$L(TITLE) OUT=0
  D REPORT(TITLE,.OUT)
  Q
  ;
-REPORTCMD(TITLE,GL,CMD) ;
+REPCMD(TITLE,GL,CMD) ;
  N X
  S X=+$G(@GL@(CMD))
  W TITLE,X,!
@@ -107,13 +107,13 @@ REPORT(TITLE,OUT) ;
 REPORTSR(GL,TITLE,GLB) ; 
  N X,OUT,SPC,NAME
  S X="",OUT=1,SPC=""
- F I=1:1:$L(TITLE) S SPC=SPC_" " 
+ F I=1:1:$L(TITLE) S SPC=SPC_" "
  S OUT(1)=TITLE
  F  S X=$O(@GL@(X)) Q:X=""  D
- . S NAME=$$GPKGNAME^ZZRGND19(X,GLB) 
+ . S NAME=$$GPKGNAME^ZZRGND19(X,GLB)
  . I $L(OUT(OUT))+$L(NAME)>75 D
  . . S OUT=OUT+1
- . . S OUT(OUT)=SPC 
+ . . S OUT(OUT)=SPC
  . S OUT(OUT)=OUT(OUT)_NAME_","
  S:$L(OUT(1))=$L(TITLE) OUT=0
  D REPORT(TITLE,.OUT)
@@ -134,22 +134,22 @@ WPKGFI(GLB,PKG,PKGNDX) ;
  . F  S TAG=$O(@GLB@(9,PKG,RTN,TAG)) Q:TAG=""  D WRTNCLLS(GLB,PKG,RTN,TAG)
  Q
  ;
-WRTNCLLS(GLB,PKG,RTN,TAG)
+WRTNCLLS(GLB,PKG,RTN,TAG) ;
  W " "_TAG_"^"_RTN,!
  D REPORTSR(GLB_"(9,"""_PKG_""","""_RTN_""","""_TAG_""")","   CALLING PACKAGES: ",GLB)
  W !
  Q
  ;
-WRTNAPI(GL,PKG,RTN,TAG)
+WRTNAPI(GL,PKG,RTN,TAG) ;
  W " "_TAG_"^"_RTN,!
  S:TAG="" TAG=RTN
  D REPORTG2("    FORMAL: ",GL_"(7,"""_PKG_""","""_RTN_""","""_TAG_""",""F"")",0)
  D REPORTGL("   ASSUMED: ",GL_"(7,"""_PKG_""","""_RTN_""","""_TAG_""",""D"")",1)
  D REPORTGL("      GLBS: ",GL_"(7,"""_PKG_""","""_RTN_""","""_TAG_""",""G"")",0)
- D REPORTCMD("      READ: ",GL_"(7,"""_PKG_""","""_RTN_""","""_TAG_""",""CMD"")","R")
- D REPORTCMD("     WRITE: ",GL_"(7,"""_PKG_""","""_RTN_""","""_TAG_""",""CMD"")","W")
- D REPORTCMD("      EXEC: ",GL_"(7,"""_PKG_""","""_RTN_""","""_TAG_""",""CMD"")","X")
- D REPORTCMD("       IND: ",GL_"(7,"""_PKG_""","""_RTN_""","""_TAG_""",""CMD"")","@")
+ D REPCMD("      READ: ",GL_"(7,"""_PKG_""","""_RTN_""","""_TAG_""",""CMD"")","R")
+ D REPCMD("     WRITE: ",GL_"(7,"""_PKG_""","""_RTN_""","""_TAG_""",""CMD"")","W")
+ D REPCMD("      EXEC: ",GL_"(7,"""_PKG_""","""_RTN_""","""_TAG_""",""CMD"")","X")
+ D REPCMD("       IND: ",GL_"(7,"""_PKG_""","""_RTN_""","""_TAG_""",""CMD"")","@")
  D REPORTGL("    FMGLBS: ",GL_"(7,"""_PKG_""","""_RTN_""","""_TAG_""",""FMG"")",0)
  D REPORTGL("   FMCALLS: ",GL_"(7,"""_PKG_""","""_RTN_""","""_TAG_""",""FMGC"")",0)
  Q
@@ -160,7 +160,7 @@ WFI(GLB) ;
  S PKG=""
  F  S PKG=$O(@GLB@(10,PKG)) Q:PKG=""  D 
  . Q:@GLB@(10,PKG,"D")'=PKG
- . S PKGNDX=PKGNDX+1 
+ . S PKGNDX=PKGNDX+1
  . W "--------------------------------------------------------------",!!
  . D WPKGFI(GLB,PKG,PKGNDX)
  . W "--------------------------------------------------------------",!!
@@ -182,9 +182,9 @@ WFO(GLB) ;
  S PKG="",NDX=0
  F  S PKG=$O(@GLB@(8,PKG)) Q:PKG=""  D
  . Q:PKG="UNCATEGORIZED"
- . S NDX=NDX+1 
+ . S NDX=NDX+1
  . W "--------------------------------------------------------------",!!
- . D WFOPKG(GLB,PKG,NDX) 
+ . D WFOPKG(GLB,PKG,NDX)
  . W !,"--------------------------------------------------------------",!!
  Q
  ;
@@ -198,31 +198,31 @@ WFOPKG(GLB,PKG,PKGNDX) ;
  D WFOTAGS(GLB,PKG)
  Q
  ;
-REPORTRP(RTN,TITLE)
+REPORTRP(RTN,TITLE) ;
  N X,OUT,SPC,NAME,PROC,RPC
  S X="",OUT=1,SPC=""
- F I=1:1:$L(TITLE) S SPC=SPC_" " 
+ F I=1:1:$L(TITLE) S SPC=SPC_" "
  S OUT(1)=TITLE
  F  S X=$O(^XWB(8994,X)) Q:X=""  D
  . Q:X=0  Q:$D(^XWB(8994,X,0))<1  Q:^XWB(8994,X,0)'["^"
  . S PROC=^XWB(8994,X,0),RPC=$P(PROC,"^",2)_"^"_$P(PROC,"^",3)
  . I RTN'[RPC Q
- . S NAME=$P(^XWB(8994,X,0),"^",1) 
+ . S NAME=$P(^XWB(8994,X,0),"^",1)
  . I $L(OUT(OUT))+$L(NAME)>75 D
  . . S OUT=OUT+1
- . . S OUT(OUT)=SPC 
+ . . S OUT(OUT)=SPC
  . S OUT(OUT)=OUT(OUT)_NAME_","
  S:$L(OUT(1))=$L(TITLE) OUT=0
  D REPORT(TITLE,.OUT)
  Q
  ;
-REPOROPT(RTN,TITLE)
+REPOROPT(RTN,TITLE) ;
  N X,OUT,SPC,NAME,PROC,OPTION,OPTSE,OPTDO,OPTEX
  S X="",OUT=1,SPC="",OPTSE="^M^E^P^I^S^X^C^B^",OPTDO="^A^O^",OPTEX="^R^"
- F I=1:1:$L(TITLE) S SPC=SPC_" " 
+ F I=1:1:$L(TITLE) S SPC=SPC_" "
  S OUT(1)=TITLE
  Q:$D(^DIC(19,0))'>0  S LENGTH=$P(^DIC(19,0),"^",3)
- F  S X=$I(X) Q:X>LENGTH  D:$D(^DIC(19,X,0))>0
+ F  S X=X+1 Q:X>LENGTH  D:$D(^DIC(19,X,0))>0
  . S OPTION=^DIC(19,X,0)
  . I OPTSE[$P(OPTION,"^",4) Q
  . S NAME=$P(OPTION,"^",1)
@@ -230,13 +230,13 @@ REPOROPT(RTN,TITLE)
  . I OPTEX[$P(OPTION,"^",4) I $S($D(^DIC(19,X,25)):^(25),1:"")'[RTN Q
  . I $L(OUT(OUT))+$L(NAME)>75 D
  . . S OUT=OUT+1
- . . S OUT(OUT)=SPC 
+ . . S OUT(OUT)=SPC
  . S OUT(OUT)=OUT(OUT)_NAME_","
  S:$L(OUT(1))=$L(TITLE) OUT=0
  D REPORT(TITLE,.OUT)
  Q
  ;
-WRPC(GL)
+WRPC(GL) ;
  N IDX,IDX2,IDXP,LEVL1,LEVL2,LEVL3,PROC,RVTYPES,PARTYPES
  S IDX="",LEVL1=" ",LEVL2="  ",LEVL3="   "
  S RVTYPES="SINGLE VALUE^ARRAY^WORD PROCESSING^GLOBAL ARRAY^GLOBAL INSTANCE"
@@ -247,12 +247,12 @@ WRPC(GL)
  . W !,$P(PROC,"^",1)_" - "_$P(PROC,"^",2)_"^"_$P(PROC,"^",3)
  . S IDX2="" ;
  . F  S IDX2=$O(^XWB(8994,IDX,1,IDX2)) Q:IDX2=""  D
- . . I $D(^XWB(8994,IDX,1,IDX2,0))'<1 W !,LEVL1_$G(^XWB(8994,IDX,1,IDX2,0)) 
+ . . I $D(^XWB(8994,IDX,1,IDX2,0))'<1 W !,LEVL1_$G(^XWB(8994,IDX,1,IDX2,0))
  . W !,LEVL1,"PARAMETERS"
  . S IDXP=""
  . F  S IDXP=$O(^XWB(8994,IDX,2,IDXP)) Q:IDXP=""  D
  . . I $D(^XWB(8994,IDX,2,IDXP,0))'<1 D
- . . . W !,LEVL2,$P(^XWB(8994,IDX,2,IDXP,0),"^",1) 
+ . . . W !,LEVL2,$P(^XWB(8994,IDX,2,IDXP,0),"^",1)
  . . . W !,LEVL3,"TYPE:",$P(PARTYPES,"^",+$P(^XWB(8994,IDX,2,IDXP,0),"^",2))
  . . . W:$D(^XWB(8994,IDX,2,IDXP,1,1,0))>0 !,LEVL3,$P(^XWB(8994,IDX,2,IDXP,1,1,0),"^",1)
  . W !,LEVL1,"RETURN VALUE"
@@ -264,7 +264,7 @@ WRPC(GL)
  . W !
  Q
  ;
-RPCRTN(RTN,PROC,GL)
+RPCRTN(RTN,PROC,GL) ;
  N X,Y,LEVL1,LEVL2,SEP,TMP
  S LEVL1=" ",LEVL2="  ",SEP="",TMP=""
  Q:RTN=""  Q:PROC="" 
@@ -272,18 +272,18 @@ RPCRTN(RTN,PROC,GL)
  S Y=GL_"(1,"""_RTN_""",""X"""
  W !,LEVL1_"EXTERNAL ROUTINES:",!,LEVL2
  F  Q:X=""  D
- . S X=$Q(@X) 
+ . S X=$Q(@X)
  . I X'[Y S X="" Q
  . I @X[PROC D
  . . S TMP=$E($P(X,",",4),2,$L($P(X,",",4))-1)
- . . W SEP_$P(TMP," ",2)_"^"_$P(TMP," ",1) S SEP="," 
+ . . W SEP_$P(TMP," ",2)_"^"_$P(TMP," ",1) S SEP=","
  Q
  ;
-REPOPTAG
+REPOPTAG ;
  N IDX,X,LENGTH,OPTION
  S IDX=0
  Q:$D(^DIC(19,0))'>0  S LENGTH=$P(^DIC(19,0),"^",3)
- F  S IDX=$I(IDX) Q:IDX>LENGTH  D:$D(^DIC(19,IDX,0))>0
+ F  S IDX=IDX+1 Q:IDX>LENGTH  D:$D(^DIC(19,IDX,0))>0
  . S OPTION=^DIC(19,IDX,0),X=""
  . I $P(OPTION,"^",4)="M" Q
  . W !,$P(OPTION,"^",2)
@@ -294,20 +294,20 @@ REPOPTAG
  . I X="" W !
  Q
  ;
-GMFLDS(GL)
+GMFLDS(GL) ;
  N X,X1,FIELD,GLB,FX
  S X="",X1=""
  F  S X=$O(^DIC(X)) Q:X=""  D
- . S X1="" S:$D(^DIC(X,0,"GL")) GLB=^DIC(X,0,"GL") Q:X=0  
+ . S X1="" S:$D(^DIC(X,0,"GL")) GLB=^DIC(X,0,"GL") Q:X=0
  . S FX=0
  . F  S X1=$O(^DD(X,X1)) Q:X1=""  D
- . . Q:$D(^DD(X,X1,0))=10  Q:$D(^DD(X,X1,0))=0  
+ . . Q:$D(^DD(X,X1,0))=10  Q:$D(^DD(X,X1,0))=0
  . . S FIELD=^DD(X,X1,0) Q:FIELD="" 
  . . I $P(FIELD,"^",2)["K" D
- . . . S @GL@(11,$P(GLB,"(",1),GLB,FX)=X1,FX=$I(FX) 
+ . . . S @GL@(11,$P(GLB,"(",1),GLB,FX)=X1,FX=FX+1
  Q
  ;
-EXMCODE(GL)
+EXMCODE(GL) ;
  N X,X1,FLDS,FX,I,RTN,IR
  S X="",IR=0
  F  S X=$O(@GL@(11,X)) Q:X=""  D
@@ -315,23 +315,23 @@ EXMCODE(GL)
  . F  S X1=$O(@GL@(11,X,X1)) Q:X1=""  D
  . . S FX="",I=0
  . . F  S FX=$O(@GL@(11,X,X1,FX)) Q:FX=""  D
- . . . S FLDS(I)=$G(@GL@(11,X,X1,FX)),I=$I(I)
+ . . . S FLDS(I)=$G(@GL@(11,X,X1,FX)),I=I+1
  . . S RTN=$P(X1,"(",1) S:RTN["%" RTN="^"_$P(RTN,"%",2)
- . . S IR=$I(IR),RTN=RTN_"^"_IR,@GL@(11,X,X1,"RTN")=RTN
+ . . S IR=IR+1,RTN=RTN_"^"_IR,@GL@(11,X,X1,"RTN")=RTN
  . . D PROCLNS(X1,.FLDS,RTN)
  . . D WRTDEP(GL,X,X1,RTN)
  Q
  ;
-WRTDEP(GL,GLB,SGLB,RTN)
+WRTDEP(GL,GLB,SGLB,RTN) ;
  N X,I,RTNAME,PKG,PKGNAME
  S X="",I=0
  S:$D(@GL@(11,GLB,"RTNS",0))>0 I=@GL@(11,GLB,"RTNS",0)
  F  S X=$O(^UTILITY($J,1,RTN,"X",X)) Q:X=""  D
- . S I=$I(I),@GL@(11,GLB,"RTNS",I)=X
+ . S I=I+1,@GL@(11,GLB,"RTNS",I)=X
  . S @GL@(11,GLB,"RTNS",0)=I,RTNAME=$P(X," ",1)
  . S PKG=$$GETPKG^ZZRGND19(RTNAME,GL),PKGNAME=$$GPKGNAME^ZZRGND19(PKG,GL)
  . S @GL@(11,GLB,"PKGS",PKG)=PKGNAME S:$D(@GL@(11,GLB,SGLB,"RTNS",0))=0 @GL@(11,GLB,SGLB,"RTNS",0)=0
- . S @GL@(11,GLB,SGLB,"RTNS",0)=$I(@GL@(11,GLB,SGLB,"RTNS",0))
+ . S @GL@(11,GLB,SGLB,"RTNS",0)=@GL@(11,GLB,SGLB,"RTNS",0)+1
  . S @GL@(11,GLB,SGLB,"PKGS",PKG)=PKGNAME
  Q
  ;
@@ -347,29 +347,29 @@ PROCLNS(GLB,FLDS,RTN) ;
  . . Q:$D(@(GLB_""""_X_""","""_F_""")"))=0 
  . . S LIN=@(GLB_""""_X_""","""_F_""")") Q:$L(LIN)<2!LIN=""
  . . I LC=0 D RTNHEAD(RTN) S LC=3
- . . S LC=$I(LC),^UTILITY($J,1,RTN,0,LC,0)=" "_LIN
+ . . S LC=LC+1,^UTILITY($J,1,RTN,0,LC,0)=" "_LIN
  . I LC>0  D
  . . S ^UTILITY($J,1,RTN,0,0)=LC,^UTILITY($J,1,RTN,1,0)=GLB
  . . D PRCSSLNS^ZZRGNDX(RTN)
  Q 
  ;
-RTNHEAD(GL)
+RTNHEAD(GL) ;
  S ^UTILITY($J,1,GL,0,1,0)=GL_" ;"
  S ^UTILITY($J,1,GL,0,2,0)=" ;;"
  S ^UTILITY($J,1,GL,0,3,0)=GL_"1 ;"
  Q 
  ;
-RGDEP(GL)
+RGDEP(GL) ;
  K @GL@("11")
  D GMFLDS(GL)
  D EXMCODE(GL)
  K ^UTILITY($J)
  Q
  ;
-REPGLPKG(TITLE,GLBS,PKG,GL)
+REPGLPKG(TITLE,GLBS,PKG,GL) ;
  N X,X1,OUT,SPC,NAME,OUTN,RTN,TAG,TMPGLB,I
  S X="",X1="",OUT=1,SPC=""
- F I=1:1:$L(TITLE) S SPC=SPC_" " 
+ F I=1:1:$L(TITLE) S SPC=SPC_" "
  S OUT(1)=TITLE
  F  S X1=$O(@GLBS@(X1)) Q:X1=""  D
  . S RTN=$P(GLBS,",",3),RTN=$E(RTN,2,$L(RTN)-1)
@@ -385,14 +385,14 @@ REPGLPKG(TITLE,GLBS,PKG,GL)
  . . . Q:PKG=X  S NAME=$$GPKGNAME^ZZRGND19(X,GL)  Q:$D(OUTN(NAME))>0
  . . . I $L(OUT(OUT))+$L(NAME)>75 D
  . . . . S OUT=OUT+1
- . . . . S OUT(OUT)=SPC 
+ . . . . S OUT(OUT)=SPC
  . . . S OUT(OUT)=OUT(OUT)_NAME_","
  . . . S OUTN(NAME)=""
  S:$L(OUT(1))=$L(TITLE) OUT=0
  D REPORT(TITLE,.OUT)
  Q
  ;
-FNDMCODE(RTN,TAG,GL,MGL)
+FNDMCODE(RTN,TAG,GL,MGL) ;
  N X,X1,XCMD,TCMD
  S X="",MGL=""
  F  S X=$O(@GL@(2,RTN,TAG,X)) Q:X=""  D
@@ -400,10 +400,10 @@ FNDMCODE(RTN,TAG,GL,MGL)
  . F  S X1=$O(@GL@(2,RTN,TAG,X,X1)) Q:'X1  D
  . . S TCMD=@GL@(2,RTN,TAG,X,X1)
  . . I ($P(TCMD,$C(9),1)="G")&(XCMD="X") D
- . . . S MGL($P(TCMD,$C(9),2))="" 
+ . . . S MGL($P(TCMD,$C(9),2))=""
  . . . I ($P(TCMD,$C(9),2)'["^DD")&($P(TCMD,$C(9),2)'["ZOSF") D
  . . . . W !,TAG_"^"_RTN_" - "_$P(TCMD,$C(9),2)
- . . I TCMD["XECUTE" S XCMD="X" 
- . . E  S XCMD="" 
+ . . I TCMD["XECUTE" S XCMD="X"
+ . . E  S XCMD=""
  Q
  ;

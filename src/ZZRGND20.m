@@ -1,6 +1,6 @@
 ZZRGND20 ;;CBR/AU - UTILITY TAGS ;08/15/12
  ;;1.0;RGI Dependency Tool;**260004**;08/15/2012
-READFILE(FILENAME,COMMAND,PATH)
+READFILE(FILENAME,COMMAND,PATH) ;
  ; Opens a file, and for each line of text calls the TAG specified in COMMAND 
  ;   FILENAME - (required) complete file name without path
  ;   COMMAND  - (required) tag to be called. It should accept the line of text as first parameter.
@@ -9,13 +9,13 @@ READFILE(FILENAME,COMMAND,PATH)
  Q:$G(COMMAND)=""
  D TEXTOPEN^ZZRGND23("INFILE",PATH,FILENAME,"R")  ;
  F  Q:$$STATUS^%ZISH  D
- . R LINE 
+ . R LINE:10
  . S TAG=COMMAND_"("""_$$DBLQUOT(LINE)_""")"
  . D @TAG
  D TEXTCLS^ZZRGND23("INFILE",FILENAME)  ; 
  Q
  ;
-GCSVFLDS(LINE,FIELDS,SEP)
+GCSVFLDS(LINE,FIELDS,SEP) ;
  ; Returns fields from a .CSV file
  ;   LINE = line of text from the CSV file
  ;   FIELDS = array passed by reference where the field values will be stored
@@ -40,7 +40,7 @@ GCSVFLDS(LINE,FIELDS,SEP)
  S:$E(VAL,$L(VAL))="""" VAL=$E(VAL,1,$L(VAL)-1)
  Q
  ;
-LTRIM(STR,CH)
+LTRIM(STR,CH) ;
  ; Trims characters passed in CH from the left side of a string
  N I,CX,TO
  S TO=0,CH=$E(CH)
@@ -51,7 +51,7 @@ LTRIM(STR,CH)
  S:TO>0 STR=$E(STR,I,$L(STR))
  Q STR
  ;
-DBLQUOT(STR)
+DBLQUOT(STR) ;
  ; Doubles quotes in a string
  N I,CH,RETVAL
  S RETVAL=""
@@ -61,7 +61,7 @@ DBLQUOT(STR)
  . S:CH="""" RETVAL=RETVAL_CH
  Q RETVAL
  ;
-REPLACE(STR,CH1,CH2)
+REPLACE(STR,CH1,CH2) ;
  N I,CH,RETVAL
  S RETVAL=""
  F I=1:1:$L(STR) D

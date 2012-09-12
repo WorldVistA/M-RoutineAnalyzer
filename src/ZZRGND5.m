@@ -1,7 +1,7 @@
 ZZRGND5 ;;CBR/AU - XINDEX based routines ;08/15/12
  ;;1.0;RGI Dependency Tool;**260004**;08/15/2012
 MAIN(SILENT) ;
- G END:$D(IND("QUIT")) I INP(8) W:'SILENT !,"Called Routines",! D MAIN^ZZRGND52(SILENT) ;Get called routines
+ G END:$D(IND("QUIT")) I INP(8) W:'SILENT !,"Called Routines",! D L1^ZZRGND52(SILENT) ;Get called routines
  K ARG,CCN,CH,COM,ERR,GK,GRB,I,INDDA,INDDS,L,LAB,LAB0,LC,LIN,LOC,PC,PRV,R,RTN,S,STR,TXT,V,X,Y
  D ^ZZRGND53:INP(7) ;Load routine file
  ;Check called tags and routines

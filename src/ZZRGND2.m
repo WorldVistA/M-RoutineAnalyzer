@@ -13,7 +13,7 @@ PRCSSEXP(ARG,V,VADDL) ;
  ;Process argument
 ARGG(STR) ;
  N LV,LI
- D PARSE^ZZRGND9(STR,.LV,.LI) 
+ D PARSE^ZZRGND9(STR,.LV,.LI)
  D ARGS(.LV,.LI,999)
  Q
  ; 
@@ -28,7 +28,7 @@ ARGS(LV,LI,AC) ;Proccess all arguments at this level
  ;
 ARGSTEXT(LV,LI,AC) ;Proccess all arguments at this level for $TEXT
  N DONE,S,S1,CHTHIS,CHPREV
- S AC=LI+AC,DONE=0 
+ S AC=LI+AC,DONE=0
  F  Q:AC'>LI  D  Q:DONE
  . D INC(.LV,.LI,.S,.S1)
  . I S="" S DONE=1 Q
@@ -43,7 +43,7 @@ ARGSTEXT(LV,LI,AC) ;Proccess all arguments at this level for $TEXT
  ;
 PARAMS(LV,LI,AC) ; 
  N S,S1,GK,N,CH,FIRST,Y
- S AC=LI+AC,DONE=0,GK="",FIRST=1,N=1 
+ S AC=LI+AC,DONE=0,GK="",FIRST=1,N=1
  F  Q:AC'>LI  D INC(.LV,.LI,.S,.S1) Q:S=""  D
  . S CH=$E(S)
  . I CH=".",$E(S1)'?1.N,FIRST D  Q
@@ -106,12 +106,12 @@ EXTGLO(LV,LI,S,S1) ;
  Q
  ;
 EG(LV,LI,S,S1) ;
- N GK,LOC,DONE,CH 
+ N GK,LOC,DONE,CH
  S GK="",LOC="L" ;HANDLE EXTENDED GLOBAL
  S DONE=0
  F  D  Q:DONE
  . D INC(.LV,.LI,.S,.S1)
- . S CH=$E(S) 
+ . S CH=$E(S)
  . I ("]"[CH)!("|"[CH) S DONE=1 Q
  . D ARG(.LV,.LI,.S,.S1)
  Q
@@ -122,14 +122,14 @@ GLO(LV,LI,S,S1) ;
  I X]"",S'["^$",X'?1(1U,1"%").7UN D E^ZZRGND1(12)
  I GK["*",$E(S,1,2)["^%" D E^ZZRGND1(45)
  I S1="(" D
- . S S=S_S1 
+ . S S=S_S1
  . S Y=$$PEEKDN(.LV,.LI)
- . I $E(Y)="." S Y=Y_$$PEEKDN2(.LV,.LI) 
+ . I $E(Y)="." S Y=Y_$$PEEKDN2(.LV,.LI)
  . I ($A(Y)=34),$$PEEKDN2(.LV,.LI)="_" Q
  . S:(Y?.N.1".".N)!($A(Y)=34)!("^$J^$I^$H^"[(U_Y)) S=S_Y
- D ST(LOC,S) 
+ D ST(LOC,S)
  I S1="(" D
- . D INC2(.LV,.LI,.S,.S1) 
+ . D INC2(.LV,.LI,.S,.S1)
  . D DN(.LV,.LI,S)
  . D INC(.LV,.LI,.S,.S1)
  Q
@@ -138,29 +138,29 @@ LOC(LV,LI,S,S1) ;
  N Y
  S LOC="L" ;Check variables at end. I S'?1.8UN,S'?1"%".7UN,S'?1.8LN,S'?1"%".7LN D E^ZZRGND1(11)
  I S1="(" D
- . S S=S_S1 
- . S Y=$$PEEKDN(.LV,.LI) 
+ . S S=S_S1
+ . S Y=$$PEEKDN(.LV,.LI)
  . S:(Y?1.N)!($A(Y)=34) S=S_Y
- D ST(LOC,S) 
+ D ST(LOC,S)
  I S1="(" D
- . D INC2(.LV,.LI,.S,.S1) 
+ . D INC2(.LV,.LI,.S,.S1)
  . D DN(.LV,.LI,S)
  . D INC(.LV,.LI,.S,.S1)
  Q
  ;
 PEEK(LV,LI) ;
- N Y 
+ N Y
  S Y=$G(LV(LV,LI+1))
  Q Y
  ;
 BACKN(LV,LI,N) ;
- N Y 
+ N Y
  S Y=$G(LV(LV,LI-N))
  Q Y
  ;
 PEEK2(LV,LI) ;
  N Y
- S Y=$G(LV(LV,LI+2)) 
+ S Y=$G(LV(LV,LI+2))
  Q Y
  ;
 INC2(LV,LI,S,S1) ;
@@ -173,43 +173,43 @@ INC(LV,LI,S,S1) ;
  S S=$G(LV(LV,LI))
  S S1=$G(LV(LV,LI+1))
  I $A(S)=10 D
- . D E^ZZRGND1(43) 
+ . D E^ZZRGND1(43)
  . S (S,S1)=""
  Q
  ;
 DN(LV,LI,NOA) ;
  S LI(LV)=LI,LV=LV+1,LI=LI(LV)
  D ARGS(.LV,.LI,NOA)
- D UP(.LV,.LI) 
+ D UP(.LV,.LI)
  Q
  ;
 DNTEXT(LV,LI,NOA) ;
  S LI(LV)=LI,LV=LV+1,LI=LI(LV)
  D ARGSTEXT(.LV,.LI,NOA)
- D UP(.LV,.LI) 
+ D UP(.LV,.LI)
  Q
  ;
 DNPARAMS(LV,LI,NOA) ;
  S LI(LV)=LI,LV=LV+1,LI=LI(LV)
  D PARAMS(.LV,.LI,NOA)
- D UP(.LV,.LI) 
+ D UP(.LV,.LI)
  Q
  ;
 UP(LV,LI) ;Inc LI as we save to skip the $C(10).
  N Y
  S Y=$$PEEK(.LV,.LI)
- D:$A(Y)'=10 E^ZZRGND1(43) 
+ D:$A(Y)'=10 E^ZZRGND1(43)
  S LI(LV)=LI+1,LV=LV-1,LI=LI(LV)
  Q
  ;
 PEEKDN(LV,LI) ;
  N Y
- S Y=$G(LV(LV+1,LI(LV+1)+1)) 
+ S Y=$G(LV(LV+1,LI(LV+1)+1))
  Q Y
  ;
 PEEKDN2(LV,LI) ;
  N Y
- S Y=$G(LV(LV+1,LI(LV+1)+2)) 
+ S Y=$G(LV(LV+1,LI(LV+1)+2))
  Q Y
  ;
  ;functions
@@ -223,24 +223,24 @@ FUN(LV,LI,S,S1) ;
  D INC2(.LV,.LI,.S,.S1)
  I S'>0 D E^ZZRGND1(43) ;Sit on NOA
  I FUN["$TE" D DNTEXT(.LV,.LI,S) Q  ;TEXT(.LV,.LI,.S,.S1) Q
- S Y=1 
+ S Y=1
  F Z1=LI(LV+1)+1:1 S X=$G(LV(LV+1,Z1)) Q:$A(X)=10!(X="")  S:X="," Y=Y+1
  I NOA,Y<NOA!(Y>$P(NOA,";",2)) D E^ZZRGND1(43)
  D DN(.LV,.LI,S)
- D INC(.LV,.LI,.S,.S1) 
+ D INC(.LV,.LI,.S,.S1)
  Q
  ;
 TEXT(LV,LI,S,S1) ;
  N Y
- S Y=$$ASM^ZZRGND3(LV+1,LI(LV+1)+1,$C(10)) 
+ S Y=$$ASM^ZZRGND3(LV+1,LI(LV+1)+1,$C(10))
  D ST("MK","$T("_$S($E(Y)'="+":Y,1:""))
  I $$VT(Y) D ST("I",Y)
  I Y["^",$$VT($P(Y,"^",2)) D
- . N X1,X2 
- . S X1=$P(Y,"^"),X2=$P(Y,"^",2) 
+ . N X1,X2
+ . S X1=$P(Y,"^"),X2=$P(Y,"^",2)
  . D ST("$T",X2_$S($$VT(X1):" "_X1,1:""))
  I $E(Y)="@" D ARGG(Y)
- D FLUSH(LV+1) 
+ D FLUSH(LV+1)
  Q
  ;special variables
 SPV(X) ;
@@ -254,7 +254,7 @@ EXT(LV,LI,S,S1) ;Extrinsic functions
  I S1["(" D
  . D ADDCMD("FUN")
  . D ADDARG(INFO)
- . D INC2(.LV,.LI,.S,.S1) 
+ . D INC2(.LV,.LI,.S,.S1)
  . D DNPARAMS(.LV,.LI,S)
  . D INC(.LV,.LI,.S,.S1) ;Process param.
  D ST($S(INFO[" ":"X",1:"I"),INFO) ;Internal, eXternal
@@ -284,7 +284,7 @@ PAT(LV,LI,S,S1) ;
 REPCNT(S) ;
  N I,X
  F I=1:1 Q:("0123456789."'[$E(S,I))!($E(S,I)="")
- S X=$E(S,1,I-1),S=$E(S,I,999) 
+ S X=$E(S,1,I-1),S=$E(S,I,999)
  I ('$L(X))!($L(X,".")>2) S S="" D E^ZZRGND1(16)
  Q
  ;
@@ -302,7 +302,7 @@ PATQ(S) ;
  S I=1
  F  D  Q:CH'=Q
  . F I=I+1:1 S CH=$E(S,I) Q:CH=""!(CH=Q)
- . S I=I+1 
+ . S I=I+1
  . D:CH="" E^ZZRGND1(6)
  . S CH=$E(S,I)
  S S=$E(S,I,999)
@@ -313,7 +313,7 @@ ST(LOC,S) ;
  S:'$D(V(LOC,S)) V(LOC,S)=""
  S:'$D(GK) GK=""
  D SETVADDL(LOC,S)
- S:$E(GK)="p" GK="" 
+ S:$E(GK)="p" GK=""
  I $D(GK),GK]"",V(LOC,S)'[GK S V(LOC,S)=V(LOC,S)_GK
  S GK=""
  Q
@@ -332,10 +332,10 @@ VA(X) ;Check if VA Standard label
  Q (X?1U.7UN)!(X?1"%".7UN)!(X?1.8N)
  ;
 FLUSH(L) ;Flush rest of list with this offset
- N I,CH 
- S I=LI(L)+1 
+ N I,CH
+ S I=LI(L)+1
  F I=I:1 S CH=$G(LV(L,I)) Q:$C(10)[CH  D:CH="(" FLUSH(L+1)
- S LI(L)=I 
+ S LI(L)=I
  Q
  ;
 FNC() ;Sets or returns the current function
@@ -343,7 +343,7 @@ FNC() ;Sets or returns the current function
  S W=+$S($D(LV(LV,"FNC",LI)):LI,$O(LV(LV,"FNC",LI),-1):$O(LV(LV,"FNC",LI),-1),1:$O(LV(LV,"FNC",LI))) ;patch 119,121
  Q $G(LV(LV,"FNC",W))
  ;
-ADDARG(ARG)
+ADDARG(ARG) ;
  Q:$G(CX)=""
  N CNT
  S CNT=+$G(PRSTREE) ;+1
@@ -354,7 +354,7 @@ ADDARG(ARG)
  S PRSTREE(CNT)=PRSTREE(CNT)_$C(9)_ARG
  Q
  ;
-ADDCMD(CMD)
+ADDCMD(CMD) ;
  N CNT
  S CNT=+$G(PRSTREE)+1
  I "SD"[CMD S PRSTREE(CNT)=CMD
